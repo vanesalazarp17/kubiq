@@ -1,0 +1,1046 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0B1B4D">
+  <meta name="description" content="KUBIQ ACADEMY es una academia online de programación para niños y jóvenes de 8 a 17 años en Latinoamérica. Clases en grupos pequeños, Scratch, Roblox Studio y Python.">
+  <title>KUBIQ ACADEMY — Mentes que programan el futuro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #0B1B4D;
+      --navy-deep: #071234;
+      --cyan: #00C8FF;
+      --violet: #7B4DFF;
+      --lavender: #E9E6FF;
+      --white: #FFFFFF;
+      --ink: #111A36;
+      --muted: #64708D;
+      --line: rgba(11,27,77,.12);
+      --radius: 28px;
+      --shadow: 0 24px 70px rgba(11,27,77,.13);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; font-family: "Nunito", sans-serif; color: var(--ink); background: #fff; overflow-x: hidden; }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; }
+    .wrap { width: min(1160px, calc(100% - 44px)); margin: 0 auto; }
+    .display { font-family: "Poppins", sans-serif; letter-spacing: -.055em; }
+    .topline { height: 5px; background: linear-gradient(90deg, var(--cyan), var(--violet), #FF79C6); }
+    header { position: relative; z-index: 50; backdrop-filter: blur(18px); background: rgba(255,255,255,.9); border-bottom: 1px solid rgba(11,27,77,.07); }
+    .nav { height: 82px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .brand { display: inline-flex; align-items: center; min-width: 205px; flex: 0 0 auto; }
+    .brand-header-logo { display:block; width:210px; height:70px; object-fit:contain; }
+    .brand-mark { width: 43px; height: 43px; display: grid; place-items: center; border-radius: 0; background: transparent; box-shadow: none; position: relative; overflow: visible; flex: 0 0 43px; }
+    .brand-mark img { width: 100%; height: 100%; object-fit: contain; padding: 0; display:block; }
+    .brand-name { font: 700 19px/1 "Poppins", sans-serif; letter-spacing: -.045em; color: var(--navy); }
+    .brand-name small { display: block; font: 700 9px/1.7 "Nunito", sans-serif; letter-spacing: .22em; color: #7B86A8; }
+    .nav-links { display: flex; align-items: center; justify-content: space-between; gap: clamp(18px, 2.1vw, 34px); flex: 1; margin-left: clamp(18px, 3vw, 48px); font-size: 13px; font-weight: 700; color: #4B5879; white-space: nowrap; }
+    .nav-links a:hover { color: var(--violet); }
+    .nav-cta, .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; border: 0; border-radius: 999px; font-weight: 700; transition: transform .2s, box-shadow .2s, background .2s; cursor: pointer; }
+    .nav-cta { padding: 13px 19px; color: white; background: var(--navy); font-size: 13px; }
+    .nav-cta:hover, .btn:hover { transform: translateY(-3px); box-shadow: 0 12px 26px rgba(11,27,77,.18); }
+    .menu-btn { display:none; border:0; background:transparent; color:var(--navy); font-size:26px; cursor:pointer; }
+    .hero { position: relative; background: var(--navy); color: white; overflow: hidden; isolation: isolate; }
+    .hero::before { content:""; position:absolute; inset:0; z-index:-2; background: radial-gradient(circle at 74% 22%, rgba(123,77,255,.48), transparent 27%), radial-gradient(circle at 88% 78%, rgba(0,200,255,.24), transparent 26%), linear-gradient(125deg, #0B1B4D 0%, #101A52 52%, #1A1556 100%); }
+    .hero::after { content:""; position:absolute; inset:0; z-index:-1; opacity:.14; background-image: linear-gradient(rgba(255,255,255,.15) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.15) 1px, transparent 1px); background-size: 44px 44px; mask-image: linear-gradient(90deg, transparent, black 70%); }
+    .hero-grid { min-height: 650px; display:grid; grid-template-columns: 1.03fr .97fr; align-items:center; gap:30px; padding: 72px 0 82px; }
+    .eyebrow { display:inline-flex; align-items:center; gap:9px; font-size:11px; font-weight:700; letter-spacing:.19em; text-transform:uppercase; color: #B9F3FF; }
+    .eyebrow .dot { width:7px; height:7px; background:var(--cyan); border-radius:50%; box-shadow:0 0 0 5px rgba(0,200,255,.13); }
+    h1 { font:700 clamp(48px, 6.4vw, 82px)/.99 "Poppins",sans-serif; letter-spacing:-.07em; margin:25px 0 22px; max-width:650px; }
+    h1 .gradient { color: transparent; background:linear-gradient(100deg, #00C8FF 5%, #A7EFFF 43%, #B7A3FF 90%); -webkit-background-clip:text; background-clip:text; }
+    .hero-copy { max-width: 500px; color:#D4DDFB; font-size:17px; line-height:1.75; margin:0; }
+    .hero-actions { display:flex; flex-wrap:wrap; align-items:center; gap:13px; margin-top:32px; }
+    .btn { padding:16px 22px; font-size:14px; }
+    .btn-primary { background:var(--cyan); color:var(--navy); box-shadow:0 10px 26px rgba(0,200,255,.16); }
+    .btn-ghost { color:white; border:1px solid rgba(255,255,255,.28); background:rgba(255,255,255,.06); }
+    .btn-ghost:hover { background:rgba(255,255,255,.13); }
+    .hero-note { margin-top:22px; color:#AEBCE7; font-size:12px; display:flex; gap:8px; align-items:center; }
+    .hero-note svg { flex-shrink:0; }
+    .hero-art { position:relative; height:480px; display:grid; place-items:center; }
+    .orbit { position:absolute; border:1px solid rgba(255,255,255,.17); border-radius:50%; transform:rotate(-23deg); }
+    .orbit.one { width:430px; height:300px; }
+    .orbit.two { width:350px; height:450px; transform:rotate(44deg); border-color:rgba(0,200,255,.25); }
+    .orbit.three { width:500px; height:180px; transform:rotate(63deg); border-color:rgba(176,153,255,.25); }
+    .cube-scene { position:relative; width:310px; height:330px; filter: drop-shadow(0 35px 42px rgba(0,0,0,.25)); animation: float 6s ease-in-out infinite; }
+    .cube { position:absolute; left:50%; top:49%; width:200px; height:200px; transform:translate(-50%,-50%) rotate(-30deg) skew(5deg,5deg); }
+    .face { position:absolute; width:141px; height:141px; }
+    .face.top { left:29px; top:-34px; transform:rotate(45deg) skew(-10deg,-10deg); background:linear-gradient(135deg,#B5F6FF,#00C8FF); border-radius:15px; }
+    .face.left { left:-6px; top:66px; transform:skewY(30deg); background:linear-gradient(135deg,#7B4DFF,#4C37D7); border-radius:15px 8px 18px 18px; }
+    .face.right { left:91px; top:66px; transform:skewY(-30deg); background:linear-gradient(135deg,#8B72FF,#5A39DB); border-radius:8px 15px 18px 18px; }
+    .cube-k { position:absolute; z-index:4; left:50%; top:49%; transform:translate(-50%,-50%) rotate(-2deg); width:126px; height:126px; display:grid; place-items:center; }
+    .cube-k img { width:100%; height:100%; object-fit:contain; filter:drop-shadow(0 4px 8px rgba(11,27,77,.2)); }
+    .spark { position:absolute; color:var(--cyan); font-size:26px; animation: twinkle 2.4s ease-in-out infinite; }
+    .spark.s1 { top:60px; right:54px; }
+    .spark.s2 { bottom:65px; left:30px; color:#C4B5FD; font-size:18px; animation-delay:.8s; }
+    .spark.s3 { top:115px; left:27px; color:#fff; font-size:13px; animation-delay:1.2s; }
+    .float-tag { position:absolute; border:1px solid rgba(255,255,255,.18); background:rgba(255,255,255,.1); backdrop-filter:blur(14px); color:#F5F7FF; border-radius:15px; padding:12px 15px; font-size:12px; font-weight:700; box-shadow:0 15px 35px rgba(0,0,0,.12); }
+    .float-tag b { display:block; font:700 19px "Poppins",sans-serif; color:var(--cyan); margin-bottom:3px; }
+    .tag-a { top:75px; left:-4px; transform:rotate(-5deg); }
+    .tag-b { bottom:61px; right:-3px; transform:rotate(4deg); }
+    .hero-bottom { display:flex; align-items:center; justify-content:space-between; border-top:1px solid rgba(255,255,255,.15); padding:20px 0 23px; color:#B7C4ED; font-size:11px; letter-spacing:.12em; text-transform:uppercase; }
+    .hero-bottom strong { color:#fff; letter-spacing:.02em; }
+    .scroll-cue { display:flex; align-items:center; gap:10px; }
+    .scroll-cue span { display:inline-block; width:26px; height:1px; background:var(--cyan); }
+    section { scroll-margin-top:calc(var(--sticky-stack-height, 90px) + 14px); }
+    .section { padding:108px 0; }
+    .section-kicker { font-size:11px; font-weight:700; letter-spacing:.2em; text-transform:uppercase; color:var(--violet); margin-bottom:16px; }
+    .section-title { font:700 clamp(35px,4.4vw,56px)/1.04 "Poppins",sans-serif; letter-spacing:-.06em; color:var(--navy); margin:0; }
+    .section-intro { color:var(--muted); line-height:1.75; max-width:560px; font-size:16px; margin:19px 0 0; }
+    .intro-row { display:flex; justify-content:space-between; align-items:end; gap:35px; margin-bottom:45px; }
+    .intro-row .section-intro { max-width:390px; margin-bottom:4px; }
+    .vision { background:#F7F8FF; position:relative; overflow:hidden; }
+    .vision::before { content:"K"; position:absolute; right:-20px; top:-150px; font:700 570px/1 "Poppins",sans-serif; letter-spacing:-.12em; color:rgba(123,77,255,.035); pointer-events:none; }
+    .vision-grid { display:grid; grid-template-columns:.95fr 1.05fr; gap:70px; align-items:center; position:relative; }
+    .vision-quote { background:white; padding:38px; border-radius:var(--radius); box-shadow:var(--shadow); position:relative; overflow:hidden; }
+    .vision-quote::before { content:""; position:absolute; width:170px; height:170px; border-radius:50%; background:var(--lavender); right:-60px; top:-60px; }
+    .quote-mark { font:700 64px/.7 "Poppins",sans-serif; color:var(--violet); position:relative; }
+    .vision-quote p { font:600 26px/1.35 "Poppins",sans-serif; letter-spacing:-.04em; color:var(--navy); margin:24px 0 22px; position:relative; }
+    .vision-quote small { font-size:12px; font-weight:700; letter-spacing:.13em; text-transform:uppercase; color:#7883A4; position:relative; }
+    .principles { display:grid; gap:23px; margin-top:30px; }
+    .principle { display:grid; grid-template-columns:48px 1fr; gap:16px; align-items:start; }
+    .principle-icon { width:48px; height:48px; display:grid; place-items:center; border-radius:15px; color:var(--navy); background:white; box-shadow:0 8px 20px rgba(11,27,77,.07); }
+    .principle-icon svg { width:22px; height:22px; }
+    .principle h3 { margin:1px 0 7px; color:var(--navy); font:700 17px "Poppins",sans-serif; letter-spacing:-.03em; }
+    .principle p { margin:0; color:var(--muted); font-size:14px; line-height:1.65; }
+    .manifesto { background:white; }
+    .manifesto-head { text-align:center; max-width:720px; margin:0 auto 54px; }
+    .manifesto-head .section-intro { margin-left:auto; margin-right:auto; }
+    .pillars { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+    .pillar { min-height:260px; padding:29px; border:1px solid var(--line); border-radius:24px; position:relative; overflow:hidden; background:#fff; transition:transform .25s, box-shadow .25s; }
+    .pillar:hover { transform:translateY(-7px); box-shadow:var(--shadow); }
+    .pillar:nth-child(2) { background:#F6F3FF; border-color:transparent; }
+    .pillar:nth-child(3) { background:#EEFBFF; border-color:transparent; }
+    .pillar-num { font:700 12px "Poppins",sans-serif; letter-spacing:.12em; color:#8992B0; }
+    .pillar-icon { width:52px; height:52px; margin:22px 0 17px; display:grid; place-items:center; border-radius:18px; background:var(--navy); color:white; }
+    .pillar:nth-child(2) .pillar-icon { background:var(--violet); }
+    .pillar:nth-child(3) .pillar-icon { background:var(--cyan); color:var(--navy); }
+    .pillar-icon svg { width:28px; height:28px; }
+    .pillar h3 { margin:0 0 10px; font:700 22px "Poppins",sans-serif; letter-spacing:-.04em; color:var(--navy); }
+    .pillar p { margin:0; color:var(--muted); font-size:14px; line-height:1.7; max-width:290px; }
+    .pillar-shape { position:absolute; width:110px; height:110px; right:-36px; bottom:-42px; border:1px solid rgba(123,77,255,.17); border-radius:28px; transform:rotate(32deg); }
+    .coming { background:var(--navy); color:white; position:relative; overflow:hidden; }
+    .coming::before { content:""; position:absolute; width:600px; height:600px; border-radius:50%; right:-150px; top:-270px; background:radial-gradient(circle,rgba(123,77,255,.3),transparent 68%); }
+    .coming::after { content:""; position:absolute; width:400px; height:400px; border-radius:50%; left:-200px; bottom:-260px; background:radial-gradient(circle,rgba(0,200,255,.17),transparent 70%); }
+    .coming-inner { position:relative; z-index:1; display:grid; grid-template-columns:1fr .72fr; align-items:center; gap:70px; }
+    .coming .section-kicker { color:var(--cyan); }
+    .coming .section-title { color:white; }
+    .coming .section-intro { color:#C5D0F0; max-width:600px; }
+    .status-card { padding:30px; border:1px solid rgba(255,255,255,.16); border-radius:25px; background:rgba(255,255,255,.07); backdrop-filter:blur(12px); }
+    .status-top { display:flex; align-items:center; gap:10px; color:#C5D0F0; font-size:11px; text-transform:uppercase; letter-spacing:.15em; font-weight:700; }
+    .status-dot { width:8px; height:8px; border-radius:50%; background:#FFC857; box-shadow:0 0 0 5px rgba(255,200,87,.13); }
+    .status-card h3 { font:700 27px/1.12 "Poppins",sans-serif; letter-spacing:-.05em; margin:23px 0 12px; }
+    .status-card p { color:#C5D0F0; font-size:14px; line-height:1.7; margin:0; }
+    .status-line { height:1px; background:rgba(255,255,255,.14); margin:23px 0 19px; }
+    .status-foot { display:flex; justify-content:space-between; gap:15px; color:#AEBBE3; font-size:11px; }
+    .status-foot strong { color:#fff; }
+    .final-cta { padding:90px 0; background:linear-gradient(120deg,#F4F2FF,#F1FBFF); }
+    .cta-box { display:flex; align-items:center; justify-content:space-between; gap:40px; padding:45px 48px; border-radius:30px; background:white; box-shadow:0 18px 60px rgba(11,27,77,.08); border:1px solid rgba(11,27,77,.06); }
+    .cta-box h2 { font:700 clamp(29px,3.5vw,42px)/1.08 "Poppins",sans-serif; letter-spacing:-.055em; color:var(--navy); margin:0; max-width:610px; }
+    .cta-box p { margin:12px 0 0; color:var(--muted); line-height:1.6; font-size:14px; }
+    .cta-box .btn { flex-shrink:0; background:var(--navy); color:white; padding:17px 22px; }
+    footer { background:#071234; color:white; padding:32px 0; }
+    .footer-row { display:flex; align-items:center; justify-content:space-between; gap:25px; }
+    .footer-brand { display:flex; align-items:center; gap:10px; }
+    .footer-brand .brand-mark { width:35px; height:35px; border-radius:11px; box-shadow:none; }
+    .footer-brand .brand-mark img { padding: 2px; }
+    .footer-brand strong { font:700 15px "Poppins",sans-serif; }
+    .footer-brand small { display:block; font-size:10px; color:#8D9AC5; margin-top:4px; }
+    .footer-slogan { color:#AEBBE3; font-size:12px; text-align:center; }
+    .footer-meta { color:#8D9AC5; font-size:11px; text-align:right; }
+
+    .reviews-section { padding:88px 0; background:linear-gradient(180deg,#F8F9FF 0%,#FFFFFF 100%); }
+    .reviews-head { display:flex; justify-content:space-between; align-items:end; gap:28px; margin-bottom:32px; }
+    .reviews-head .section-title { margin-bottom:10px; }
+    .reviews-note { max-width:390px; font-size:12px; line-height:1.6; color:#6B7592; background:#F0EEFF; border:1px solid #E1DCFF; border-radius:14px; padding:12px 15px; }
+    .reviews-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:16px; }
+    .review-card { background:white; border:1px solid rgba(11,27,77,.1); border-radius:20px; padding:22px; box-shadow:0 8px 26px rgba(11,27,77,.045); display:flex; flex-direction:column; min-height:220px; }
+    .review-stars { color:#7B4DFF; letter-spacing:2px; font-size:14px; margin-bottom:14px; }
+    .review-card blockquote { margin:0 0 18px; color:#303B5E; font-size:14px; line-height:1.65; flex:1; }
+    .review-person { display:flex; align-items:center; gap:10px; border-top:1px solid #EEF0F8; padding-top:14px; }
+    .review-avatar { width:35px; height:35px; display:grid; place-items:center; border-radius:50%; background:#E9E6FF; color:#0B1B4D; font-size:12px; font-weight:800; }
+    .review-person strong { display:block; font-size:12px; color:#0B1B4D; }
+    .review-person small { display:block; color:#7B86A8; font-size:11px; margin-top:3px; }
+    @media(max-width:900px){.reviews-grid{grid-template-columns:repeat(2,minmax(0,1fr));}.reviews-head{align-items:start;flex-direction:column;}}
+    @media(max-width:520px){.reviews-grid{grid-template-columns:1fr}.reviews-section{padding:62px 0}.review-card{min-height:0}}
+
+
+    /* KUBIQ playful micro-interactions: responsive, keyboard-friendly, no libraries */
+    :root { --motion-fast: 180ms; --motion-mid: 280ms; --ease-playful: cubic-bezier(.2,.8,.2,1); }
+    .nav-links a:not(.nav-cta) { position:relative; transition:color var(--motion-fast) ease; }
+    .nav-links a:not(.nav-cta)::after { content:""; position:absolute; left:0; right:0; bottom:-7px; height:2px; border-radius:9px; background:linear-gradient(90deg,var(--cyan),var(--violet)); transform:scaleX(0); transform-origin:left; transition:transform var(--motion-mid) var(--ease-playful); }
+    .nav-links a:not(.nav-cta):hover::after,.nav-links a:not(.nav-cta):focus-visible::after { transform:scaleX(1); }
+    .btn,.nav-cta { position:relative; isolation:isolate; overflow:hidden; transition:transform var(--motion-mid) var(--ease-playful),box-shadow var(--motion-mid) ease,filter var(--motion-fast) ease; }
+    .btn::before,.nav-cta::before { content:""; position:absolute; inset:0; z-index:-1; background:linear-gradient(110deg,transparent 20%,rgba(255,255,255,.34) 48%,transparent 72%); transform:translateX(-130%); transition:transform 650ms var(--ease-playful); }
+    .btn:hover::before,.btn:focus-visible::before,.nav-cta:hover::before { transform:translateX(130%); }
+    .pillar,.course-card,.review-card,.status-card,.vision-quote,.faq-item { --spot-x:50%; --spot-y:50%; position:relative; isolation:isolate; }
+    .pillar::after,.course-card::before,.review-card::after,.status-card::after,.vision-quote::after { content:""; position:absolute; inset:0; z-index:-1; pointer-events:none; border-radius:inherit; opacity:0; background:radial-gradient(240px circle at var(--spot-x) var(--spot-y),rgba(0,200,255,.15),transparent 70%); transition:opacity var(--motion-mid) ease; }
+    .pillar:hover::after,.pillar:focus-within::after,.course-card:hover::before,.course-card:focus-within::before,.review-card:hover::after,.review-card:focus-within::after,.status-card:hover::after,.vision-quote:hover::after { opacity:1; }
+    .pillar,.course-card,.review-card,.status-card,.vision-quote { transition:transform var(--motion-mid) var(--ease-playful),box-shadow var(--motion-mid) ease,border-color var(--motion-mid) ease; }
+    .pillar:hover,.pillar:focus-within { transform:translateY(-8px) rotate(-.35deg); box-shadow:0 22px 45px rgba(11,27,77,.12); }
+    .course-card:hover,.course-card:focus-within { transform:translateY(-4px) scale(1.008); box-shadow:0 18px 35px rgba(11,27,77,.12); border-color:rgba(0,200,255,.65); }
+    .course-art { transition:background var(--motion-mid) ease; }
+    .course-icon img { transition:transform 360ms var(--ease-playful),filter 360ms ease; }
+    .course-card:hover .course-icon img,.course-card:focus-within .course-icon img { transform:scale(1.09) rotate(-4deg); filter:drop-shadow(0 8px 8px rgba(11,27,77,.13)); }
+    .review-card { overflow:hidden; border-color:rgba(11,27,77,.1); }
+    .review-card::before { content:""; position:absolute; inset:0 0 auto; height:4px; background:linear-gradient(90deg,var(--cyan),var(--violet),#FF79C6); transform:scaleX(.12); transform-origin:left; transition:transform 420ms var(--ease-playful); }
+    .review-card:hover,.review-card:focus-within { transform:translateY(-7px) rotate(.25deg); box-shadow:0 20px 42px rgba(11,27,77,.11); border-color:rgba(123,77,255,.25); }
+    .review-card:hover::before,.review-card:focus-within::before { transform:scaleX(1); }
+    .review-stars { display:inline-block; transform-origin:left center; transition:transform 260ms var(--ease-playful),color 260ms ease; }
+    .review-card:hover .review-stars { transform:scale(1.12) rotate(-2deg); color:#F2A900; }
+    .review-avatar { transition:transform 300ms var(--ease-playful),background 300ms ease; }
+    .review-card:hover .review-avatar { transform:rotate(-8deg) scale(1.12); background:#D8F8FF; }
+    .principle-icon,.pillar-icon { transition:transform 300ms var(--ease-playful),box-shadow 300ms ease; }
+    .principle:hover .principle-icon,.pillar:hover .pillar-icon { transform:translateY(-4px) rotate(-7deg) scale(1.06); box-shadow:0 12px 24px rgba(123,77,255,.18); }
+    .faq-item { transition:border-color 220ms ease,box-shadow 220ms ease,transform 220ms var(--ease-playful); }
+    .faq-item:hover,.faq-item:focus-within { border-color:rgba(123,77,255,.35); box-shadow:0 8px 24px rgba(11,27,77,.07); transform:translateX(3px); }
+    .float-tag { animation:tagBob 5.5s ease-in-out infinite; }
+    .cube-scene .cube{opacity:.12;transform:scale(.78)} .cube-scene .cube-k{z-index:3;filter:drop-shadow(0 18px 30px rgba(0,0,0,.22))} .tag-c{left:50%;bottom:1%;transform:translateX(-50%);animation-delay:-2s;white-space:nowrap}.tag-c b{font-size:16px!important}
+    .teacher-feature{display:grid;grid-template-columns:minmax(240px,.9fr) 1.1fr;gap:24px;align-items:stretch;margin-top:30px;border-radius:24px;overflow:hidden;background:linear-gradient(120deg,#0B1B4D,#182965);color:#fff;box-shadow:0 20px 45px rgba(11,27,77,.14)}.teacher-feature img{width:100%;height:100%;min-height:250px;object-fit:cover}.teacher-feature-copy{padding:28px 28px 28px 0;align-self:center}.teacher-feature-copy .section-kicker{color:#00C8FF}.teacher-feature-copy h3{font:700 clamp(22px,3vw,30px)/1.2 Poppins,sans-serif;margin:10px 0}.teacher-feature-copy p{color:#DCE5FF;line-height:1.75;margin:0}
+
+    .modal-schedule-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.modal-schedule-options p{margin:0;padding:12px;border-radius:14px;background:#F5F8FF}.modal-schedule-options p strong{display:block;margin-bottom:8px;color:#0B1B4D}.modal-schedule-options p span{display:inline-block;margin:3px 4px 3px 0;padding:5px 8px;border-radius:8px;background:#E8F8FF;color:#243B70;font-size:12px;font-weight:700}
+    .schedule-section{padding:82px 0;background:radial-gradient(circle at 8% 15%,rgba(0,200,255,.10),transparent 30%),linear-gradient(135deg,#F5F7FF,#F0FBFF)}
+    .schedule-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:34px;align-items:stretch}
+    .schedule-card{position:relative;overflow:hidden;background:rgba(255,255,255,.94);border:1px solid #DCE6FA;border-radius:26px;padding:28px;box-shadow:0 16px 42px rgba(11,27,77,.08);transition:transform .25s ease,box-shadow .25s ease}
+    .schedule-card:hover{transform:translateY(-5px);box-shadow:0 22px 48px rgba(11,27,77,.13)}
+    .schedule-card:before{content:"";position:absolute;inset:0 0 auto;height:6px;background:linear-gradient(90deg,#00C8FF,#7B4DFF)}
+    .schedule-card-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:22px}
+    .schedule-card h3{font:700 22px Poppins,sans-serif;color:#0B1B4D;margin:0}
+    .schedule-day-badge{display:inline-flex;align-items:center;gap:7px;padding:8px 12px;border-radius:999px;background:#F0EDFF;color:#6845E8;font-size:12px;font-weight:800;white-space:nowrap}
+    .schedule-day-badge:before{content:"";width:7px;height:7px;border-radius:50%;background:#7B4DFF}
+    .schedule-caption{color:#71809F;font-size:14px;margin:-12px 0 20px}
+    .schedule-times{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+    .schedule-time{display:flex;flex-direction:column;gap:5px;padding:15px 16px;border:1px solid #E3EAF8;border-radius:16px;background:linear-gradient(145deg,#FAFCFF,#F3F8FF);color:#64708D;min-height:76px;justify-content:center;transition:border-color .2s ease,background .2s ease}
+    .schedule-time:hover{border-color:#9ADFF5;background:#F0FBFF}
+    .schedule-time span{font-size:11px;text-transform:uppercase;letter-spacing:.08em;font-weight:800;color:#8793B0}
+    .schedule-time strong{font-size:17px;color:#0B1B4D;font-weight:800;white-space:nowrap}
+    .schedule-zone{display:flex;justify-content:center;align-items:center;gap:8px;margin:22px 0 0;color:#64708D;font-size:13px}
+    .schedule-zone strong{background:#EAE6FF;color:#6845E8;border-radius:999px;padding:6px 11px;font-size:12px}
+
+    .projects-carousel-wrap{position:relative;margin:28px 30px 0}
+    .projects-carousel{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 16px)/2);gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;padding:4px 2px 18px}
+    .projects-carousel::-webkit-scrollbar{display:none}
+    .project-card{min-width:0;overflow:hidden;border:1px solid #e3eaf8;border-radius:24px;background:#fff;box-shadow:0 14px 32px rgba(11,27,77,.08);scroll-snap-align:start;transition:transform .3s ease,box-shadow .3s ease}
+    .project-card:hover{transform:translateY(-6px);box-shadow:0 22px 42px rgba(11,27,77,.13)}
+    .project-card>img{display:block;width:100%;height:220px;object-fit:cover}
+    .project-card-copy{display:flex;align-items:center;gap:14px;padding:18px 18px 20px}
+    .project-card-copy>div{min-width:0}
+    .project-card-copy h4{margin:0 0 5px;color:#0B1B4D;font:700 17px/1.25 Poppins,sans-serif}
+    .project-card-copy p{margin:0;color:#64708D;font-size:14px;line-height:1.4}
+    .project-tech{flex:none;border-radius:999px;padding:8px 12px;font:800 12px Poppins,sans-serif;color:#0B1B4D;background:#eaf5ff}
+    .python-tech{background:#fff4d9}.roblox-tech{background:#eeeaff}
+    .projects-arrow{position:absolute;z-index:2;top:40%;width:46px;height:46px;border:0;border-radius:50%;background:#fff;color:#0B1B4D;box-shadow:0 8px 24px rgba(11,27,77,.14);font-size:30px;line-height:1;cursor:pointer;transition:transform .2s ease,opacity .2s ease}
+    .projects-arrow:hover{transform:scale(1.08)}.projects-arrow:disabled{opacity:.35;cursor:default;transform:none}
+    .projects-prev{left:-24px}.projects-next{right:-24px}
+    .projects-pagination{display:flex;justify-content:center;gap:10px;margin:10px 0 0}
+    .projects-pagination button{width:10px;height:10px;border:0;border-radius:50%;background:#d7dced;padding:0;cursor:pointer;transition:transform .2s ease,background .2s ease}
+    .projects-pagination button.is-active{background:#704dff;transform:scale(1.25)}
+    @media(max-width:900px){.projects-carousel{grid-auto-columns:calc((100% - 16px)/2)}}
+    @media(max-width:620px){.projects-carousel-wrap{margin:22px 18px 0}.projects-carousel{grid-auto-columns:88%;gap:12px}.project-card>img{height:205px}.project-card-copy{padding:15px}.projects-prev{left:-22px}.projects-next{right:-22px}.projects-arrow{width:40px;height:40px}}
+    @media(prefers-reduced-motion:reduce){.projects-carousel{scroll-behavior:auto}.project-card,.projects-arrow,.projects-pagination button{transition:none}}
+    @media(max-width:700px){.schedule-grid{grid-template-columns:1fr}.schedule-card{padding:23px}.schedule-times{gap:9px}.schedule-time{padding:13px 12px}.schedule-time strong{font-size:15px}.teacher-feature{grid-template-columns:1fr}.teacher-feature img{height:210px;min-height:0}.teacher-feature-copy{padding:0 22px 24px}.schedule-grid{grid-template-columns:1fr}}
+    .tag-b { animation-delay:-2.4s; }
+
+    .tag-d{top:25%;right:3%;transform:rotate(5deg);animation-delay:-1.3s}
+    .tag-e{bottom:24%;left:2%;transform:rotate(-4deg);animation-delay:-3.1s}
+    .tag-f{top:5%;right:27%;transform:rotate(-3deg);animation-delay:-4.2s}
+    .class-projects-head{margin:34px 0 18px;text-align:left}
+    .class-projects-head h3{font:700 clamp(24px,3vw,32px)/1.2 Poppins,sans-serif;color:#0B1B4D;margin:8px 0}
+    .class-projects-head p{color:#64708D;max-width:760px;margin:0;line-height:1.65}
+    @media(max-width:760px){.tag-d{top:7%;right:0}.tag-e{bottom:20%;left:0}.tag-f{top:0;right:18%}.project-card>img{height:190px}}
+
+    @keyframes tagBob { 0%,100%{translate:0 0} 50%{translate:0 -7px} }
+    @media (hover:hover) and (pointer:fine) {
+      .course-card,.pillar,.review-card { transform-style:preserve-3d; }
+    }
+    @media (hover:none),(pointer:coarse) {
+      .pillar:hover,.course-card:hover,.review-card:hover,.faq-item:hover { transform:none; }
+      .float-tag { animation:none; }
+      .course-description { opacity:1; max-height:none; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .float-tag { animation:none!important; }
+      .pillar:hover,.course-card:hover,.review-card:hover,.faq-item:hover { transform:none!important; }
+      .btn::before,.nav-cta::before { display:none; }
+    }
+
+    .reveal { opacity:1; transform:none; }
+    .reveal.visible { opacity:1; transform:none; }
+    @keyframes float { 0%,100%{transform:translateY(0) rotate(-1deg)} 50%{transform:translateY(-13px) rotate(1deg)} }
+    @keyframes twinkle { 0%,100%{opacity:.5; transform:scale(.85)} 50%{opacity:1; transform:scale(1.15)} }
+    @media (prefers-reduced-motion: reduce) { *,*::before,*::after { animation:none!important; scroll-behavior:auto!important; transition:none!important; } .reveal { opacity:1; transform:none; } }
+    @media (max-width: 900px) {
+      .nav-links { gap:17px; }
+      .hero-grid { grid-template-columns:1fr 0.8fr; min-height:580px; }
+      .hero-art { transform:scale(.85); margin-left:-35px; }
+      .vision-grid { gap:35px; }
+      .coming-inner { gap:35px; }
+      .cta-box { padding:35px; }
+    }
+    @media (max-width: 720px) {
+      .wrap { width:min(100% - 34px, 560px); }
+      .nav { height:72px; }
+      .brand { min-width:0; }
+      .brand-mark { width:39px; height:39px; }
+      .brand-name { font-size:17px; }
+      .menu-btn { display:block; }
+      .nav-links { display:none; position:absolute; left:17px; right:17px; top:72px; padding:20px; border-radius:20px; background:white; box-shadow:var(--shadow); flex-direction:column; align-items:stretch; gap:0; }
+      .nav-links.open { display:flex; }
+      .nav-links a { padding:13px 5px; border-bottom:1px solid #EEF0F8; }
+      .nav-links .nav-cta { margin-top:12px; text-align:center; border:0; padding:14px; }
+      .hero-grid { grid-template-columns:1fr; gap:0; padding:65px 0 35px; min-height:auto; }
+      h1 { font-size:clamp(48px,13vw,68px); margin-top:22px; }
+      .hero-copy { font-size:15px; }
+      .hero-art { height:340px; transform:scale(.8); margin:-4px auto -10px; width:100%; }
+      .cube-scene { transform:scale(.9); }
+      .tag-a { left:0; }
+      .tag-b { right:0; }
+      .hero-bottom { align-items:flex-start; flex-direction:column; gap:12px; padding:18px 0; }
+      .section { padding:75px 0; }
+      .intro-row { display:block; margin-bottom:30px; }
+      .intro-row .section-intro { margin-top:15px; }
+      .vision-grid { grid-template-columns:1fr; gap:35px; }
+      .vision-quote { padding:29px; }
+      .vision-quote p { font-size:23px; }
+      .pillars { grid-template-columns:1fr; gap:14px; }
+      .pillar { min-height:245px; }
+      .manifesto-head { margin-bottom:35px; }
+      .coming-inner { grid-template-columns:1fr; gap:32px; }
+      .status-card { padding:25px; }
+      .final-cta { padding:65px 0; }
+      .cta-box { display:block; padding:29px; }
+      .cta-box .btn { margin-top:23px; width:100%; }
+      .footer-row { flex-direction:column; align-items:flex-start; gap:20px; }
+      .footer-slogan { text-align:left; }
+      .footer-meta { text-align:left; }
+    }
+  
+    /* V3 polish: tighter vertical rhythm, clearer hierarchy, course catalogue */
+    .section { padding: 56px 0; }
+    .vision-grid { gap: 48px; }
+    .manifesto-head { margin-bottom: 36px; }
+    .pillar { min-height: 220px; }
+    .coming-inner { gap: 48px; }
+    .final-cta { padding: 48px 0; }
+    .hero-grid { min-height: 540px; padding-top: 42px; padding-bottom: 36px; }
+    .hero-art { height: 430px; }
+    .catalog { background:#F7F9FF; position:relative; overflow:hidden; }
+    .catalog:before { content:""; position:absolute; width:420px; height:420px; border-radius:50%; left:-210px; top:-160px; background:radial-gradient(circle,rgba(0,200,255,.13),transparent 70%); }
+    .catalog .wrap { position:relative; }
+    .catalog-head { text-align:center; max-width:760px; margin:0 auto 34px; }
+    .catalog-head .section-intro { margin:15px auto 0; }
+    .course-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; max-width:1040px; margin:0 auto; }
+    .course-card { position:relative; background:linear-gradient(145deg,#fff 0%,#F8FBFF 100%); border:1px solid #DCE5FA; border-radius:24px; overflow:hidden; display:grid; grid-template-columns:112px minmax(0,1fr); align-items:stretch; min-height:190px; box-shadow:0 8px 24px rgba(11,27,77,.045); transition:border-color .22s,box-shadow .22s,transform .22s; }
+    .course-card:hover,.course-card:focus-within { border-color:rgba(123,77,255,.28); box-shadow:0 9px 24px rgba(11,27,77,.07); transform:translateX(2px); }
+    .course-art { display:grid; place-items:center; position:relative; overflow:hidden; background:#EEF8FC; }
+    .course-card:nth-child(2) .course-art,.course-card:nth-child(5) .course-art { background:#F3F0FF; }
+    .course-card:nth-child(3) .course-art,.course-card:nth-child(4) .course-art { background:#F0F4FC; }
+    .course-card:nth-child(6) .course-art { background:#EEF8FC; }
+    .course-art:before,.course-art:after { content:""; position:absolute; border:1px solid rgba(11,27,77,.07); border-radius:20px; transform:rotate(30deg); }
+    .course-art:before { width:75px;height:75px;left:-30px;top:55px; }
+    .course-art:after { width:60px;height:60px;right:-18px;top:-24px; }
+    .course-icon { width:58px;height:58px;border-radius:18px;background:#DDECF8;color:var(--navy);display:grid;place-items:center;position:relative;z-index:1;box-shadow:0 4px 10px rgba(11,27,77,.05);transform:none; }
+    .course-card:nth-child(2) .course-icon,.course-card:nth-child(5) .course-icon { background:#E8E1FF;color:#5B45B5; }
+    .course-card:nth-child(3) .course-icon,.course-card:nth-child(4) .course-icon { background:#E4EAF8;color:#344D87; }
+    .course-card:nth-child(6) .course-icon { background:#DDECF8;color:#0B1B4D; }
+    .course-icon svg { width:31px;height:31px; }
+    .course-icon { width:100%; height:100%; min-height:112px; border-radius:0; background:transparent!important; box-shadow:none; padding:12px; overflow:hidden; }
+    .course-icon img { width:100%; height:100%; max-width:82px; max-height:82px; min-height:0; object-fit:contain; display:block; margin:auto; border-radius:12px; transition:transform .25s ease,filter .25s ease; }
+    .course-card:hover .course-icon img,.course-card:focus-visible .course-icon img { transform:scale(1.06) rotate(-2deg); filter:drop-shadow(0 5px 7px rgba(11,27,77,.12)); }
+    .course-card:nth-child(2) .course-icon,.course-card:nth-child(5) .course-icon { border:1px solid rgba(123,77,255,.08); }
+    .course-content { padding:20px 22px 18px; display:flex; flex-direction:column; align-items:stretch; justify-content:center; gap:9px; }
+    .course-main { min-width:0; }
+    .course-level { display:inline-block; padding:5px 9px; border-radius:999px; background:#F0F2FA; color:#536081; font-size:9px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; margin-bottom:8px; }
+    .course-content h3 { margin:0 0 9px; font:700 21px/1.15 "Poppins",sans-serif; letter-spacing:-.045em; color:var(--navy); }
+    .course-bottom { display:flex; align-items:center; gap:8px; }
+    .course-age { display:flex; align-items:center; gap:7px; color:#596584; font-size:12px; font-weight:700; }
+    .course-age svg { width:15px;height:15px;color:var(--violet);flex-shrink:0; }
+    .course-code { color:#A2A9C0;font:700 10px "Poppins",sans-serif;letter-spacing:.1em; margin-left:auto; }
+    .course-description { color:#66718D; font-size:13px; line-height:1.6; margin:0; opacity:1; max-height:none; overflow:visible; transform:none; }
+    .course-more { display:inline-flex; align-items:center; gap:7px; align-self:flex-start; margin-top:3px; padding:8px 13px; border-radius:999px; background:var(--navy); color:#fff; font-size:11px; font-weight:800; letter-spacing:.01em; box-shadow:0 5px 12px rgba(11,27,77,.12); transition:background .2s,transform .2s,box-shadow .2s; }
+    .course-card:hover .course-more,.course-card:focus-visible .course-more { background:var(--violet); transform:translateY(-1px); box-shadow:0 8px 18px rgba(123,77,255,.22); }
+    .catalog-disclaimer { margin:20px auto 0; max-width:850px; text-align:center; font-size:12px; line-height:1.65; color:#75809F; }
+    .catalog-disclaimer strong { color:var(--navy); }
+    @media(max-width:900px) { .section { padding:52px 0; } }
+    @media(max-width:720px) {
+      .section { padding:42px 0; }
+      .hero-grid { min-height:0; padding:38px 0 24px; }
+      .hero-art { height:320px; }
+      .intro-row { margin-bottom:28px; }
+      .course-grid { grid-template-columns:1fr; gap:12px; }
+      .course-card { grid-template-columns:70px minmax(0,1fr); min-height:0; transform:none!important; }
+      .course-art { min-height:126px; }
+      .course-icon { width:100%; height:100%; min-height:100px; border-radius:0; padding:9px; }
+      .course-icon img { width:100%; height:100%; max-width:60px; max-height:60px; min-height:0; object-fit:contain; }
+       .course-icon svg { width:27px;height:27px; }
+      .course-content { padding:14px; display:flex; flex-direction:column; align-items:stretch; gap:8px; }
+      .course-content h3 { font-size:17px; margin-bottom:8px; }
+      .course-age { font-size:11px; }
+      .course-description { opacity:1; max-height:none; overflow:visible; transform:none; font-size:12px; }
+      .coming-inner { gap:28px; }
+      .final-cta { padding:38px 0; }
+    }
+    @media(max-width:380px) { .course-card { grid-template-columns:64px minmax(0,1fr); } .course-icon { padding:7px; } .course-icon img { max-width:50px; max-height:50px; } .course-content { padding:12px; } .course-content h3 { font-size:16px; } }
+
+
+
+.course-card.course-open{cursor:pointer}.course-card.course-open:focus-visible{outline:3px solid var(--cyan);outline-offset:3px}
+@media(max-width:520px){.course-content{padding:13px;gap:7px}.course-content h3{font-size:16px}.course-more{font-size:10px;padding:7px 11px}}
+.course-modal-backdrop{position:fixed;inset:0;z-index:1000;display:none;align-items:center;justify-content:center;padding:20px;background:rgba(7,18,52,.68);backdrop-filter:blur(8px)}.course-modal-backdrop.open{display:flex}
+.course-modal{position:relative;width:min(660px,100%);max-height:88vh;overflow:auto;background:#fff;border-radius:26px;box-shadow:0 30px 100px rgba(0,0,0,.28)}
+.course-modal-top{display:grid;grid-template-columns:140px 1fr;gap:20px;align-items:center;padding:28px;background:linear-gradient(125deg,#F6F7FF,#EEF9FF);border-bottom:1px solid #E7EBF6}
+.course-modal-art{width:140px;height:130px;border-radius:20px;background:white;display:grid;place-items:center;overflow:hidden;padding:10px}.course-modal-art img{width:100%;height:100%;object-fit:contain;border-radius:14px}
+.course-modal-level{display:inline-flex;padding:6px 11px;border-radius:999px;background:var(--lavender);color:var(--navy);font-size:12px;font-weight:800;margin-bottom:9px}
+.course-modal h2{margin:0 0 8px;font:800 clamp(24px,4vw,34px)/1.1 "Poppins",sans-serif;letter-spacing:-.04em;color:var(--navy)}.course-modal-age{margin:0;color:#5B6685;font-weight:700}
+.course-modal-close{position:absolute;right:14px;top:14px;width:38px;height:38px;border:1px solid #DDE3F2;border-radius:50%;background:white;color:var(--navy);font-size:23px;cursor:pointer;z-index:2}
+.course-modal-body{padding:25px 30px 30px}.course-modal-body p{color:#53607F;line-height:1.7;margin:0 0 18px}.course-modal-body h3{color:var(--navy);font:700 16px "Poppins",sans-serif;margin:20px 0 10px}.course-modal-body ul{margin:0;padding-left:21px;color:#53607F;line-height:1.8}
+.course-modal-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.btn-whatsapp{background:#20C76A;color:#07351F}.course-modal-footnote{font-size:12px;margin-top:15px!important;color:#77819A!important}
+.floating-whatsapp{position:fixed;right:20px;bottom:20px;z-index:80;display:flex;align-items:center;gap:8px;background:#20C76A;color:#07351F;padding:13px 17px;border-radius:999px;box-shadow:0 10px 28px rgba(5,50,28,.24);font-size:13px;font-weight:900}.floating-whatsapp:hover{transform:translateY(-2px)}
+@media(max-width:560px){.course-modal-backdrop{padding:10px}.course-modal-top{grid-template-columns:85px 1fr;gap:13px;padding:20px 16px}.course-modal-art{width:85px;height:95px}.course-modal-body{padding:20px}.course-modal-actions{flex-direction:column}.course-modal-actions .btn{width:100%}.floating-whatsapp{right:10px;bottom:10px;padding:12px 14px;font-size:12px}}
+
+
+
+/* Enrollment request form */
+.enroll-backdrop{position:fixed;inset:0;z-index:1100;display:none;align-items:center;justify-content:center;padding:18px;background:rgba(7,18,52,.72);backdrop-filter:blur(8px)}.enroll-backdrop.open{display:flex}.enroll-dialog{width:min(760px,100%);max-height:90vh;overflow:auto;background:#fff;border-radius:25px;box-shadow:0 30px 100px rgba(0,0,0,.3);position:relative}.enroll-head{padding:27px 30px;background:linear-gradient(125deg,#F6F7FF,#EEF9FF);border-bottom:1px solid #E7EBF6}.enroll-head h2{font:800 clamp(25px,4vw,34px)/1.15 "Poppins",sans-serif;color:var(--navy);margin:0 42px 9px 0;letter-spacing:-.035em}.enroll-head p{color:#53607F;line-height:1.6;margin:0}.enroll-close{position:absolute;right:14px;top:14px;width:38px;height:38px;border:1px solid #DDE3F2;border-radius:50%;background:white;color:var(--navy);font-size:23px;cursor:pointer}.enroll-form{padding:25px 30px 30px;display:grid;grid-template-columns:1fr 1fr;gap:16px}.enroll-field{display:flex;flex-direction:column;gap:7px}.enroll-field.full,.payment-choice-wrap,.enroll-submit-wrap,.enroll-note{grid-column:1/-1}.enroll-field label,.payment-choice-wrap legend{font-size:13px;font-weight:800;color:var(--navy)}.enroll-field input,.enroll-field select{width:100%;min-height:46px;border:1px solid #D8DEEF;border-radius:12px;padding:11px 13px;background:#fff;color:#17234B;font:inherit}.enroll-field input:focus,.enroll-field select:focus{outline:3px solid rgba(0,200,255,.2);border-color:#00A9D8}.payment-choice-wrap{border:1px solid #D8DEEF;border-radius:15px;padding:15px}.payment-choices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:10px}.payment-option{border:1px solid #D8DEEF;border-radius:12px;padding:12px;display:flex;gap:9px;align-items:flex-start;cursor:pointer;color:#34405F;font-size:13px;line-height:1.4}.payment-option:has(input:checked){border-color:var(--violet);background:#F6F3FF;box-shadow:0 0 0 2px rgba(123,77,255,.08)}.payment-option input{margin-top:3px;accent-color:var(--violet)}.payment-option[hidden]{display:none!important}.payment-option small{display:block;color:#707A96;margin-top:3px}.enroll-note{font-size:12px;line-height:1.6;color:#66718F;margin:0}.enroll-submit-wrap .btn{width:100%;min-height:48px}.enroll-status{font-size:13px;color:#236B48;line-height:1.5;margin:10px 0 0}.payment-country-note{font-size:12px;color:#66718F;margin:8px 0 0}.enroll-form .consent-row{grid-column:1/-1}
+@media(max-width:560px){.enroll-backdrop{padding:8px}.enroll-head{padding:23px 20px}.enroll-form{padding:20px;grid-template-columns:1fr;gap:14px}.enroll-field.full,.payment-choice-wrap,.enroll-submit-wrap,.enroll-note{grid-column:1}.payment-choices{grid-template-columns:1fr}.enroll-dialog{border-radius:20px}}
+
+    .faq-section { padding:88px 0; background:#F7F8FF; }
+    .faq-layout { display:grid; grid-template-columns:.78fr 1.22fr; gap:52px; align-items:start; }
+    .faq-intro h2 { font:800 clamp(30px,4vw,46px)/1.1 "Poppins",sans-serif; letter-spacing:-.04em; color:var(--navy); margin:12px 0 16px; }
+    .faq-intro p { color:var(--muted); line-height:1.75; }
+    .latam-pill { display:inline-flex; align-items:center; gap:8px; padding:8px 12px; border:1px solid rgba(0,200,255,.35); border-radius:999px; color:var(--navy); background:#fff; font-weight:800; font-size:12px; }
+    .faq-list { display:grid; gap:10px; }
+    .faq-item { background:#fff; border:1px solid #E3E8F5; border-radius:16px; overflow:hidden; }
+    .faq-item summary { list-style:none; cursor:pointer; padding:19px 22px; display:flex; align-items:center; justify-content:space-between; gap:16px; color:var(--navy); font-weight:800; }
+    .faq-item summary::-webkit-details-marker { display:none; }
+    .faq-item summary::after { content:"+"; color:var(--violet); font-size:23px; font-weight:500; flex:0 0 auto; }
+    .faq-item[open] summary::after { content:"−"; }
+    .faq-answer { padding:0 22px 20px; color:var(--muted); line-height:1.75; }
+    .faq-answer p { margin:0; }
+    .faq-contact { margin-top:22px; display:flex; flex-wrap:wrap; align-items:center; gap:12px; }
+    @media(max-width:760px) { .faq-section { padding:60px 0; } .faq-layout { grid-template-columns:1fr; gap:28px; } }
+
+  
+    /* Small-group learning highlights */
+    .small-group-highlight{display:inline-flex;align-items:center;gap:12px;margin-top:20px;padding:12px 16px;border:1px solid rgba(0,200,255,.28);border-radius:16px;background:linear-gradient(120deg,rgba(0,200,255,.09),rgba(123,77,255,.08));box-shadow:0 8px 26px rgba(11,27,77,.06);transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+    .small-group-highlight:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(11,27,77,.12);border-color:rgba(0,200,255,.7)}
+    .small-group-icon{display:grid;place-items:center;width:38px;height:38px;flex:0 0 38px;border-radius:12px;background:#0B1B4D;color:#00C8FF;font-size:20px;animation:groupSpark 3s ease-in-out infinite}
+    .small-group-highlight strong,.small-group-highlight span:not(.small-group-icon){display:block}
+    .small-group-highlight strong{color:#fff;font-size:.92rem;color:#FFFFFF}
+    .small-group-highlight div span{font-size:.82rem;color:#E0E8FF;margin-top:3px}
+    .catalog-personalized{display:flex;align-items:flex-start;gap:13px;max-width:680px;margin:22px 0 0;padding:17px 20px;border-radius:18px;background:linear-gradient(110deg,rgba(0,200,255,.09),rgba(123,77,255,.08));border:1px solid rgba(123,77,255,.18);transition:transform .25s ease,box-shadow .25s ease}
+    .catalog-personalized:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(11,27,77,.09)}
+    .catalog-personalized>span{display:grid;place-items:center;width:32px;height:32px;flex:0 0 32px;border-radius:10px;background:#fff;color:#7B4DFF;font-size:18px;box-shadow:0 3px 12px rgba(11,27,77,.08)}
+    .catalog-personalized strong{display:block;color:#0B1B4D;font-size:.98rem;margin:1px 0 4px}
+    .catalog-personalized p{margin:0;color:#4d5874;font-size:.9rem;line-height:1.55}
+    @keyframes groupSpark{0%,100%{transform:rotate(0) scale(1)}50%{transform:rotate(8deg) scale(1.06)}}
+    @media(max-width:600px){.small-group-highlight{width:100%;box-sizing:border-box}.catalog-personalized{padding:15px}}
+    @media(prefers-reduced-motion:reduce){.small-group-highlight,.catalog-personalized,.small-group-icon{animation:none!important;transition:none!important}}
+    /* Accessible, responsive parent-review carousel */
+    .reviews-proof{max-width:780px;color:var(--muted);line-height:1.7;margin-top:12px}
+    .reviews-controls{display:flex;align-items:center;justify-content:flex-end;gap:10px;margin:22px 0 14px}
+    .reviews-controls button{width:42px;height:42px;border-radius:50%;border:1px solid #DDE3F2;background:#fff;color:var(--navy);font-size:22px;cursor:pointer;transition:transform .2s ease,background .2s ease,border-color .2s ease}
+    .reviews-controls button:hover{transform:translateY(-2px);background:#F0F8FF;border-color:var(--cyan)}
+    .reviews-controls button:focus-visible{outline:3px solid var(--cyan);outline-offset:3px}
+    .reviews-counter{font-size:12px;font-weight:800;color:#687391;min-width:58px;text-align:center}
+    .reviews-grid{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:4px 3px 20px;scrollbar-width:thin;scrollbar-color:#B8B5F8 #F0F2FA}
+    .reviews-grid .review-card{flex:0 0 calc((100% - 32px)/3);scroll-snap-align:start;min-width:0}
+    .reviews-grid::-webkit-scrollbar{height:8px}.reviews-grid::-webkit-scrollbar-track{background:#F0F2FA;border-radius:99px}.reviews-grid::-webkit-scrollbar-thumb{background:#B8B5F8;border-radius:99px}
+    .review-carousel-hint{font-size:12px;color:#7B849E;margin:0}
+    .trust-highlights{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:28px}
+    .trust-highlight{padding:16px;border:1px solid #E1E6F4;border-radius:16px;background:#fff;box-shadow:0 7px 22px rgba(11,27,77,.035)}
+    .trust-highlight strong{display:block;color:var(--navy);font:700 15px "Poppins",sans-serif;margin-bottom:5px}.trust-highlight span{font-size:12px;line-height:1.55;color:#65708D}
+    .session-cta{display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;font-weight:800;padding:13px 18px;border-radius:12px;background:linear-gradient(100deg,var(--violet),#5B6CFF);color:#fff;box-shadow:0 9px 22px rgba(91,76,255,.2);transition:transform .2s ease,box-shadow .2s ease}
+    .session-cta:hover{transform:translateY(-2px);box-shadow:0 13px 28px rgba(91,76,255,.28)}
+    @media(max-width:900px){.reviews-grid .review-card{flex-basis:calc((100% - 16px)/2)}}
+    @media(max-width:560px){.reviews-grid .review-card{flex-basis:88%}.trust-highlights{grid-template-columns:1fr}.reviews-controls{justify-content:flex-start}}
+    @media(prefers-reduced-motion:reduce){.reviews-grid{scroll-behavior:auto}.reviews-controls button,.session-cta{transition:none}}
+
+
+    /* V24: visual storytelling, concise copy and stronger teacher cards */
+    .kids-showcase{padding:78px 0;background:linear-gradient(180deg,#fff 0%,#f4f7ff 100%);overflow:hidden}
+    .kids-showcase-grid{display:grid;grid-template-columns:1.04fr .96fr;gap:clamp(28px,5vw,70px);align-items:center}
+    .kids-photo-wrap{position:relative;border-radius:28px;overflow:visible;isolation:isolate;box-shadow:0 24px 60px rgba(11,27,77,.16);animation:photoFloat 6s ease-in-out infinite}
+    .kids-photo-wrap:before{content:"";position:absolute;inset:-12px 18px 18px -12px;border:2px solid rgba(0,200,255,.45);border-radius:30px;z-index:-1}
+    .kids-photo-wrap img{display:block;width:100%;aspect-ratio:1.42;object-fit:cover;border-radius:28px}
+    .photo-badge{position:absolute;left:18px;bottom:18px;display:grid;gap:3px;padding:13px 17px;border:1px solid rgba(255,255,255,.5);border-radius:16px;background:rgba(11,27,77,.82);backdrop-filter:blur(12px);color:white;box-shadow:0 12px 30px #07123435}
+    .photo-badge b{font:700 11px Poppins,sans-serif;letter-spacing:.12em;color:#8cecff}.photo-badge small{font-size:12px}
+    .kids-showcase-copy{position:relative}.kids-showcase-copy h2{font-size:clamp(30px,4vw,48px);line-height:1.13;color:var(--navy);margin:14px 0 18px}.kids-showcase-copy p{font-size:16px;line-height:1.8;color:var(--muted);margin:0 0 24px;max-width:520px}
+    .floating-code{display:inline-flex;gap:9px;align-items:center;margin-top:25px;padding:12px 17px;border-radius:13px;background:#0b1b4d;color:#fff;font:600 13px monospace;box-shadow:0 10px 25px #0b1b4d20;animation:codePulse 3s ease-in-out infinite}.floating-code span{color:#00c8ff}.floating-code b{color:#c8baff}
+    .trust-highlights{gap:16px;margin-top:30px}.trust-highlight{position:relative;overflow:hidden;min-height:190px;padding:23px 21px;border-radius:20px;background:linear-gradient(150deg,#fff,#f8faff);box-shadow:0 12px 30px rgba(11,27,77,.06);transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}.trust-highlight:after{content:"";position:absolute;width:100px;height:100px;right:-40px;top:-40px;border-radius:50%;background:rgba(0,200,255,.09);transition:transform .35s ease}.trust-highlight:hover{transform:translateY(-7px);box-shadow:0 20px 38px rgba(11,27,77,.12);border-color:#b9edfa}.trust-highlight:hover:after{transform:scale(1.5)}.teacher-icon{display:grid;place-items:center;width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,#e4fbff,#ece7ff);color:var(--violet);font-size:23px;margin-bottom:16px}.trust-highlight strong{font-size:14px;line-height:1.4;margin-bottom:9px}.trust-highlight span:last-child{font-size:13px;line-height:1.65}
+    @keyframes photoFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}@keyframes codePulse{0%,100%{box-shadow:0 10px 25px #0b1b4d20;transform:translateY(0)}50%{box-shadow:0 14px 32px #7b4dff30;transform:translateY(-3px)}}
+    @media(max-width:760px){.kids-showcase{padding:58px 0}.kids-showcase-grid{grid-template-columns:1fr;gap:35px}.kids-photo-wrap img{aspect-ratio:1.2}.trust-highlights{grid-template-columns:1fr}.trust-highlight{min-height:0}}
+    @media(prefers-reduced-motion:reduce){.kids-photo-wrap,.floating-code{animation:none}.trust-highlight,.trust-highlight:after{transition:none}}
+
+    /* V22: cierre de página ordenado y responsive */
+    .contact-news{padding:84px 0 88px;background:linear-gradient(180deg,#f5f7ff 0%,#eef8ff 100%);position:relative;isolation:isolate}
+    .contact-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.88fr);gap:28px;align-items:stretch}
+    .contact-panel,.newsletter-panel{min-width:0;border:1px solid rgba(11,27,77,.09);border-radius:28px;padding:clamp(24px,3.2vw,38px);background:#fff;box-shadow:0 18px 48px rgba(11,27,77,.07)}
+    .contact-panel{display:flex;flex-direction:column;align-items:flex-start}
+    .contact-panel h2,.newsletter-panel h2{font:700 clamp(27px,3vw,36px)/1.14 "Poppins",sans-serif;letter-spacing:-.045em;color:var(--navy);margin:13px 0 14px;max-width:560px}
+    .contact-panel>p,.newsletter-panel>p{font-size:15px;line-height:1.75;color:var(--muted);margin:0 0 23px;max-width:560px}
+    .contact-channels{display:grid;gap:12px;width:100%;margin:auto 0}
+    .contact-channel{display:flex;align-items:flex-start;gap:14px;min-width:0;padding:16px;border:1px solid #e8ebf6;border-radius:17px;background:#fbfcff;color:var(--ink)}
+    a.contact-channel{transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
+    a.contact-channel:hover{transform:translateY(-2px);border-color:#b8eefa;box-shadow:0 10px 24px rgba(11,27,77,.06)}
+    .contact-icon{display:grid;place-items:center;flex:0 0 42px;width:42px;height:42px;border-radius:13px;background:#e9faff;font-size:20px}
+    .contact-channel>span:last-child{min-width:0;display:block}
+    .contact-channel strong{display:block;font-size:14px;line-height:1.45;color:var(--navy);margin:0 0 4px}
+    .contact-channel span span{display:block;font-size:13px;line-height:1.6;color:var(--muted);overflow-wrap:anywhere}
+    .contact-panel>.btn{margin-top:auto;max-width:100%;text-align:center}
+    .contact-booking-panel{position:relative;isolation:isolate;overflow:hidden;min-width:0;border-radius:28px;padding:clamp(28px,3.5vw,44px);background:linear-gradient(145deg,#0b1b4d 0%,#172866 58%,#30216d 100%);color:#fff;box-shadow:0 22px 55px rgba(11,27,77,.17);display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
+    .contact-booking-panel:before{content:"";position:absolute;z-index:-1;width:360px;height:360px;right:-125px;top:-155px;border:1px solid rgba(0,200,255,.28);border-radius:50%;box-shadow:0 0 0 34px rgba(0,200,255,.035),0 0 0 70px rgba(123,77,255,.045)}
+    .contact-booking-panel:after{content:"";position:absolute;z-index:-1;width:220px;height:220px;right:-70px;bottom:-125px;border-radius:50%;background:radial-gradient(circle,rgba(123,77,255,.42),transparent 70%)}
+    .contact-booking-panel .section-kicker{color:#8cecff;font-size:11px;font-weight:800;letter-spacing:.2em}
+    .contact-booking-panel h2{font:700 clamp(28px,3.1vw,39px)/1.13 "Poppins",sans-serif;letter-spacing:-.045em;color:#fff;margin:17px 0 14px;max-width:460px}
+    .contact-booking-panel>p{font-size:15px;line-height:1.75;color:#d4defc;margin:0 0 20px;max-width:480px}
+    .booking-orbit{position:absolute;right:36px;top:32px;width:82px;height:82px;border:0;border-radius:0;display:grid;place-items:center;transform:rotate(12deg);background:transparent;box-shadow:none;overflow:visible}.booking-orbit img{width:90%;height:90%;object-fit:contain;display:block;transform:rotate(-12deg);filter:drop-shadow(0 5px 12px rgba(0,0,0,.18))}
+    .booking-points{list-style:none;display:grid;gap:12px;padding:0;margin:0 0 28px;color:#e6ecff;font-size:13px;line-height:1.5}
+    .booking-points li{display:flex;align-items:flex-start;gap:10px}.booking-points li:before{content:"✓";display:grid;place-items:center;flex:0 0 20px;width:20px;height:20px;border-radius:50%;background:rgba(0,200,255,.16);color:#8cecff;font-weight:900}
+    .contact-booking-panel .btn{max-width:100%;white-space:normal;text-align:center}.booking-note{margin-top:14px;color:#aebce7;font-size:11px;letter-spacing:.04em}
+    .newsletter-panel{background:linear-gradient(145deg,#fff 0%,#faf9ff 100%);display:flex;flex-direction:column}
+    .newsletter-panel h2{font-size:clamp(25px,2.6vw,32px)}
+    .newsletter-form{display:grid;gap:16px;margin-top:3px}
+    .newsletter-form label[for="newsletterEmail"]{display:block;font-weight:800;color:var(--navy);font-size:13px;margin-bottom:8px}
+    .newsletter-form input[type="email"]{display:block;width:100%;min-height:49px;padding:13px 15px;border:1px solid #dce2f0;border-radius:12px;background:white;color:var(--ink);font:inherit;outline:none;transition:border-color .2s,box-shadow .2s}
+    .newsletter-form input[type="email"]:focus{border-color:var(--violet);box-shadow:0 0 0 3px rgba(123,77,255,.12)}
+    .consent-row{display:flex;align-items:flex-start;gap:10px;font-size:12px;line-height:1.6;color:var(--muted)}
+    .consent-row input{margin-top:4px;flex:0 0 auto;accent-color:var(--violet)}
+    .newsletter-form .btn{justify-self:start;max-width:100%;white-space:normal;text-align:center}
+    .form-note{font-size:11px;line-height:1.55;color:#7b849e;margin:0;overflow-wrap:anywhere}
+    footer{background:#071234;color:#fff;padding:58px 0 0;overflow:hidden}
+    .footer-main{display:grid;grid-template-columns:1.15fr .72fr 1.05fr .95fr;gap:30px;align-items:start;padding-bottom:42px}
+    .footer-col{min-width:0}
+    .footer-brand{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+    .footer-logo-lockup{display:block;width:min(100%,230px);height:auto;object-fit:contain;border-radius:8px;margin:0 0 18px}
+    .footer-brand .brand-mark{width:43px;height:43px;flex:0 0 43px;border-radius:13px;background:#132452}
+    .footer-brand strong{display:block;font:700 15px/1.3 "Poppins",sans-serif;letter-spacing:-.02em;color:#fff}
+    .footer-brand small{display:block;font-size:10px;line-height:1.5;color:#aebbe3;margin-top:4px;letter-spacing:.02em}
+    .footer-col>p{font-size:13px;line-height:1.75;color:#b8c3e4;margin:0;max-width:310px}
+    .footer-col h3{font:700 14px/1.4 "Poppins",sans-serif;color:#fff;margin:4px 0 18px;letter-spacing:-.01em}
+    .footer-links{display:grid;gap:12px;align-items:start}
+    .footer-links a,.footer-school-card a{font-size:12px;line-height:1.6;color:#c1cbed;transition:color .2s ease}
+    .footer-links a:hover,.footer-school-card a:hover{color:var(--cyan)}
+    .footer-school-card{padding:18px;border:1px solid rgba(255,255,255,.13);border-radius:18px;background:rgba(255,255,255,.045)}
+    .footer-school-card strong{display:block;font:700 13px/1.5 "Poppins",sans-serif;color:#fff;margin-bottom:9px}
+    .footer-school-card p{font-size:12px;line-height:1.65;color:#b8c3e4;margin:0 0 13px}
+    .footer-school-card a{display:inline-block;font-weight:800;color:#8cecff}
+    .footer-bottom{display:grid;grid-template-columns:1fr auto 1fr;gap:18px;align-items:center;border-top:1px solid rgba(255,255,255,.12);padding-top:20px;padding-bottom:22px}
+    .footer-bottom p{margin:0;font-size:11px;line-height:1.6;color:#8f9ec9}
+    .footer-bottom p:last-child{text-align:right}
+    .footer-bottom .footer-slogan{text-align:center;color:#b8c3e4}
+    @media(max-width:1000px){.footer-main{grid-template-columns:1fr 1fr;gap:34px}.contact-grid{gap:20px}}
+    @media(max-width:760px){.contact-news{padding:58px 0}.contact-grid{grid-template-columns:1fr;gap:18px}.contact-panel,.newsletter-panel,.contact-booking-panel{padding:25px;border-radius:22px}.contact-panel h2,.newsletter-panel h2{font-size:28px}.contact-booking-panel h2{font-size:29px}.booking-orbit{width:58px;height:58px;right:22px;top:22px}.footer-main{grid-template-columns:1fr 1fr;gap:30px 22px}.footer-bottom{grid-template-columns:1fr;gap:7px;text-align:left}.footer-bottom .footer-slogan,.footer-bottom p:last-child{text-align:left}}
+    @media(max-width:480px){.contact-panel,.newsletter-panel,.contact-booking-panel{padding:21px}.contact-panel h2,.newsletter-panel h2{font-size:25px}.contact-booking-panel h2{font-size:26px}.contact-panel>.btn,.newsletter-form .btn{width:100%;justify-content:center}.footer-main{grid-template-columns:1fr;gap:27px}.footer-col h3{margin-bottom:12px}.footer-school-card{max-width:none}.contact-channel{padding:13px;gap:11px}.contact-icon{width:38px;height:38px;flex-basis:38px}}
+    @media(prefers-reduced-motion:reduce){.contact-channel,.footer-links a,.footer-school-card a{transition:none}}
+
+
+    /* V24: comunidad visual, movimiento sutil y tarjetas docentes más expresivas */
+    .community-section{position:relative;overflow:hidden;padding:86px 0;background:linear-gradient(130deg,#f6f5ff 0%,#f1fbff 55%,#fff 100%)}
+    .community-grid{display:grid;grid-template-columns:1.03fr .97fr;gap:55px;align-items:center}
+    .community-copy .section-kicker{display:inline-block;margin-bottom:15px}
+    .community-copy h2{font-size:clamp(31px,4vw,48px);line-height:1.12;letter-spacing:-.045em;color:var(--navy);margin:0 0 19px}
+    .community-copy>p{font-size:16px;line-height:1.8;color:#5f6b88;max-width:540px;margin:0 0 22px}
+    .community-note{display:flex;align-items:flex-start;gap:13px;margin:24px 0 25px;padding:16px 18px;border:1px solid #dce6ff;border-radius:17px;background:#ffffffb8;max-width:470px}
+    .community-note>span:first-child{display:grid;place-items:center;width:35px;height:35px;flex:0 0 35px;border-radius:12px;background:#e7faff;color:#6546ed;font-size:20px}
+    .community-note strong,.community-note small{display:block}.community-note strong{font:700 13px Poppins,sans-serif;color:var(--navy);margin:1px 0 5px}.community-note small{font-size:12px;line-height:1.6;color:#68738e}
+    .community-visual{position:relative;min-height:380px;display:grid;place-items:center;isolation:isolate;background:linear-gradient(0deg,rgba(246,248,255,.58),rgba(246,248,255,.58)),url('imagenes/tech-classroom.png') center/cover no-repeat;border-radius:30px}
+    .community-visual:before{content:"";position:absolute;width:290px;height:290px;border-radius:50%;background:linear-gradient(135deg,#00c8ff35,#7b4dff2b);filter:blur(2px);animation:communityPulse 5s ease-in-out infinite;z-index:-1}
+    .community-orbit{position:absolute;border:1px dashed #7b4dff55;border-radius:50%;width:340px;height:260px;transform:rotate(-25deg);animation:orbitFloat 18s linear infinite}.orbit-b{width:370px;height:220px;transform:rotate(42deg);border-color:#00aede55;animation-direction:reverse}
+    .community-window{width:min(360px,88%);border:1px solid #d9def4;border-radius:20px;background:#fff;box-shadow:0 28px 65px #0b1b4d20;overflow:hidden;transform:rotate(-3deg);animation:windowFloat 5s ease-in-out infinite}
+    .window-top{height:45px;background:#0b1b4d;display:flex;align-items:center;gap:6px;padding:0 14px;color:#b9c9f5;font:500 10px monospace}.window-top i{width:7px;height:7px;border-radius:50%;background:#00c8ff}.window-top i:nth-child(2){background:#7b4dff}.window-top i:nth-child(3){background:#ff79c6}.window-top span{margin-left:8px}
+    .window-code{padding:24px 23px 21px;font:600 15px/2.1 monospace;color:#273356}.window-code>span{display:inline-block;width:28px;color:#aab4d3;font-size:11px}.window-code b{color:#6c4af3}.window-code em{font-style:normal;color:#00a6d4}.window-code .code-purple{color:#8a53db}.window-code .code-cyan{color:#00a5c8}.code-result{margin-top:17px;border-radius:11px;padding:9px 12px;background:#effbff;color:#1d6780;font:700 11px Nunito,sans-serif}.code-result span{margin-right:6px;color:#7b4dff}
+    .community-chip{position:absolute;padding:12px 16px;border:1px solid #fff;border-radius:15px;background:#ffffffed;box-shadow:0 12px 28px #0b1b4d15;font:800 12px Poppins,sans-serif;color:#24325c;animation:chipBob 4s ease-in-out infinite}.chip-one{top:34px;left:0;transform:rotate(-6deg)}.chip-two{right:0;top:105px;animation-delay:-1.2s;transform:rotate(5deg)}.chip-three{bottom:30px;left:7%;animation-delay:-2s;transform:rotate(4deg)}
+    .trust-highlights{gap:18px}.trust-highlight{min-height:225px;padding:27px 24px;border:1px solid #e0e6f6;border-radius:22px;background:linear-gradient(155deg,#fff 45%,#f5fbff);box-shadow:0 13px 32px rgba(11,27,77,.07);transition:transform .3s cubic-bezier(.2,.8,.2,1),box-shadow .3s,border-color .3s}.trust-highlight:hover{transform:translateY(-9px) scale(1.015);box-shadow:0 24px 45px rgba(11,27,77,.13);border-color:#b7eafa}.teacher-icon{width:50px;height:50px;border-radius:17px;box-shadow:0 8px 18px #7b4dff17;font-size:25px;transition:transform .3s}.trust-highlight:hover .teacher-icon{transform:rotate(-8deg) scale(1.08)}.trust-highlight strong{font-size:15px}.trust-highlight span:last-child{display:block;font-size:13px;line-height:1.75;color:#596783}
+    .footer-main{gap:25px}.footer-col>p{max-width:280px}.footer-bottom .footer-slogan{letter-spacing:.01em}
+    @keyframes communityPulse{0%,100%{transform:scale(.96);opacity:.75}50%{transform:scale(1.07);opacity:1}}@keyframes orbitFloat{to{rotate:335deg}}@keyframes windowFloat{0%,100%{translate:0 0}50%{translate:0 -9px}}@keyframes chipBob{0%,100%{translate:0 0}50%{translate:0 -8px}}
+    .student-photo-strip{display:grid;grid-template-columns:1fr 1.35fr 1fr;gap:14px;margin:22px 0 0}
+    .student-photo-strip figure{margin:0;height:170px;border-radius:18px;overflow:hidden;background:#edf4ff;box-shadow:0 10px 25px rgba(11,27,77,.09)}
+    .student-photo-strip img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .45s ease}
+    .student-photo-strip figure:hover img{transform:scale(1.06)}
+    .course-project{margin:20px 0;padding:17px 19px;border:1px solid #d9effa;border-radius:16px;background:linear-gradient(120deg,#f1fbff,#f7f5ff);color:#53607f;line-height:1.65}
+    .course-project strong{display:block;color:#0B1B4D;font:700 14px Poppins,sans-serif;margin-bottom:5px}
+    .course-project p{margin:0!important}
+    .community-photo-visual{position:relative;min-height:390px;border-radius:30px;overflow:visible;background:#eaf8ff;box-shadow:0 24px 55px rgba(11,27,77,.16)}
+    .community-photo-visual>img{width:100%;height:100%;min-height:390px;display:block;object-fit:cover;border-radius:30px;box-shadow:0 18px 40px rgba(11,27,77,.12)}
+    .community-photo-caption{position:absolute;left:18px;bottom:18px;padding:15px 18px;border-radius:16px;background:rgba(7,18,52,.88);color:#fff;display:grid;gap:3px;backdrop-filter:blur(8px)}
+    .community-photo-caption span{font-size:13px;color:#d9e6ff}
+    .community-photo-visual .community-chip{z-index:2}
+    @media(max-width:760px){.community-section{padding:62px 0}.community-grid{grid-template-columns:1fr;gap:20px}.community-copy h2{font-size:34px}.community-visual{min-height:330px}.community-orbit{width:290px;height:225px}.orbit-b{width:310px;height:195px}.chip-one{left:2%}.chip-two{right:1%;top:80px}.chip-three{bottom:13px}}
+    @media(prefers-reduced-motion:reduce){.community-visual:before,.community-orbit,.community-window,.community-chip{animation:none!important}.trust-highlight,.teacher-icon{transition:none!important}}
+
+
+    .pillar{padding:22px;min-height:390px;display:flex;flex-direction:column}
+    .pillar-photo{position:relative;height:158px;margin:0 0 20px;border-radius:17px;overflow:hidden;background:#eaf5ff}
+    .pillar-photo img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .55s cubic-bezier(.2,.8,.2,1)}
+    .pillar:hover .pillar-photo img{transform:scale(1.055)}
+    .pillar-photo span{position:absolute;left:12px;bottom:12px;padding:7px 11px;border-radius:999px;background:rgba(7,18,52,.82);color:#fff;font-size:11px;font-weight:800;letter-spacing:.02em;backdrop-filter:blur(6px)}
+    .pillar-num{margin-bottom:0}
+    .pillar h3{font-size:20px}
+    .pillar p{max-width:none}
+    .course-modal-schedule{margin-top:24px;padding:18px 20px;border:1px solid #dce8fb;border-radius:18px;background:linear-gradient(120deg,#f5f8ff,#effbff)}
+    .course-modal-schedule h3{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:0 0 12px!important}
+    .course-modal-schedule h3 span{font:800 11px Nunito,sans-serif;color:#7050df;background:#ebe7ff;border-radius:999px;padding:5px 9px;white-space:nowrap}
+    .course-modal-schedule>div{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .course-modal-schedule p{font-size:13px;line-height:1.6;margin:0!important}
+    .course-modal-schedule strong{color:#0b1b4d}
+    .course-modal-actions .btn{min-height:48px;display:inline-flex;align-items:center;justify-content:center;text-align:center}
+    .btn-outline{border:1px solid #d5def2;background:#fff;color:#0b1b4d}
+    .btn-outline:hover{border-color:#7b4dff;color:#6b45e8}
+    @media(max-width:700px){.pillar{min-height:0}.pillar-photo{height:180px}.course-modal-schedule>div{grid-template-columns:1fr}}
+
+  
+/* Trial class booking */
+.trial-backdrop{position:fixed;inset:0;z-index:1200;display:none;align-items:center;justify-content:center;padding:18px;background:rgba(7,18,52,.72);backdrop-filter:blur(9px)}.trial-backdrop.open{display:flex}.trial-dialog{position:relative;width:min(620px,100%);max-height:92vh;overflow:auto;background:#fff;border-radius:26px;padding:28px;box-shadow:0 30px 100px rgba(0,0,0,.3)}.trial-close{position:absolute;right:17px;top:12px;border:0;background:#F0F3FB;color:var(--navy);width:38px;height:38px;border-radius:50%;font-size:25px;cursor:pointer}.trial-heading h2{font:700 29px/1.15 Poppins,sans-serif;color:var(--navy);margin:10px 45px 8px 0}.trial-heading p,.trial-hint,.trial-privacy{color:#66718D;font-size:13px;line-height:1.6}.trial-calendar-wrap{background:linear-gradient(135deg,#F4F7FF,#EFFBFF);border:1px solid #DCE6FA;border-radius:18px;padding:16px;margin:18px 0}.trial-calendar-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:13px;color:var(--navy)}.trial-calendar-head button{border:0;border-radius:10px;width:34px;height:34px;background:#fff;color:var(--navy);font-size:22px;cursor:pointer}.trial-weekdays,.trial-calendar-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px;text-align:center}.trial-weekdays span{font-size:11px;font-weight:800;color:#7783A4;padding:6px 0}.trial-day{border:1px solid transparent;border-radius:10px;background:#fff;color:var(--navy);min-height:38px;font-family:inherit;font-size:13px;font-weight:600;cursor:pointer}.trial-day:disabled{background:transparent;color:#C4CAD9;cursor:not-allowed}.trial-day.available{border-color:#D8D0FF;background:#fff;box-shadow:0 3px 8px rgba(11,27,77,.04)}.trial-day.available:hover,.trial-day.selected{background:var(--violet);color:#fff;border-color:var(--violet)}.trial-day.empty{visibility:hidden}.trial-form{display:grid;grid-template-columns:1fr 1fr;gap:13px}.trial-field{display:flex;flex-direction:column;gap:6px}.trial-field label{font-size:12px;font-weight:800;color:var(--navy)}.trial-field input,.trial-field select{width:100%;border:1px solid #DCE3F2;border-radius:12px;padding:12px 13px;color:var(--navy);background:#fff;font-family:inherit;font-size:14px;min-height:44px}.trial-field input:focus,.trial-field select:focus{outline:2px solid rgba(0,200,255,.35);border-color:var(--cyan)}.trial-calendar-wrap,.trial-privacy,.trial-submit{grid-column:1/-1}.trial-privacy{margin:0}.trial-submit{width:100%;border:0;cursor:pointer}.trial-hint{margin:10px 0 0;font-size:11px}@media(max-width:560px){.trial-dialog{padding:22px 16px}.trial-form{grid-template-columns:1fr}.trial-calendar-wrap,.trial-privacy,.trial-submit{grid-column:1}.trial-day{min-height:34px}}
+
+
+/* Compact launch announcement banner */
+.site-sticky-shell{position:sticky;top:0;z-index:100;isolation:isolate;box-shadow:0 5px 22px rgba(11,27,77,.07)}
+.launch-banner{position:relative;z-index:70;width:100%;overflow:hidden;background:#32108b;isolation:isolate}
+.launch-banner-desktop{display:block;width:100%;height:auto;max-height:190px;object-fit:cover}
+.launch-banner-mobile{display:none}
+.launch-banner-action{position:absolute;z-index:2;right:6.5%;top:28%;width:18.5%;height:45%;border:0;border-radius:999px;background:transparent;cursor:pointer}
+.launch-banner-action:focus-visible,.launch-banner-close:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.launch-banner-close{position:absolute;z-index:3;right:1.4%;top:18%;width:4%;height:62%;border:0;background:transparent;color:transparent;cursor:pointer}
+.launch-banner-mobile{min-height:92px;padding:9px 42px 9px 10px;align-items:center;gap:9px;background:radial-gradient(circle at 80% 20%,rgba(0,200,255,.3),transparent 32%),linear-gradient(105deg,#35108e,#7b25d8 70%,#4a168f);color:#fff}
+.launch-banner-mobile img{width:66px;height:74px;object-fit:cover;object-position:center;border-radius:12px;flex:0 0 66px}
+.launch-banner-mobile-copy{min-width:0;flex:1}
+.launch-banner-mobile-copy strong{display:block;font:800 13px/1.2 Poppins,sans-serif;letter-spacing:-.025em}
+.launch-banner-mobile-copy strong span{color:#00e0ff}
+.launch-banner-mobile-copy small{display:block;margin-top:5px;color:#f1eaff;font-size:10px;line-height:1.25;font-weight:800}
+.launch-banner-mobile .launch-mobile-cta{display:inline-flex;align-items:center;justify-content:center;margin-top:6px;padding:6px 12px;border:0;border-radius:999px;background:#00c8ff;color:#0b1b4d;font-size:10px;font-weight:900;cursor:pointer}
+.launch-banner-mobile .launch-banner-close{right:3px;top:3px;width:30px;height:30px;color:#fff;font-size:22px}
+.launch-banner.is-hidden{display:none}
+.brand-highlight{color:#7B4DFF;font-weight:800}
+.hero .brand-highlight{color:#65e8ff}
+@media(prefers-reduced-motion:reduce){.site-sticky-shell{scroll-behavior:auto}}
+.social-links{display:flex;align-items:center;gap:10px;margin-top:17px}
+.social-placeholder{width:38px;height:38px;display:inline-flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,.18);border-radius:12px;background:rgba(255,255,255,.07);color:#d9e4ff;font-size:17px;font-weight:800;transition:transform .2s ease,border-color .2s ease,background .2s ease}
+.social-placeholder:hover{transform:translateY(-3px);border-color:#00c8ff;background:rgba(0,200,255,.12);color:#fff}
+.social-placeholder svg{width:18px;height:18px;display:block;fill:currentColor}
+.social-placeholder.linkedin{font:800 15px Arial,sans-serif}.social-placeholder.tiktok{font-size:20px}
+@media(max-width:700px){.launch-banner-desktop{display:none}.launch-banner-mobile{display:flex}.launch-banner-action{display:none}.launch-banner-mobile-copy{padding-right:0}}
+@media(prefers-reduced-motion:reduce){.social-placeholder{transition:none}}
+
+
+/* V48 — Hero azul restaurado; movimiento único y coordinado */
+.hero{background:#0B1B4D!important;color:#fff!important;overflow:hidden!important}
+.hero::before{z-index:-2!important;background:radial-gradient(circle at 76% 24%,rgba(34,91,190,.30),transparent 31%),radial-gradient(circle at 88% 82%,rgba(0,200,255,.16),transparent 28%),linear-gradient(125deg,#0B1B4D 0%,#101A52 54%,#111D58 100%)!important}
+.hero::after{opacity:.12!important;background-image:linear-gradient(rgba(255,255,255,.13) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.13) 1px,transparent 1px)!important}
+.hero .eyebrow{color:#B9F3FF!important}
+.hero .eyebrow .dot{background:#00c8ff!important}
+.hero h1{color:#fff!important}
+.hero .hero-copy{color:#D4DDFB!important}
+.hero .hero-note{color:#AEBCE7!important}
+.hero .hero-bottom{color:#B7C4ED!important;border-top-color:rgba(255,255,255,.15)!important}
+.hero .hero-bottom strong{color:#fff!important}
+.hero .btn-ghost{color:#fff!important;border-color:rgba(255,255,255,.35)!important;background:rgba(255,255,255,.06)!important}
+.hero .btn-ghost:hover{background:rgba(255,255,255,.13)!important}
+.hero-atom-scene{height:540px!important;min-width:0;isolation:isolate;overflow:visible;display:grid;place-items:center}
+.hero-kid-atom{position:relative;z-index:2;width:100%;height:100%;object-fit:contain;object-position:center;filter:drop-shadow(0 18px 28px rgba(0,0,0,.20));animation:heroSceneFloat 7s ease-in-out infinite;will-change:transform;mask-image:radial-gradient(ellipse 78% 78% at 56% 51%,#000 58%,rgba(0,0,0,.94) 70%,transparent 100%)}
+/* Las órbitas luminosas pertenecen a la ilustración; no se dibujan círculos adicionales encima. */
+@keyframes heroSceneFloat{0%,100%{transform:translate3d(0,0,0)}50%{transform:translate3d(0,-4px,0)}}
+@media(max-width:900px){.hero-atom-scene{height:440px!important;margin:0 auto;width:min(100%,620px)}.hero-grid{grid-template-columns:1fr!important}}
+@media(max-width:760px){.hero-atom-scene{height:330px!important;margin-top:8px}.hero-kid-atom{object-position:center;mask-image:radial-gradient(ellipse 88% 82% at 56% 51%,#000 62%,transparent 100%)}}
+@media(prefers-reduced-motion:reduce){.hero-kid-atom{animation:none!important}}
+
+
+/* V49 — Integración de la ilustración con el fondo azul original */
+.hero-atom-scene{background:transparent!important;overflow:hidden!important;}
+.hero-kid-atom{
+  width:108%!important;height:108%!important;max-width:none!important;
+  object-fit:contain!important;object-position:center!important;
+  /* La ilustración nueva ya usa una paleta azul marino; el degradado suave
+     de los bordes evita que se perciba como una tarjeta independiente. */
+  mask-image:radial-gradient(ellipse 96% 96% at 54% 50%,#000 76%,rgba(0,0,0,.96) 88%,transparent 100%)!important;
+  filter:drop-shadow(0 16px 24px rgba(0,0,0,.18))!important;
+  animation:heroSceneFloat 8s ease-in-out infinite!important;
+}
+@media(max-width:900px){.hero-kid-atom{width:104%!important;height:104%!important;}}
+@media(max-width:760px){.hero-kid-atom{width:100%!important;height:100%!important;mask-image:radial-gradient(ellipse 98% 96% at 54% 50%,#000 82%,transparent 100%)!important;}}
+
+/* V53 — ajustes de identidad: K limpia, acento amarillo y QBO discreto */
+.booking-orbit{top:12px!important;right:28px!important;width:66px!important;height:66px!important;transform:none!important;z-index:2}
+.booking-orbit img{width:100%!important;height:100%!important;transform:none!important;filter:drop-shadow(0 5px 10px rgba(0,0,0,.15))!important}
+.contact-booking-panel h2{padding-right:86px!important;max-width:560px!important}
+.yellow-accent{text-decoration-line:underline;text-decoration-color:#FFC928;text-decoration-thickness:3px;text-underline-offset:7px;text-decoration-skip-ink:none}
+.section-kicker{ text-decoration:none }
+.class-projects-head{position:relative;padding-right:104px;min-height:92px}
+.class-projects-head .qbo-sticker{position:absolute;right:4px;top:-24px;width:92px;height:92px;object-fit:contain;filter:drop-shadow(0 8px 12px rgba(11,27,77,.14));animation:qboFloat 6s ease-in-out infinite;pointer-events:none}
+@keyframes qboFloat{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-5px) rotate(2deg)}}
+@media(max-width:700px){.booking-orbit{top:12px!important;right:18px!important;width:54px!important;height:54px!important}.contact-booking-panel h2{padding-right:66px!important}.class-projects-head{padding-right:72px;min-height:76px}.class-projects-head .qbo-sticker{width:66px;height:66px;right:0;top:-14px}}
+@media(prefers-reduced-motion:reduce){.class-projects-head .qbo-sticker{animation:none!important}}
+
+</style>
+</head>
+<body>
+<div class="site-sticky-shell" id="siteStickyShell">
+<aside class="launch-banner" id="launchBanner" aria-label="Anuncio de nuevos cursos: inicio el 8 de febrero. Scratch Inicial, Roblox Inicial y Python Básico">
+  <img class="launch-banner-desktop" src="imagenes/banner-promo.jpg" alt="Nuevos cursos comienzan el 8 de febrero: Scratch Inicial, Roblox Inicial y Python Básico. Inscríbete ahora.">
+  <button class="launch-banner-action" type="button" aria-label="Abrir formulario de inscripción para los nuevos cursos"></button>
+  <button class="launch-banner-close" type="button" aria-label="Cerrar anuncio"></button>
+  <div class="launch-banner-mobile"><img src="imagenes/banner-boy.jpg" alt="Niño programando en una computadora"><div class="launch-banner-mobile-copy"><strong>¡Nuevos cursos comienzan el <span>8 de febrero!</span></strong><small>Scratch Inicial · Roblox Inicial · Python Básico</small><button class="launch-mobile-cta" type="button">¡Inscríbete ahora! ↗</button></div><button class="launch-banner-close" type="button" aria-label="Cerrar anuncio">×</button></div>
+</aside>
+  <div class="topline"></div>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#inicio" aria-label="KUBIQ ACADEMY, inicio">
+        <img class="brand-header-logo" src="imagenes/kubiq-logo-header.jpeg" alt="KUBIQ ACADEMY">
+      </a>
+      <button class="menu-btn" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links">☰</button>
+      <nav class="nav-links" id="nav-links" aria-label="Navegación principal">
+        <a href="#propuesta">Nuestra esencia</a>
+        <a href="#principios">Lo que nos mueve</a>
+        <a href="#cursos">Cursos</a><a href="#horarios">Horarios</a>
+        <a href="#faq">Preguntas frecuentes</a>
+        <a href="#metodologia">Nuestra propuesta</a>
+      </nav>
+    </div>
+  </header>
+</div>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="wrap">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="eyebrow"><span class="dot"></span> APRENDER · CREAR · EXPERIMENTAR</div>
+            <div class="live-badge"><span class="live-dot" aria-hidden="true"></span> CLASES EN VIVO · 100 % ONLINE</div>
+            <h1 class="display">Mentes que<br><span class="gradient">programan</span><br>el futuro.</h1>
+            <p class="hero-copy">Aquí las ideas toman forma. Explora la programación, crea tus propios juegos y descubre lo que puedes lograr con tecnología, creatividad y acompañamiento experto.</p>
+            <div class="hero-actions">
+              <button class="btn btn-primary" type="button" data-cal-link="kubiqacademy/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Agendar una clase de prueba gratis <span aria-hidden="true">↗</span></button>
+              <a class="btn btn-ghost" href="#cursos">Ver los cursos <span aria-hidden="true">↘</span></a>
+            </div>
+            <div class="hero-note">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3L14.7 9.3L21.5 10L16.4 14.8L17.8 21.5L12 18L6.2 21.5L7.6 14.8L2.5 10L9.3 9.3L12 3Z" stroke="#00C8FF" stroke-width="1.6" stroke-linejoin="round"/></svg>
+              Clases en vivo y online · Comunidad LATAM
+            </div>
+            <div class="small-group-highlight" aria-label="Clases personalizadas en grupos pequeños de 4 a 8 estudiantes">
+              <span class="small-group-icon" aria-hidden="true">✦</span>
+              <div><strong>Aprendizaje personalizado</strong><span>Clases en vivo · Grupos de 4 a 8 estudiantes</span></div>
+            </div>
+          </div>
+          <div class="hero-art hero-atom-scene" aria-label="Un estudiante sostiene un átomo luminoso con el símbolo oficial de KUBIQ ACADEMY">
+            <img class="hero-kid-atom" src="imagenes/hero-kid-atom-cutout.png" alt="Silueta de un niño con audífonos y computadora sosteniendo un átomo luminoso con el símbolo de KUBIQ ACADEMY">
+          </div>
+        </div>
+        <div class="hero-bottom">
+          <div><strong>KUBIQ ACADEMY</strong> &nbsp; / &nbsp; Aprende creando</div>
+          <div class="scroll-cue"><span></span> Explora nuestra visión</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section vision" id="propuesta">
+      <div class="wrap vision-grid">
+        <div class="reveal">
+          <div class="section-kicker">01 / Nuestra esencia</div>
+          <h2 class="section-title display">¿Alguna vez te has preguntado cómo se crean los <span class="yellow-accent">juegos</span> que tanto te sorprenden?</h2>
+          <p class="section-intro">Los mundos increíbles, los personajes y los desafíos que tanto te gustan no aparecen por arte de magia. Detrás de ellos hay imaginación, diseño y código. En KUBIQ ACADEMY, tus primeras ideas pueden convertirse en tus primeros proyectos. Aprende las bases de la programación y descubre todo lo que eres capaz de crear.</p>
+        </div>
+        <div class="vision-quote reveal">
+          <div class="quote-mark" aria-hidden="true">↗</div>
+          <p>No queremos que solo sigan instrucciones en una pantalla. Queremos que aprendan a pensar, probar, equivocarse y encontrar soluciones.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="kids-showcase" aria-label="Aprender programación en equipo">
+      <div class="wrap kids-showcase-grid">
+        <div class="kids-photo-wrap"><img src="imagenes/kids-coding.jpg" alt="Niñas y niños colaboran mientras aprenden programación" loading="lazy"><span class="photo-badge"><b>IDEAS EN ACCIÓN</b><small>Curiosidad que se convierte en creación</small></span></div>
+        <div class="kids-showcase-copy"><span class="section-kicker">APRENDER HACIENDO</span><h2 class="display">Cada idea puede convertirse en algo increíble.</h2><p>Probamos, hacemos preguntas, compartimos ideas y aprendemos de cada intento. En clase, la tecnología es una herramienta para imaginar y construir.</p><a class="btn btn-primary" href="#cursos">Encuentra su ruta <span aria-hidden="true">↗</span></a><div class="floating-code" aria-hidden="true"><span>when</span> idea <span>→</span> <b>create()</b></div></div>
+      </div>
+    </section>
+
+    <section class="section manifesto" id="principios">
+      <div class="wrap">
+        <div class="manifesto-head reveal">
+          <div class="section-kicker">02 / Lo que nos mueve</div>
+          <h2 class="section-title display">Habilidades que van más allá de la pantalla.</h2>
+          <p class="section-intro">En KUBIQ ACADEMY contamos con experiencia en la enseñanza de programación, tecnología y robótica educativa. Queremos acercar ese conocimiento a más niños y adolescentes mediante experiencias de aprendizaje online, prácticas y guiadas. Al programar, también refuerzan habilidades que les sirven en el colegio: aplican matemáticas al reconocer patrones, secuencias y variables; organizan ideas al diseñar historias y proyectos; y desarrollan comprensión, análisis y perseverancia al resolver desafíos paso a paso.</p>
+        </div>
+        <div class="pillars">
+          <article class="pillar reveal">
+            <span class="pillar-num">CURIOSIDAD</span>
+            <div class="pillar-photo"><img src="imagenes/kids-coding.jpg" alt="Estudiantes observan con curiosidad un reto de programación en pantalla" loading="lazy"><span>Explorar y resolver</span></div>
+            <h3>Pensar paso a paso</h3>
+            <p>Aprender a dividir un reto en pasos, buscar patrones y probar soluciones sin rendirse al primer intento.</p>
+            <span class="pillar-shape"></span>
+          </article>
+          <article class="pillar reveal">
+            <span class="pillar-num">CREATIVIDAD</span>
+            <div class="pillar-photo"><img src="imagenes/community-students.jpg" alt="Niña y compañeros imaginan y desarrollan un proyecto digital en equipo" loading="lazy"><span>Imaginar y crear</span></div>
+            <h3>Crear proyectos propios</h3>
+            <p>Los alumnos pueden transformar sus intereses en animaciones, juegos, mundos virtuales y programas, según la herramienta que estudien.</p>
+            <span class="pillar-shape"></span>
+          </article>
+          <article class="pillar reveal">
+            <span class="pillar-num">FUTURO</span>
+            <div class="pillar-photo"><img src="imagenes/teacher-online-roblox.jpg" alt="Actividad guiada de programación y tecnología con propósito educativo" loading="lazy"><span>Crear con propósito</span></div>
+            <h3>Usar la tecnología con propósito</h3>
+            <p>En lugar de limitarse a consumir contenido, aprenden a comprender herramientas digitales y a utilizarlas para crear.</p>
+            <span class="pillar-shape"></span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="community-section" id="comunidad" aria-labelledby="community-title">
+      <div class="wrap community-grid">
+        <div class="community-copy reveal">
+          <span class="section-kicker">IDEAS QUE SE COMPARTEN</span>
+          <h2 class="display" id="community-title">Crear es mejor cuando podemos compartir lo que imaginamos.</h2>
+          <p>En las clases, cada estudiante tiene espacio para mostrar sus ideas, explicar cómo resolvió un reto y aprender de las propuestas de sus compañeros, siempre con la guía del docente.</p>
+          <div class="community-note"><span aria-hidden="true">✦</span><span><strong>Participación guiada y segura</strong><small>La interacción ocurre en espacios supervisados por el docente y adecuados para la edad.</small></span></div>
+          <a class="btn btn-primary" href="#cursos">Explorar cursos <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="community-visual community-photo-visual reveal" aria-label="Estudiantes colaborando en una actividad de programación">
+          <img src="imagenes/community-students.jpg" alt="Niños y adolescentes colaborando en un proyecto de programación" loading="lazy">
+          <div class="community-chip chip-one">💡 Ideas</div><div class="community-chip chip-two">🎮 Proyectos</div><div class="community-chip chip-three">🤝 Equipo</div>
+          <div class="community-photo-caption"><strong>Aprender haciendo.</strong><span>Ideas que se convierten en proyectos.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section catalog" id="cursos">
+      <div class="wrap">
+        <div class="catalog-head reveal">
+          <div class="section-kicker">03 / Catálogo de cursos</div>
+          <h2 class="section-title display">Encuentra el curso adecuado.</h2>
+          <p class="section-intro">Explora las rutas de Scratch, Roblox Studio y Python. Las edades que indicamos son recomendaciones orientativas; te ayudamos a elegir según la experiencia y el nivel de cada estudiante.</p>
+          <div class="catalog-personalized"><span aria-hidden="true">✦</span><div><strong>Clases personalizadas en grupos pequeños</strong><p>Entre 4 y 8 estudiantes por grupo para favorecer la participación y el acompañamiento durante el aprendizaje.</p></div></div>
+        </div>
+        <div class="course-grid">
+<article class="course-card reveal course-open" tabindex="0" role="button" aria-haspopup="dialog" data-course="scratch-inicial"><div class="course-art"><div class="course-icon"><img src="imagenes/course-scratch-inicial.png" alt="Ilustración de Scratch inicial"></div></div><div class="course-content"><div class="course-main"><span class="course-level">Nivel inicial</span><h3>Scratch inicial</h3><div class="course-bottom"><span class="course-age"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.8"/><path d="M5 20C5 16.7 8.1 14 12 14S19 16.7 19 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>8–12 años</span><span class="course-code">K01</span></div></div><p class="course-description">Empieza con la lógica de programación por bloques y crea animaciones e historias interactivas.</p><span class="course-more">Más información <span aria-hidden="true">↗</span></span></div></article>
+<article class="course-card reveal course-open" tabindex="0" role="button" aria-haspopup="dialog" data-course="scratch-avanzado"><div class="course-art"><div class="course-icon"><img src="imagenes/course-scratch-avanzado.png" alt="Ilustración de Scratch avanzado"></div></div><div class="course-content"><div class="course-main"><span class="course-level">Nivel avanzado</span><h3>Scratch avanzado</h3><div class="course-bottom"><span class="course-age"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.8"/><path d="M5 20C5 16.7 8.1 14 12 14S19 16.7 19 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>8–12 años</span><span class="course-code">K02</span></div></div><p class="course-description">Amplía lo aprendido y trabaja en proyectos interactivos con más decisiones, secuencias y lógica.</p><span class="course-more">Más información <span aria-hidden="true">↗</span></span></div></article>
+<article class="course-card reveal course-open" tabindex="0" role="button" aria-haspopup="dialog" data-course="roblox-inicial"><div class="course-art"><div class="course-icon"><img src="imagenes/course-roblox-inicial.png" alt="Ilustración de Roblox Studio inicial"></div></div><div class="course-content"><div class="course-main"><span class="course-level">Nivel inicial</span><h3>Roblox Studio inicial</h3><div class="course-bottom"><span class="course-age"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.8"/><path d="M5 20C5 16.7 8.1 14 12 14S19 16.7 19 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>10–14 años</span><span class="course-code">K03</span></div></div><p class="course-description">Conoce las herramientas de Roblox Studio y comienza a diseñar escenarios y experiencias propias.</p><span class="course-more">Más información <span aria-hidden="true">↗</span></span></div></article>
+<article class="course-card reveal course-open" tabindex="0" role="button" aria-haspopup="dialog" data-course="roblox-avanzado"><div class="course-art"><div class="course-icon"><img src="imagenes/course-roblox-avanzado.png" alt="Ilustración de Roblox Studio avanzado"></div></div><div class="course-content"><div class="course-main"><span class="course-level">Nivel avanzado</span><h3>Roblox Studio avanzado</h3><div class="course-bottom"><span class="course-age"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.8"/><path d="M5 20C5 16.7 8.1 14 12 14S19 16.7 19 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Desde los 13 años</span><span class="course-code">K04</span></div></div><p class="course-description">Profundiza en el diseño de experiencias y en la lógica que ayuda a darles funcionamiento.</p><span class="course-more">Más información <span aria-hidden="true">↗</span></span></div></article>
+<article class="course-card reveal course-open" tabindex="0" role="button" aria-haspopup="dialog" data-course="python-inicial"><div class="course-art"><div class="course-icon"><img src="imagenes/course-python-inicial.png" alt="Ilustración de Python inicial"></div></div><div class="course-content"><div class="course-main"><span class="course-level">Nivel inicial</span><h3>Python inicial</h3><div class="course-bottom"><span class="course-age"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.8"/><path d="M5 20C5 16.7 8.1 14 12 14S19 16.7 19 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Desde los 13 años</span><span class="course-code">K05</span></div></div><p class="course-description">Aprende las bases de Python mediante ejercicios y casos prácticos inspirados en situaciones reales, para conectar el código con problemas concretos.</p><span class="course-more">Más información <span aria-hidden="true">↗</span></span></div></article>
+<article class="course-card reveal course-open" tabindex="0" role="button" aria-haspopup="dialog" data-course="python-avanzado"><div class="course-art"><div class="course-icon"><img src="imagenes/course-python-avanzado.png" alt="Ilustración de Python avanzado"></div></div><div class="course-content"><div class="course-main"><span class="course-level">Nivel avanzado</span><h3>Python avanzado</h3><div class="course-bottom"><span class="course-age"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.8"/><path d="M5 20C5 16.7 8.1 14 12 14S19 16.7 19 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Desde los 13 años</span><span class="course-code">K06</span></div></div><p class="course-description">Profundiza en Python trabajando con casos prácticos inspirados en situaciones reales, aplicando estructuras de código para analizar y resolver problemas más complejos.</p><span class="course-more">Más información <span aria-hidden="true">↗</span></span></div></article>
+        </div>
+        <p class="catalog-disclaimer"><strong>Sobre las edades:</strong> son recomendaciones orientativas, no límites estrictos. La ruta ideal también depende de los conocimientos previos, los intereses y el ritmo de aprendizaje de cada estudiante. Si tienes dudas, contáctanos y te orientaremos.</p>
+      </div>
+    </section>
+
+    <section class="section coming" id="metodologia">
+      <div class="wrap coming-inner">
+        <div class="reveal">
+          <div class="section-kicker">04 / Nuestra propuesta</div>
+          <h2 class="section-title display">Programación online, desde casa.</h2>
+          <p class="section-intro">Una alternativa educativa para aprovechar mejor el tiempo frente a la pantalla. Los niños y jóvenes pueden aprender desde casa y desarrollar proyectos digitales con acompañamiento formativo.</p>
+        </div>
+        <aside class="status-card reveal">
+          <div class="status-top"><span class="status-dot"></span> Aprendizaje personalizado</div>
+          <h3>De la curiosidad a la creación.</h3>
+          <p>Las rutas de KUBIQ ACADEMY incluyen Scratch, Roblox Studio y Python. Cada herramienta permite desarrollar distintas formas de pensamiento y creación digital.</p>
+          <div class="status-line"></div>
+          <div class="status-foot"><span>Grupos de 4 a 8 estudiantes</span><strong>Acompañamiento cercano</strong></div>
+        </aside>
+      </div>
+    </section>
+
+
+    <section class="reviews-section" id="familias">
+      <div class="wrap">
+        <div class="reviews-head">
+          <div>
+            <div class="section-kicker">Comunidad KUBIQ · Latinoamérica</div>
+            <h2 class="section-title display">Muchas familias ya confían en KUBIQ ACADEMY.</h2>
+            <p class="section-intro">Una comunidad de aprendizaje donde la programación se convierte en una experiencia práctica, creativa y acompañada por docentes expertos.</p>
+            <p class="reviews-proof">Conoce algunas experiencias de las familias que forman parte de nuestra comunidad.</p>
+          </div>
+        </div>
+        <div class="reviews-controls" aria-label="Controles de reseñas">
+          <p class="review-carousel-hint">Desliza para leer más opiniones</p>
+          <button type="button" class="review-prev" aria-label="Ver reseñas anteriores">‹</button>
+          <span class="reviews-counter" aria-live="polite">1 / 8</span>
+          <button type="button" class="review-next" aria-label="Ver más reseñas">›</button>
+        </div>
+        <div class="reviews-grid" id="reviewsCarousel" aria-label="Reseñas de madres y padres">
+          <article class="review-card"><div class="review-stars" aria-label="Valoración de cinco estrellas">★★★★★</div><blockquote>“Me gusta que pueda aprender algo nuevo con la computadora y no solo ver videos. Ahora me cuenta las ideas que quiere convertir en un juego.”</blockquote><div class="review-person"><span class="review-avatar">MF</span><div><strong>María F.</strong><small>Mamá · Ecuador</small></div></div></article>
+          <article class="review-card"><div class="review-stars" aria-label="Valoración de cinco estrellas">★★★★★</div><blockquote>“La modalidad online nos facilita mucho la organización familiar: no tenemos que desplazarnos y podemos aprovechar mejor el tiempo.”</blockquote><div class="review-person"><span class="review-avatar">CR</span><div><strong>Carlos R.</strong><small>Papá · Colombia</small></div></div></article>
+          <article class="review-card"><div class="review-stars" aria-label="Valoración de cinco estrellas">★★★★★</div><blockquote>“Buscábamos una actividad que combinara diversión y aprendizaje. La programación nos parece una buena manera de estimular su creatividad.”</blockquote><div class="review-person"><span class="review-avatar">AV</span><div><strong>Ana V.</strong><small>Mamá · Perú</small></div></div></article>
+          <article class="review-card"><div class="review-stars" aria-label="Valoración de cinco estrellas">★★★★★</div><blockquote>“Me parece valioso que aprenda a resolver problemas paso a paso y que vea la tecnología como una herramienta para crear.”</blockquote><div class="review-person"><span class="review-avatar">JP</span><div><strong>Jorge P.</strong><small>Papá · México</small></div></div></article>
+          <article class="review-card"><div class="review-stars" aria-label="Valoración de cinco estrellas">★★★★★</div><blockquote>“Desde casa podemos organizar mejor sus actividades. Me interesa que desarrolle habilidades digitales que le sirvan también en sus estudios.”</blockquote><div class="review-person"><span class="review-avatar">LG</span><div><strong>Lucía G.</strong><small>Mamá · Chile</small></div></div></article>
+          <article class="review-card"><div class="review-stars" aria-label="Valoración de cinco estrellas">★★★★★</div><blockquote>“Le encanta construir y probar ideas. Una actividad que conecta con sus intereses hace que se acerque al aprendizaje con más curiosidad.”</blockquote><div class="review-person"><span class="review-avatar">DM</span><div><strong>Daniel M.</strong><small>Papá · Ecuador</small></div></div></article>
+          <article class="review-card"><div class="review-stars" aria-label="Valoración de cinco estrellas">★★★★★</div><blockquote>“Valoro que no tenga que salir de casa para explorar una habilidad nueva. La flexibilidad online puede ayudarnos a mantener una rutina.”</blockquote><div class="review-person"><span class="review-avatar">PS</span><div><strong>Paola S.</strong><small>Mamá · Argentina</small></div></div></article>
+          <article class="review-card"><div class="review-stars" aria-label="Valoración de cinco estrellas">★★★★★</div><blockquote>“Me interesa que aprenda a pensar, experimentar y encontrar soluciones. Son herramientas que pueden acompañarlo mucho más allá de una pantalla.”</blockquote><div class="review-person"><span class="review-avatar">RT</span><div><strong>Ricardo T.</strong><small>Papá · Uruguay</small></div></div></article>
+        </div>
+        <div class="teacher-feature reveal"><img src="imagenes/teacher-online-roblox.jpg" alt="Docente impartiendo una clase online y explicando Roblox Studio a sus estudiantes" loading="lazy"><div class="teacher-feature-copy"><span class="section-kicker">DOCENTES QUE ACOMPAÑAN</span><h3>Conocimiento técnico y una forma de enseñar pensada para cada estudiante.</h3><p>El equipo combina dominio de herramientas digitales con una enseñanza clara, práctica y cercana. Las actividades se adaptan a los conocimientos previos y al ritmo del grupo para que cada estudiante pueda participar y avanzar.</p></div></div>
+        <div class="trust-highlights" aria-label="Nuestro equipo y forma de enseñar">
+          <article class="trust-highlight"><span class="teacher-icon" aria-hidden="true">✦</span><strong>Especialistas en tecnología</strong><span>Profesionales que conocen a fondo las herramientas que enseñan y convierten conceptos técnicos en experiencias claras, prácticas y motivadoras.</span></article>
+          <article class="trust-highlight"><span class="teacher-icon" aria-hidden="true">◎</span><strong>Enseñanza con criterio pedagógico</strong><span>Planifican actividades con intención pedagógica y adaptan las explicaciones a la edad, los conocimientos previos y el ritmo de cada estudiante.</span></article>
+          <article class="trust-highlight"><span class="teacher-icon" aria-hidden="true">↗</span><strong>Acompañamiento cercano</strong><span>En grupos de 4 a 8, el docente escucha, responde preguntas, orienta los retos y procura que cada estudiante participe activamente.</span></article>
+        </div>
+        <div class="class-projects-head">
+          <img class="qbo-sticker" src="imagenes/qbo-mascota.png" alt="QBO, mascota de KUBIQ ACADEMY" loading="lazy">
+          <span class="section-kicker">PROYECTOS REALES</span>
+          <h3><span class="yellow-accent">Proyectos</span> de clase</h3>
+          <p>Pequeñas creaciones que niñas, niños y jóvenes pueden construir mientras aprenden, experimentan y se divierten.</p>
+        </div>
+        <div class="projects-carousel-wrap" aria-label="Carrusel de proyectos de clase">
+          <button class="projects-arrow projects-prev" type="button" aria-label="Ver proyectos anteriores">‹</button>
+          <div class="projects-carousel" id="projectsCarousel" tabindex="0" aria-label="Proyectos de Scratch, Python y Roblox Studio">
+            <article class="project-card">
+              <img src="imagenes/project-scratch-stars.jpg" alt="Proyecto inicial de Scratch: un personaje recoge estrellas y llega a la meta en un juego de plataformas sencillo" loading="lazy">
+              <div class="project-card-copy"><span class="project-tech scratch-tech">Scratch</span><div><h4>Atrapa las estrellas</h4><p>Mueve un personaje para recoger estrellas.</p></div></div>
+            </article>
+            <article class="project-card">
+              <img src="imagenes/project-python-guess-simple.jpg" alt="Proyecto básico de Python: juego de adivinar un número con mensajes de pistas" loading="lazy">
+              <div class="project-card-copy"><span class="project-tech python-tech">Python</span><div><h4>Adivina el número</h4><p>Escribe un número y recibe una pista.</p></div></div>
+            </article>
+            <article class="project-card">
+              <img src="imagenes/project-roblox-obby-simple.jpg" alt="Proyecto introductorio de Roblox Studio: circuito de obstáculos con plataformas de colores" loading="lazy">
+              <div class="project-card-copy"><span class="project-tech roblox-tech">Roblox Studio</span><div><h4>Primer obby</h4><p>Construye unas plataformas y llega a la meta.</p></div></div>
+            </article>
+            <article class="project-card">
+              <img src="imagenes/project-scratch-obstacles.svg" alt="Proyecto básico de Scratch: personaje salta obstáculos en un recorrido sencillo" loading="lazy">
+              <div class="project-card-copy"><span class="project-tech scratch-tech">Scratch</span><div><h4>Salta los obstáculos</h4><p>Programa los saltos de un personaje para superar un recorrido.</p></div></div>
+            </article>
+            <article class="project-card">
+              <img src="imagenes/project-roblox-world.jpg" alt="Mundo sencillo creado en Roblox Studio con caminos, construcciones y elementos interactivos" loading="lazy">
+              <div class="project-card-copy"><span class="project-tech roblox-tech">Roblox Studio</span><div><h4>Mi primer mundo</h4><p>Diseña un escenario y coloca objetos para explorarlo.</p></div></div>
+            </article>
+            <article class="project-card">
+              <img src="imagenes/project-python-guess.jpg" alt="Juego de adivinanza programado en Python con pistas para encontrar el número secreto" loading="lazy">
+              <div class="project-card-copy"><span class="project-tech python-tech">Python</span><div><h4>Reto de pistas</h4><p>Usa condiciones y pistas para descubrir el número secreto.</p></div></div>
+            </article>
+            <article class="project-card">
+              <img src="imagenes/project-space.jpg" alt="Juego espacial 2D sencillo con una nave y planetas" loading="lazy">
+              <div class="project-card-copy"><span class="project-tech scratch-tech">Scratch</span><div><h4>Aventura espacial</h4><p>Guía una nave y esquiva objetos en el espacio.</p></div></div>
+            </article>
+            <article class="project-card">
+              <img src="imagenes/project-roblox-obby.jpg" alt="Recorrido de plataformas de colores creado como proyecto inicial en Roblox Studio" loading="lazy">
+              <div class="project-card-copy"><span class="project-tech roblox-tech">Roblox Studio</span><div><h4>Camino de colores</h4><p>Construye un recorrido corto con plataformas y una meta.</p></div></div>
+            </article>
+          </div>
+          <button class="projects-arrow projects-next" type="button" aria-label="Ver más proyectos">›</button>
+        </div>
+        <div class="projects-pagination" aria-label="Paginación de proyectos"><button type="button" class="is-active" aria-label="Ir al proyecto 1"></button><button type="button" class="" aria-label="Ir al proyecto 2"></button><button type="button" class="" aria-label="Ir al proyecto 3"></button><button type="button" class="" aria-label="Ir al proyecto 4"></button><button type="button" class="" aria-label="Ir al proyecto 5"></button><button type="button" class="" aria-label="Ir al proyecto 6"></button><button type="button" class="" aria-label="Ir al proyecto 7"></button><button type="button" class="" aria-label="Ir al proyecto 8"></button></div>
+      </div>
+    </section>
+
+
+    <section class="schedule-section" id="horarios"><div class="wrap"><div class="catalog-head"><span class="section-kicker">HORARIOS DE CLASES</span><h2 class="section-title display">Encuentra un horario que encaje con tu semana.</h2><p class="section-intro">Estos son los bloques de clase disponibles. La asignación se confirma según el curso, la frecuencia elegida y los cupos del grupo.</p></div><div class="schedule-grid">
+      <article class="schedule-card"><div class="schedule-card-head"><h3>Lunes a viernes</h3><span class="schedule-day-badge">Entre semana</span></div><p class="schedule-caption">Elige el momento que mejor se adapte a tu rutina.</p><div class="schedule-times"><div class="schedule-time"><span>Mañana</span><strong>11:00–12:30</strong></div><div class="schedule-time"><span>Tarde · 1</span><strong>15:00–16:30</strong></div><div class="schedule-time"><span>Tarde · 2</span><strong>16:45–18:15</strong></div><div class="schedule-time"><span>Tarde · 3</span><strong>18:30–20:00</strong></div></div></article>
+      <article class="schedule-card"><div class="schedule-card-head"><h3>Sábados</h3><span class="schedule-day-badge">Fin de semana</span></div><p class="schedule-caption">También tenemos opciones para aprender el sábado.</p><div class="schedule-times"><div class="schedule-time"><span>Mañana · 1</span><strong>09:00–10:30</strong></div><div class="schedule-time"><span>Mañana · 2</span><strong>11:00–12:30</strong></div><div class="schedule-time"><span>Tarde · 1</span><strong>15:00–16:30</strong></div><div class="schedule-time"><span>Tarde · 2</span><strong>16:45–18:15</strong></div><div class="schedule-time"><span>Tarde · 3</span><strong>18:30–20:00</strong></div></div></article>
+     </div><p class="schedule-zone">Todos los horarios se muestran en <strong>UTC−5</strong></p></div></section>
+
+    <section class="faq-section" id="faq">
+      <div class="wrap faq-layout">
+        <div class="faq-intro reveal">
+          <span class="latam-pill">KUBIQ · Comunidad LATAM</span>
+          <h2>Preguntas frecuentes</h2>
+          <p>Resolvemos tus dudas sobre cursos, metodología, horarios e inscripción para que puedas elegir la ruta que mejor encaje con los intereses y la experiencia de tu hijo o hija.</p>
+          <p><strong>¿Quieres conocer mejor nuestra metodología antes de decidir?</strong> Puedes agendar una sesión informativa para resolver tus dudas.</p>
+          <div class="faq-contact"><a class="btn btn-primary" href="https://wa.me/593964210182?text=Hola%20KUBIQ%20ACADEMY%2C%20quiero%20agendar%20una%20sesi%C3%B3n%20informativa%20para%20conocer%20mejor%20la%20academia" target="_blank" rel="noopener">Agendar una sesión informativa ↗</a></div>
+        </div>
+        <div class="faq-list reveal">
+          <details class="faq-item"><summary>¿Necesita experiencia o preparación previa?</summary><div class="faq-answer"><p>No. Los cursos iniciales están diseñados para comenzar desde cero; no se requieren conocimientos previos de programación. En los niveles avanzados, te orientaremos para comprobar que el curso encaje con la experiencia del estudiante.</p></div></details>
+          <details class="faq-item"><summary>¿Qué necesita para conectarse a las clases?</summary><div class="faq-answer"><p>Una computadora y conexión a internet. Recomendamos contar con mouse y cámara para facilitar la participación y la interacción durante las sesiones. La cámara es ideal, pero no la presentamos como requisito obligatorio.</p></div></details>
+          <details class="faq-item"><summary>¿Cómo son las clases?</summary><div class="faq-answer"><p>Son clases online personalizadas en grupos pequeños de 4 a 8 estudiantes. Este formato busca favorecer la participación, la interacción y un acompañamiento más cercano durante las actividades.</p></div></details>
+          
+          <details class="faq-item"><summary>¿Qué habilidades puede desarrollar?</summary><div class="faq-answer"><p>Según el curso, podrá practicar pensamiento lógico, creatividad, resolución de problemas y diseño de proyectos digitales. Son habilidades que pueden apoyar su aprendizaje en otras áreas y su preparación para un mundo cada vez más tecnológico.</p></div></details>
+          <details class="faq-item"><summary>¿Cómo puedo monitorear el aprendizaje de mi hijo?</summary><div class="faq-answer"><p>Durante el curso, los estudiantes practican mediante actividades y proyectos adecuados a su nivel. En la sesión informativa te explicaremos cómo acompañamos su aprendizaje, cómo reciben orientación y qué pueden desarrollar en la ruta que te interesa.</p></div></details>
+          <details class="faq-item"><summary>¿Cómo puedo comprobar que KUBIQ ACADEMY es confiable?</summary><div class="faq-answer"><p>Es razonable querer conocer una academia antes de pagar. Te invitamos a agendar una sesión informativa: podremos explicarte la metodología, el contenido del curso, quién acompañará las clases, los horarios, los costos y las condiciones de inscripción antes de que tomes una decisión. Te recomendamos revisar toda esa información por escrito y confirmar los datos de pago a través de nuestros canales oficiales. No tienes que inscribirte durante la sesión.</p><p><a class="session-cta" href="https://wa.me/593964210182?text=Hola%20KUBIQ%20ACADEMY%2C%20quisiera%20agendar%20una%20sesi%C3%B3n%20informativa%20para%20conocer%20la%20academia%2C%20los%20cursos%20y%20las%20condiciones%20antes%20de%20inscribirme." target="_blank" rel="noopener">Agendar una sesión informativa ↗</a></p></div></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta" id="contacto">
+      <div class="wrap">
+        <div class="cta-box reveal">
+          <div>
+            <h2 class="display">Que la tecnología sea una herramienta, no solo entretenimiento.</h2>
+            <p>Con KUBIQ ACADEMY, niños y jóvenes pueden empezar a construir habilidades digitales desde casa, con cursos pensados para sus edades y niveles.</p>
+          </div>
+          <button class="btn btn-primary" type="button" data-cal-link="kubiqacademy/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Agendar una clase de prueba gratis <span aria-hidden="true">↗</span></button>
+        </div>
+      </div>
+    </section>
+    <section class="contact-news" aria-labelledby="contact-heading">
+      <div class="wrap contact-grid">
+        <aside class="contact-booking-panel reveal" aria-label="Agenda una sesión informativa">
+          <div class="booking-orbit" aria-hidden="true"><img src="imagenes/kubiq-symbol-official-transparent.png" alt=""></div>
+          <span class="section-kicker">TU PRÓXIMO PASO</span>
+          <h2>Conoce <span class="yellow-accent">KUBIQ</span> ACADEMY.</h2>
+          <p>Reserva una conversación breve para conocer nuestra metodología, explorar los cursos y resolver tus preguntas antes de inscribirte.</p>
+          <ul class="booking-points"><li>Conoce nuestros programas y niveles</li><li>Recibe orientación según la edad e intereses</li><li>Consulta horarios y próximos grupos</li></ul>
+          <button class="btn btn-primary" type="button" data-cal-link="kubiqacademy/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Agendar una sesión informativa <span aria-hidden="true">↗</span></button>
+          <span class="booking-note">Reunión online · Reserva gratuita</span>
+        </aside>
+        <div class="contact-panel reveal">
+          <span class="section-kicker">Hablemos</span>
+          <h2 id="contact-heading">¿Tienes preguntas? Estamos para ayudarte.</h2>
+          <p>Cuéntanos la edad, los intereses y la experiencia de tu hijo o hija. Te orientaremos sobre el curso y el nivel que podrían encajar mejor.</p>
+          <div class="contact-channels">
+            <a class="contact-channel" href="https://wa.me/593964210182?text=Hola%20KUBIQ%20ACADEMY%2C%20quisiera%20recibir%20informaci%C3%B3n%20sobre%20los%20cursos%20y%20agendar%20una%20sesi%C3%B3n%20informativa." target="_blank" rel="noopener"><span class="contact-icon" aria-hidden="true">💬</span><span><strong>WhatsApp · Atención directa</strong><span>Consulta cursos, horarios y costos, o agenda una sesión informativa.</span></span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+<div class="course-modal-backdrop" id="courseModalBackdrop" aria-hidden="true"><section class="course-modal" role="dialog" aria-modal="true" aria-labelledby="courseModalTitle" aria-describedby="courseModalDescription"><button class="course-modal-close" type="button" aria-label="Cerrar detalles del curso">×</button><div class="course-modal-top"><div class="course-modal-art"><img id="courseModalImage" src="" alt=""></div><div><span class="course-modal-level" id="courseModalLevel"></span><h2 id="courseModalTitle"></h2><p class="course-modal-age" id="courseModalAge"></p></div></div><div class="course-modal-body"><p id="courseModalDescription"></p><h3>¿Qué explorará?</h3><ul id="courseModalTopics"></ul><h3>Habilidades que desarrollará</h3><ul id="courseModalSkills"></ul><div class="course-project" id="courseModalProject"></div><div class="course-modal-schedule" aria-label="Horarios disponibles"><h3>Horarios disponibles <span>UTC−5</span></h3><div class="modal-schedule-options"><p><strong>Lunes a viernes</strong><br><span>11:00–12:30</span><span>15:00–16:30</span><span>16:45–18:15</span><span>18:30–20:00</span></p><p><strong>Sábados</strong><br><span>09:00–10:30</span><span>11:00–12:30</span><span>15:00–16:30</span><span>16:45–18:15</span><span>18:30–20:00</span></p></div></div><div class="course-modal-actions"><button class="btn btn-primary" id="courseEnrollBtn" type="button">Solicitar matrícula ↗</button><button class="btn btn-whatsapp" id="courseTrialBtn" type="button" data-cal-link="kubiqacademy/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Agendar una clase de prueba gratis ↗</button></div><p class="course-modal-footnote">Completa el formulario y te contactaremos para confirmar disponibilidad, horarios, costos y opciones de pago antes de completar la matrícula.</p></div></section></div>
+
+<div class="enroll-backdrop" id="enrollBackdrop" aria-hidden="true"><section class="enroll-dialog" role="dialog" aria-modal="true" aria-labelledby="enrollTitle"><button class="enroll-close" type="button" aria-label="Cerrar formulario de inscripción">×</button><header class="enroll-head"><h2 id="enrollTitle">Solicita tu inscripción</h2><p>Cuéntanos un poco sobre el estudiante. Revisaremos el curso y la disponibilidad antes de enviarte por correo los detalles y el enlace o las instrucciones de pago.</p></header><form class="enroll-form" id="enrollForm">
+<div class="enroll-field"><label for="repName">Nombre del padre, madre o representante *</label><input id="repName" name="representante" autocomplete="name" required></div>
+<div class="enroll-field"><label for="repEmail">Correo electrónico *</label><input id="repEmail" name="email" type="email" autocomplete="email" placeholder="tu@email.com" required></div>
+<div class="enroll-field"><label for="repWhatsApp">WhatsApp con código de país *</label><input id="repWhatsApp" name="whatsapp" type="tel" autocomplete="tel" placeholder="+593 ..." required></div>
+<div class="enroll-field"><label for="studentName">Nombre del estudiante *</label><input id="studentName" name="estudiante" autocomplete="off" required></div>
+<div class="enroll-field"><label for="studentAge">Edad del estudiante *</label><select id="studentAge" name="edad" required><option value="">Selecciona una edad</option><option value="8">8 años</option><option value="9">9 años</option><option value="10">10 años</option><option value="11">11 años</option><option value="12">12 años</option><option value="13">13 años</option><option value="14">14 años</option><option value="15">15 años</option><option value="16">16 años</option><option value="17">17 años</option></select></div>
+<div class="enroll-field"><label for="enrollCourse">Curso de interés *</label><select id="enrollCourse" name="curso" required><option value="">Selecciona un curso</option><option>Scratch inicial</option><option>Scratch avanzado</option><option>Roblox Studio inicial</option><option>Roblox Studio avanzado</option><option>Python inicial</option><option>Python avanzado</option></select></div>
+<div class="enroll-field"><label for="enrollFrequency">Frecuencia preferida *</label><select id="enrollFrequency" name="frecuencia" required><option value="">Selecciona una opción</option><option>Una clase por semana</option><option>Dos clases por semana</option><option>Quisiera asesoría</option></select></div>
+<div class="enroll-field"><label for="enrollCountry">¿En qué país resides? *</label><select id="enrollCountry" name="pais" required><option value="">Selecciona un país</option><option>Ecuador</option><option>Colombia</option><option>Perú</option><option>México</option><option>Chile</option><option>Argentina</option><option>Estados Unidos</option><option>Otro país de LATAM</option><option>Otro país</option></select></div>
+<div class="enroll-field full"><label for="enrollSchedule">Días u horarios preferidos (opcional)</label><input id="enrollSchedule" name="horario" placeholder="Ej.: tardes entre semana o sábados"></div>
+<fieldset class="payment-choice-wrap"><legend>¿Qué método de pago prefieres? *</legend><div class="payment-choices"><label class="payment-option"><input type="radio" name="metodoPago" value="Tarjeta de crédito o débito mediante enlace de pago" required><span><strong>Tarjeta</strong><small>Enlace de pago con tarjeta de crédito o débito.</small></span></label><label class="payment-option"><input type="radio" name="metodoPago" value="PayPal"><span><strong>PayPal</strong><small>Pago mediante PayPal, sujeto a disponibilidad.</small></span></label><label class="payment-option" id="transferOption" hidden><input type="radio" name="metodoPago" value="Transferencia bancaria en Ecuador"><span><strong>Transferencia bancaria</strong><small>Disponible únicamente para clientes en Ecuador.</small></span></label></div><p class="payment-country-note" id="paymentCountryNote">La transferencia bancaria se habilitará si seleccionas Ecuador como país de residencia.</p></fieldset>
+<p class="enroll-note">Enviar esta solicitud no confirma la matrícula ni genera un cobro. Primero confirmaremos disponibilidad y condiciones; luego te enviaremos por correo las instrucciones o el enlace de pago. No incluyas información bancaria en este formulario.</p>
+<div class="enroll-submit-wrap"><button class="btn btn-primary" type="submit">Enviar solicitud de inscripción ↗</button><p class="enroll-status" id="enrollStatus" aria-live="polite"></p></div>
+</form></section></div>
+
+<div class="trial-backdrop" id="trialBackdrop" aria-hidden="true"><section class="trial-dialog" role="dialog" aria-modal="true" aria-labelledby="trialTitle"><button class="trial-close" type="button" aria-label="Cerrar">×</button><div class="trial-heading"><span class="course-modal-level">CLASE DE PRUEBA GRATUITA</span><h2 id="trialTitle">¡Conozcamos KUBIQ!</h2><p>Elige un día y una hora para coordinar una clase de prueba. La solicitud queda sujeta a confirmación de disponibilidad.</p></div><form id="trialForm" class="trial-form"><div class="trial-calendar-wrap"><div class="trial-calendar-head"><button type="button" id="trialPrevMonth" aria-label="Mes anterior">‹</button><strong id="trialMonthLabel"></strong><button type="button" id="trialNextMonth" aria-label="Mes siguiente">›</button></div><div class="trial-weekdays"><span>Lun</span><span>Mar</span><span>Mié</span><span>Jue</span><span>Vie</span><span>Sáb</span><span>Dom</span></div><div class="trial-calendar-grid" id="trialCalendarGrid"></div><p class="trial-hint">Puedes elegir miércoles, jueves o viernes. Horarios en UTC−5.</p></div><input type="hidden" id="trialDate" name="fecha" required><div class="trial-field"><label for="trialTime">Horario disponible *</label><select id="trialTime" name="hora" required><option value="">Primero selecciona un día</option></select></div><div class="trial-field"><label for="trialEmail">Correo electrónico *</label><input id="trialEmail" name="email" type="email" placeholder="nombre@correo.com" required></div><div class="trial-field"><label for="trialWhatsApp">WhatsApp con código de país *</label><input id="trialWhatsApp" name="whatsapp" type="tel" placeholder="+593 99 123 4567" required></div><div class="trial-field"><label for="trialStudent">Nombre del estudiante (opcional)</label><input id="trialStudent" name="estudiante" placeholder="Nombre"></div><div class="trial-field"><label for="trialCourse">Curso de interés (opcional)</label><select id="trialCourse" name="curso"><option value="">Aún no lo sé</option><option>Scratch inicial</option><option>Scratch avanzado</option><option>Roblox Studio inicial</option><option>Roblox Studio avanzado</option><option>Python inicial</option><option>Python avanzado</option></select></div><p class="trial-privacy">Al enviar, se abrirá WhatsApp con los datos de tu solicitud para que puedas enviarlos a KUBIQ ACADEMY. La clase no queda confirmada hasta recibir nuestra respuesta.</p><button class="btn btn-primary trial-submit" type="submit">Solicitar clase de prueba ↗</button></form></section></div>
+
+<a class="floating-whatsapp" href="https://wa.me/593964210182?text=Hola%20KUBIQ%20ACADEMY%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20cursos%20e%20inscripciones" target="_blank" rel="noopener" aria-label="Contactar a KUBIQ Academy por WhatsApp">WhatsApp · Inscripciones ↗</a>
+
+  <footer>
+    <div class="wrap footer-main">
+      <div class="footer-col">
+        <img class="footer-logo-lockup" src="imagenes/kubiq-logo-completo-footer.jpg" alt="KUBIQ ACADEMY — Mentes que programan el futuro">
+        <p>Programación online para aprender creando, con clases en vivo y acompañamiento cercano.</p>
+      </div>
+      <div class="footer-col"><h3>Explora</h3><div class="footer-links"><a href="index.html#propuesta">Nuestra esencia</a><a href="index.html#cursos">Cursos</a><a href="index.html#faq">Preguntas frecuentes</a><a href="index.html#contacto">Contacto</a></div></div>
+      <div class="footer-col"><h3>¿Representas una escuela?</h3><div class="footer-school-card"><strong>La programación también puede llegar a tu institución.</strong><p>Conoce opciones de convenio, clases en vivo, beneficios para estudiantes y formación docente.</p><a href="escuelas.html">Conocer propuesta para escuelas ↗</a></div></div>
+      <div class="footer-col"><h3>Conecta con KUBIQ</h3><p>¿Quieres orientación sobre un curso o explorar una colaboración?</p><div class="footer-links"><a href="https://wa.me/593964210182?text=Hola%20KUBIQ%20ACADEMY%2C%20quisiera%20agendar%20una%20sesi%C3%B3n%20informativa." target="_blank" rel="noopener">Agenda una sesión informativa ↗</a></div><div class="social-links" aria-label="Redes sociales de KUBIQ ACADEMY; enlaces oficiales próximamente">
+          <span class="social-placeholder" title="Instagram · Próximamente" aria-label="Instagram, próximamente"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2.2A2.8 2.8 0 0 0 4.2 7v10A2.8 2.8 0 0 0 7 19.8h10a2.8 2.8 0 0 0 2.8-2.8V7A2.8 2.8 0 0 0 17 4.2H7zm5 2.3a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11zm0 2.2a3.3 3.3 0 1 0 0 6.6 3.3 3.3 0 0 0 0-6.6zm5.8-3a1.3 1.3 0 1 1 0 2.6 1.3 1.3 0 0 1 0-2.6z"/></svg></span>
+          <span class="social-placeholder" title="Facebook · Próximamente" aria-label="Facebook, próximamente"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V8c0-.9.3-1.5 1.6-1.5h1.7V3.7c-.3 0-1.4-.1-2.6-.1-2.6 0-4.4 1.6-4.4 4.6v1.7H7V13h2.8v8h3.7z"/></svg></span>
+          <span class="social-placeholder tiktok" title="TikTok · Próximamente" aria-label="TikTok, próximamente">♪</span>
+          <span class="social-placeholder linkedin" title="LinkedIn · Próximamente" aria-label="LinkedIn, próximamente">in</span>
+          <span class="social-placeholder" title="Correo electrónico · Próximamente" aria-label="Correo electrónico, próximamente"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2zm9 7.1L20.3 7H3.7l8.3 5.1zm0 2.5L3 8.9V17h18V8.9l-9 5.7z"/></svg></span>
+        </div></div>
+    </div>
+    <div class="wrap footer-bottom"><p>© <span id="year"></span> KUBIQ ACADEMY. Todos los derechos reservados.</p><p><a href="index.html#contacto">Hablemos ↗</a></p></div>
+  </footer>
+
+  
+
+  <!-- Cal.com element-click embed: KUBIQ ACADEMY trial booking -->
+  
+
+<script src="scripts/main.js" defer></script>
+<script src="scripts/cal-embed.js" defer></script>
+</body>
+</html>
+<style id="v52-transparent-cutout">
+.hero-atom-scene{background:transparent!important;overflow:visible!important;isolation:isolate!important}
+.hero-kid-atom{width:108%!important;height:108%!important;max-width:none!important;object-fit:contain!important;object-position:center!important;mask-image:none!important;-webkit-mask-image:none!important;filter:drop-shadow(0 16px 24px rgba(0,0,0,.20))!important;animation:heroSceneFloat 8s ease-in-out infinite!important}
+@media(max-width:900px){.hero-kid-atom{width:104%!important;height:104%!important}}
+@media(max-width:760px){.hero-kid-atom{width:100%!important;height:100%!important;mask-image:none!important;-webkit-mask-image:none!important}}
+@media(prefers-reduced-motion:reduce){.hero-kid-atom{animation:none!important}}
+</style>

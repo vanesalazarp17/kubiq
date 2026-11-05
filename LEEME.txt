@@ -1,0 +1,14 @@
+KUBIQ ACADEMY — PAQUETE WEB V53
+
+Estructura:
+- index.html: página principal (archivo de inicio en la raíz).
+- escuelas.html: página para instituciones.
+- imagenes/: imágenes, logotipos y recursos gráficos.
+- scripts/: JavaScript del sitio y carga de Cal.com.
+
+Para publicar: sube TODO el contenido de esta carpeta al directorio raíz de tu hosting
+(public_html, www o equivalente). No subas la carpeta contenedora como un nivel adicional:
+index.html debe quedar directamente en la raíz pública.
+
+Las hojas de estilo están integradas en cada HTML. Cal.com carga su embed desde app.cal.com
+y necesita conexión a internet.
