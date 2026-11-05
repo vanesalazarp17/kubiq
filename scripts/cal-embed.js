@@ -28,3 +28,7 @@
     Cal.config = Cal.config || {};
     Cal.config.forwardQueryParams = true;
     Cal.ns["30min"]("ui", { hideEventTypeDetails: false, layout: "month_view" });
+
+    // KUBIQ: sesión informativa para familias e instituciones.
+    Cal("init", "sesion-informativa", { origin: "https://app.cal.com" });
+    Cal.ns["sesion-informativa"]("ui", { hideEventTypeDetails: false, layout: "month_view" });
