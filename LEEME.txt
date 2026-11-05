@@ -1,4 +1,4 @@
-KUBIQ ACADEMY — PAQUETE WEB V54
+KUBIQ ACADEMY — PAQUETE WEB V55
 
 Estructura:
 - index.html: página principal (archivo de inicio en la raíz).
@@ -14,3 +14,5 @@ Las hojas de estilo están integradas en cada HTML. Cal.com carga su embed desde
 y necesita conexión a internet.
 
 Actualización V54: ajustes de textos, presentación de cursos, beneficios educativos, iconografía, mascota QBO, clases personalizadas 1:1 y calendario Cal.com para sesiones informativas.
+
+Actualización V55: reorganización responsive de los beneficios en tarjetas 3+2; ilustraciones SVG originales para habilidades y propuesta docente; mayor protagonismo visual de las ilustraciones de cursos; CTA decorativo de código alineado junto al botón; enlace de clases 1:1 conectado al calendario de sesión informativa.

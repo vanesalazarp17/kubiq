@@ -731,6 +731,62 @@
       .class-projects-head h3{font-size:23px}
     }
 
+
+    /* KUBIQ V55: responsive layout and illustrated visual assets */
+    .school-skills{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px;margin:0 0 28px}
+    .school-skill{grid-column:span 2;display:flex;align-items:center;gap:13px;min-height:124px;padding:18px 17px;border:1px solid #dce5fa;border-radius:20px;background:linear-gradient(145deg,#fff 0%,#f5f9ff 100%);box-shadow:0 10px 26px rgba(11,27,77,.055)}
+    .school-skill:nth-child(4){grid-column:2/span 2}
+    .school-skill:nth-child(5){grid-column:4/span 2}
+    .school-skill-art{display:grid;place-items:center;flex:0 0 64px;width:64px;height:64px;border-radius:19px;background:linear-gradient(145deg,#e6faff,#eee9ff);overflow:hidden}
+    .school-skill-art img{display:block;width:58px;height:58px;object-fit:contain}
+    .school-skill strong{font:700 14px/1.35 Poppins,sans-serif;margin:0 0 5px}
+    .school-skill p{font-size:12px;line-height:1.55}
+    .teacher-icon{display:grid;place-items:center;width:104px;height:92px;margin:0 0 17px;padding:0;border-radius:0;background:transparent;box-shadow:none;overflow:visible}
+    .teacher-icon img{display:block;width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 9px 10px rgba(11,27,77,.12))}
+    .trust-highlight{padding:24px 23px}
+    .course-card{grid-template-columns:clamp(145px,18vw,185px) minmax(0,1fr);min-height:210px}
+    .course-art{min-height:100%;height:100%;width:100%;display:block;position:relative;background:linear-gradient(145deg,#e9faff,#eeebff);overflow:hidden}
+    .course-icon{display:block;width:100%;height:100%;border:0;border-radius:0;background:transparent;box-shadow:none;transform:none;overflow:hidden}
+    .course-icon img{display:block;width:100%;height:100%;min-height:210px;object-fit:cover;object-position:center;filter:none;transition:transform .45s cubic-bezier(.2,.75,.25,1)}
+    .course-card:hover .course-icon,.course-card:focus-within .course-icon{transform:none;box-shadow:none}
+    .course-card:hover .course-icon img,.course-card:focus-within .course-icon img{transform:scale(1.075);filter:none}
+    .course-card:nth-child(1) .course-art,.course-card:nth-child(2) .course-art{background:linear-gradient(145deg,#e4faff,#f1eaff)}
+    .course-card:nth-child(3) .course-art,.course-card:nth-child(4) .course-art{background:linear-gradient(145deg,#eaf0ff,#e9e7ff)}
+    .course-card:nth-child(5) .course-art,.course-card:nth-child(6) .course-art{background:linear-gradient(145deg,#e4f8ff,#edf0ff)}
+    .showcase-actions{display:flex;align-items:center;gap:34px;flex-wrap:wrap;margin-top:22px}
+    .kids-showcase-copy .showcase-actions .btn{margin:0;flex:0 0 auto}
+    .floating-code.code-decoration{display:inline-flex;align-items:center;position:static;margin:0;padding:12px 17px;border-radius:13px;box-shadow:0 10px 25px rgba(11,27,77,.14);animation:codePulse 3s ease-in-out infinite;white-space:nowrap;pointer-events:none}
+    .one-to-one-callout .session-cta{display:inline-flex;align-items:center;gap:7px;margin-top:7px;padding:0;background:none;border:0;box-shadow:none;border-radius:0;color:#6845e8;font-size:13px;font-weight:800;text-decoration:none}
+    .one-to-one-callout .session-cta:hover{transform:none;box-shadow:none;text-decoration:underline}
+    @media(max-width:1050px){
+      .school-skills{grid-template-columns:repeat(6,minmax(0,1fr))}
+      .school-skill{grid-column:span 3}
+      .school-skill:nth-child(4){grid-column:2/span 2}
+      .school-skill:nth-child(5){grid-column:4/span 2}
+    }
+    @media(max-width:760px){
+      .school-skills{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+      .school-skill,.school-skill:nth-child(4),.school-skill:nth-child(5){grid-column:auto;min-height:116px;padding:14px 12px;gap:10px}
+      .school-skill-art{width:50px;height:50px;flex-basis:50px;border-radius:15px}
+      .school-skill-art img{width:47px;height:47px}
+      .school-skill strong{font-size:12px}
+      .school-skill p{font-size:11px}
+      .course-card{grid-template-columns:118px minmax(0,1fr);min-height:180px}
+      .course-icon img{min-height:180px}
+      .teacher-icon{width:90px;height:78px}
+      .showcase-actions{gap:20px}
+      .floating-code.code-decoration{padding:10px 13px;font-size:11px}
+    }
+    @media(max-width:480px){
+      .school-skills{grid-template-columns:1fr}
+      .school-skill,.school-skill:nth-child(4),.school-skill:nth-child(5){min-height:94px}
+      .course-card{grid-template-columns:100px minmax(0,1fr)}
+      .course-icon img{min-height:100%;height:100%}
+      .showcase-actions{align-items:flex-start;gap:14px}
+      .showcase-actions .btn{font-size:13px;padding:12px 15px}
+      .floating-code.code-decoration{font-size:10px;padding:10px 11px}
+    }
+
 </style>
 </head>
 <body>
@@ -805,7 +861,7 @@
     <section class="kids-showcase" aria-label="Aprender programación en equipo">
       <div class="wrap kids-showcase-grid">
         <div class="kids-photo-wrap"><img src="imagenes/kids-coding.jpg" alt="Niñas y niños colaboran mientras aprenden programación" loading="lazy"><span class="photo-badge"><b>IDEAS EN ACCIÓN</b><small>Curiosidad que se convierte en creación</small></span></div>
-        <div class="kids-showcase-copy"><span class="section-kicker">APRENDER HACIENDO</span><h2 class="display">Cada idea puede convertirse en algo increíble.</h2><p>Probamos, hacemos preguntas, compartimos ideas y aprendemos de cada intento. En clase, la tecnología es una herramienta para imaginar y construir.</p><a class="btn btn-primary" href="#cursos">Encuentra su ruta <span aria-hidden="true">↗</span></a><div class="floating-code code-decoration" aria-hidden="true"><span>when</span> idea <span>→</span> <b>create()</b></div></div>
+        <div class="kids-showcase-copy"><span class="section-kicker">APRENDER HACIENDO</span><h2 class="display">Cada idea puede convertirse en algo increíble.</h2><p>Probamos, hacemos preguntas, compartimos ideas y aprendemos de cada intento. En clase, la tecnología es una herramienta para imaginar y construir.</p><div class="showcase-actions"><a class="btn btn-primary" href="#cursos">Encuentra su ruta <span aria-hidden="true">↗</span></a><div class="floating-code code-decoration" aria-hidden="true"><span>when</span> idea <span>→</span> <b>create()</b></div></div></div>
       </div>
     </section>
 
@@ -817,11 +873,11 @@
           <p class="section-intro experience-intro">En KUBIQ ACADEMY contamos con varios años de experiencia en la enseñanza de programación, tecnología y robótica educativa. Acercamos estos conocimientos a niños y adolescentes mediante experiencias de aprendizaje online, prácticas y guiadas.</p>
           <p class="skills-intro">Al programar, también desarrollan habilidades que pueden aplicar en el colegio y en su día a día:</p>
           <div class="school-skills" aria-label="Habilidades que se fortalecen al programar">
-            <article class="school-skill"><span aria-hidden="true">🧩</span><div><strong>Pensamiento lógico</strong><p>Reconocen patrones y resuelven problemas paso a paso.</p></div></article>
-            <article class="school-skill"><span aria-hidden="true">📐</span><div><strong>Razonamiento matemático</strong><p>Aplican secuencias, variables y relaciones.</p></div></article>
-            <article class="school-skill"><span aria-hidden="true">💡</span><div><strong>Creatividad</strong><p>Transforman ideas en historias, juegos y proyectos.</p></div></article>
-            <article class="school-skill"><span aria-hidden="true">🗂️</span><div><strong>Organización</strong><p>Planifican y estructuran sus propias soluciones.</p></div></article>
-            <article class="school-skill"><span aria-hidden="true">🚀</span><div><strong>Análisis y perseverancia</strong><p>Identifican errores, prueban alternativas y mejoran sus resultados.</p></div></article>
+            <article class="school-skill"><span class="school-skill-art"><img src="imagenes/benefit-logic.svg" alt="Ilustración de piezas de rompecabezas para pensamiento lógico" loading="lazy"></span><div><strong>Pensamiento lógico</strong><p>Reconocen patrones y resuelven problemas paso a paso.</p></div></article>
+            <article class="school-skill"><span class="school-skill-art"><img src="imagenes/benefit-math.svg" alt="Ilustración de escuadra para razonamiento matemático" loading="lazy"></span><div><strong>Razonamiento matemático</strong><p>Aplican secuencias, variables y relaciones.</p></div></article>
+            <article class="school-skill"><span class="school-skill-art"><img src="imagenes/benefit-creativity.svg" alt="Ilustración de bombilla para creatividad" loading="lazy"></span><div><strong>Creatividad</strong><p>Transforman ideas en historias, juegos y proyectos.</p></div></article>
+            <article class="school-skill"><span class="school-skill-art"><img src="imagenes/benefit-organization.svg" alt="Ilustración de carpeta organizada" loading="lazy"></span><div><strong>Organización</strong><p>Planifican y estructuran sus propias soluciones.</p></div></article>
+            <article class="school-skill"><span class="school-skill-art"><img src="imagenes/benefit-perseverance.svg" alt="Ilustración de cohete para análisis y perseverancia" loading="lazy"></span><div><strong>Análisis y perseverancia</strong><p>Identifican errores, prueban alternativas y mejoran sus resultados.</p></div></article>
           </div>
         </div>
         <div class="pillars">
@@ -934,9 +990,9 @@
         </div>
         <div class="teacher-feature reveal"><img src="imagenes/teacher-online-roblox.jpg" alt="Docente impartiendo una clase online y explicando Roblox Studio a sus estudiantes" loading="lazy"><div class="teacher-feature-copy"><span class="section-kicker">DOCENTES QUE ACOMPAÑAN</span><h3>Conocimiento técnico y una forma de enseñar pensada para cada estudiante.</h3><p>El equipo combina dominio de herramientas digitales con una enseñanza clara, práctica y cercana. Las actividades se adaptan a los conocimientos previos y al ritmo del grupo para que cada estudiante pueda participar y avanzar.</p></div></div>
         <div class="trust-highlights" aria-label="Nuestro equipo y forma de enseñar">
-          <article class="trust-highlight"><span class="teacher-icon teacher-icon-tech" aria-hidden="true">💻</span><strong>Especialistas en tecnología</strong><span>Profesionales que conocen a fondo las herramientas que enseñan y convierten conceptos técnicos en experiencias claras, prácticas y motivadoras.</span></article>
-          <article class="trust-highlight"><span class="teacher-icon teacher-icon-learning" aria-hidden="true">🧠</span><strong>Enseñanza con criterio pedagógico</strong><span>Planifican actividades con intención pedagógica y adaptan las explicaciones a la edad, los conocimientos previos y el ritmo de cada estudiante.</span></article>
-          <article class="trust-highlight"><span class="teacher-icon teacher-icon-team" aria-hidden="true">🤝</span><strong>Acompañamiento cercano</strong><span>En grupos de 4 a 8, el docente escucha, responde preguntas, orienta los retos y procura que cada estudiante participe activamente.</span></article>
+          <article class="trust-highlight"><span class="teacher-icon"><img src="imagenes/feature-tech.svg" alt="Ilustración de laptop con código" loading="lazy"></span><strong>Especialistas en tecnología</strong><span>Profesionales que conocen a fondo las herramientas que enseñan y convierten conceptos técnicos en experiencias claras, prácticas y motivadoras.</span></article>
+          <article class="trust-highlight"><span class="teacher-icon"><img src="imagenes/feature-pedagogy.svg" alt="Ilustración de cerebro y libros" loading="lazy"></span><strong>Enseñanza con criterio pedagógico</strong><span>Planifican actividades con intención pedagógica y adaptan las explicaciones a la edad, los conocimientos previos y el ritmo de cada estudiante.</span></article>
+          <article class="trust-highlight"><span class="teacher-icon"><img src="imagenes/feature-team.svg" alt="Ilustración de estudiantes colaborando" loading="lazy"></span><strong>Acompañamiento cercano</strong><span>En grupos de 4 a 8, el docente escucha, responde preguntas, orienta los retos y procura que cada estudiante participe activamente.</span></article>
         </div>
         <div class="class-projects-head">
           <img class="qbo-sticker qbo-projects" src="imagenes/qbo-mascota.png" alt="QBO, mascota de KUBIQ ACADEMY" loading="lazy">
@@ -995,7 +1051,7 @@
      </div><p class="schedule-zone">Todos los horarios se muestran en <strong>UTC−5</strong></p>
       <div class="one-to-one-callout">
         <span class="one-to-one-icon" aria-hidden="true">✦</span>
-        <div><strong>¿Buscas clases personalizadas 1:1?</strong><p>También ofrecemos clases individuales con horarios a convenir, según tu disponibilidad.</p><a href="https://wa.me/593964210182?text=Hola%20KUBIQ%20ACADEMY%2C%20me%20interesan%20las%20clases%20personalizadas%201%3A1.%20Quisiera%20consultar%20horarios%20y%20disponibilidad." target="_blank" rel="noopener">Contáctanos para coordinar un horario ↗</a></div>
+        <div><strong>¿Buscas clases personalizadas 1:1?</strong><p>También ofrecemos clases individuales con horarios a convenir, según tu disponibilidad.</p><a href="#" class="session-cta session-calendar-link" data-cal-link="kubiqacademy/sesion-informativa" data-cal-namespace="sesion-informativa" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Agendar una sesión informativa ↗</a></div>
       </div></div></section>
 
     <section class="faq-section" id="faq">
