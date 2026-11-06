@@ -29,3 +29,13 @@ Renovación V59: experiencia visual más dinámica sin cambiar la identidad de m
 Actualización V60: rangos de edad actualizados tanto en las seis tarjetas del catálogo como en los detalles de cada curso y el flujo de inscripción: Scratch Inicial 8–11, Scratch Avanzado 9–12, Roblox Studio Inicial 10–13, Roblox Studio Avanzado 12–16, Python Inicial 13–17 y Python Avanzado 14–17 años.
 
 Renovación visual V61 basada en la estructura y contenidos de V60: seis ilustraciones SVG originales y diferenciadas para cada curso (Scratch Inicial/Avanzado, Roblox Studio Inicial/Avanzado, Python Inicial/Avanzado), con paletas, personajes y objetos propios de cada disciplina. Se actualizaron las cinco ilustraciones de habilidades y se corrigió el ajuste de tamaño de las imágenes para evitar recortes/desbordamientos. Se añadieron fondos de color diferenciados y microinteracciones en las tarjetas, con adaptación móvil y respeto a movimiento reducido.
+
+ACTUALIZACIÓN V62 — BRANDING, UX Y SEO
+- Rediseño de los seis emblemas/ilustraciones de curso como identidades visuales diferenciadas: Scratch Inicial, Scratch Avanzado, Roblox Studio Inicial, Roblox Studio Avanzado, Python Inicial y Python Avanzado.
+- Las tarjetas y el modal de detalle utilizan el mismo SVG de cada programa.
+- Las edades se mantienen sincronizadas desde el objeto de datos que alimenta los detalles del curso; se verificó la coincidencia entre catálogo y modal.
+- Se añadieron temas principales y ejemplos de proyecto directamente en las tarjetas para que las familias puedan comparar sin abrir cada detalle.
+- Se mejoró la guía de selección de nivel y se añadieron navegación, accesibilidad de teclado, salto al contenido y carga diferida de imágenes.
+- Página de escuelas enriquecida con proceso de colaboración y preguntas frecuentes institucionales.
+- SEO: títulos y descripciones orientados a intención de búsqueda, Open Graph, Twitter cards, datos estructurados Schema.org para organización educativa, cursos y FAQ, archivo llms.txt y robots.txt.
+- No se añadió canonical ni sitemap.xml con dominio ficticio. Deben configurarse cuando esté definido el dominio público final.

@@ -1,23 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 250">
 <defs>
- <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#DDF8FF"/><stop offset="1" stop-color="#E8E4FF"/></linearGradient>
- <linearGradient id="block" x2="1" y2="1"><stop stop-color="#38D6FF"/><stop offset="1" stop-color="#2771DB"/></linearGradient>
- <linearGradient id="skin" x2="1" y2="1"><stop stop-color="#FFD99A"/><stop offset="1" stop-color="#F3A65B"/></linearGradient>
- <filter id="sh" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="9" stdDeviation="8" flood-color="#1A3978" flood-opacity=".2"/></filter>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#D9F7FF"/><stop offset="1" stop-color="#DDE4FF"/></linearGradient>
+ <linearGradient id="cube" x2="1" y2="1"><stop stop-color="#59E4FF"/><stop offset="1" stop-color="#2875D9"/></linearGradient>
+ <linearGradient id="avatar" x2="1" y2="1"><stop stop-color="#FFDCA4"/><stop offset="1" stop-color="#EBA15A"/></linearGradient>
+ <filter id="s" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="10" stdDeviation="9" flood-color="#22477C" flood-opacity=".22"/></filter>
 </defs>
-<circle cx="157" cy="125" r="108" fill="url(#bg)"/>
-<g filter="url(#sh)">
- <path d="m35 187 57-33 63 34-58 34Z" fill="#6D55D9"/><path d="m35 187 62 35v-31l-62-35Z" fill="#523AB5"/>
- <path d="m97 191 58-34 60 35-60 35Z" fill="#00C8FF"/><path d="m97 191 58 36v-31l-58-35Z" fill="#238CE4"/>
- <path d="m182 180 42-25 47 27-45 27Z" fill="#FFD34D"/><path d="m182 180 44 29v-26l-44-28Z" fill="#F5A91D"/>
- <rect x="111" y="62" width="84" height="74" rx="13" fill="url(#skin)" stroke="#B96D38" stroke-width="4"/>
- <path d="M108 72q4-34 44-34 41 0 45 34Z" fill="#263C75"/><path d="M115 63q38-30 76 0" fill="none" stroke="#4E73BD" stroke-width="9"/>
- <rect x="125" y="87" width="12" height="15" rx="5" fill="#17234E"/><rect x="169" y="87" width="12" height="15" rx="5" fill="#17234E"/>
- <path d="M143 112q14 12 28 0" fill="none" stroke="#A64D38" stroke-width="5" stroke-linecap="round"/>
- <rect x="104" y="138" width="98" height="52" rx="12" fill="#2771DB" stroke="#174B9A" stroke-width="4"/>
- <path d="M104 150h98" stroke="#63CFFF" stroke-width="8"/>
- <rect x="119" y="187" width="29" height="34" rx="7" fill="#F5B12C"/><rect x="160" y="187" width="29" height="34" rx="7" fill="#F5B12C"/>
+<circle cx="160" cy="125" r="108" fill="url(#bg)"/>
+<g filter="url(#s)">
+ <path d="m40 185 65-38 65 38-65 39Z" fill="#6B56D9"/><path d="m40 185 65 39v-36l-65-39Z" fill="#4D3AB3"/>
+ <path d="m105 188 60-36 62 36-62 38Z" fill="url(#cube)"/><path d="m105 188 60 36v-36l-60-36Z" fill="#168BD8"/>
+ <path d="m183 177 37-22 42 24-40 24Z" fill="#FFD34D"/><path d="m183 177 39 26v-24l-39-24Z" fill="#EFA41E"/>
+ <rect x="109" y="66" width="84" height="76" rx="13" fill="url(#avatar)" stroke="#B86F42" stroke-width="4"/>
+ <path d="M105 76q6-38 46-38t47 38Z" fill="#273A75"/><path d="M116 65q36-28 71 0" fill="none" stroke="#4C72BC" stroke-width="8"/>
+ <rect x="124" y="91" width="12" height="16" rx="5" fill="#17234E"/><rect x="166" y="91" width="12" height="16" rx="5" fill="#17234E"/>
+ <path d="M143 119q13 11 27 0" fill="none" stroke="#A64D38" stroke-width="5" stroke-linecap="round"/>
+ <rect x="103" y="145" width="96" height="47" rx="11" fill="#2875D9" stroke="#174B9A" stroke-width="4"/>
+ <path d="M103 157h96" stroke="#6ADFFF" stroke-width="8"/>
+ <rect x="119" y="189" width="27" height="34" rx="6" fill="#F5B12C"/><rect x="157" y="189" width="27" height="34" rx="6" fill="#F5B12C"/>
 </g>
-<g fill="#fff" stroke="#3976E8" stroke-width="4"><rect x="227" y="49" width="45" height="45" rx="8" transform="rotate(12 227 49)"/><path d="m240 64 10-7 10 7v13h-20Z" fill="#00C8FF"/></g>
-<path d="m42 75 10-18 10 18 18 10-18 10-10 18-10-18-18-10Z" fill="#7B4DFF"/>
+<path d="m244 45 31 8-8 31-31-8Z" fill="#fff" stroke="#3976E8" stroke-width="4"/><path d="m249 57 12 4-4 12-12-4Z" fill="#00C8FF"/>
+<circle cx="62" cy="68" r="9" fill="#7B4DFF"/><path d="m62 48 0-8m-20 28h-8" stroke="#7B4DFF" stroke-width="4" stroke-linecap="round"/>
 </svg>
