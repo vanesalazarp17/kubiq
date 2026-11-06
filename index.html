@@ -796,41 +796,70 @@
     .status-foot-single{display:flex;justify-content:center;align-items:center}
     .status-foot-single strong{font-weight:800;letter-spacing:.01em}
 \n
-/* V61 — precise illustration sizing and distinct benefit artwork */
-.school-skill{overflow:hidden;align-items:center;gap:18px}
-.school-skill-art{
+/* KUBIQ V61 — distinct course worlds, rich illustration treatment */
+.course-card{overflow:hidden;border:1px solid rgba(123,77,255,.17);background:linear-gradient(135deg,#fff 0%,#f8fbff 100%);transition:transform .42s cubic-bezier(.2,.75,.25,1),box-shadow .42s ease,border-color .42s ease}
+.course-card .course-art{
+  min-height:210px!important;height:100%;padding:13px!important;box-sizing:border-box;
+  display:grid!important;place-items:center!important;overflow:hidden!important;
+  position:relative;isolation:isolate;
+  background:radial-gradient(circle at 50% 46%,rgba(255,255,255,.95),rgba(255,255,255,.18) 58%,transparent 72%),linear-gradient(145deg,#fff4df,#ffeaf3)!important;
+}
+.course-card .course-art:before{
+  content:"";position:absolute;inset:10px;border:1px solid rgba(255,255,255,.75);
+  border-radius:23px;pointer-events:none;z-index:-1;
+}
+.course-card .course-icon{
   display:grid!important;place-items:center!important;
-  flex:0 0 66px!important;width:66px!important;height:66px!important;
-  min-width:66px;min-height:66px;padding:8px!important;
-  box-sizing:border-box;border-radius:20px;
-  overflow:hidden!important;background:linear-gradient(145deg,#e7faff 0%,#eee9ff 100%);
+  width:100%!important;height:100%!important;min-height:0!important;
+  padding:0!important;margin:0!important;overflow:visible!important;
+  border:0!important;border-radius:18px!important;
+  background:transparent!important;box-shadow:none!important;transform:none!important;
 }
-.school-skill-art img{
+.course-card .course-icon img{
   display:block!important;width:100%!important;height:100%!important;
-  max-width:48px!important;max-height:48px!important;
-  min-width:0!important;min-height:0!important;
+  min-width:0!important;min-height:0!important;max-width:100%!important;max-height:184px!important;
   object-fit:contain!important;object-position:center!important;
-  transform:none;filter:drop-shadow(0 4px 5px rgba(11,27,77,.10));
-  transition:transform .35s cubic-bezier(.2,.75,.25,1),filter .35s ease;
+  filter:drop-shadow(0 12px 12px rgba(11,27,77,.17))!important;
+  transition:transform .55s cubic-bezier(.2,.75,.25,1),filter .45s ease!important;
 }
-.school-skill:hover .school-skill-art img{
-  transform:translateY(-2px) scale(1.07);
-  filter:drop-shadow(0 7px 8px rgba(11,27,77,.16));
-}
-.school-skill:nth-child(1) .school-skill-art{background:linear-gradient(145deg,#E0F8FF,#E7EEFF)}
-.school-skill:nth-child(2) .school-skill-art{background:linear-gradient(145deg,#EEE8FF,#E2E8FF)}
-.school-skill:nth-child(3) .school-skill-art{background:linear-gradient(145deg,#FFF5D8,#FFE8F2)}
-.school-skill:nth-child(4) .school-skill-art{background:linear-gradient(145deg,#E1FAF4,#E4F0FF)}
-.school-skill:nth-child(5) .school-skill-art{background:linear-gradient(145deg,#F0E9FF,#E2F7FF)}
-.school-skill strong{position:relative;z-index:2}
-.school-skill p{position:relative;z-index:2}
+.course-card:hover .course-icon,.course-card:focus-within .course-icon{transform:none!important;box-shadow:none!important}
+.course-card:hover .course-icon img,.course-card:focus-within .course-icon img{transform:translateY(-7px) scale(1.07)!important;filter:drop-shadow(0 18px 16px rgba(11,27,77,.22))!important}
+.course-card:nth-child(1) .course-art{background:radial-gradient(circle at 50% 45%,#fff8df 0,#ffe8c6 46%,#ffdce9 100%)!important}
+.course-card:nth-child(2) .course-art{background:radial-gradient(circle at 50% 45%,#f6eaff 0,#e9e1ff 48%,#d9f6ff 100%)!important}
+.course-card:nth-child(3) .course-art{background:radial-gradient(circle at 50% 45%,#e4faff 0,#d5f2ff 48%,#e7e6ff 100%)!important}
+.course-card:nth-child(4) .course-art{background:radial-gradient(circle at 50% 45%,#fce4ff 0,#e8ddff 48%,#d7f7ff 100%)!important}
+.course-card:nth-child(5) .course-art{background:radial-gradient(circle at 50% 45%,#e3faff 0,#d8edff 48%,#e7e4ff 100%)!important}
+.course-card:nth-child(6) .course-art{background:radial-gradient(circle at 50% 45%,#eee5ff 0,#e0e4ff 48%,#d6f8ff 100%)!important}
+.course-card:nth-child(1){border-color:#ffd28b}
+.course-card:nth-child(2){border-color:#d9c9ff}
+.course-card:nth-child(3){border-color:#a9e9ff}
+.course-card:nth-child(4){border-color:#e3b5ff}
+.course-card:nth-child(5){border-color:#a6e9f5}
+.course-card:nth-child(6){border-color:#c5b6ff}
+.course-card:hover{transform:translateY(-8px);box-shadow:0 24px 52px rgba(11,27,77,.14);border-color:#8b75ff}
+.course-card .course-level{letter-spacing:.1em}
+.course-card .course-more{transition:transform .25s ease,letter-spacing .25s ease}
+.course-card:hover .course-more{letter-spacing:.025em}
+.course-card:nth-child(odd) .course-level{background:#fff2d7;color:#9a5b08}
+.course-card:nth-child(even) .course-level{background:#eee9ff;color:#6845c8}
+/* Benefit illustrations: keep each asset fully inside a consistent frame. */
+.school-skill{overflow:hidden;align-items:center}
+.school-skill-art{display:grid!important;place-items:center!important;flex:0 0 66px!important;width:66px!important;height:66px!important;min-width:66px;min-height:66px;padding:8px!important;box-sizing:border-box;overflow:hidden!important;border-radius:20px}
+.school-skill-art img{display:block!important;width:100%!important;height:100%!important;max-width:48px!important;max-height:48px!important;min-width:0!important;min-height:0!important;object-fit:contain!important;object-position:center!important;filter:drop-shadow(0 5px 6px rgba(11,27,77,.12));transition:transform .35s ease}
+.school-skill:hover .school-skill-art img{transform:translateY(-3px) scale(1.06)}
 @media(max-width:760px){
-  .school-skill{gap:12px}
-  .school-skill-art{flex-basis:56px!important;width:56px!important;height:56px!important;min-width:56px;min-height:56px;padding:7px!important}
-  .school-skill-art img{max-width:42px!important;max-height:42px!important}
+ .course-card .course-art{min-height:170px!important;padding:10px!important}
+ .course-card .course-icon img{max-height:150px!important}
+ .school-skill-art{flex-basis:56px!important;width:56px!important;height:56px!important;min-width:56px;min-height:56px;padding:7px!important}
+ .school-skill-art img{max-width:42px!important;max-height:42px!important}
+}
+@media(max-width:480px){
+ .course-card .course-art{min-height:145px!important;padding:8px!important}
+ .course-card .course-icon img{max-height:128px!important}
 }
 @media(prefers-reduced-motion:reduce){
-  .school-skill-art img{transition:none!important}
+ .course-card,.course-card .course-icon img,.school-skill-art img{transition:none!important}
+ .course-card:hover{transform:none}
 }
 
 </style>
@@ -976,12 +1005,12 @@
           <div class="catalog-personalized"><span aria-hidden="true">✦</span><div><strong>Clases personalizadas en grupos pequeños</strong><p>Entre 4 y 8 estudiantes por grupo para favorecer la participación y el acompañamiento durante el aprendizaje.</p></div></div>
         </div>
         <div class="course-grid">
-<article class="course-card reveal course-open" tabindex="0" role="button" aria-haspopup="dialog" data-course="scratch-inicial"><div class="course-art"><div class="course-icon"><img src="imagenes/course-scratch-inicial.png" alt="Ilustración de Scratch inicial"></div></div><div class="course-content"><div class="course-main"><span class="course-level">Nivel inicial</span><h3>Scratch inicial</h3><div class="course-bottom"><span class="course-age"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.8"/><path d="M5 20C5 16.7 8.1 14 12 14S19 16.7 19 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>8–11 años</span><span class="course-code">K01</span></div></div><p class="course-description">Empieza con la lógica de programación por bloques y crea animaciones e historias interactivas.</p><span class="course-more">Más información <span aria-hidden="true">↗</span></span></div></article>
-<article class="course-card reveal course-open" tabindex="0" role="button" aria-haspopup="dialog" data-course="scratch-avanzado"><div class="course-art"><div class="course-icon"><img src="imagenes/course-scratch-avanzado.png" alt="Ilustración de Scratch avanzado"></div></div><div class="course-content"><div class="course-main"><span class="course-level">Nivel avanzado</span><h3>Scratch avanzado</h3><div class="course-bottom"><span class="course-age"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.8"/><path d="M5 20C5 16.7 8.1 14 12 14S19 16.7 19 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>9–12 años</span><span class="course-code">K02</span></div></div><p class="course-description">Amplía lo aprendido y trabaja en proyectos interactivos con más decisiones, secuencias y lógica.</p><span class="course-more">Más información <span aria-hidden="true">↗</span></span></div></article>
-<article class="course-card reveal course-open" tabindex="0" role="button" aria-haspopup="dialog" data-course="roblox-inicial"><div class="course-art"><div class="course-icon"><img src="imagenes/course-roblox-inicial.png" alt="Ilustración de Roblox Studio inicial"></div></div><div class="course-content"><div class="course-main"><span class="course-level">Nivel inicial</span><h3>Roblox Studio inicial</h3><div class="course-bottom"><span class="course-age"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.8"/><path d="M5 20C5 16.7 8.1 14 12 14S19 16.7 19 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>10–13 años</span><span class="course-code">K03</span></div></div><p class="course-description">Conoce las herramientas de Roblox Studio y comienza a diseñar escenarios y experiencias propias.</p><span class="course-more">Más información <span aria-hidden="true">↗</span></span></div></article>
-<article class="course-card reveal course-open" tabindex="0" role="button" aria-haspopup="dialog" data-course="roblox-avanzado"><div class="course-art"><div class="course-icon"><img src="imagenes/course-roblox-avanzado.png" alt="Ilustración de Roblox Studio avanzado"></div></div><div class="course-content"><div class="course-main"><span class="course-level">Nivel avanzado</span><h3>Roblox Studio avanzado</h3><div class="course-bottom"><span class="course-age"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.8"/><path d="M5 20C5 16.7 8.1 14 12 14S19 16.7 19 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>12–16 años</span><span class="course-code">K04</span></div></div><p class="course-description">Profundiza en el diseño de experiencias y en la lógica que ayuda a darles funcionamiento.</p><span class="course-more">Más información <span aria-hidden="true">↗</span></span></div></article>
-<article class="course-card reveal course-open" tabindex="0" role="button" aria-haspopup="dialog" data-course="python-inicial"><div class="course-art"><div class="course-icon"><img src="imagenes/course-python-inicial.png" alt="Ilustración de Python inicial"></div></div><div class="course-content"><div class="course-main"><span class="course-level">Nivel inicial</span><h3>Python inicial</h3><div class="course-bottom"><span class="course-age"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.8"/><path d="M5 20C5 16.7 8.1 14 12 14S19 16.7 19 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>13–17 años</span><span class="course-code">K05</span></div></div><p class="course-description">Aprende las bases de Python mediante ejercicios y casos prácticos inspirados en situaciones reales, para conectar el código con problemas concretos.</p><span class="course-more">Más información <span aria-hidden="true">↗</span></span></div></article>
-<article class="course-card reveal course-open" tabindex="0" role="button" aria-haspopup="dialog" data-course="python-avanzado"><div class="course-art"><div class="course-icon"><img src="imagenes/course-python-avanzado.png" alt="Ilustración de Python avanzado"></div></div><div class="course-content"><div class="course-main"><span class="course-level">Nivel avanzado</span><h3>Python avanzado</h3><div class="course-bottom"><span class="course-age"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.8"/><path d="M5 20C5 16.7 8.1 14 12 14S19 16.7 19 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>14–17 años</span><span class="course-code">K06</span></div></div><p class="course-description">Profundiza en Python trabajando con casos prácticos inspirados en situaciones reales, aplicando estructuras de código para analizar y resolver problemas más complejos.</p><span class="course-more">Más información <span aria-hidden="true">↗</span></span></div></article>
+<article class="course-card reveal course-open" tabindex="0" role="button" aria-haspopup="dialog" data-course="scratch-inicial"><div class="course-art"><div class="course-icon"><img src="imagenes/course-scratch-inicial.svg" alt="Gatito creativo y bloques de programación para Scratch inicial"></div></div><div class="course-content"><div class="course-main"><span class="course-level">Nivel inicial</span><h3>Scratch inicial</h3><div class="course-bottom"><span class="course-age"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.8"/><path d="M5 20C5 16.7 8.1 14 12 14S19 16.7 19 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>8–11 años</span><span class="course-code">K01</span></div></div><p class="course-description">Empieza con la lógica de programación por bloques y crea animaciones e historias interactivas.</p><span class="course-more">Más información <span aria-hidden="true">↗</span></span></div></article>
+<article class="course-card reveal course-open" tabindex="0" role="button" aria-haspopup="dialog" data-course="scratch-avanzado"><div class="course-art"><div class="course-icon"><img src="imagenes/course-scratch-avanzado.svg" alt="Gatito con gafas y pantalla de creación para Scratch avanzado"></div></div><div class="course-content"><div class="course-main"><span class="course-level">Nivel avanzado</span><h3>Scratch avanzado</h3><div class="course-bottom"><span class="course-age"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.8"/><path d="M5 20C5 16.7 8.1 14 12 14S19 16.7 19 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>9–12 años</span><span class="course-code">K02</span></div></div><p class="course-description">Amplía lo aprendido y trabaja en proyectos interactivos con más decisiones, secuencias y lógica.</p><span class="course-more">Más información <span aria-hidden="true">↗</span></span></div></article>
+<article class="course-card reveal course-open" tabindex="0" role="button" aria-haspopup="dialog" data-course="roblox-inicial"><div class="course-art"><div class="course-icon"><img src="imagenes/course-roblox-inicial.svg" alt="Avatar constructor y bloques 3D para Roblox Studio inicial"></div></div><div class="course-content"><div class="course-main"><span class="course-level">Nivel inicial</span><h3>Roblox Studio inicial</h3><div class="course-bottom"><span class="course-age"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.8"/><path d="M5 20C5 16.7 8.1 14 12 14S19 16.7 19 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>10–13 años</span><span class="course-code">K03</span></div></div><p class="course-description">Conoce las herramientas de Roblox Studio y comienza a diseñar escenarios y experiencias propias.</p><span class="course-more">Más información <span aria-hidden="true">↗</span></span></div></article>
+<article class="course-card reveal course-open" tabindex="0" role="button" aria-haspopup="dialog" data-course="roblox-avanzado"><div class="course-art"><div class="course-icon"><img src="imagenes/course-roblox-avanzado.svg" alt="Portal de mundo virtual y avatar para Roblox Studio avanzado"></div></div><div class="course-content"><div class="course-main"><span class="course-level">Nivel avanzado</span><h3>Roblox Studio avanzado</h3><div class="course-bottom"><span class="course-age"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.8"/><path d="M5 20C5 16.7 8.1 14 12 14S19 16.7 19 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>12–16 años</span><span class="course-code">K04</span></div></div><p class="course-description">Profundiza en el diseño de experiencias y en la lógica que ayuda a darles funcionamiento.</p><span class="course-more">Más información <span aria-hidden="true">↗</span></span></div></article>
+<article class="course-card reveal course-open" tabindex="0" role="button" aria-haspopup="dialog" data-course="python-inicial"><div class="course-art"><div class="course-icon"><img src="imagenes/course-python-inicial.svg" alt="Pantalla de código y serpiente Python para Python inicial"></div></div><div class="course-content"><div class="course-main"><span class="course-level">Nivel inicial</span><h3>Python inicial</h3><div class="course-bottom"><span class="course-age"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.8"/><path d="M5 20C5 16.7 8.1 14 12 14S19 16.7 19 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>13–17 años</span><span class="course-code">K05</span></div></div><p class="course-description">Aprende las bases de Python mediante ejercicios y casos prácticos inspirados en situaciones reales, para conectar el código con problemas concretos.</p><span class="course-more">Más información <span aria-hidden="true">↗</span></span></div></article>
+<article class="course-card reveal course-open" tabindex="0" role="button" aria-haspopup="dialog" data-course="python-avanzado"><div class="course-art"><div class="course-icon"><img src="imagenes/course-python-avanzado.svg" alt="Robot tecnológico y circuitos Python para Python avanzado"></div></div><div class="course-content"><div class="course-main"><span class="course-level">Nivel avanzado</span><h3>Python avanzado</h3><div class="course-bottom"><span class="course-age"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.8"/><path d="M5 20C5 16.7 8.1 14 12 14S19 16.7 19 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>14–17 años</span><span class="course-code">K06</span></div></div><p class="course-description">Profundiza en Python trabajando con casos prácticos inspirados en situaciones reales, aplicando estructuras de código para analizar y resolver problemas más complejos.</p><span class="course-more">Más información <span aria-hidden="true">↗</span></span></div></article>
         </div>
         <p class="catalog-disclaimer"><strong>Sobre las edades:</strong> son recomendaciones orientativas, no límites estrictos. La ruta ideal también depende de los conocimientos previos, los intereses y el ritmo de aprendizaje de cada estudiante. Si tienes dudas, contáctanos y te orientaremos.</p>
       </div>
