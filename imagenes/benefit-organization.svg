@@ -1,1 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"><defs><linearGradient id="a" x2="1" y2="1"><stop stop-color="#00C8FF"/><stop offset="1" stop-color="#6C76F5"/></linearGradient></defs><ellipse cx="61" cy="104" rx="38" ry="7" fill="#0B1B4D" opacity=".1"/><path d="M19 34q0-7 8-7h25l9 10h33q7 0 7 8v43q0 7-7 7H27q-8 0-8-8Z" fill="url(#a)"/><path d="M19 45q0-7 8-7h69q7 0 7 8v7H19Z" fill="#9FEAFF"/><path d="M31 60h45m-45 13h33" stroke="#fff" stroke-width="5" stroke-linecap="round"/><circle cx="87" cy="79" r="17" fill="#FFC928"/><path d="m87 67 3 8 8 4-8 3-3 8-4-8-8-3 8-4Z" fill="#fff"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+<defs><linearGradient id="a" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#00C8FF"/><stop offset="1" stop-color="#4772E8"/></linearGradient></defs>
+<ellipse cx="60" cy="106" rx="37" ry="6" fill="#0B1B4D" opacity=".1"/>
+<rect x="27" y="15" width="67" height="89" rx="11" fill="#DDEEFF"/><rect x="32" y="20" width="67" height="84" rx="10" fill="url(#a)"/>
+<rect x="43" y="14" width="45" height="15" rx="7" fill="#7B4DFF"/><rect x="48" y="18" width="35" height="5" rx="2.5" fill="#E9E3FF"/>
+<g fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="m44 48 5 5 9-11"/><path d="M66 49h20"/><path d="m44 70 5 5 9-11"/><path d="M66 71h20"/><path d="m44 91 5 5 9-11"/><path d="M66 92h20"/></g>
+<circle cx="95" cy="24" r="11" fill="#FFD34D"/><path d="m90 24 4 4 7-8" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

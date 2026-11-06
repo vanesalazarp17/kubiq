@@ -795,7 +795,45 @@
     /* V58: concise status-card footer */
     .status-foot-single{display:flex;justify-content:center;align-items:center}
     .status-foot-single strong{font-weight:800;letter-spacing:.01em}
-\n</style>
+\n
+/* V61 — precise illustration sizing and distinct benefit artwork */
+.school-skill{overflow:hidden;align-items:center;gap:18px}
+.school-skill-art{
+  display:grid!important;place-items:center!important;
+  flex:0 0 66px!important;width:66px!important;height:66px!important;
+  min-width:66px;min-height:66px;padding:8px!important;
+  box-sizing:border-box;border-radius:20px;
+  overflow:hidden!important;background:linear-gradient(145deg,#e7faff 0%,#eee9ff 100%);
+}
+.school-skill-art img{
+  display:block!important;width:100%!important;height:100%!important;
+  max-width:48px!important;max-height:48px!important;
+  min-width:0!important;min-height:0!important;
+  object-fit:contain!important;object-position:center!important;
+  transform:none;filter:drop-shadow(0 4px 5px rgba(11,27,77,.10));
+  transition:transform .35s cubic-bezier(.2,.75,.25,1),filter .35s ease;
+}
+.school-skill:hover .school-skill-art img{
+  transform:translateY(-2px) scale(1.07);
+  filter:drop-shadow(0 7px 8px rgba(11,27,77,.16));
+}
+.school-skill:nth-child(1) .school-skill-art{background:linear-gradient(145deg,#E0F8FF,#E7EEFF)}
+.school-skill:nth-child(2) .school-skill-art{background:linear-gradient(145deg,#EEE8FF,#E2E8FF)}
+.school-skill:nth-child(3) .school-skill-art{background:linear-gradient(145deg,#FFF5D8,#FFE8F2)}
+.school-skill:nth-child(4) .school-skill-art{background:linear-gradient(145deg,#E1FAF4,#E4F0FF)}
+.school-skill:nth-child(5) .school-skill-art{background:linear-gradient(145deg,#F0E9FF,#E2F7FF)}
+.school-skill strong{position:relative;z-index:2}
+.school-skill p{position:relative;z-index:2}
+@media(max-width:760px){
+  .school-skill{gap:12px}
+  .school-skill-art{flex-basis:56px!important;width:56px!important;height:56px!important;min-width:56px;min-height:56px;padding:7px!important}
+  .school-skill-art img{max-width:42px!important;max-height:42px!important}
+}
+@media(prefers-reduced-motion:reduce){
+  .school-skill-art img{transition:none!important}
+}
+
+</style>
 </head>
 <body>
 <div class="site-sticky-shell" id="siteStickyShell">
