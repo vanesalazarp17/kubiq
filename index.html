@@ -1,24 +1,25 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0B1B4D">
-  <meta name="description" content="Academia online de programación para niños y jóvenes de 8 a 17 años en Latinoamérica. Aprende Scratch, Roblox Studio y Python en clases en vivo, grupos pequeños y proyectos prácticos.">
-  <meta name="robots" content="index, follow, max-image-preview:large">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="KUBIQ ACADEMY">
-  <meta property="og:locale" content="es_419">
-  <meta property="og:title" content="KUBIQ ACADEMY | Cursos online de programación para niños y jóvenes">
-  <meta property="og:description" content="Clases en vivo de Scratch, Roblox Studio y Python para niños y jóvenes de 8 a 17 años. Grupos pequeños, proyectos prácticos y docentes expertos.">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="KUBIQ ACADEMY | Programación para niños y jóvenes">
-  <meta name="twitter:description" content="Aprende Scratch, Roblox Studio y Python con clases online en vivo y proyectos prácticos.">
-  <title>Academia online de programación para niños y jóvenes | KUBIQ ACADEMY</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#0B1B4D" name="theme-color"/>
+<meta content="Academia online de programación para niños y jóvenes de 8 a 17 años en Latinoamérica. Aprende Scratch, Roblox Studio y Python en clases en vivo, grupos pequeños y proyectos prácticos." name="description"/>
+<meta content="index, follow, max-image-preview:large" name="robots"/>
+<meta content="website" property="og:type"/>
+<meta content="KUBIQ ACADEMY" property="og:site_name"/>
+<meta content="es_419" property="og:locale"/>
+<meta content="KUBIQ ACADEMY | Cursos online de programación para niños y jóvenes" property="og:title"/>
+<meta content="Clases en vivo de Scratch, Roblox Studio y Python para niños y jóvenes de 8 a 17 años. Grupos pequeños, proyectos prácticos y docentes expertos." property="og:description"/>
+<meta content="summary" name="twitter:card"/>
+<meta content="KUBIQ ACADEMY | Programación para niños y jóvenes" name="twitter:title"/>
+<meta content="Aprende Scratch, Roblox Studio y Python con clases online en vivo y proyectos prácticos." name="twitter:description"/>
+<title>Academia online de programación para niños y jóvenes | KUBIQ ACADEMY</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&amp;family=Poppins:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style>
     :root {
       --navy: #0B1B4D;
       --navy-deep: #071234;
@@ -907,6 +908,29 @@
 @media(prefers-reduced-motion:reduce){.course-card,.course-card .course-icon img{transition:none!important}.course-card:hover{transform:none}}
 
 .course-card .course-more{display:inline-flex;align-items:center;gap:7px}
+
+.proof-strip{background:#f5f7ff;border-bottom:1px solid #e8ecf7}
+.proof-strip .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;padding:18px 0}
+.proof-strip .wrap>div{display:flex;flex-direction:column;align-items:center;text-align:center;gap:3px}
+.proof-strip strong{font:800 15px Poppins,sans-serif;color:#0B1B4D}
+.proof-strip span{font-size:12px;color:#64708D}
+.family-expectations{padding:76px 0;background:linear-gradient(180deg,#f8f9ff,#fff)}
+.family-expectations-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px}
+.family-expectations-grid article{padding:22px;border:1px solid #e5e9f5;border-radius:18px;background:#fff;box-shadow:0 10px 28px rgba(11,27,77,.05)}
+.expect-icon{display:grid;place-items:center;width:36px;height:36px;border-radius:12px;background:#e9e6ff;color:#0B1B4D;font-weight:900;font-size:12px}
+.family-expectations-grid h3{font:700 16px Poppins,sans-serif;color:#0B1B4D;margin:15px 0 8px}
+.family-expectations-grid p{font-size:13px;line-height:1.65;color:#64708D;margin:0}
+.course-program-link{background:#eef0ff!important;color:#0B1B4D!important}
+@media(max-width:850px){.family-expectations-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.proof-strip .wrap{grid-template-columns:repeat(2,1fr);row-gap:14px}.family-expectations{padding:52px 0}.family-expectations-grid{grid-template-columns:1fr}}
+
+.program-paths{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:24px 0 28px}
+.program-paths a{display:flex;flex-direction:column;gap:6px;padding:18px 20px;border:1px solid #e4e8f5;border-radius:17px;background:linear-gradient(145deg,#fff,#f7f8ff);transition:transform .2s,box-shadow .2s}
+.program-paths a:hover{transform:translateY(-3px);box-shadow:0 12px 26px rgba(11,27,77,.09)}
+.program-paths span{font-size:10px;letter-spacing:.09em;font-weight:900;color:#7B4DFF}
+.program-paths strong{font:700 17px Poppins,sans-serif;color:#0B1B4D}
+.program-paths small{font-size:12px;color:#64708D}
+@media(max-width:760px){.program-paths{grid-template-columns:1fr}}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"KUBIQ ACADEMY","inLanguage":"es-419","description":"Academia online de programación para niños y jóvenes en Latinoamérica."},{"@type":"EducationalOrganization","name":"KUBIQ ACADEMY","description":"Academia online de programación y tecnología para niños y jóvenes de 8 a 17 años en Latinoamérica. Ofrece clases en vivo de Scratch, Roblox Studio y Python, con grupos pequeños y proyectos prácticos.","areaServed":{"@type":"Place","name":"Latinoamérica"},"availableLanguage":"Spanish","knowsAbout":["Programación para niños y jóvenes","Scratch","Roblox Studio","Python","Pensamiento computacional","Diseño de videojuegos","Educación tecnológica"]},{"@type":"Course","name":"Scratch Inicial","description":"Una primera experiencia con programación visual por bloques para crear historias, animaciones y juegos sencillos.","educationalLevel":"Inicial","audience":{"@type":"EducationalAudience","educationalRole":"student","suggestedMinAge":8,"suggestedMaxAge":11},"provider":{"@type":"EducationalOrganization","name":"KUBIQ ACADEMY"},"courseMode":"online","inLanguage":"es","keywords":"Scratch, programación por bloques, secuencias, eventos, animación, juegos"},{"@type":"Course","name":"Scratch Avanzado","description":"Proyectos interactivos con condiciones, ciclos, variables, puntajes, niveles y depuración.","educationalLevel":"Avanzado","audience":{"@type":"EducationalAudience","educationalRole":"student","suggestedMinAge":9,"suggestedMaxAge":12},"provider":{"@type":"EducationalOrganization","name":"KUBIQ ACADEMY"},"courseMode":"online","inLanguage":"es","keywords":"Scratch avanzado, variables, ciclos, condiciones, videojuegos"},{"@type":"Course","name":"Roblox Studio Inicial","description":"Introducción al diseño de mundos digitales en Roblox Studio: escenarios 3D, objetos, materiales e interacciones.","educationalLevel":"Inicial","audience":{"@type":"EducationalAudience","educationalRole":"student","suggestedMinAge":10,"suggestedMaxAge":13},"provider":{"@type":"EducationalOrganization","name":"KUBIQ ACADEMY"},"courseMode":"online","inLanguage":"es","keywords":"Roblox Studio, diseño 3D, construcción de mundos, experiencias interactivas"},{"@type":"Course","name":"Roblox Studio Avanzado","description":"Diseño de experiencias completas en Roblox Studio con scripting en Lua, eventos, mecánicas y pruebas.","educationalLevel":"Avanzado","audience":{"@type":"EducationalAudience","educationalRole":"student","suggestedMinAge":12,"suggestedMaxAge":16},"provider":{"@type":"EducationalOrganization","name":"KUBIQ ACADEMY"},"courseMode":"online","inLanguage":"es","keywords":"Roblox Studio avanzado, Lua, scripting, mecánicas de juego"},{"@type":"Course","name":"Python Inicial","description":"Introducción a Python con variables, tipos de datos, condicionales, ciclos, funciones y ejercicios prácticos.","educationalLevel":"Inicial","audience":{"@type":"EducationalAudience","educationalRole":"student","suggestedMinAge":13,"suggestedMaxAge":17},"provider":{"@type":"EducationalOrganization","name":"KUBIQ ACADEMY"},"courseMode":"online","inLanguage":"es","keywords":"Python para jóvenes, programación textual, variables, ciclos, funciones"},{"@type":"Course","name":"Python Avanzado","description":"Programación Python con funciones, módulos, estructuras de datos, depuración y proyectos integradores.","educationalLevel":"Avanzado","audience":{"@type":"EducationalAudience","educationalRole":"student","suggestedMinAge":14,"suggestedMaxAge":17},"provider":{"@type":"EducationalOrganization","name":"KUBIQ ACADEMY"},"courseMode":"online","inLanguage":"es","keywords":"Python avanzado, funciones, módulos, estructuras de datos, depuración"},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Necesita experiencia o preparación previa?","acceptedAnswer":{"@type":"Answer","text":"No. Los cursos iniciales están diseñados para comenzar desde cero; no se requieren conocimientos previos de programación. En los niveles avanzados, te orientaremos para comprobar que el curso encaje con la experiencia del estudiante."}},{"@type":"Question","name":"¿Qué necesita para conectarse a las clases?","acceptedAnswer":{"@type":"Answer","text":"Una computadora y conexión a internet. Recomendamos contar con mouse y cámara para facilitar la participación y la interacción durante las sesiones. La cámara es ideal, pero no la presentamos como requisito obligatorio."}},{"@type":"Question","name":"¿Cómo son las clases?","acceptedAnswer":{"@type":"Answer","text":"Son clases online personalizadas en grupos pequeños de 4 a 8 estudiantes. Este formato busca favorecer la participación, la interacción y un acompañamiento más cercano durante las actividades."}},{"@type":"Question","name":"¿Qué habilidades puede desarrollar?","acceptedAnswer":{"@type":"Answer","text":"Según el curso, podrá practicar pensamiento lógico, creatividad, resolución de problemas y diseño de proyectos digitales. Son habilidades que pueden apoyar su aprendizaje en otras áreas y su preparación para un mundo cada vez más tecnológico."}},{"@type":"Question","name":"¿Cómo puedo monitorear el aprendizaje de mi hijo?","acceptedAnswer":{"@type":"Answer","text":"Durante el curso, los estudiantes practican mediante actividades y proyectos adecuados a su nivel. En la sesión informativa te explicaremos cómo acompañamos su aprendizaje, cómo reciben orientación y qué pueden desarrollar en la ruta que te interesa."}},{"@type":"Question","name":"¿Cómo puedo comprobar que KUBIQ ACADEMY es confiable?","acceptedAnswer":{"@type":"Answer","text":"Es razonable querer conocer una academia antes de pagar. Te invitamos a agendar una sesión informativa: podremos explicarte la metodología, el contenido del curso, quién acompañará las clases, los horarios, los costos y las condiciones de inscripción antes de que tomes una decisión. Te recomendamos revisar toda esa información por escrito y confirmar los datos de pago a través de nuestros canales oficiales. No tienes que inscribirte durante la sesión. Agendar una sesión informativa ↗"}}]}]}</script>
 <style id="v52-transparent-cutout">
@@ -980,378 +1004,329 @@ section:hover>.wrap>.intro-row .section-kicker{letter-spacing:.18em}
   .course-card,.trust-highlight,.pillar,.project-card,.school-skill,.faq-item,.btn,.session-cta,.course-more,.qbo-sticker.qbo-projects{transition:none!important}
 }
 
-</style>
-
 /* Accessibility and discovery refinements */
 .skip-link{position:absolute;left:12px;top:-60px;z-index:1000;padding:10px 14px;border-radius:10px;background:#fff;color:#0B1B4D;font-weight:900;box-shadow:0 8px 24px #07123430}.skip-link:focus{top:12px}a:focus-visible,button:focus-visible,summary:focus-visible,[role="button"]:focus-visible{outline:3px solid #00C8FF;outline-offset:4px}
+
+    .certificate-section{padding:34px 0 42px;background:linear-gradient(105deg,#f4f7ff 0%,#fff 58%,#f4f0ff 100%)}
+    .certificate-inner{display:flex;align-items:center;justify-content:center;gap:26px;max-width:900px;margin:0 auto;padding:22px 28px;border:1px solid rgba(11,27,77,.09);border-radius:22px;background:#fff;box-shadow:0 12px 34px rgba(11,27,77,.07)}
+    .certificate-art{flex:0 0 150px;display:flex;align-items:center;justify-content:center}
+    .certificate-art svg{display:block;width:145px;height:auto;filter:drop-shadow(0 7px 8px rgba(11,27,77,.10))}
+    .certificate-copy{max-width:590px}
+    .certificate-copy h2{margin:5px 0 9px;color:#0B1B4D;font-size:clamp(1.25rem,2.5vw,1.75rem);line-height:1.2}
+    .certificate-copy p{margin:0;color:#46516e;line-height:1.65}
+    @media(max-width:640px){.certificate-section{padding:24px 0 30px}.certificate-inner{flex-direction:column;gap:10px;text-align:center;padding:20px 18px}.certificate-art{flex-basis:auto}.certificate-art svg{width:112px}}
+</style>
 </head>
 <body><a class="skip-link" href="#contenido-principal">Saltar al contenido principal</a>
 <div class="site-sticky-shell" id="siteStickyShell">
-<aside class="launch-banner" id="launchBanner" aria-label="Anuncio de nuevos cursos: inicio el 8 de febrero. Scratch Inicial, Roblox Inicial y Python Básico">
-  <img loading="lazy" decoding="async" class="launch-banner-desktop" src="imagenes/banner-promo.jpg" alt="Nuevos cursos comienzan el 8 de febrero: Scratch Inicial, Roblox Inicial y Python Básico. Inscríbete ahora.">
-  <button class="launch-banner-action" type="button" aria-label="Abrir formulario de inscripción para los nuevos cursos"></button>
-  <button class="launch-banner-close" type="button" aria-label="Cerrar anuncio"></button>
-  <div class="launch-banner-mobile"><img loading="lazy" decoding="async" src="imagenes/banner-boy.jpg" alt="Niño programando en una computadora"><div class="launch-banner-mobile-copy"><strong>¡Nuevos cursos comienzan el <span>8 de febrero!</span></strong><small>Scratch Inicial · Roblox Inicial · Python Básico</small><button class="launch-mobile-cta" type="button">¡Inscríbete ahora! ↗</button></div><button class="launch-banner-close" type="button" aria-label="Cerrar anuncio">×</button></div>
+<aside aria-label="Anuncio de nuevos cursos: inicio el 8 de febrero. Scratch Inicial, Roblox Inicial y Python Básico" class="launch-banner" id="launchBanner">
+<img alt="Nuevos cursos comienzan el 8 de febrero: Scratch Inicial, Roblox Inicial y Python Básico. Inscríbete ahora." class="launch-banner-desktop" decoding="async" loading="lazy" src="imagenes/banner-promo.jpg"/>
+<button aria-label="Abrir formulario de inscripción para los nuevos cursos" class="launch-banner-action" type="button"></button>
+<button aria-label="Cerrar anuncio" class="launch-banner-close" type="button"></button>
+<div class="launch-banner-mobile"><img alt="Niño programando en una computadora" decoding="async" loading="lazy" src="imagenes/banner-boy.jpg"/><div class="launch-banner-mobile-copy"><strong>¡Nuevos cursos comienzan el <span>8 de febrero!</span></strong><small>Scratch Inicial · Roblox Inicial · Python Básico</small><button class="launch-mobile-cta" type="button">¡Inscríbete ahora! ↗</button></div><button aria-label="Cerrar anuncio" class="launch-banner-close" type="button">×</button></div>
 </aside>
-  <div class="topline"></div>
-  <header>
-    <div class="wrap nav">
-      <a class="brand" href="#inicio" aria-label="KUBIQ ACADEMY, inicio">
-        <img loading="lazy" decoding="async" class="brand-header-logo" src="imagenes/kubiq-logo-header.jpeg" alt="KUBIQ ACADEMY">
-      </a>
-      <button class="menu-btn" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links">☰</button>
-      <nav class="nav-links" id="nav-links" aria-label="Navegación principal">
-        <a href="#propuesta">Nuestra esencia</a>
-        <a href="#principios">Lo que nos mueve</a>
-        <a href="#cursos">Cursos</a><a href="#horarios">Horarios</a>
-        <a href="#faq">Preguntas frecuentes</a>
-        <a href="escuelas.html">Para escuelas</a>
-        <a href="#metodologia">Nuestra propuesta</a>
-      </nav>
-    </div>
-  </header>
+<div class="topline"></div>
+<header>
+<div class="wrap nav">
+<a aria-label="KUBIQ ACADEMY, inicio" class="brand" href="#inicio">
+<img alt="KUBIQ ACADEMY" class="brand-header-logo" decoding="async" loading="lazy" src="imagenes/kubiq-logo-header.jpeg"/>
+</a>
+<button aria-controls="nav-links" aria-expanded="false" aria-label="Abrir menú" class="menu-btn">☰</button>
+<nav aria-label="Navegación principal" class="nav-links" id="nav-links">
+<a href="#propuesta">Nuestra esencia</a>
+<a href="#principios">Lo que nos mueve</a>
+<a href="#cursos">Cursos</a><a href="#horarios">Horarios</a>
+<a href="#faq">Preguntas frecuentes</a>
+<a href="escuelas.html">Para escuelas</a>
+<a href="#metodologia">Nuestra propuesta</a>
+</nav>
 </div>
+</header>
+</div>
+<main id="contenido-principal">
+<section class="hero" id="inicio">
+<div class="wrap">
+<div class="hero-grid">
+<div class="hero-content">
+<div class="live-badge"><span aria-hidden="true" class="live-dot"></span> CLASES EN VIVO · 100 % ONLINE</div>
+<h1 class="display">Mentes que<br/><span class="gradient">programan</span><br/>el futuro.</h1>
+<p class="hero-copy">Aquí las ideas toman forma. Explora la programación, crea tus propios juegos y descubre lo que puedes lograr con tecnología, creatividad y acompañamiento experto.</p>
+<div class="hero-actions">
+<button class="btn btn-primary" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}' data-cal-link="kubiqacademy/30min" data-cal-namespace="30min" type="button">Agendar una clase de prueba gratis <span aria-hidden="true">↗</span></button>
+<a class="btn btn-ghost" href="#cursos">Ver los cursos <span aria-hidden="true">↘</span></a>
+</div>
+<div class="hero-note"><span aria-hidden="true" class="community-dot"></span>Comunidad LATAM</div>
+<div aria-label="Clases personalizadas en grupos pequeños de 4 a 8 estudiantes" class="small-group-highlight">
+<span aria-hidden="true" class="small-group-icon">✦</span>
+<div><strong>Aprendizaje personalizado</strong><span>Clases en vivo · Grupos de 4 a 8 estudiantes</span></div>
+</div>
+</div>
+<div aria-label="Un estudiante sostiene un átomo luminoso con el símbolo oficial de KUBIQ ACADEMY" class="hero-art hero-atom-scene">
+<img alt="Silueta de un niño con audífonos y computadora sosteniendo un átomo luminoso con el símbolo de KUBIQ ACADEMY" class="hero-kid-atom" decoding="async" fetchpriority="high" src="imagenes/hero-kid-atom-cutout.png"/>
+</div>
+</div>
+<div class="hero-bottom">
+<div><strong>KUBIQ ACADEMY</strong>   /   Aprende creando</div>
+<div class="scroll-cue"><span></span> Explora nuestra visión</div>
+</div>
+</div>
+</section>
+<section aria-label="Cómo funciona KUBIQ" class="proof-strip">
+<div class="wrap">
+<div><strong>32 clases</strong><span>por nivel</span></div>
+<div><strong>48 horas</strong><span>de formación</span></div>
+<div><strong>4–8 estudiantes</strong><span>por grupo</span></div>
+<div><strong>En vivo</strong><span>con docente</span></div>
+</div>
+</section>
+<section class="section vision" id="propuesta">
+<div class="wrap vision-grid">
+<div class="reveal">
+<div class="section-kicker">01 / Nuestra esencia</div>
+<h2 class="section-title display">¿Alguna vez te has preguntado cómo se crean los <span class="yellow-accent">juegos</span> que tanto te sorprenden?</h2>
+<p class="section-intro">Los mundos increíbles, los personajes y los desafíos que tanto te gustan no aparecen por arte de magia. Detrás de ellos hay imaginación, diseño y código. En KUBIQ ACADEMY, tus primeras ideas pueden convertirse en tus primeros proyectos. Aprende las bases de la programación y descubre todo lo que eres capaz de crear.</p>
+</div>
+<div class="vision-quote reveal">
+<div aria-hidden="true" class="quote-mark">↗</div>
+<p>No queremos que solo sigan instrucciones en una pantalla. Queremos que aprendan a pensar, probar, equivocarse y encontrar soluciones.</p>
+</div>
+</div>
+</section>
+<section aria-label="Aprender programación en equipo" class="kids-showcase">
+<div class="wrap kids-showcase-grid">
+<div class="kids-photo-wrap"><img alt="Niñas y niños colaboran mientras aprenden programación" loading="lazy" src="imagenes/kids-coding.jpg"/><span class="photo-badge"><b>IDEAS EN ACCIÓN</b><small>Curiosidad que se convierte en creación</small></span></div>
+<div class="kids-showcase-copy"><span class="section-kicker">APRENDER HACIENDO</span><h2 class="display">Cada idea puede convertirse en algo increíble.</h2><p>Probamos, hacemos preguntas, compartimos ideas y aprendemos de cada intento. En clase, la tecnología es una herramienta para imaginar y construir.</p><div class="showcase-actions"><a class="btn btn-primary" href="#cursos">Encuentra su ruta <span aria-hidden="true">↗</span></a><div aria-hidden="true" class="floating-code code-decoration"><span>when</span> idea <span>→</span> <b>create()</b></div></div></div>
+</div>
+</section>
+<section class="section manifesto" id="principios">
+<div class="wrap">
+<div class="manifesto-head reveal">
+<div class="section-kicker">02 / Lo que nos mueve</div>
+<h2 class="section-title display">Habilidades que van más allá de la pantalla.</h2>
+<p class="section-intro experience-intro">En KUBIQ ACADEMY acercamos la programación y la creación tecnológica a niños y adolescentes mediante experiencias online, prácticas y guiadas. Cada ruta combina explicación, experimentación y acompañamiento para que el estudiante avance creando.</p>
+<p class="skills-intro">Al programar, también desarrollan habilidades que pueden aplicar en el colegio y en su día a día:</p>
+<div aria-label="Habilidades que se fortalecen al programar" class="school-skills">
+<article class="school-skill"><span class="school-skill-art"><img alt="Ilustración de piezas de rompecabezas para pensamiento lógico" loading="lazy" src="imagenes/benefit-logic.svg"/></span><div><strong>Pensamiento lógico</strong><p>Reconocen patrones y resuelven problemas paso a paso.</p></div></article>
+<article class="school-skill"><span class="school-skill-art"><img alt="Ilustración de escuadra para razonamiento matemático" loading="lazy" src="imagenes/benefit-math.svg"/></span><div><strong>Razonamiento matemático</strong><p>Aplican secuencias, variables y relaciones.</p></div></article>
+<article class="school-skill"><span class="school-skill-art"><img alt="Ilustración de bombilla para creatividad" loading="lazy" src="imagenes/benefit-creativity.svg"/></span><div><strong>Creatividad</strong><p>Transforman ideas en historias, juegos y proyectos.</p></div></article>
+<article class="school-skill"><span class="school-skill-art"><img alt="Ilustración de carpeta organizada" loading="lazy" src="imagenes/benefit-organization.svg"/></span><div><strong>Organización</strong><p>Planifican y estructuran sus propias soluciones.</p></div></article>
+<article class="school-skill"><span class="school-skill-art"><img alt="Ilustración de cohete para análisis y perseverancia" loading="lazy" src="imagenes/benefit-perseverance.svg"/></span><div><strong>Análisis y perseverancia</strong><p>Identifican errores, prueban alternativas y mejoran sus resultados.</p></div></article>
+</div>
+</div>
+<div class="pillars">
+<article class="pillar reveal">
+<div class="pillar-photo"><img alt="Estudiantes observan con curiosidad un reto de programación en pantalla" loading="lazy" src="imagenes/kids-coding.jpg"/><span>Explorar y resolver</span></div>
+<h3>Pensar paso a paso</h3>
+<p>Aprender a dividir un reto en pasos, buscar patrones y probar soluciones sin rendirse al primer intento.</p>
+<span class="pillar-shape"></span>
+</article>
+<article class="pillar reveal">
+<div class="pillar-photo"><img alt="Niña y compañeros imaginan y desarrollan un proyecto digital en equipo" loading="lazy" src="imagenes/community-students.jpg"/><span>Imaginar y crear</span></div>
+<h3>Crear proyectos propios</h3>
+<p>Los alumnos pueden transformar sus intereses en animaciones, juegos, mundos virtuales y programas, según la herramienta que estudien.</p>
+<span class="pillar-shape"></span>
+</article>
+<article class="pillar reveal">
+<div class="pillar-photo"><img alt="Actividad guiada de programación y tecnología con propósito educativo" loading="lazy" src="imagenes/teacher-online-roblox.jpg"/><span>Crear con propósito</span></div>
+<h3>Usar la tecnología con propósito</h3>
+<p>En lugar de limitarse a consumir contenido, aprenden a comprender herramientas digitales y a utilizarlas para crear.</p>
+<span class="pillar-shape"></span>
+</article>
+</div>
+</div>
+</section>
+<section aria-labelledby="community-title" class="community-section" id="comunidad">
+<div class="wrap community-grid">
+<div class="community-copy reveal">
+<span class="section-kicker">IDEAS QUE SE COMPARTEN</span>
+<h2 class="display" id="community-title">Crear es mejor cuando podemos compartir lo que imaginamos.</h2>
+<p>En las clases, cada estudiante tiene espacio para mostrar sus ideas, explicar cómo resolvió un reto y aprender de las propuestas de sus compañeros, siempre con la guía del docente.</p>
+<div class="community-note"><span aria-hidden="true">✦</span><span><strong>Participación guiada y segura</strong><small>La interacción ocurre en espacios supervisados por el docente y adecuados para la edad.</small></span></div>
+<a class="btn btn-primary" href="#cursos">Explorar cursos <span aria-hidden="true">↗</span></a>
+</div>
+<div aria-label="Estudiantes colaborando en una actividad de programación" class="community-visual community-photo-visual reveal">
+<img alt="Niños y adolescentes colaborando en un proyecto de programación" loading="lazy" src="imagenes/community-students.jpg"/>
+<div class="community-chip chip-one">💡 Ideas</div><div class="community-chip chip-two">🎮 Proyectos</div><div class="community-chip chip-three">🤝 Equipo</div>
+<div class="community-photo-caption"><strong>Aprender haciendo.</strong><span>Ideas que se convierten en proyectos.</span></div>
+</div>
+</div>
+</section>
+<section class="section catalog" id="cursos">
+<div class="wrap">
+<div class="catalog-head reveal">
+<div class="section-kicker">03 / Catálogo de cursos</div>
+<h2 class="section-title display">Encuentra el curso adecuado.</h2>
+<p class="section-intro">Explora las rutas de Scratch, Roblox Studio y Python. Las edades que indicamos son recomendaciones orientativas; te ayudamos a elegir según la experiencia y el nivel de cada estudiante.</p>
+<div class="catalog-personalized"><span aria-hidden="true">✦</span><div><strong>Clases personalizadas en grupos pequeños</strong><p>Entre 4 y 8 estudiantes por grupo para favorecer la participación y el acompañamiento durante el aprendizaje.</p></div></div>
+</div>
+<div aria-label="Cómo elegir un programa" class="catalog-guide">
+<strong>¿Cómo elegir el nivel?</strong>
+<p>Revisa la edad orientativa y los temas de cada programa. Los niveles avanzados requieren conocimientos previos; si no sabes cuál corresponde, agenda una sesión informativa y te ayudaremos a elegir.</p>
+</div>
+</div>
+<div aria-label="Explora las rutas de aprendizaje" class="program-paths">
+<a href="programas/scratch/"><span>01 · PROGRAMACIÓN VISUAL</span><strong>Ruta Scratch</strong><small>Historias, animaciones y videojuegos ↗</small></a>
+<a href="programas/roblox/"><span>02 · DISEÑO 3D Y CREACIÓN</span><strong>Ruta Roblox Studio</strong><small>Mundos y experiencias interactivas ↗</small></a>
+<a href="programas/python/"><span>03 · CÓDIGO Y SOLUCIONES</span><strong>Ruta Python</strong><small>Programación textual y lógica ↗</small></a>
+</div>
+<div class="course-grid">
+<article class="course-card reveal course-open" data-course="scratch-inicial" tabindex="0"><div class="course-art"><div class="course-icon"><img alt="Gatito creativo y bloques de programación para Scratch inicial" decoding="async" loading="lazy" src="imagenes/course-scratch-inicial.png"/></div></div><div class="course-content"><div class="course-main"><span class="course-level">Nivel inicial</span><h3>Scratch inicial</h3><div class="course-bottom"><span class="course-age"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24"><circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.8"></circle><path d="M5 20C5 16.7 8.1 14 12 14S19 16.7 19 20" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg>8–11 años</span><span class="course-code">K01</span></div></div><p class="course-description">Empieza con la lógica de programación por bloques y crea animaciones e historias interactivas.</p><div class="course-quick-info"><span class="quick-label">Aprenderá a:</span><ul><li>Bloques, secuencias e instrucciones</li><li>Personajes, escenarios y animaciones</li></ul></div><button class="course-more" type="button">Más detalles <span aria-hidden="true">↗</span></button></div></article>
+<article class="course-card reveal course-open" data-course="scratch-avanzado" tabindex="0"><div class="course-art"><div class="course-icon"><img alt="Gatito con gafas y pantalla de creación para Scratch avanzado" decoding="async" loading="lazy" src="imagenes/course-scratch-avanzado.png"/></div></div><div class="course-content"><div class="course-main"><span class="course-level">Nivel avanzado</span><h3>Scratch avanzado</h3><div class="course-bottom"><span class="course-age"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24"><circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.8"></circle><path d="M5 20C5 16.7 8.1 14 12 14S19 16.7 19 20" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg>9–12 años</span><span class="course-code">K02</span></div></div><p class="course-description">Amplía lo aprendido y trabaja en proyectos interactivos con más decisiones, secuencias y lógica.</p><div class="course-quick-info"><span class="quick-label">Aprenderá a:</span><ul><li>Condiciones, ciclos y variables</li><li>Puntajes, vidas y niveles de juego</li></ul></div><button class="course-more" type="button">Más detalles <span aria-hidden="true">↗</span></button></div></article>
+<article class="course-card reveal course-open" data-course="roblox-inicial" tabindex="0"><div class="course-art"><div class="course-icon"><img alt="Avatar constructor y bloques 3D para Roblox Studio inicial" decoding="async" loading="lazy" src="imagenes/course-roblox-inicial.svg"/></div></div><div class="course-content"><div class="course-main"><span class="course-level">Nivel inicial</span><h3>Roblox Studio inicial</h3><div class="course-bottom"><span class="course-age"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24"><circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.8"></circle><path d="M5 20C5 16.7 8.1 14 12 14S19 16.7 19 20" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg>10–13 años</span><span class="course-code">K03</span></div></div><p class="course-description">Conoce las herramientas de Roblox Studio y comienza a diseñar escenarios y experiencias propias.</p><div class="course-quick-info"><span class="quick-label">Aprenderá a:</span><ul><li>Herramientas de Roblox Studio</li><li>Construcción de mundos y escenarios 3D</li></ul></div><button class="course-more" type="button">Más detalles <span aria-hidden="true">↗</span></button></div></article>
+<article class="course-card reveal course-open" data-course="roblox-avanzado" tabindex="0"><div class="course-art"><div class="course-icon"><img alt="Portal de mundo virtual y avatar para Roblox Studio avanzado" decoding="async" loading="lazy" src="imagenes/course-roblox-avanzado.svg"/></div></div><div class="course-content"><div class="course-main"><span class="course-level">Nivel avanzado</span><h3>Roblox Studio avanzado</h3><div class="course-bottom"><span class="course-age"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24"><circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.8"></circle><path d="M5 20C5 16.7 8.1 14 12 14S19 16.7 19 20" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg>12–16 años</span><span class="course-code">K04</span></div></div><p class="course-description">Profundiza en el diseño de experiencias y en la lógica que ayuda a darles funcionamiento.</p><div class="course-quick-info"><span class="quick-label">Aprenderá a:</span><ul><li>Programación con lenguaje Lua</li><li>Variables, funciones y eventos</li></ul></div><button class="course-more" type="button">Más detalles <span aria-hidden="true">↗</span></button></div></article>
+<article class="course-card reveal course-open" data-course="python-inicial" tabindex="0"><div class="course-art"><div class="course-icon"><img alt="Pantalla de código y serpiente Python para Python inicial" decoding="async" loading="lazy" src="imagenes/course-python-inicial.svg"/></div></div><div class="course-content"><div class="course-main"><span class="course-level">Nivel inicial</span><h3>Python inicial</h3><div class="course-bottom"><span class="course-age"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24"><circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.8"></circle><path d="M5 20C5 16.7 8.1 14 12 14S19 16.7 19 20" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg>13–17 años</span><span class="course-code">K05</span></div></div><p class="course-description">Aprende las bases de Python mediante ejercicios y casos prácticos inspirados en situaciones reales, para conectar el código con problemas concretos.</p><div class="course-quick-info"><span class="quick-label">Aprenderá a:</span><ul><li>Variables, datos y operaciones</li><li>Condicionales y ciclos</li></ul></div><button class="course-more" type="button">Más detalles <span aria-hidden="true">↗</span></button></div></article>
+<article class="course-card reveal course-open" data-course="python-avanzado" tabindex="0"><div class="course-art"><div class="course-icon"><img alt="Robot tecnológico y circuitos Python para Python avanzado" decoding="async" loading="lazy" src="imagenes/course-python-avanzado.svg"/></div></div><div class="course-content"><div class="course-main"><span class="course-level">Nivel avanzado</span><h3>Python avanzado</h3><div class="course-bottom"><span class="course-age"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24"><circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.8"></circle><path d="M5 20C5 16.7 8.1 14 12 14S19 16.7 19 20" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg>14–17 años</span><span class="course-code">K06</span></div></div><p class="course-description">Profundiza en Python trabajando con casos prácticos inspirados en situaciones reales, aplicando estructuras de código para analizar y resolver problemas más complejos.</p><div class="course-quick-info"><span class="quick-label">Aprenderá a:</span><ul><li>Funciones, parámetros y módulos</li><li>Listas, diccionarios y estructuras de datos</li></ul></div><button class="course-more" type="button">Más detalles <span aria-hidden="true">↗</span></button></div></article>
+</div>
+<p class="catalog-disclaimer"><strong>Sobre las edades:</strong> son recomendaciones orientativas, no límites estrictos. La ruta ideal también depende de los conocimientos previos, los intereses y el ritmo de aprendizaje de cada estudiante. Si tienes dudas, contáctanos y te orientaremos.</p>
 
-  <main id="contenido-principal">
-    <section class="hero" id="inicio">
-      <div class="wrap">
-        <div class="hero-grid">
-          <div class="hero-content">
-            <div class="live-badge"><span class="live-dot" aria-hidden="true"></span> CLASES EN VIVO · 100 % ONLINE</div>
-            <h1 class="display">Mentes que<br><span class="gradient">programan</span><br>el futuro.</h1>
-            <p class="hero-copy">Aquí las ideas toman forma. Explora la programación, crea tus propios juegos y descubre lo que puedes lograr con tecnología, creatividad y acompañamiento experto.</p>
-            <div class="hero-actions">
-              <button class="btn btn-primary" type="button" data-cal-link="kubiqacademy/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Agendar una clase de prueba gratis <span aria-hidden="true">↗</span></button>
-              <a class="btn btn-ghost" href="#cursos">Ver los cursos <span aria-hidden="true">↘</span></a>
-            </div>
-            <div class="hero-note"><span class="community-dot" aria-hidden="true"></span>Comunidad LATAM</div>
-            <div class="small-group-highlight" aria-label="Clases personalizadas en grupos pequeños de 4 a 8 estudiantes">
-              <span class="small-group-icon" aria-hidden="true">✦</span>
-              <div><strong>Aprendizaje personalizado</strong><span>Clases en vivo · Grupos de 4 a 8 estudiantes</span></div>
-            </div>
-          </div>
-          <div class="hero-art hero-atom-scene" aria-label="Un estudiante sostiene un átomo luminoso con el símbolo oficial de KUBIQ ACADEMY">
-            <img fetchpriority="high" decoding="async" class="hero-kid-atom" src="imagenes/hero-kid-atom-cutout.png" alt="Silueta de un niño con audífonos y computadora sosteniendo un átomo luminoso con el símbolo de KUBIQ ACADEMY">
-          </div>
-        </div>
-        <div class="hero-bottom">
-          <div><strong>KUBIQ ACADEMY</strong> &nbsp; / &nbsp; Aprende creando</div>
-          <div class="scroll-cue"><span></span> Explora nuestra visión</div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section vision" id="propuesta">
-      <div class="wrap vision-grid">
-        <div class="reveal">
-          <div class="section-kicker">01 / Nuestra esencia</div>
-          <h2 class="section-title display">¿Alguna vez te has preguntado cómo se crean los <span class="yellow-accent">juegos</span> que tanto te sorprenden?</h2>
-          <p class="section-intro">Los mundos increíbles, los personajes y los desafíos que tanto te gustan no aparecen por arte de magia. Detrás de ellos hay imaginación, diseño y código. En KUBIQ ACADEMY, tus primeras ideas pueden convertirse en tus primeros proyectos. Aprende las bases de la programación y descubre todo lo que eres capaz de crear.</p>
-        </div>
-        <div class="vision-quote reveal">
-          <div class="quote-mark" aria-hidden="true">↗</div>
-          <p>No queremos que solo sigan instrucciones en una pantalla. Queremos que aprendan a pensar, probar, equivocarse y encontrar soluciones.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="kids-showcase" aria-label="Aprender programación en equipo">
-      <div class="wrap kids-showcase-grid">
-        <div class="kids-photo-wrap"><img src="imagenes/kids-coding.jpg" alt="Niñas y niños colaboran mientras aprenden programación" loading="lazy"><span class="photo-badge"><b>IDEAS EN ACCIÓN</b><small>Curiosidad que se convierte en creación</small></span></div>
-        <div class="kids-showcase-copy"><span class="section-kicker">APRENDER HACIENDO</span><h2 class="display">Cada idea puede convertirse en algo increíble.</h2><p>Probamos, hacemos preguntas, compartimos ideas y aprendemos de cada intento. En clase, la tecnología es una herramienta para imaginar y construir.</p><div class="showcase-actions"><a class="btn btn-primary" href="#cursos">Encuentra su ruta <span aria-hidden="true">↗</span></a><div class="floating-code code-decoration" aria-hidden="true"><span>when</span> idea <span>→</span> <b>create()</b></div></div></div>
-      </div>
-    </section>
-
-    <section class="section manifesto" id="principios">
-      <div class="wrap">
-        <div class="manifesto-head reveal">
-          <div class="section-kicker">02 / Lo que nos mueve</div>
-          <h2 class="section-title display">Habilidades que van más allá de la pantalla.</h2>
-          <p class="section-intro experience-intro">En KUBIQ ACADEMY contamos con varios años de experiencia en la enseñanza de programación, tecnología y robótica educativa. Acercamos estos conocimientos a niños y adolescentes mediante experiencias de aprendizaje online, prácticas y guiadas.</p>
-          <p class="skills-intro">Al programar, también desarrollan habilidades que pueden aplicar en el colegio y en su día a día:</p>
-          <div class="school-skills" aria-label="Habilidades que se fortalecen al programar">
-            <article class="school-skill"><span class="school-skill-art"><img src="imagenes/benefit-logic.svg" alt="Ilustración de piezas de rompecabezas para pensamiento lógico" loading="lazy"></span><div><strong>Pensamiento lógico</strong><p>Reconocen patrones y resuelven problemas paso a paso.</p></div></article>
-            <article class="school-skill"><span class="school-skill-art"><img src="imagenes/benefit-math.svg" alt="Ilustración de escuadra para razonamiento matemático" loading="lazy"></span><div><strong>Razonamiento matemático</strong><p>Aplican secuencias, variables y relaciones.</p></div></article>
-            <article class="school-skill"><span class="school-skill-art"><img src="imagenes/benefit-creativity.svg" alt="Ilustración de bombilla para creatividad" loading="lazy"></span><div><strong>Creatividad</strong><p>Transforman ideas en historias, juegos y proyectos.</p></div></article>
-            <article class="school-skill"><span class="school-skill-art"><img src="imagenes/benefit-organization.svg" alt="Ilustración de carpeta organizada" loading="lazy"></span><div><strong>Organización</strong><p>Planifican y estructuran sus propias soluciones.</p></div></article>
-            <article class="school-skill"><span class="school-skill-art"><img src="imagenes/benefit-perseverance.svg" alt="Ilustración de cohete para análisis y perseverancia" loading="lazy"></span><div><strong>Análisis y perseverancia</strong><p>Identifican errores, prueban alternativas y mejoran sus resultados.</p></div></article>
-          </div>
-        </div>
-        <div class="pillars">
-          <article class="pillar reveal">
-            <div class="pillar-photo"><img src="imagenes/kids-coding.jpg" alt="Estudiantes observan con curiosidad un reto de programación en pantalla" loading="lazy"><span>Explorar y resolver</span></div>
-            <h3>Pensar paso a paso</h3>
-            <p>Aprender a dividir un reto en pasos, buscar patrones y probar soluciones sin rendirse al primer intento.</p>
-            <span class="pillar-shape"></span>
-          </article>
-          <article class="pillar reveal">
-            <div class="pillar-photo"><img src="imagenes/community-students.jpg" alt="Niña y compañeros imaginan y desarrollan un proyecto digital en equipo" loading="lazy"><span>Imaginar y crear</span></div>
-            <h3>Crear proyectos propios</h3>
-            <p>Los alumnos pueden transformar sus intereses en animaciones, juegos, mundos virtuales y programas, según la herramienta que estudien.</p>
-            <span class="pillar-shape"></span>
-          </article>
-          <article class="pillar reveal">
-            <div class="pillar-photo"><img src="imagenes/teacher-online-roblox.jpg" alt="Actividad guiada de programación y tecnología con propósito educativo" loading="lazy"><span>Crear con propósito</span></div>
-            <h3>Usar la tecnología con propósito</h3>
-            <p>En lugar de limitarse a consumir contenido, aprenden a comprender herramientas digitales y a utilizarlas para crear.</p>
-            <span class="pillar-shape"></span>
-          </article>
-        </div>
-      </div>
-    </section>
-
-
-    <section class="community-section" id="comunidad" aria-labelledby="community-title">
-      <div class="wrap community-grid">
-        <div class="community-copy reveal">
-          <span class="section-kicker">IDEAS QUE SE COMPARTEN</span>
-          <h2 class="display" id="community-title">Crear es mejor cuando podemos compartir lo que imaginamos.</h2>
-          <p>En las clases, cada estudiante tiene espacio para mostrar sus ideas, explicar cómo resolvió un reto y aprender de las propuestas de sus compañeros, siempre con la guía del docente.</p>
-          <div class="community-note"><span aria-hidden="true">✦</span><span><strong>Participación guiada y segura</strong><small>La interacción ocurre en espacios supervisados por el docente y adecuados para la edad.</small></span></div>
-          <a class="btn btn-primary" href="#cursos">Explorar cursos <span aria-hidden="true">↗</span></a>
-        </div>
-        <div class="community-visual community-photo-visual reveal" aria-label="Estudiantes colaborando en una actividad de programación">
-          <img src="imagenes/community-students.jpg" alt="Niños y adolescentes colaborando en un proyecto de programación" loading="lazy">
-          <div class="community-chip chip-one">💡 Ideas</div><div class="community-chip chip-two">🎮 Proyectos</div><div class="community-chip chip-three">🤝 Equipo</div>
-          <div class="community-photo-caption"><strong>Aprender haciendo.</strong><span>Ideas que se convierten en proyectos.</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section catalog" id="cursos">
-      <div class="wrap">
-        <div class="catalog-head reveal">
-          <div class="section-kicker">03 / Catálogo de cursos</div>
-          <h2 class="section-title display">Encuentra el curso adecuado.</h2>
-          <p class="section-intro">Explora las rutas de Scratch, Roblox Studio y Python. Las edades que indicamos son recomendaciones orientativas; te ayudamos a elegir según la experiencia y el nivel de cada estudiante.</p>
-          <div class="catalog-personalized"><span aria-hidden="true">✦</span><div><strong>Clases personalizadas en grupos pequeños</strong><p>Entre 4 y 8 estudiantes por grupo para favorecer la participación y el acompañamiento durante el aprendizaje.</p></div></div>
-        </div>
-        <div class="catalog-guide" aria-label="Cómo elegir un programa">
-          <strong>¿Cómo elegir el nivel?</strong>
-          <p>Revisa la edad orientativa y los temas de cada programa. Los niveles avanzados requieren conocimientos previos; si no sabes cuál corresponde, agenda una sesión informativa y te ayudaremos a elegir.</p>
-        </div>
-        <div class="course-grid">
-<article class="course-card reveal course-open" tabindex="0" role="button" aria-haspopup="dialog" data-course="scratch-inicial"><div class="course-art"><div class="course-icon"><img loading="lazy" decoding="async" src="imagenes/course-scratch-inicial.png" alt="Gatito creativo y bloques de programación para Scratch inicial"></div></div><div class="course-content"><div class="course-main"><span class="course-level">Nivel inicial</span><h3>Scratch inicial</h3><div class="course-bottom"><span class="course-age"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.8"/><path d="M5 20C5 16.7 8.1 14 12 14S19 16.7 19 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>8–11 años</span><span class="course-code">K01</span></div></div><p class="course-description">Empieza con la lógica de programación por bloques y crea animaciones e historias interactivas.</p><div class="course-quick-info"><span class="quick-label">Aprenderá a:</span><ul><li>Bloques, secuencias e instrucciones</li><li>Personajes, escenarios y animaciones</li><li>Historias y diálogos interactivos</li><li>Juegos con reglas sencillas</li><li>Pensamiento lógico para resolver problemas de matemáticas</li></ul></div><span class="course-more">Más información <span aria-hidden="true">↗</span></span></div></article>
-<article class="course-card reveal course-open" tabindex="0" role="button" aria-haspopup="dialog" data-course="scratch-avanzado"><div class="course-art"><div class="course-icon"><img loading="lazy" decoding="async" src="imagenes/course-scratch-avanzado.png" alt="Gatito con gafas y pantalla de creación para Scratch avanzado"></div></div><div class="course-content"><div class="course-main"><span class="course-level">Nivel avanzado</span><h3>Scratch avanzado</h3><div class="course-bottom"><span class="course-age"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.8"/><path d="M5 20C5 16.7 8.1 14 12 14S19 16.7 19 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>9–12 años</span><span class="course-code">K02</span></div></div><p class="course-description">Amplía lo aprendido y trabaja en proyectos interactivos con más decisiones, secuencias y lógica.</p><div class="course-quick-info"><span class="quick-label">Aprenderá a:</span><ul><li>Condiciones, ciclos y variables</li><li>Puntajes, vidas y niveles de juego</li><li>Mensajes y sincronización de personajes</li><li>Depuración y mejora de programas</li><li>Descomposición de problemas y lógica matemática</li></ul></div><span class="course-more">Más información <span aria-hidden="true">↗</span></span></div></article>
-<article class="course-card reveal course-open" tabindex="0" role="button" aria-haspopup="dialog" data-course="roblox-inicial"><div class="course-art"><div class="course-icon"><img loading="lazy" decoding="async" src="imagenes/course-roblox-inicial.svg" alt="Avatar constructor y bloques 3D para Roblox Studio inicial"></div></div><div class="course-content"><div class="course-main"><span class="course-level">Nivel inicial</span><h3>Roblox Studio inicial</h3><div class="course-bottom"><span class="course-age"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.8"/><path d="M5 20C5 16.7 8.1 14 12 14S19 16.7 19 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>10–13 años</span><span class="course-code">K03</span></div></div><p class="course-description">Conoce las herramientas de Roblox Studio y comienza a diseñar escenarios y experiencias propias.</p><div class="course-quick-info"><span class="quick-label">Aprenderá a:</span><ul><li>Herramientas de Roblox Studio</li><li>Construcción de mundos y escenarios 3D</li><li>Objetos, propiedades y materiales</li><li>Coordenadas, escala y proporciones</li><li>Diseño espacial aplicado a geometría</li></ul></div><span class="course-more">Más información <span aria-hidden="true">↗</span></span></div></article>
-<article class="course-card reveal course-open" tabindex="0" role="button" aria-haspopup="dialog" data-course="roblox-avanzado"><div class="course-art"><div class="course-icon"><img loading="lazy" decoding="async" src="imagenes/course-roblox-avanzado.svg" alt="Portal de mundo virtual y avatar para Roblox Studio avanzado"></div></div><div class="course-content"><div class="course-main"><span class="course-level">Nivel avanzado</span><h3>Roblox Studio avanzado</h3><div class="course-bottom"><span class="course-age"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.8"/><path d="M5 20C5 16.7 8.1 14 12 14S19 16.7 19 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>12–16 años</span><span class="course-code">K04</span></div></div><p class="course-description">Profundiza en el diseño de experiencias y en la lógica que ayuda a darles funcionamiento.</p><div class="course-quick-info"><span class="quick-label">Aprenderá a:</span><ul><li>Programación con lenguaje Lua</li><li>Variables, funciones y eventos</li><li>Mecánicas, reglas e interacciones</li><li>Pruebas, depuración y optimización</li><li>Lógica algorítmica útil para matemáticas y tecnología</li></ul></div><span class="course-more">Más información <span aria-hidden="true">↗</span></span></div></article>
-<article class="course-card reveal course-open" tabindex="0" role="button" aria-haspopup="dialog" data-course="python-inicial"><div class="course-art"><div class="course-icon"><img loading="lazy" decoding="async" src="imagenes/course-python-inicial.svg" alt="Pantalla de código y serpiente Python para Python inicial"></div></div><div class="course-content"><div class="course-main"><span class="course-level">Nivel inicial</span><h3>Python inicial</h3><div class="course-bottom"><span class="course-age"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.8"/><path d="M5 20C5 16.7 8.1 14 12 14S19 16.7 19 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>13–17 años</span><span class="course-code">K05</span></div></div><p class="course-description">Aprende las bases de Python mediante ejercicios y casos prácticos inspirados en situaciones reales, para conectar el código con problemas concretos.</p><div class="course-quick-info"><span class="quick-label">Aprenderá a:</span><ul><li>Variables, datos y operaciones</li><li>Condicionales y ciclos</li><li>Funciones y primeros programas</li><li>Lectura de datos y resultados</li><li>Resolución de problemas con lógica matemática</li></ul></div><span class="course-more">Más información <span aria-hidden="true">↗</span></span></div></article>
-<article class="course-card reveal course-open" tabindex="0" role="button" aria-haspopup="dialog" data-course="python-avanzado"><div class="course-art"><div class="course-icon"><img loading="lazy" decoding="async" src="imagenes/course-python-avanzado.svg" alt="Robot tecnológico y circuitos Python para Python avanzado"></div></div><div class="course-content"><div class="course-main"><span class="course-level">Nivel avanzado</span><h3>Python avanzado</h3><div class="course-bottom"><span class="course-age"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.8"/><path d="M5 20C5 16.7 8.1 14 12 14S19 16.7 19 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>14–17 años</span><span class="course-code">K06</span></div></div><p class="course-description">Profundiza en Python trabajando con casos prácticos inspirados en situaciones reales, aplicando estructuras de código para analizar y resolver problemas más complejos.</p><div class="course-quick-info"><span class="quick-label">Aprenderá a:</span><ul><li>Funciones, parámetros y módulos</li><li>Listas, diccionarios y estructuras de datos</li><li>Manejo de errores y depuración</li><li>Organización y reutilización de código</li><li>Análisis y procesamiento de datos para proyectos académicos</li></ul></div><span class="course-more">Más información <span aria-hidden="true">↗</span></span></div></article>
-        </div>
-        <p class="catalog-disclaimer"><strong>Sobre las edades:</strong> son recomendaciones orientativas, no límites estrictos. La ruta ideal también depende de los conocimientos previos, los intereses y el ritmo de aprendizaje de cada estudiante. Si tienes dudas, contáctanos y te orientaremos.</p>
-      </div>
-    </section>
-
-    <section class="section coming" id="metodologia">
-      <div class="wrap coming-inner">
-        <div class="reveal">
-          <div class="section-kicker">04 / Nuestra propuesta</div>
-          <h2 class="section-title display">Programación online, desde casa.</h2>
-          <p class="section-intro">Una alternativa educativa para aprovechar mejor el tiempo frente a la pantalla. Los niños y jóvenes pueden aprender desde casa y desarrollar proyectos digitales con acompañamiento formativo.</p>
-        </div>
-        <aside class="status-card reveal">
-          <div class="status-top"><span class="status-dot"></span> Aprendizaje personalizado</div>
-          <h3>De la curiosidad a la creación.</h3>
-          <p>Las rutas de KUBIQ ACADEMY incluyen Scratch, Roblox Studio y Python. Cada herramienta permite desarrollar distintas formas de pensamiento y creación digital.</p>
-          <div class="status-line"></div>
-          <div class="status-foot status-foot-single"><strong>Grupos pequeños</strong></div>
-        </aside>
-      </div>
-    </section>
-
-
-    <section class="reviews-section" id="familias">
-      <div class="wrap">
-        <div class="reviews-head">
-          <div>
-            <div class="section-kicker">Comunidad KUBIQ · Latinoamérica</div>
-            <h2 class="section-title display">Muchas familias ya confían en KUBIQ ACADEMY.</h2>
-            <p class="section-intro">Una comunidad de aprendizaje donde la programación se convierte en una experiencia práctica, creativa y acompañada por <strong class="teacher-emphasis">docentes expertos</strong>.</p>
-            <p class="reviews-proof">Conoce algunas experiencias de las familias que forman parte de nuestra comunidad.</p>
-          </div>
-        </div>
-        <div class="reviews-controls" aria-label="Controles de reseñas">
-          <p class="review-carousel-hint">Desliza para leer más opiniones</p>
-          <button type="button" class="review-prev" aria-label="Ver reseñas anteriores">‹</button>
-          <span class="reviews-counter" aria-live="polite">1 / 8</span>
-          <button type="button" class="review-next" aria-label="Ver más reseñas">›</button>
-        </div>
-        <div class="reviews-grid" id="reviewsCarousel" aria-label="Reseñas de madres y padres">
-          <article class="review-card"><div class="review-stars" aria-label="Valoración de cinco estrellas">★★★★★</div><blockquote>“Me gusta que pueda aprender algo nuevo con la computadora y no solo ver videos. Ahora me cuenta las ideas que quiere convertir en un juego.”</blockquote><div class="review-person"><span class="review-avatar">MF</span><div><strong>María F.</strong><small>Mamá · Ecuador</small></div></div></article>
-          <article class="review-card"><div class="review-stars" aria-label="Valoración de cinco estrellas">★★★★★</div><blockquote>“La modalidad online nos facilita mucho la organización familiar: no tenemos que desplazarnos y podemos aprovechar mejor el tiempo.”</blockquote><div class="review-person"><span class="review-avatar">CR</span><div><strong>Carlos R.</strong><small>Papá · Colombia</small></div></div></article>
-          <article class="review-card"><div class="review-stars" aria-label="Valoración de cinco estrellas">★★★★★</div><blockquote>“Buscábamos una actividad que combinara diversión y aprendizaje. La programación nos parece una buena manera de estimular su creatividad.”</blockquote><div class="review-person"><span class="review-avatar">AV</span><div><strong>Ana V.</strong><small>Mamá · Perú</small></div></div></article>
-          <article class="review-card"><div class="review-stars" aria-label="Valoración de cinco estrellas">★★★★★</div><blockquote>“Me parece valioso que aprenda a resolver problemas paso a paso y que vea la tecnología como una herramienta para crear.”</blockquote><div class="review-person"><span class="review-avatar">JP</span><div><strong>Jorge P.</strong><small>Papá · México</small></div></div></article>
-          <article class="review-card"><div class="review-stars" aria-label="Valoración de cinco estrellas">★★★★★</div><blockquote>“Desde casa podemos organizar mejor sus actividades. Me interesa que desarrolle habilidades digitales que le sirvan también en sus estudios.”</blockquote><div class="review-person"><span class="review-avatar">LG</span><div><strong>Lucía G.</strong><small>Mamá · Chile</small></div></div></article>
-          <article class="review-card"><div class="review-stars" aria-label="Valoración de cinco estrellas">★★★★★</div><blockquote>“Le encanta construir y probar ideas. Una actividad que conecta con sus intereses hace que se acerque al aprendizaje con más curiosidad.”</blockquote><div class="review-person"><span class="review-avatar">DM</span><div><strong>Daniel M.</strong><small>Papá · Ecuador</small></div></div></article>
-          <article class="review-card"><div class="review-stars" aria-label="Valoración de cinco estrellas">★★★★★</div><blockquote>“Valoro que no tenga que salir de casa para explorar una habilidad nueva. La flexibilidad online puede ayudarnos a mantener una rutina.”</blockquote><div class="review-person"><span class="review-avatar">PS</span><div><strong>Paola S.</strong><small>Mamá · Argentina</small></div></div></article>
-          <article class="review-card"><div class="review-stars" aria-label="Valoración de cinco estrellas">★★★★★</div><blockquote>“Me interesa que aprenda a pensar, experimentar y encontrar soluciones. Son herramientas que pueden acompañarlo mucho más allá de una pantalla.”</blockquote><div class="review-person"><span class="review-avatar">RT</span><div><strong>Ricardo T.</strong><small>Papá · Uruguay</small></div></div></article>
-        </div>
-        <div class="teacher-feature reveal"><img src="imagenes/teacher-online-roblox.jpg" alt="Docente impartiendo una clase online y explicando Roblox Studio a sus estudiantes" loading="lazy"><div class="teacher-feature-copy"><span class="section-kicker">DOCENTES QUE ACOMPAÑAN</span><h3>Conocimiento técnico y una forma de enseñar pensada para cada estudiante.</h3><p>El equipo combina dominio de herramientas digitales con una enseñanza clara, práctica y cercana. Las actividades se adaptan a los conocimientos previos y al ritmo del grupo para que cada estudiante pueda participar y avanzar.</p></div></div>
-        <div class="trust-highlights" aria-label="Nuestro equipo y forma de enseñar">
-          <article class="trust-highlight"><span class="teacher-icon"><img src="imagenes/feature-tech.svg" alt="Ilustración de laptop con código" loading="lazy"></span><strong>Especialistas en tecnología</strong><span>Profesionales que conocen a fondo las herramientas que enseñan y convierten conceptos técnicos en experiencias claras, prácticas y motivadoras.</span></article>
-          <article class="trust-highlight"><span class="teacher-icon"><img src="imagenes/feature-pedagogy.svg" alt="Ilustración de cerebro y libros" loading="lazy"></span><strong>Enseñanza con criterio pedagógico</strong><span>Planifican actividades con intención pedagógica y adaptan las explicaciones a la edad, los conocimientos previos y el ritmo de cada estudiante.</span></article>
-          <article class="trust-highlight"><span class="teacher-icon"><img src="imagenes/feature-team.svg" alt="Ilustración de estudiantes colaborando" loading="lazy"></span><strong>Acompañamiento cercano</strong><span>En grupos de 4 a 8, el docente escucha, responde preguntas, orienta los retos y procura que cada estudiante participe activamente.</span></article>
-        </div>
-        <div class="class-projects-head">
-          <img class="qbo-sticker qbo-projects" src="imagenes/qbo-mascota.png" alt="QBO, mascota de KUBIQ ACADEMY" loading="lazy">
-          <div class="class-projects-copy">
-            <span class="section-kicker">PROYECTOS REALES</span>
-            <h3><span class="yellow-accent">Proyectos</span> de clase</h3>
-            <p>Pequeñas creaciones que niñas, niños y jóvenes pueden construir mientras aprenden, experimentan y se divierten.</p>
-          </div>
-        </div>
-        <div class="projects-carousel-wrap" aria-label="Carrusel de proyectos de clase">
-          <button class="projects-arrow projects-prev" type="button" aria-label="Ver proyectos anteriores">‹</button>
-          <div class="projects-carousel" id="projectsCarousel" tabindex="0" aria-label="Proyectos de Scratch, Python y Roblox Studio">
-            <article class="project-card">
-              <img src="imagenes/project-scratch-stars.jpg" alt="Proyecto inicial de Scratch: un personaje recoge estrellas y llega a la meta en un juego de plataformas sencillo" loading="lazy">
-              <div class="project-card-copy"><span class="project-tech scratch-tech">Scratch</span><div><h4>Atrapa las estrellas</h4><p>Mueve un personaje para recoger estrellas.</p></div></div>
-            </article>
-            <article class="project-card">
-              <img src="imagenes/project-python-guess-simple.jpg" alt="Proyecto básico de Python: juego de adivinar un número con mensajes de pistas" loading="lazy">
-              <div class="project-card-copy"><span class="project-tech python-tech">Python</span><div><h4>Adivina el número</h4><p>Escribe un número y recibe una pista.</p></div></div>
-            </article>
-            <article class="project-card">
-              <img src="imagenes/project-roblox-obby-simple.jpg" alt="Proyecto introductorio de Roblox Studio: circuito de obstáculos con plataformas de colores" loading="lazy">
-              <div class="project-card-copy"><span class="project-tech roblox-tech">Roblox Studio</span><div><h4>Primer obby</h4><p>Construye unas plataformas y llega a la meta.</p></div></div>
-            </article>
-            <article class="project-card">
-              <img src="imagenes/project-scratch-obstacles.svg" alt="Proyecto básico de Scratch: personaje salta obstáculos en un recorrido sencillo" loading="lazy">
-              <div class="project-card-copy"><span class="project-tech scratch-tech">Scratch</span><div><h4>Salta los obstáculos</h4><p>Programa los saltos de un personaje para superar un recorrido.</p></div></div>
-            </article>
-            <article class="project-card">
-              <img src="imagenes/project-roblox-world.jpg" alt="Mundo sencillo creado en Roblox Studio con caminos, construcciones y elementos interactivos" loading="lazy">
-              <div class="project-card-copy"><span class="project-tech roblox-tech">Roblox Studio</span><div><h4>Mi primer mundo</h4><p>Diseña un escenario y coloca objetos para explorarlo.</p></div></div>
-            </article>
-            <article class="project-card">
-              <img src="imagenes/project-python-guess.jpg" alt="Juego de adivinanza programado en Python con pistas para encontrar el número secreto" loading="lazy">
-              <div class="project-card-copy"><span class="project-tech python-tech">Python</span><div><h4>Reto de pistas</h4><p>Usa condiciones y pistas para descubrir el número secreto.</p></div></div>
-            </article>
-            <article class="project-card">
-              <img src="imagenes/project-space.jpg" alt="Juego espacial 2D sencillo con una nave y planetas" loading="lazy">
-              <div class="project-card-copy"><span class="project-tech scratch-tech">Scratch</span><div><h4>Aventura espacial</h4><p>Guía una nave y esquiva objetos en el espacio.</p></div></div>
-            </article>
-            <article class="project-card">
-              <img src="imagenes/project-roblox-obby.jpg" alt="Recorrido de plataformas de colores creado como proyecto inicial en Roblox Studio" loading="lazy">
-              <div class="project-card-copy"><span class="project-tech roblox-tech">Roblox Studio</span><div><h4>Camino de colores</h4><p>Construye un recorrido corto con plataformas y una meta.</p></div></div>
-            </article>
-          </div>
-          <button class="projects-arrow projects-next" type="button" aria-label="Ver más proyectos">›</button>
-        </div>
-        <div class="projects-pagination" aria-label="Paginación de proyectos"><button type="button" class="is-active" aria-label="Ir al proyecto 1"></button><button type="button" class="" aria-label="Ir al proyecto 2"></button><button type="button" class="" aria-label="Ir al proyecto 3"></button><button type="button" class="" aria-label="Ir al proyecto 4"></button><button type="button" class="" aria-label="Ir al proyecto 5"></button><button type="button" class="" aria-label="Ir al proyecto 6"></button><button type="button" class="" aria-label="Ir al proyecto 7"></button><button type="button" class="" aria-label="Ir al proyecto 8"></button></div>
-      </div>
-    </section>
-
-
-    <section class="schedule-section" id="horarios"><div class="wrap"><div class="catalog-head"><span class="section-kicker">HORARIOS DE CLASES</span><h2 class="section-title display">Encuentra un horario que encaje con tu semana.</h2><p class="section-intro">Estos son los bloques de clase disponibles. La asignación se confirma según el curso, la frecuencia elegida y los cupos del grupo.</p></div><div class="schedule-grid">
-      <article class="schedule-card"><div class="schedule-card-head"><h3>Lunes a viernes</h3><span class="schedule-day-badge">Entre semana</span></div><p class="schedule-caption">Elige el momento que mejor se adapte a tu rutina.</p><div class="schedule-times"><div class="schedule-time"><span>Mañana</span><strong>11:00–12:30</strong></div><div class="schedule-time"><span>Tarde · 1</span><strong>15:00–16:30</strong></div><div class="schedule-time"><span>Tarde · 2</span><strong>16:45–18:15</strong></div><div class="schedule-time"><span>Tarde · 3</span><strong>18:30–20:00</strong></div></div></article>
-      <article class="schedule-card"><div class="schedule-card-head"><h3>Sábados</h3><span class="schedule-day-badge">Fin de semana</span></div><p class="schedule-caption">También tenemos opciones para aprender el sábado.</p><div class="schedule-times"><div class="schedule-time"><span>Mañana · 1</span><strong>09:00–10:30</strong></div><div class="schedule-time"><span>Mañana · 2</span><strong>11:00–12:30</strong></div><div class="schedule-time"><span>Tarde · 1</span><strong>15:00–16:30</strong></div><div class="schedule-time"><span>Tarde · 2</span><strong>16:45–18:15</strong></div><div class="schedule-time"><span>Tarde · 3</span><strong>18:30–20:00</strong></div></div></article>
-     </div><p class="schedule-zone">Todos los horarios se muestran en <strong>UTC−5</strong></p>
-      <div class="one-to-one-callout">
-        <span class="one-to-one-icon" aria-hidden="true">✦</span>
-        <div><strong>¿Buscas clases personalizadas 1:1?</strong><p>También ofrecemos clases individuales con horarios a convenir, según tu disponibilidad.</p><a href="#" class="session-cta session-calendar-link" data-cal-link="kubiqacademy/sesion-informativa" data-cal-namespace="sesion-informativa" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Agendar una sesión informativa ↗</a></div>
-      </div></div></section>
-
-    <section class="faq-section" id="faq">
-      <div class="wrap faq-layout">
-        <div class="faq-intro reveal">
-          <span class="latam-pill">KUBIQ · Comunidad LATAM</span>
-          <h2>Preguntas frecuentes</h2>
-          <p>Resolvemos tus dudas sobre cursos, metodología, horarios e inscripción para que puedas elegir la ruta que mejor encaje con los intereses y la experiencia de tu hijo o hija.</p>
-          <p><strong>¿Quieres conocer mejor nuestra metodología antes de decidir?</strong> Puedes agendar una sesión informativa para resolver tus dudas.</p>
-          <div class="faq-contact"><a class="btn btn-primary session-calendar-link" href="#" data-cal-link="kubiqacademy/sesion-informativa" data-cal-namespace="sesion-informativa" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Agendar una sesión informativa ↗</a></div>
-        </div>
-        <div class="faq-list reveal">
-          <details class="faq-item"><summary>¿Necesita experiencia o preparación previa?</summary><div class="faq-answer"><p>No. Los cursos iniciales están diseñados para comenzar desde cero; no se requieren conocimientos previos de programación. En los niveles avanzados, te orientaremos para comprobar que el curso encaje con la experiencia del estudiante.</p></div></details>
-          <details class="faq-item"><summary>¿Qué necesita para conectarse a las clases?</summary><div class="faq-answer"><p>Una computadora y conexión a internet. Recomendamos contar con mouse y cámara para facilitar la participación y la interacción durante las sesiones. La cámara es ideal, pero no la presentamos como requisito obligatorio.</p></div></details>
-          <details class="faq-item"><summary>¿Cómo son las clases?</summary><div class="faq-answer"><p>Son clases online personalizadas en grupos pequeños de 4 a 8 estudiantes. Este formato busca favorecer la participación, la interacción y un acompañamiento más cercano durante las actividades.</p></div></details>
-          
-          <details class="faq-item"><summary>¿Qué habilidades puede desarrollar?</summary><div class="faq-answer"><p>Según el curso, podrá practicar pensamiento lógico, creatividad, resolución de problemas y diseño de proyectos digitales. Son habilidades que pueden apoyar su aprendizaje en otras áreas y su preparación para un mundo cada vez más tecnológico.</p></div></details>
-          <details class="faq-item"><summary>¿Cómo puedo monitorear el aprendizaje de mi hijo?</summary><div class="faq-answer"><p>Durante el curso, los estudiantes practican mediante actividades y proyectos adecuados a su nivel. En la sesión informativa te explicaremos cómo acompañamos su aprendizaje, cómo reciben orientación y qué pueden desarrollar en la ruta que te interesa.</p></div></details>
-          <details class="faq-item"><summary>¿Cómo puedo comprobar que KUBIQ ACADEMY es confiable?</summary><div class="faq-answer"><p>Es razonable querer conocer una academia antes de pagar. Te invitamos a agendar una sesión informativa: podremos explicarte la metodología, el contenido del curso, quién acompañará las clases, los horarios, los costos y las condiciones de inscripción antes de que tomes una decisión. Te recomendamos revisar toda esa información por escrito y confirmar los datos de pago a través de nuestros canales oficiales. No tienes que inscribirte durante la sesión.</p><p><a class="session-cta session-calendar-link" href="#" data-cal-link="kubiqacademy/sesion-informativa" data-cal-namespace="sesion-informativa" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Agendar una sesión informativa ↗</a></p></div></details>
-        </div>
-      </div>
-    </section>
-
-    <section class="final-cta" id="contacto">
-      <div class="wrap">
-        <div class="cta-box reveal">
-          <div>
-            <h2 class="display">Que la tecnología sea una herramienta, no solo entretenimiento.</h2>
-            <p>Con KUBIQ ACADEMY, niños y jóvenes pueden empezar a construir habilidades digitales desde casa, con cursos pensados para sus edades y niveles.</p>
-          </div>
-          <button class="btn btn-primary" type="button" data-cal-link="kubiqacademy/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Agendar una clase de prueba gratis <span aria-hidden="true">↗</span></button>
-        </div>
-      </div>
-    </section>
-    <section class="contact-news" aria-labelledby="contact-heading">
-      <div class="wrap contact-grid">
-        <aside class="contact-booking-panel reveal" aria-label="Agenda una sesión informativa">
-          <div class="booking-orbit" aria-hidden="true"><img loading="lazy" decoding="async" src="imagenes/kubiq-symbol-official-transparent.png" alt=""></div>
-          <span class="section-kicker">TU PRÓXIMO PASO</span>
-          <h2>Conoce <span class="yellow-accent">KUBIQ</span> ACADEMY.</h2>
-          <p>Reserva una conversación breve para conocer nuestra metodología, explorar los cursos y resolver tus preguntas antes de inscribirte.</p>
-          <ul class="booking-points"><li>Conoce nuestros programas y niveles</li><li>Recibe orientación según la edad e intereses</li><li>Consulta horarios y próximos grupos</li></ul>
-          <button class="btn btn-primary" type="button" data-cal-link="kubiqacademy/sesion-informativa" data-cal-namespace="sesion-informativa" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Agendar una sesión informativa <span aria-hidden="true">↗</span></button>
-          <span class="booking-note">Reunión online · Reserva gratuita</span>
-        </aside>
-        <div class="contact-panel reveal">
-          <span class="section-kicker">Hablemos</span>
-          <h2 id="contact-heading">¿Tienes preguntas? Estamos para ayudarte.</h2>
-          <p>Cuéntanos la edad, los intereses y la experiencia de tu hijo o hija. Te orientaremos sobre el curso y el nivel que podrían encajar mejor.</p>
-          <div class="contact-channels">
-            <a class="contact-channel whatsapp-channel" href="https://wa.me/593964210182?text=Hola%20KUBIQ%20ACADEMY%2C%20quisiera%20hacer%20una%20consulta." target="_blank" rel="noopener"><span class="contact-icon whatsapp-brand" aria-hidden="true"><svg viewBox="0 0 32 32" role="img" aria-label="WhatsApp"><circle cx="16" cy="16" r="15" fill="#25D366"/><path fill="#fff" d="M23.1 8.8A9.8 9.8 0 0 0 7.7 20.6L6.4 25.4l4.9-1.3a9.8 9.8 0 0 0 11.8-15.3ZM16 23.4a7.4 7.4 0 0 1-3.8-1l-.3-.2-2.9.8.8-2.8-.2-.3a7.4 7.4 0 1 1 6.4 3.5Zm4.1-5.5c-.2-.1-1.3-.7-1.5-.8s-.4-.1-.5.1-.6.8-.8 1-.3.2-.5.1a6.1 6.1 0 0 1-1.8-1.1 6.8 6.8 0 0 1-1.2-1.5c-.1-.2 0-.3.1-.4l.4-.5c.1-.1.2-.3.2-.4s0-.3 0-.4-.5-1.2-.7-1.6c-.2-.4-.4-.3-.5-.3h-.4c-.1 0-.4.1-.6.3s-.8.8-.8 1.9.8 2.2.9 2.3a8.6 8.6 0 0 0 3.3 2.9c.5.2.9.4 1.2.5.5.2 1 .2 1.4.1.4-.1 1.3-.5 1.5-1s.2-.9.2-1-.2-.2-.4-.3Z"/></svg></span><span><strong>WhatsApp</strong><span>Si prefieres escribirnos, puedes dejarnos tu consulta por este medio.</span></span></a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-
-<div class="course-modal-backdrop" id="courseModalBackdrop" aria-hidden="true"><section class="course-modal" role="dialog" aria-modal="true" aria-labelledby="courseModalTitle" aria-describedby="courseModalDescription"><button class="course-modal-close" type="button" aria-label="Cerrar detalles del curso">×</button><div class="course-modal-top"><div class="course-modal-art"><img loading="lazy" decoding="async" id="courseModalImage" src="" alt=""></div><div><span class="course-modal-level" id="courseModalLevel"></span><h2 id="courseModalTitle"></h2><p class="course-modal-age" id="courseModalAge"></p></div></div><div class="course-modal-body"><p id="courseModalDescription"></p><h3>¿Qué explorará?</h3><ul id="courseModalTopics"></ul><h3>Habilidades que desarrollará</h3><ul id="courseModalSkills"></ul><div class="course-modal-schedule" aria-label="Horarios disponibles"><h3>Horarios disponibles <span>UTC−5</span></h3><div class="modal-schedule-options"><p><strong>Lunes a viernes</strong><br><span>11:00–12:30</span><span>15:00–16:30</span><span>16:45–18:15</span><span>18:30–20:00</span></p><p><strong>Sábados</strong><br><span>09:00–10:30</span><span>11:00–12:30</span><span>15:00–16:30</span><span>16:45–18:15</span><span>18:30–20:00</span></p></div></div><div class="course-modal-actions"><button class="btn btn-primary" id="courseEnrollBtn" type="button">Solicitar matrícula ↗</button><button class="btn btn-whatsapp" id="courseTrialBtn" type="button" data-cal-link="kubiqacademy/30min" data-cal-namespace="30min" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Agendar una clase de prueba gratis ↗</button></div><p class="course-modal-footnote">Completa el formulario y te contactaremos para confirmar disponibilidad, horarios, costos y opciones de pago antes de completar la matrícula.</p></div></section></div>
-
-<div class="enroll-backdrop" id="enrollBackdrop" aria-hidden="true"><section class="enroll-dialog" role="dialog" aria-modal="true" aria-labelledby="enrollTitle"><button class="enroll-close" type="button" aria-label="Cerrar formulario de inscripción">×</button><header class="enroll-head"><h2 id="enrollTitle">Solicita tu inscripción</h2><p>Cuéntanos un poco sobre el estudiante. Revisaremos el curso y la disponibilidad antes de enviarte por correo los detalles y el enlace o las instrucciones de pago.</p></header><form class="enroll-form" id="enrollForm">
-<div class="enroll-field"><label for="repName">Nombre del padre, madre o representante *</label><input id="repName" name="representante" autocomplete="name" required></div>
-<div class="enroll-field"><label for="repEmail">Correo electrónico *</label><input id="repEmail" name="email" type="email" autocomplete="email" placeholder="tu@email.com" required></div>
-<div class="enroll-field"><label for="repWhatsApp">WhatsApp con código de país *</label><input id="repWhatsApp" name="whatsapp" type="tel" autocomplete="tel" placeholder="+593 ..." required></div>
-<div class="enroll-field"><label for="studentName">Nombre del estudiante *</label><input id="studentName" name="estudiante" autocomplete="off" required></div>
-<div class="enroll-field"><label for="studentAge">Edad del estudiante *</label><select id="studentAge" name="edad" required><option value="">Selecciona una edad</option><option value="8">8 años</option><option value="9">9 años</option><option value="10">10 años</option><option value="11">11 años</option><option value="12">12 años</option><option value="13">13 años</option><option value="14">14 años</option><option value="15">15 años</option><option value="16">16 años</option><option value="17">17 años</option></select></div>
-<div class="enroll-field"><label for="enrollCourse">Curso de interés *</label><select id="enrollCourse" name="curso" required><option value="">Selecciona un curso</option><option>Scratch inicial</option><option>Scratch avanzado</option><option>Roblox Studio inicial</option><option>Roblox Studio avanzado</option><option>Python inicial</option><option>Python avanzado</option></select></div>
-<div class="enroll-field"><label for="enrollFrequency">Frecuencia preferida *</label><select id="enrollFrequency" name="frecuencia" required><option value="">Selecciona una opción</option><option>Una clase por semana</option><option>Dos clases por semana</option><option>Quisiera asesoría</option></select></div>
-<div class="enroll-field"><label for="enrollCountry">¿En qué país resides? *</label><select id="enrollCountry" name="pais" required><option value="">Selecciona un país</option><option>Ecuador</option><option>Colombia</option><option>Perú</option><option>México</option><option>Chile</option><option>Argentina</option><option>Estados Unidos</option><option>Otro país de LATAM</option><option>Otro país</option></select></div>
-<div class="enroll-field full"><label for="enrollSchedule">Días u horarios preferidos (opcional)</label><input id="enrollSchedule" name="horario" placeholder="Ej.: tardes entre semana o sábados"></div>
-<fieldset class="payment-choice-wrap"><legend>¿Qué método de pago prefieres? *</legend><div class="payment-choices"><label class="payment-option"><input type="radio" name="metodoPago" value="Tarjeta de crédito o débito mediante enlace de pago" required><span><strong>Tarjeta</strong><small>Enlace de pago con tarjeta de crédito o débito.</small></span></label><label class="payment-option"><input type="radio" name="metodoPago" value="PayPal"><span><strong>PayPal</strong><small>Pago mediante PayPal, sujeto a disponibilidad.</small></span></label><label class="payment-option" id="transferOption" hidden><input type="radio" name="metodoPago" value="Transferencia bancaria en Ecuador"><span><strong>Transferencia bancaria</strong><small>Disponible únicamente para clientes en Ecuador.</small></span></label></div><p class="payment-country-note" id="paymentCountryNote">La transferencia bancaria se habilitará si seleccionas Ecuador como país de residencia.</p></fieldset>
+</section>
+<section class="section coming" id="metodologia">
+<div class="wrap coming-inner">
+<div class="reveal">
+<div class="section-kicker">04 / Nuestra propuesta</div>
+<h2 class="section-title display">Programación online, desde casa.</h2>
+<p class="section-intro">Una alternativa educativa para aprovechar mejor el tiempo frente a la pantalla. Los niños y jóvenes pueden aprender desde casa y desarrollar proyectos digitales con acompañamiento formativo.</p>
+</div>
+<aside class="status-card reveal">
+<div class="status-top"><span class="status-dot"></span> Aprendizaje personalizado</div>
+<h3>De la curiosidad a la creación.</h3>
+<p>Las rutas de KUBIQ ACADEMY incluyen Scratch, Roblox Studio y Python. Cada herramienta permite desarrollar distintas formas de pensamiento y creación digital.</p>
+<div class="status-line"></div>
+<div class="status-foot status-foot-single"><strong>Grupos pequeños</strong></div>
+</aside>
+</div>
+</section>
+<section aria-labelledby="family-expectations-title" class="family-expectations">
+<div class="wrap">
+<div class="catalog-head">
+<span class="section-kicker">UNA EXPERIENCIA CLARA PARA LAS FAMILIAS</span>
+<h2 class="section-title display" id="family-expectations-title">Acompañamiento que puedes ver en cada etapa.</h2>
+<p class="section-intro">Antes de inscribirte, queremos que sepas qué esperar de KUBIQ y cómo acompañaremos el proceso de aprendizaje.</p>
+</div>
+<div class="family-expectations-grid">
+<article><span class="expect-icon">01</span><h3>Orientación de nivel</h3><p>Te ayudamos a elegir el programa según la edad, los conocimientos previos y los intereses del estudiante.</p></article>
+<article><span class="expect-icon">02</span><h3>Clases en vivo</h3><p>El docente explica, acompaña los ejercicios y responde preguntas durante la sesión online.</p></article>
+<article><span class="expect-icon">03</span><h3>Avance paso a paso</h3><p>El estudiante practica, prueba sus ideas y recibe orientación para mejorar sus creaciones.</p></article>
+<article><span class="expect-icon">04</span><h3>Comunicación con la familia</h3><p>Podrás consultar sobre horarios, progreso, requisitos y próximos pasos directamente con KUBIQ.</p></article>
+</div>
+</div>
+</section>
+<section aria-labelledby="certificate-title" class="certificate-section">
+<div class="wrap certificate-inner">
+<div aria-hidden="true" class="certificate-art">
+<svg viewbox="0 0 180 150" xmlns="http://www.w3.org/2000/svg">
+<rect fill="#fff" height="112" rx="9" stroke="#00C8FF" stroke-width="4" width="112" x="22" y="12"></rect>
+<path d="M36 34h83M36 48h61M36 62h48" opacity=".75" stroke="#0B1B4D" stroke-linecap="round" stroke-width="5"></path>
+<circle cx="105" cy="91" fill="#E9E6FF" r="20" stroke="#7B4DFF" stroke-width="4"></circle>
+<path d="m94 107-5 29 16-9 13 9-4-29" fill="#00C8FF" stroke="#0B1B4D" stroke-linejoin="round" stroke-width="3"></path>
+<path d="m105 78 4 8 9 1-7 6 2 9-8-5-8 5 2-9-7-6 9-1z" fill="#FFC928"></path>
+<path d="M143 26h16M151 18v16" stroke="#7B4DFF" stroke-linecap="round" stroke-width="4"></path>
+<path d="m13 104 8 8 13-16" fill="none" stroke="#00C8FF" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"></path>
+</svg>
+</div>
+<div class="certificate-copy">
+<span class="section-kicker">UN LOGRO PARA CELEBRAR</span>
+<h2 id="certificate-title">¡Tu aprendizaje también merece un reconocimiento!</h2>
+<p>Al culminar satisfactoriamente cada curso, cada estudiante recibirá un <strong>certificado propio de finalización de KUBIQ Academy</strong> que reconoce su participación y los aprendizajes trabajados durante el programa.</p>
+</div>
+</div>
+</section>
+<section class="schedule-section" id="horarios"><div class="wrap"><div class="catalog-head"><span class="section-kicker">HORARIOS DE CLASES</span><h2 class="section-title display">Encuentra un horario que encaje con tu semana.</h2><p class="section-intro">Estos son los bloques de clase disponibles. La asignación se confirma según el curso, la frecuencia elegida y los cupos del grupo.</p></div><div class="schedule-grid">
+<article class="schedule-card"><div class="schedule-card-head"><h3>Lunes a viernes</h3><span class="schedule-day-badge">Entre semana</span></div><p class="schedule-caption">Elige el momento que mejor se adapte a tu rutina.</p><div class="schedule-times"><div class="schedule-time"><span>Mañana</span><strong>11:00–12:30</strong></div><div class="schedule-time"><span>Tarde · 1</span><strong>15:00–16:30</strong></div><div class="schedule-time"><span>Tarde · 2</span><strong>16:45–18:15</strong></div><div class="schedule-time"><span>Tarde · 3</span><strong>18:30–20:00</strong></div></div></article>
+<article class="schedule-card"><div class="schedule-card-head"><h3>Sábados</h3><span class="schedule-day-badge">Fin de semana</span></div><p class="schedule-caption">También tenemos opciones para aprender el sábado.</p><div class="schedule-times"><div class="schedule-time"><span>Mañana · 1</span><strong>09:00–10:30</strong></div><div class="schedule-time"><span>Mañana · 2</span><strong>11:00–12:30</strong></div><div class="schedule-time"><span>Tarde · 1</span><strong>15:00–16:30</strong></div><div class="schedule-time"><span>Tarde · 2</span><strong>16:45–18:15</strong></div><div class="schedule-time"><span>Tarde · 3</span><strong>18:30–20:00</strong></div></div></article>
+</div><p class="schedule-zone">Todos los horarios se muestran en <strong>UTC−5</strong></p>
+<div class="one-to-one-callout">
+<span aria-hidden="true" class="one-to-one-icon">✦</span>
+<div><strong>¿Buscas clases personalizadas 1:1?</strong><p>También ofrecemos clases individuales con horarios a convenir, según tu disponibilidad.</p><a class="session-cta session-calendar-link" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}' data-cal-link="kubiqacademy/sesion-informativa" data-cal-namespace="sesion-informativa" href="#">Agendar una sesión informativa ↗</a></div>
+</div></div></section>
+<section class="faq-section" id="faq">
+<div class="wrap faq-layout">
+<div class="faq-intro reveal">
+<span class="latam-pill">KUBIQ · Comunidad LATAM</span>
+<h2>Preguntas frecuentes</h2>
+<p>Resolvemos tus dudas sobre cursos, metodología, horarios e inscripción para que puedas elegir la ruta que mejor encaje con los intereses y la experiencia de tu hijo o hija.</p>
+<p><strong>¿Quieres conocer mejor nuestra metodología antes de decidir?</strong> Puedes agendar una sesión informativa para resolver tus dudas.</p>
+<div class="faq-contact"><a class="btn btn-primary session-calendar-link" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}' data-cal-link="kubiqacademy/sesion-informativa" data-cal-namespace="sesion-informativa" href="#">Agendar una sesión informativa ↗</a></div>
+</div>
+<div class="faq-list reveal">
+<details class="faq-item"><summary>¿Necesita experiencia o preparación previa?</summary><div class="faq-answer"><p>No. Los cursos iniciales están diseñados para comenzar desde cero; no se requieren conocimientos previos de programación. En los niveles avanzados, te orientaremos para comprobar que el curso encaje con la experiencia del estudiante.</p></div></details>
+<details class="faq-item"><summary>¿Qué necesita para conectarse a las clases?</summary><div class="faq-answer"><p>Una computadora y conexión a internet. Recomendamos contar con mouse y cámara para facilitar la participación y la interacción durante las sesiones. La cámara es ideal, pero no la presentamos como requisito obligatorio.</p></div></details>
+<details class="faq-item"><summary>¿Cómo son las clases?</summary><div class="faq-answer"><p>Son clases online personalizadas en grupos pequeños de 4 a 8 estudiantes. Este formato busca favorecer la participación, la interacción y un acompañamiento más cercano durante las actividades.</p></div></details>
+<details class="faq-item"><summary>¿Qué habilidades puede desarrollar?</summary><div class="faq-answer"><p>Según el curso, podrá practicar pensamiento lógico, creatividad, resolución de problemas y diseño de proyectos digitales. Son habilidades que pueden apoyar su aprendizaje en otras áreas y su preparación para un mundo cada vez más tecnológico.</p></div></details>
+<details class="faq-item"><summary>¿Cómo puedo monitorear el aprendizaje de mi hijo?</summary><div class="faq-answer"><p>Durante el curso, los estudiantes practican mediante actividades y proyectos adecuados a su nivel. En la sesión informativa te explicaremos cómo acompañamos su aprendizaje, cómo reciben orientación y qué pueden desarrollar en la ruta que te interesa.</p></div></details>
+<details class="faq-item"><summary>¿Cómo puedo comprobar que KUBIQ ACADEMY es confiable?</summary><div class="faq-answer"><p>Es razonable querer conocer una academia antes de pagar. Te invitamos a agendar una sesión informativa: podremos explicarte la metodología, el contenido del curso, quién acompañará las clases, los horarios, los costos y las condiciones de inscripción antes de que tomes una decisión. Te recomendamos revisar toda esa información por escrito y confirmar los datos de pago a través de nuestros canales oficiales. No tienes que inscribirte durante la sesión.</p><p><a class="session-cta session-calendar-link" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}' data-cal-link="kubiqacademy/sesion-informativa" data-cal-namespace="sesion-informativa" href="#">Agendar una sesión informativa ↗</a></p></div></details>
+</div>
+</div>
+</section>
+<section class="final-cta" id="contacto">
+<div class="wrap">
+<div class="cta-box reveal">
+<div>
+<h2 class="display">Que la tecnología sea una herramienta, no solo entretenimiento.</h2>
+<p>Con KUBIQ ACADEMY, niños y jóvenes pueden empezar a construir habilidades digitales desde casa, con cursos pensados para sus edades y niveles.</p>
+</div>
+<button class="btn btn-primary" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}' data-cal-link="kubiqacademy/30min" data-cal-namespace="30min" type="button">Agendar una clase de prueba gratis <span aria-hidden="true">↗</span></button>
+</div>
+</div>
+</section>
+<section aria-labelledby="contact-heading" class="contact-news">
+<div class="wrap contact-grid">
+<aside aria-label="Agenda una sesión informativa" class="contact-booking-panel reveal">
+<div aria-hidden="true" class="booking-orbit"><img alt="" decoding="async" loading="lazy" src="imagenes/kubiq-symbol-official-transparent.png"/></div>
+<span class="section-kicker">TU PRÓXIMO PASO</span>
+<h2>Conoce <span class="yellow-accent">KUBIQ</span> ACADEMY.</h2>
+<p>Reserva una conversación breve para conocer nuestra metodología, explorar los cursos y resolver tus preguntas antes de inscribirte.</p>
+<ul class="booking-points"><li>Conoce nuestros programas y niveles</li><li>Recibe orientación según la edad e intereses</li><li>Consulta horarios y próximos grupos</li></ul>
+<button class="btn btn-primary" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}' data-cal-link="kubiqacademy/sesion-informativa" data-cal-namespace="sesion-informativa" type="button">Agendar una sesión informativa <span aria-hidden="true">↗</span></button>
+<span class="booking-note">Reunión online · Reserva gratuita</span>
+</aside>
+<div class="contact-panel reveal">
+<span class="section-kicker">Hablemos</span>
+<h2 id="contact-heading">¿Tienes preguntas? Estamos para ayudarte.</h2>
+<p>Cuéntanos la edad, los intereses y la experiencia de tu hijo o hija. Te orientaremos sobre el curso y el nivel que podrían encajar mejor.</p>
+<div class="contact-channels">
+<a class="contact-channel whatsapp-channel" href="https://wa.me/593964210182?text=Hola%20KUBIQ%20ACADEMY%2C%20quisiera%20hacer%20una%20consulta." rel="noopener" target="_blank"><span aria-hidden="true" class="contact-icon whatsapp-brand"><svg aria-label="WhatsApp" role="img" viewbox="0 0 32 32"><circle cx="16" cy="16" fill="#25D366" r="15"></circle><path d="M23.1 8.8A9.8 9.8 0 0 0 7.7 20.6L6.4 25.4l4.9-1.3a9.8 9.8 0 0 0 11.8-15.3ZM16 23.4a7.4 7.4 0 0 1-3.8-1l-.3-.2-2.9.8.8-2.8-.2-.3a7.4 7.4 0 1 1 6.4 3.5Zm4.1-5.5c-.2-.1-1.3-.7-1.5-.8s-.4-.1-.5.1-.6.8-.8 1-.3.2-.5.1a6.1 6.1 0 0 1-1.8-1.1 6.8 6.8 0 0 1-1.2-1.5c-.1-.2 0-.3.1-.4l.4-.5c.1-.1.2-.3.2-.4s0-.3 0-.4-.5-1.2-.7-1.6c-.2-.4-.4-.3-.5-.3h-.4c-.1 0-.4.1-.6.3s-.8.8-.8 1.9.8 2.2.9 2.3a8.6 8.6 0 0 0 3.3 2.9c.5.2.9.4 1.2.5.5.2 1 .2 1.4.1.4-.1 1.3-.5 1.5-1s.2-.9.2-1-.2-.2-.4-.3Z" fill="#fff"></path></svg></span><span><strong>WhatsApp</strong><span>Si prefieres escribirnos, puedes dejarnos tu consulta por este medio.</span></span></a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<div aria-hidden="true" class="course-modal-backdrop" id="courseModalBackdrop"><section aria-describedby="courseModalDescription" aria-labelledby="courseModalTitle" aria-modal="true" class="course-modal" role="dialog"><button aria-label="Cerrar detalles del curso" class="course-modal-close" type="button">×</button><div class="course-modal-top"><div class="course-modal-art"><img alt="" decoding="async" id="courseModalImage" loading="lazy" src=""/></div><div><span class="course-modal-level" id="courseModalLevel"></span><h2 id="courseModalTitle"></h2><p class="course-modal-age" id="courseModalAge"></p></div></div><div class="course-modal-body"><p id="courseModalDescription"></p><h3>¿Qué explorará?</h3><ul id="courseModalTopics"></ul><h3>Habilidades que desarrollará</h3><ul id="courseModalSkills"></ul><div aria-label="Horarios disponibles" class="course-modal-schedule"><h3>Horarios disponibles <span>UTC−5</span></h3><div class="modal-schedule-options"><p><strong>Lunes a viernes</strong><br/><span>11:00–12:30</span><span>15:00–16:30</span><span>16:45–18:15</span><span>18:30–20:00</span></p><p><strong>Sábados</strong><br/><span>09:00–10:30</span><span>11:00–12:30</span><span>15:00–16:30</span><span>16:45–18:15</span><span>18:30–20:00</span></p></div></div><div class="course-modal-actions"><a class="btn btn-ghost course-program-link" href="programas/scratch/" id="courseProgramLink">Ver programa completo ↗</a><button class="btn btn-primary" id="courseEnrollBtn" type="button">Solicitar matrícula ↗</button><button class="btn btn-whatsapp" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}' data-cal-link="kubiqacademy/30min" data-cal-namespace="30min" id="courseTrialBtn" type="button">Agendar una clase de prueba gratis ↗</button></div><p class="course-modal-footnote">Completa el formulario y te contactaremos para confirmar disponibilidad, horarios, costos y opciones de pago antes de completar la matrícula.</p></div></section></div>
+<div aria-hidden="true" class="enroll-backdrop" id="enrollBackdrop"><section aria-labelledby="enrollTitle" aria-modal="true" class="enroll-dialog" role="dialog"><button aria-label="Cerrar formulario de inscripción" class="enroll-close" type="button">×</button><header class="enroll-head"><h2 id="enrollTitle">Solicita tu inscripción</h2><p>Cuéntanos un poco sobre el estudiante. Esta es una solicitud inicial: revisaremos el curso y la disponibilidad y te contactaremos por WhatsApp para confirmar los detalles. No se realiza ningún cobro en este formulario.</p></header><form class="enroll-form" id="enrollForm">
+<div class="enroll-field"><label for="repName">Nombre del padre, madre o representante *</label><input autocomplete="name" id="repName" name="representante" required=""/></div>
+<div class="enroll-field"><label for="repEmail">Correo electrónico *</label><input autocomplete="email" id="repEmail" name="email" placeholder="tu@email.com" required="" type="email"/></div>
+<div class="enroll-field"><label for="repWhatsApp">WhatsApp con código de país *</label><input autocomplete="tel" id="repWhatsApp" name="whatsapp" placeholder="+593 ..." required="" type="tel"/></div>
+<div class="enroll-field"><label for="studentName">Nombre del estudiante *</label><input autocomplete="off" id="studentName" name="estudiante" required=""/></div>
+<div class="enroll-field"><label for="studentAge">Edad del estudiante *</label><select id="studentAge" name="edad" required=""><option value="">Selecciona una edad</option><option value="8">8 años</option><option value="9">9 años</option><option value="10">10 años</option><option value="11">11 años</option><option value="12">12 años</option><option value="13">13 años</option><option value="14">14 años</option><option value="15">15 años</option><option value="16">16 años</option><option value="17">17 años</option></select></div>
+<div class="enroll-field"><label for="enrollCourse">Curso de interés *</label><select id="enrollCourse" name="curso" required=""><option value="">Selecciona un curso</option><option>Scratch inicial</option><option>Scratch avanzado</option><option>Roblox Studio inicial</option><option>Roblox Studio avanzado</option><option>Python inicial</option><option>Python avanzado</option></select></div>
+<div class="enroll-field"><label for="enrollFrequency">Frecuencia preferida *</label><select id="enrollFrequency" name="frecuencia" required=""><option value="">Selecciona una opción</option><option>Una clase por semana</option><option>Dos clases por semana</option><option>Quisiera asesoría</option></select></div>
+<div class="enroll-field"><label for="enrollCountry">¿En qué país resides? *</label><select id="enrollCountry" name="pais" required=""><option value="">Selecciona un país</option><option>Ecuador</option><option>Colombia</option><option>Perú</option><option>México</option><option>Chile</option><option>Argentina</option><option>Estados Unidos</option><option>Otro país de LATAM</option><option>Otro país</option></select></div>
+<div class="enroll-field full"><label for="enrollSchedule">Días u horarios preferidos (opcional)</label><input id="enrollSchedule" name="horario" placeholder="Ej.: tardes entre semana o sábados"/></div>
+<fieldset class="payment-choice-wrap"><legend>¿Qué método de pago prefieres? *</legend><div class="payment-choices"><label class="payment-option"><input name="metodoPago" required="" type="radio" value="Tarjeta de crédito o débito mediante enlace de pago"/><span><strong>Tarjeta</strong><small>Enlace de pago con tarjeta de crédito o débito.</small></span></label><label class="payment-option"><input name="metodoPago" type="radio" value="PayPal"/><span><strong>PayPal</strong><small>Pago mediante PayPal, sujeto a disponibilidad.</small></span></label><label class="payment-option" hidden="" id="transferOption"><input name="metodoPago" type="radio" value="Transferencia bancaria en Ecuador"/><span><strong>Transferencia bancaria</strong><small>Disponible únicamente para clientes en Ecuador.</small></span></label></div><p class="payment-country-note" id="paymentCountryNote">La transferencia bancaria se habilitará si seleccionas Ecuador como país de residencia.</p></fieldset>
 <p class="enroll-note">Enviar esta solicitud no confirma la matrícula ni genera un cobro. Primero confirmaremos disponibilidad y condiciones; luego te enviaremos por correo las instrucciones o el enlace de pago. No incluyas información bancaria en este formulario.</p>
-<div class="enroll-submit-wrap"><button class="btn btn-primary" type="submit">Enviar solicitud de inscripción ↗</button><p class="enroll-status" id="enrollStatus" aria-live="polite"></p></div>
+<div class="enroll-submit-wrap"><button class="btn btn-primary" type="submit">Enviar solicitud de inscripción ↗</button><p aria-live="polite" class="enroll-status" id="enrollStatus"></p></div>
 </form></section></div>
 
-<div class="trial-backdrop" id="trialBackdrop" aria-hidden="true"><section class="trial-dialog" role="dialog" aria-modal="true" aria-labelledby="trialTitle"><button class="trial-close" type="button" aria-label="Cerrar">×</button><div class="trial-heading"><span class="course-modal-level">CLASE DE PRUEBA GRATUITA</span><h2 id="trialTitle">¡Conozcamos KUBIQ!</h2><p>Elige un día y una hora para coordinar una clase de prueba. La solicitud queda sujeta a confirmación de disponibilidad.</p></div><form id="trialForm" class="trial-form"><div class="trial-calendar-wrap"><div class="trial-calendar-head"><button type="button" id="trialPrevMonth" aria-label="Mes anterior">‹</button><strong id="trialMonthLabel"></strong><button type="button" id="trialNextMonth" aria-label="Mes siguiente">›</button></div><div class="trial-weekdays"><span>Lun</span><span>Mar</span><span>Mié</span><span>Jue</span><span>Vie</span><span>Sáb</span><span>Dom</span></div><div class="trial-calendar-grid" id="trialCalendarGrid"></div><p class="trial-hint">Puedes elegir miércoles, jueves o viernes. Horarios en UTC−5.</p></div><input type="hidden" id="trialDate" name="fecha" required><div class="trial-field"><label for="trialTime">Horario disponible *</label><select id="trialTime" name="hora" required><option value="">Primero selecciona un día</option></select></div><div class="trial-field"><label for="trialEmail">Correo electrónico *</label><input id="trialEmail" name="email" type="email" placeholder="nombre@correo.com" required></div><div class="trial-field"><label for="trialWhatsApp">WhatsApp con código de país *</label><input id="trialWhatsApp" name="whatsapp" type="tel" placeholder="+593 99 123 4567" required></div><div class="trial-field"><label for="trialStudent">Nombre del estudiante (opcional)</label><input id="trialStudent" name="estudiante" placeholder="Nombre"></div><div class="trial-field"><label for="trialCourse">Curso de interés (opcional)</label><select id="trialCourse" name="curso"><option value="">Aún no lo sé</option><option>Scratch inicial</option><option>Scratch avanzado</option><option>Roblox Studio inicial</option><option>Roblox Studio avanzado</option><option>Python inicial</option><option>Python avanzado</option></select></div><p class="trial-privacy">Al enviar, se abrirá WhatsApp con los datos de tu solicitud para que puedas enviarlos a KUBIQ ACADEMY. La clase no queda confirmada hasta recibir nuestra respuesta.</p><button class="btn btn-primary trial-submit" type="submit">Solicitar clase de prueba ↗</button></form></section></div>
-
-  <footer>
-    <div class="wrap footer-main">
-      <div class="footer-col">
-        <img loading="lazy" decoding="async" class="footer-logo-lockup" src="imagenes/kubiq-logo-completo-footer.jpg" alt="KUBIQ ACADEMY — Mentes que programan el futuro">
-        <p>Programación online para aprender creando, con clases en vivo y acompañamiento cercano.</p>
-      </div>
-      <div class="footer-col"><h3>Explora</h3><div class="footer-links"><a href="index.html#propuesta">Nuestra esencia</a><a href="index.html#cursos">Cursos</a><a href="index.html#faq">Preguntas frecuentes</a><a href="index.html#contacto">Contacto</a></div></div>
-      <div class="footer-col"><h3>¿Representas una escuela?</h3><div class="footer-school-card"><strong>La programación también puede llegar a tu institución.</strong><p>Conoce opciones de convenio, clases en vivo, beneficios para estudiantes y formación docente.</p><a href="escuelas.html">Conocer propuesta para escuelas ↗</a></div></div>
-      <div class="footer-col"><h3>Conecta con KUBIQ</h3><p>¿Quieres orientación sobre un curso o explorar una colaboración?</p><div class="footer-links"><a class="session-calendar-link" href="#" data-cal-link="kubiqacademy/sesion-informativa" data-cal-namespace="sesion-informativa" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'>Agenda una sesión informativa ↗</a></div><div class="social-links" aria-label="Redes sociales de KUBIQ ACADEMY; enlaces oficiales próximamente">
-          <span class="social-placeholder" title="Instagram · Próximamente" aria-label="Instagram, próximamente"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2.2A2.8 2.8 0 0 0 4.2 7v10A2.8 2.8 0 0 0 7 19.8h10a2.8 2.8 0 0 0 2.8-2.8V7A2.8 2.8 0 0 0 17 4.2H7zm5 2.3a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11zm0 2.2a3.3 3.3 0 1 0 0 6.6 3.3 3.3 0 0 0 0-6.6zm5.8-3a1.3 1.3 0 1 1 0 2.6 1.3 1.3 0 0 1 0-2.6z"/></svg></span>
-          <span class="social-placeholder" title="Facebook · Próximamente" aria-label="Facebook, próximamente"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V8c0-.9.3-1.5 1.6-1.5h1.7V3.7c-.3 0-1.4-.1-2.6-.1-2.6 0-4.4 1.6-4.4 4.6v1.7H7V13h2.8v8h3.7z"/></svg></span>
-          <span class="social-placeholder tiktok" title="TikTok · Próximamente" aria-label="TikTok, próximamente">♪</span>
-          <span class="social-placeholder linkedin" title="LinkedIn · Próximamente" aria-label="LinkedIn, próximamente">in</span>
-          <span class="social-placeholder" title="Correo electrónico · Próximamente" aria-label="Correo electrónico, próximamente"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2zm9 7.1L20.3 7H3.7l8.3 5.1zm0 2.5L3 8.9V17h18V8.9l-9 5.7z"/></svg></span>
-        </div></div>
-    </div>
-    <div class="wrap footer-bottom"><p>© <span id="year"></span> KUBIQ ACADEMY. Todos los derechos reservados.</p><p><a href="index.html#contacto">Hablemos ↗</a></p></div>
-  </footer>
-
-  
-
-  <!-- Cal.com element-click embed: KUBIQ ACADEMY trial booking -->
-  
-
-<script src="scripts/main.js" defer></script>
-<script src="scripts/cal-embed.js" defer></script>
+<footer>
+<div class="wrap footer-main">
+<div class="footer-col">
+<img alt="KUBIQ ACADEMY — Mentes que programan el futuro" class="footer-logo-lockup" decoding="async" loading="lazy" src="imagenes/kubiq-logo-completo-footer.jpg"/>
+<p>Programación online para aprender creando, con clases en vivo y acompañamiento cercano.</p>
+</div>
+<div class="footer-col"><h3>Explora</h3><div class="footer-links"><a href="index.html#propuesta">Nuestra esencia</a><a href="index.html#cursos">Cursos</a><a href="index.html#faq">Preguntas frecuentes</a><a href="index.html#contacto">Contacto</a></div></div>
+<div class="footer-col"><h3>¿Representas una escuela?</h3><div class="footer-school-card"><strong>La programación también puede llegar a tu institución.</strong><p>Conoce opciones de convenio, clases en vivo, beneficios para estudiantes y formación docente.</p><a href="escuelas.html">Conocer propuesta para escuelas ↗</a></div></div>
+<div class="footer-col"><h3>Conecta con KUBIQ</h3><p>¿Quieres orientación sobre un curso o explorar una colaboración?</p><div class="footer-links"><a class="session-calendar-link" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}' data-cal-link="kubiqacademy/sesion-informativa" data-cal-namespace="sesion-informativa" href="#">Agenda una sesión informativa ↗</a></div><div aria-label="Redes sociales de KUBIQ ACADEMY; enlaces oficiales próximamente" class="social-links">
+<span aria-label="Instagram, próximamente" class="social-placeholder" title="Instagram · Próximamente"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2.2A2.8 2.8 0 0 0 4.2 7v10A2.8 2.8 0 0 0 7 19.8h10a2.8 2.8 0 0 0 2.8-2.8V7A2.8 2.8 0 0 0 17 4.2H7zm5 2.3a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11zm0 2.2a3.3 3.3 0 1 0 0 6.6 3.3 3.3 0 0 0 0-6.6zm5.8-3a1.3 1.3 0 1 1 0 2.6 1.3 1.3 0 0 1 0-2.6z"></path></svg></span>
+<span aria-label="Facebook, próximamente" class="social-placeholder" title="Facebook · Próximamente"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M13.5 21v-8h2.7l.4-3.1h-3.1V8c0-.9.3-1.5 1.6-1.5h1.7V3.7c-.3 0-1.4-.1-2.6-.1-2.6 0-4.4 1.6-4.4 4.6v1.7H7V13h2.8v8h3.7z"></path></svg></span>
+<span aria-label="TikTok, próximamente" class="social-placeholder tiktok" title="TikTok · Próximamente">♪</span>
+<span aria-label="LinkedIn, próximamente" class="social-placeholder linkedin" title="LinkedIn · Próximamente">in</span>
+<span aria-label="Correo electrónico, próximamente" class="social-placeholder" title="Correo electrónico · Próximamente"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M3 5h18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2zm9 7.1L20.3 7H3.7l8.3 5.1zm0 2.5L3 8.9V17h18V8.9l-9 5.7z"></path></svg></span>
+</div></div>
+</div>
+<div class="wrap footer-bottom"><p>© <span id="year"></span> KUBIQ ACADEMY. Todos los derechos reservados.</p><p><a href="index.html#contacto">Hablemos ↗</a></p></div>
+</footer>
+<!-- Cal.com element-click embed: KUBIQ ACADEMY trial booking -->
+<script defer="" src="scripts/main.js"></script>
+<script defer="" src="scripts/cal-embed.js"></script>
 </body>
 </html>
