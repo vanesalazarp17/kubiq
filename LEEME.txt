@@ -1,4 +1,4 @@
-KUBIQ ACADEMY — PAQUETE WEB V55
+KUBIQ ACADEMY — PAQUETE WEB V59
 
 Estructura:
 - index.html: página principal (archivo de inicio en la raíz).
@@ -16,3 +16,14 @@ y necesita conexión a internet.
 Actualización V54: ajustes de textos, presentación de cursos, beneficios educativos, iconografía, mascota QBO, clases personalizadas 1:1 y calendario Cal.com para sesiones informativas.
 
 Actualización V55: reorganización responsive de los beneficios en tarjetas 3+2; ilustraciones SVG originales para habilidades y propuesta docente; mayor protagonismo visual de las ilustraciones de cursos; CTA decorativo de código alineado junto al botón; enlace de clases 1:1 conectado al calendario de sesión informativa.
+
+Actualización V56: se eliminaron las etiquetas superiores CURIOSIDAD, CREATIVIDAD y FUTURO de las tres tarjetas de pilares.
+
+Actualización V57: se redujo el tamaño de las ilustraciones de las tarjetas de cursos, con imágenes centradas, completas y con más espacio visual; ajustes responsive para móvil.
+\nActualización V58: en la tarjeta de presentación se sustituyó la frase redundante «Grupos de 4 a 8 estudiantes / Acompañamiento cercano» por una sola mención breve: «Grupos pequeños».
+
+Actualización V59: renovación de experiencia visual con sistema de animaciones de entrada al hacer scroll, luces ambientales sutiles en hero, microinteracciones hover, reflejos en CTA, barra de progreso de lectura, estado visual del header al desplazarse y luces de seguimiento en tarjetas. Incluye adaptación móvil y respeto a prefers-reduced-motion.
+
+Renovación V59: experiencia visual más dinámica sin cambiar la identidad de marca. Incluye animaciones de entrada en hero, revelado progresivo al desplazarse, brillos ambientales, microinteracciones en tarjetas y botones, seguimiento luminoso del cursor en escritorio, barra de progreso de lectura y adaptación para dispositivos móviles. Se respetan las preferencias de movimiento reducido del sistema.
+
+Actualización V60: rangos de edad actualizados tanto en las seis tarjetas del catálogo como en los detalles de cada curso y el flujo de inscripción: Scratch Inicial 8–11, Scratch Avanzado 9–12, Roblox Studio Inicial 10–13, Roblox Studio Avanzado 12–16, Python Inicial 13–17 y Python Avanzado 14–17 años.
