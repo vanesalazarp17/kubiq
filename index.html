@@ -483,7 +483,7 @@
     .kids-showcase-grid{display:grid;grid-template-columns:1.04fr .96fr;gap:clamp(28px,5vw,70px);align-items:center}
     .kids-photo-wrap{position:relative;border-radius:28px;overflow:visible;isolation:isolate;box-shadow:0 24px 60px rgba(11,27,77,.16);animation:photoFloat 6s ease-in-out infinite}
     .kids-photo-wrap:before{content:"";position:absolute;inset:-12px 18px 18px -12px;border:2px solid rgba(0,200,255,.45);border-radius:30px;z-index:-1}
-    .kids-photo-wrap img{display:block;width:100%;aspect-ratio:1.42;object-fit:cover;border-radius:28px}
+    .kids-photo-wrap img{display:block;width:100%;aspect-ratio:1.42;object-fit:cover;border-radius:28px}.kids-photo-wrap img[src*="kubiq-docente-clase-en-vivo.gif"]{aspect-ratio:1/1;object-fit:contain;background:#0b1b4d}
     .photo-badge{position:absolute;left:18px;bottom:18px;display:grid;gap:3px;padding:13px 17px;border:1px solid rgba(255,255,255,.5);border-radius:16px;background:rgba(11,27,77,.82);backdrop-filter:blur(12px);color:white;box-shadow:0 12px 30px #07123435}
     .photo-badge b{font:700 11px Poppins,sans-serif;letter-spacing:.12em;color:#8cecff}.photo-badge small{font-size:12px}
     .kids-showcase-copy{position:relative}.kids-showcase-copy h2{font-size:clamp(30px,4vw,48px);line-height:1.13;color:var(--navy);margin:14px 0 18px}.kids-showcase-copy p{font-size:16px;line-height:1.8;color:var(--muted);margin:0 0 24px;max-width:520px}
@@ -950,9 +950,9 @@
 @media(prefers-reduced-motion:reduce){.v74-banner-cta,.course-card .course-more{transition:none}}
 <style>
 /* V74.1 — mobile polish and visual learning cards */
-.v71-mission-icon{width:100%;height:148px;margin:14px 0;border-radius:16px;overflow:hidden;background:#eef5ff}.v71-mission-icon img{width:100%;height:100%;object-fit:cover;display:block}.v71-mission-card p{min-height:0;margin-bottom:4px}.v74-banner-cta:hover{transform:translateY(-1px);box-shadow:0 12px 24px #00c8ff45}
+.v71-mission-icon{width:100%;height:auto;aspect-ratio:1.12;margin:14px 0;border-radius:16px;overflow:hidden;background:#0b1b4d}.v71-mission-icon img{width:100%;height:100%;object-fit:contain;display:block}.v71-mission-card p{min-height:0;margin-bottom:4px}.v74-banner-cta:hover{transform:translateY(-1px);box-shadow:0 12px 24px #00c8ff45}
 html,body{max-width:100%;overflow-x:hidden}.course-grid,.course-card,.course-content,.course-quick-info{min-width:0}.course-card .course-more{font-size:13px;letter-spacing:0}.course-area-heading h3{max-width:100%;overflow-wrap:anywhere}.course-quick-info li{overflow-wrap:anywhere}
-@media(max-width:760px){.v71-missions{padding:42px 0}.v71-mission-grid{gap:13px}.v71-mission-card{padding:16px;border-radius:18px}.v71-mission-icon{height:128px;margin:12px 0}.v71-mission-card h3{font-size:18px}.v71-mission-card p{font-size:12px;line-height:1.5}.catalog-head h2{font-size:clamp(27px,8vw,35px)}.course-art{min-height:0}.course-icon img{max-height:170px;object-fit:contain}.v74-progress-screen{min-width:76%}.faq-intro p{font-size:13px;line-height:1.55}.faq-item summary{font-size:14px}.footer-main{gap:24px}}
+@media(max-width:760px){.v71-missions{padding:42px 0}.v71-mission-grid{gap:13px}.v71-mission-card{padding:16px;border-radius:18px}.v71-mission-icon{height:auto;aspect-ratio:1.05;margin:12px 0}.v71-mission-card h3{font-size:18px}.v71-mission-card p{font-size:12px;line-height:1.5}.catalog-head h2{font-size:clamp(27px,8vw,35px)}.course-art{min-height:0}.course-icon img{max-height:170px;object-fit:contain}.v74-progress-screen{min-width:76%}.faq-intro p{font-size:13px;line-height:1.55}.faq-item summary{font-size:14px}.footer-main{gap:24px}}
 @media(max-width:390px){.v74-banner-copy strong{font-size:11px}.v74-banner-cta{padding:8px 9px}.v74-progress-screen{min-width:86%;padding:14px}.proof-strip .wrap>div{padding:8px 4px}.proof-strip strong{font-size:14px}}
 
 .course-duration{display:inline-flex;margin:6px 0 0 22px;padding:4px 8px;border-radius:999px;background:#e9f8ff;color:#08799b;font-size:10px;font-weight:900;white-space:nowrap}
@@ -1129,14 +1129,7 @@ section:hover>.wrap>.intro-row .section-kicker{letter-spacing:.18em}
 </div>
 </div>
 </section>
-<section aria-label="Cómo funciona KUBIQ" class="proof-strip">
-<div class="wrap">
-<div><strong>32 encuentros</strong><span>por nivel</span></div>
-<div><strong>1 vez</strong><span>por semana</span></div>
-<div><strong>4–8 estudiantes</strong><span>por grupo</span></div>
-<div><strong>En vivo</strong><span>con docente</span></div>
-</div>
-</section>
+
 <section class="section vision" id="propuesta">
 <div class="wrap vision-grid">
 <div class="reveal">
@@ -1152,7 +1145,7 @@ section:hover>.wrap>.intro-row .section-kicker{letter-spacing:.18em}
 </section>
 <section aria-label="Aprender programación en equipo" class="kids-showcase">
 <div class="wrap kids-showcase-grid">
-<div class="kids-photo-wrap"><img alt="Docente KUBIQ impartiendo una clase en vivo de Roblox Studio con estudiantes conectados y participando" loading="lazy" src="imagenes/kubiq-clase-en-vivo.gif"/><span class="photo-badge"><b>IDEAS EN ACCIÓN</b><small>Curiosidad que se convierte en creación</small></span></div>
+<div class="kids-photo-wrap"><img alt="Docente KUBIQ impartiendo una clase en vivo de Roblox Studio con estudiantes conectados y participando" loading="lazy" src="imagenes/kubiq-docente-clase-en-vivo.gif"/><span class="photo-badge"><b>IDEAS EN ACCIÓN</b><small>Curiosidad que se convierte en creación</small></span></div>
 <div class="kids-showcase-copy"><span class="section-kicker">DOCENTES QUE ACOMPAÑAN EN VIVO</span><h2 class="display">Aprender tecnología también es compartir ideas.</h2><p>En las clases en vivo, el docente guía los retos, resuelve dudas y acompaña a cada estudiante mientras crea, prueba y mejora sus proyectos.</p><div class="showcase-actions"><a class="btn btn-primary" href="#cursos">Encuentra su ruta</a><div aria-hidden="true" class="floating-code code-decoration"><span>when</span> idea <span>→</span> <b>create()</b></div></div></div>
 </div>
 </section>
@@ -1200,9 +1193,9 @@ section:hover>.wrap>.intro-row .section-kicker{letter-spacing:.18em}
 <h2 class="section-title display" id="v71-missions-title">¿Qué te gustaría crear primero?</h2>
 <p class="section-intro">Cada programa convierte la curiosidad en pequeños desafíos. El estudiante prueba ideas, toma decisiones, encuentra errores y mejora su proyecto con acompañamiento.</p>
 <div class="v71-mission-grid">
-<article class="v71-mission-card v71-mission-scratch"><span class="v71-mission-tag">MISIÓN 01 · SCRATCH</span><div aria-hidden="true" class="v71-mission-icon"><img alt="Ejemplo de proyecto digital creado durante el aprendizaje" loading="lazy" src="imagenes/project-scratch-stars.jpg"/></div><h3>Diseña un videojuego</h3><p>Diseña personajes, crea reglas y programa cómo funciona tu juego.</p></article>
-<article class="v71-mission-card v71-mission-roblox"><span class="v71-mission-tag">MISIÓN 02 · ROBLOX STUDIO</span><div aria-hidden="true" class="v71-mission-icon"><img alt="Ejemplo de proyecto digital creado durante el aprendizaje" loading="lazy" src="imagenes/project-roblox-world.jpg"/></div><h3>Construye un mundo 3D</h3><p>Construye escenarios, recorridos y experiencias en 3D.</p></article>
-<article class="v71-mission-card v71-mission-python"><span class="v71-mission-tag">MISIÓN 03 · PYTHON</span><div aria-hidden="true" class="v71-mission-icon"><img alt="Ejemplo de proyecto digital creado durante el aprendizaje" loading="lazy" src="imagenes/project-python-guess.jpg"/></div><h3>Programa una solución</h3><p>Escribe código para crear pequeños programas y resolver retos.</p></article>
+<article class="v71-mission-card v71-mission-scratch"><span class="v71-mission-tag">MISIÓN 01 · SCRATCH</span><div aria-hidden="true" class="v71-mission-icon"><img alt="Ilustración animada de estudiante creando un videojuego con KUBIQ"  loading="lazy" src="imagenes/scratch-disenia-videojuego.gif"/></div><h3>Diseña un videojuego</h3><p>Diseña personajes, crea reglas y programa cómo funciona tu juego.</p></article>
+<article class="v71-mission-card v71-mission-roblox"><span class="v71-mission-tag">MISIÓN 02 · ROBLOX STUDIO</span><div aria-hidden="true" class="v71-mission-icon"><img alt="Ilustración animada de estudiante construyendo un mundo 3D con KUBIQ"  loading="lazy" src="imagenes/roblox-construye-mundo-3d.gif"/></div><h3>Construye un mundo 3D</h3><p>Construye escenarios, recorridos y experiencias en 3D.</p></article>
+<article class="v71-mission-card v71-mission-python"><span class="v71-mission-tag">MISIÓN 03 · PYTHON</span><div aria-hidden="true" class="v71-mission-icon"><img alt="Ilustración animada de estudiantes programando una solución con Python"  loading="lazy" src="imagenes/python-programa-solucion.gif"/></div><h3>Programa una solución</h3><p>Escribe código para crear pequeños programas y resolver retos.</p></article>
 </div>
 <p class="v71-mission-note">Los proyectos concretos se ajustan al nivel y avance de cada grupo; estos ejemplos muestran posibilidades de creación.</p>
 <a class="btn btn-primary" href="#cursos">Encuentra tu próxima misión</a>

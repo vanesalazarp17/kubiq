@@ -14,3 +14,6 @@ PUBLICACIÓN
 Sube el contenido de esta carpeta directamente a la raíz pública del hosting. index.html debe quedar en la raíz, no dentro de otra carpeta.
 
 La página modelo-academico.html se retiró porque no tenía enlaces entrantes y duplicaba información ya presentada en el catálogo y en las páginas de programas. La experiencia introductoria se conserva porque sí está conectada a los flujos de orientación y reserva.
+
+
+VERSIÓN MÁS RECIENTE: KUBIQ V77. Incluye los cambios de experiencia familiar, KUBIQ PROGRESS, imágenes animadas de cursos, docente y página para escuelas. Consultar AUDITORIA_V77.txt.
