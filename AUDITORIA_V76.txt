@@ -1,0 +1,26 @@
+KUBIQ ACADEMY — AUDITORÍA V76
+Fecha: 7 de noviembre de 2026
+Base: paquete V75
+
+CAMBIOS APLICADOS
+1. Navegación: acceso a “Para escuelas” en los encabezados de páginas institucionales, páginas de programa, Family Experience y KUBIQ PROGRESS; se mantienen rutas relativas según profundidad.
+2. Banner: mayor contraste, jerarquía, acento amarillo/cian y CTA; no se inventan fechas ni cupos.
+3. Posicionamiento: LATAM deja de ser titular o mensaje repetido; se conserva como alcance geográfico en información contextual/SEO/formularios cuando hace falta.
+4. Elementos visuales: se elimina la flecha diagonal decorativa del bloque de visión.
+5. Metodología: mensaje principal simplificado a “Aprender creando, no memorizando”; no se publican cronogramas minuto a minuto ni duración universal.
+6. Catálogo móvil: anchos flexibles, sin desbordamiento horizontal y tarjetas de programa apiladas en pantallas pequeñas.
+7. Páginas de programas: se corrigen etiquetas de duración duplicadas o equivocadas; Scratch 45/60 min, Roblox 60/75 min y Python 75/75 min según nivel.
+8. Limpieza: se retira modelo-academico.html, que no tenía enlaces entrantes y repetía información; se conserva experiencia.html porque corresponde a la clase introductoria y sí está enlazada. Se eliminaron recursos gráficos no referenciados por páginas/scripts activos.
+
+MODELO ACADÉMICO CONSERVADO
+- 32 encuentros por nivel.
+- Una sesión semanal.
+- Duración diferenciada: Scratch 45/60 min; Roblox Studio 60/75 min; Python 75/75 min.
+- Edades orientativas y recomendación según conocimientos previos.
+
+VERIFICACIONES
+- Se ejecutó node --check sobre scripts/main.js, scripts/escuelas.js y scripts/cal-embed.js.
+- Se comprobaron referencias locales href/src en los documentos HTML; no se detectaron rutas locales inexistentes en esta revisión.
+- Se revisó coherencia de duraciones visibles en las páginas de programas.
+- No se realizó prueba de navegador real en dispositivos iOS/Android ni se certificó envío de formularios o servicios externos (Cal.com/WhatsApp).
+- No se afirma que el sitio esté publicado en GitHub ni en hosting.

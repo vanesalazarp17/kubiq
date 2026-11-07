@@ -1,0 +1,8 @@
+KUBIQ V76.4 · AUDITORÍA ESTÁTICA DE ENLACES
+- Se revisaron los enlaces locales de todas las páginas HTML incluidas.
+- Se comprobaron las rutas internas de Scratch, Roblox Studio y Python.
+- Se verificaron los recursos locales enlazados desde HTML.
+- Los enlaces href="#" restantes corresponden a activadores de Cal.com con data-cal-link; dependen del script/servicio externo para abrir la reserva.
+- No se detectaron rutas locales ni anclas internas rotas en la revisión estática.
+- Los enlaces externos (Cal.com y WhatsApp) no se pueden certificar en vivo sin acceso de red/navegador.
+- La imagen animada proporcionada se incorporó en el bloque visual de clases en vivo y reemplazó la fotografía genérica anterior.
