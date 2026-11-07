@@ -1,4 +1,4 @@
-KUBIQ ACADEMY — PAQUETE WEB V59
+KUBIQ ACADEMY — PAQUETE WEB V72
 
 Estructura:
 - index.html: página principal (archivo de inicio en la raíz).
@@ -20,7 +20,8 @@ Actualización V55: reorganización responsive de los beneficios en tarjetas 3+2
 Actualización V56: se eliminaron las etiquetas superiores CURIOSIDAD, CREATIVIDAD y FUTURO de las tres tarjetas de pilares.
 
 Actualización V57: se redujo el tamaño de las ilustraciones de las tarjetas de cursos, con imágenes centradas, completas y con más espacio visual; ajustes responsive para móvil.
-\nActualización V58: en la tarjeta de presentación se sustituyó la frase redundante «Grupos de 4 a 8 estudiantes / Acompañamiento cercano» por una sola mención breve: «Grupos pequeños».
+
+Actualización V58: en la tarjeta de presentación se sustituyó la frase redundante «Grupos de 4 a 8 estudiantes / Acompañamiento cercano» por una sola mención breve: «Grupos pequeños».
 
 Actualización V59: renovación de experiencia visual con sistema de animaciones de entrada al hacer scroll, luces ambientales sutiles en hero, microinteracciones hover, reflejos en CTA, barra de progreso de lectura, estado visual del header al desplazarse y luces de seguimiento en tarjetas. Incluye adaptación móvil y respeto a prefers-reduced-motion.
 
@@ -39,3 +40,37 @@ ACTUALIZACIÓN V62 — BRANDING, UX Y SEO
 - Página de escuelas enriquecida con proceso de colaboración y preguntas frecuentes institucionales.
 - SEO: títulos y descripciones orientados a intención de búsqueda, Open Graph, Twitter cards, datos estructurados Schema.org para organización educativa, cursos y FAQ, archivo llms.txt y robots.txt.
 - No se añadió canonical ni sitemap.xml con dominio ficticio. Deben configurarse cuando esté definido el dominio público final.
+
+
+HISTORIAL V71 — EXPERIENCIA, CONFIANZA Y CONVERSIÓN (SUPERADO POR V72)
+- Convocatoria de febrero de 2027 comunicada sin fecha de día inventada ni imagen promocional con texto obsoleto.
+- Se sustituyeron horarios publicados no confirmados por una explicación transparente de cohortes, duración de 90 minutos y frecuencia de 1 o 2 veces por semana.
+- Se diseñó KUBIQ FAMILY EXPERIENCE de 30 minutos: orientación, reto guiado, explicación del aprendizaje y conversación con la familia.
+- Se añadió sección de acompañamiento de la fundadora como docente principal en la etapa inicial, sin inventar credenciales o trayectoria.
+- Se añadieron misiones de creación para Scratch, Roblox Studio y Python.
+- Se retiró la solicitud prematura de método de pago: la familia recibirá primero precio total, disponibilidad y condiciones por escrito.
+- Se corrigió la gestión de scroll y retorno de foco al abrir/cerrar el modal de inscripción dentro del modal de curso.
+- Se conservaron los seis cursos, sus edades, sus rutas, sus contenidos curriculares, enlaces Cal.com y WhatsApp.
+- No se publicaron precios ficticios, testimonios inventados ni resultados de estudiantes inexistentes.
+
+PENDIENTES OBLIGATORIOS ANTES DE PUBLICAR / ABRIR INSCRIPCIONES
+- Crear y publicar aviso de privacidad y tratamiento de datos personales, incluyendo el tratamiento de datos de menores y el consentimiento de sus representantes. El formulario ya incorpora una casilla de autorización inicial, pero no sustituye el aviso legal completo.
+- Publicar términos de contratación, cancelación, reprogramación, devoluciones, alcance del certificado y canales de atención.
+- En Cal.com, actualizar el evento existente kubiqacademy/30min: título “KUBIQ Family Experience — 30 minutos”; descripción con el flujo 5 + 15 + 5 + 5 minutos; aclarar que el representante puede observar y que no existe compromiso de matrícula. Confirmar que la disponibilidad del evento coincide con la agenda real de la docente.
+- Completar pruebas en navegador real (escritorio, Android e iOS), incluidos modales, envío de formularios, Cal.com, WhatsApp, teclado, lector de pantalla y reducción de movimiento. No se certifica visualmente esta versión desde el entorno de empaquetado.
+- Verificar dominio final, HTTPS, canonical, sitemap.xml, correo oficial y datos de contacto.
+- Confirmar calendario de inicio de febrero de 2027 y cupos reales antes de activar campañas.
+
+
+ACTUALIZACIÓN V72 — POSICIONAMIENTO INTERNACIONAL LATAM
+- Identidad de marca: academia digital online para Latinoamérica, con estética global/premium sin afirmar sedes, oficinas o presencia física en otros países.
+- Se retiraron todas las referencias públicas a la fundadora como docente o líder visible y no se publican perfiles docentes.
+- Se sustituyó la sección de fundadora por un marco institucional basado en alcance regional, rutas por niveles, aprendizaje basado en proyectos e información transparente.
+- Se actualizó el hero para expresar que los estudiantes no solo usan tecnología: aprenden a crear con ella.
+- Se ajustaron las preguntas frecuentes para explicar que la organización académica y la información de las personas responsables del servicio se entregará a las familias antes de contratar, sin revelar perfiles públicamente.
+- Se redujo la referencia visual y textual a Ecuador en la experiencia pública regional; los formularios siguen solicitando país de residencia cuando es necesario para atender a cada familia.
+- Se actualizaron páginas de programas, metadatos y pie de página para una narrativa coherente con LATAM.
+- No se inventaron sedes internacionales, docentes, testimonios, acreditaciones, cifras ni resultados.
+- Se conservan cursos, edades, currículos, convocatoria de febrero de 2027, Cal.com, WhatsApp y formularios existentes.
+
+PENDIENTE: confirmar en la versión publicada los datos legales y de contacto, aviso de privacidad, términos de contratación, y la información del equipo responsable antes de aceptar matrículas y pagos.

@@ -1,0 +1,31 @@
+AUDITORÍA DE CAMBIOS V72 — KUBIQ ACADEMY
+Fecha: 7 de noviembre de 2026
+
+IDENTIDAD Y CONTENIDO
+- Posicionamiento Internacional LATAM, con narrativa en español y señales visuales globales/premium.
+- No se presenta a la fundadora ni se publican nombres, fotos o perfiles docentes.
+- La sección de fundadora se sustituyó por una explicación institucional de alcance regional, rutas por niveles, aprendizaje basado en proyectos e información transparente.
+- El hero expresa la idea central: la próxima generación no solo usa tecnología, la crea.
+- Las páginas de cursos y la página para instituciones se alinearon con la narrativa LATAM.
+- No se inventaron sedes, oficinas, nacionalidades, acreditaciones, testimonios, cifras ni resultados.
+- Se conservaron cursos, edades, contenidos curriculares, convocatoria febrero 2027, formularios, Cal.com y WhatsApp.
+
+VERIFICACIONES AUTOMÁTICAS REALIZADAS
+- 5 páginas HTML procesadas con parser: correcto.
+- IDs HTML duplicados: ninguno detectado.
+- Referencias locales a archivos inexistentes: ninguna detectada.
+- Imágenes sin atributo alt: ninguna detectada.
+- JavaScript: node --check correcto en main.js, escuelas.js y cal-embed.js.
+- Frases públicas sobre fundadora/docente principal y referencias horarias exclusivas de Ecuador: no detectadas en HTML.
+
+LÍMITES DE LA AUDITORÍA
+- No se ejecutó una prueba visual completa en Chrome/Safari ni pruebas reales de formularios y servicios externos.
+- La comprobación estática no certifica la disponibilidad de Cal.com, WhatsApp, correo, hosting ni integraciones.
+- No se declara que el sitio esté listo para producción hasta realizar pruebas manuales en escritorio y móvil.
+
+PENDIENTES ANTES DE ACEPTAR MATRÍCULAS/PAGOS
+- Publicar aviso de privacidad y tratamiento de datos, con consentimiento de representantes de menores.
+- Publicar términos de contratación, cancelación, reprogramación, devoluciones y alcance del certificado.
+- Antes de cualquier pago, facilitar a la familia información verificable sobre responsables del servicio, modalidad de enseñanza, condiciones, precio total y canales de atención.
+- Confirmar los horarios, cupos y fechas reales de la convocatoria de febrero de 2027.
+- Verificar dominio, HTTPS, correo oficial, canonical y sitemap al publicar.
