@@ -44,7 +44,7 @@ ACTUALIZACIÓN V62 — BRANDING, UX Y SEO
 
 HISTORIAL V71 — EXPERIENCIA, CONFIANZA Y CONVERSIÓN (SUPERADO POR V72)
 - Convocatoria de febrero de 2027 comunicada sin fecha de día inventada ni imagen promocional con texto obsoleto.
-- Se sustituyeron horarios publicados no confirmados por una explicación transparente de cohortes, duración de 90 minutos y frecuencia de 1 o 2 veces por semana.
+- Se sustituyeron horarios publicados no confirmados por una explicación transparente de cohortes. (Este criterio fue actualizado en V75: una sesión semanal y duración adaptada por programa.)
 - Se diseñó KUBIQ FAMILY EXPERIENCE de 30 minutos: orientación, reto guiado, explicación del aprendizaje y conversación con la familia.
 - Se añadió sección de acompañamiento de la fundadora como docente principal en la etapa inicial, sin inventar credenciales o trayectoria.
 - Se añadieron misiones de creación para Scratch, Roblox Studio y Python.
@@ -74,3 +74,15 @@ ACTUALIZACIÓN V72 — POSICIONAMIENTO INTERNACIONAL LATAM
 - Se conservan cursos, edades, currículos, convocatoria de febrero de 2027, Cal.com, WhatsApp y formularios existentes.
 
 PENDIENTE: confirmar en la versión publicada los datos legales y de contacto, aviso de privacidad, términos de contratación, y la información del equipo responsable antes de aceptar matrículas y pagos.
+
+
+Actualización V75 — Modelo académico adaptativo:
+- 32 encuentros por nivel, una sesión semanal.
+- Scratch Inicial 8–10 años, 45 min (24 h).
+- Scratch Avanzado 10–12 años, 60 min (32 h).
+- Roblox Studio Inicial 10–13 años, 60 min (32 h).
+- Roblox Studio Avanzado 12–16 años, 75 min (40 h).
+- Python Inicial 13–15 años, 75 min (40 h).
+- Python Avanzado 14–17 años, 75 min (40 h).
+- Edades orientativas; la asignación final considera conocimientos previos.
+- Nueva página modelo-academico.html y documento curricular V75.

@@ -1,0 +1,45 @@
+KUBIQ ACADEMY — MODELO ACADÉMICO V75
+
+DECISIONES CONFIRMADAS
+- 32 encuentros por nivel.
+- Una sesión por semana.
+- Cohortes por programa y nivel.
+- Duración de sesión diferenciada por curso.
+- Edades revisadas como recomendación orientativa; la asignación final considera conocimientos previos, intereses y madurez digital.
+
+CATÁLOGO
+Scratch Inicial: 8–10 años | 45 min/sesión | 32 sesiones | 24 horas totales.
+Scratch Avanzado: 10–12 años | 60 min/sesión | 32 sesiones | 32 horas totales.
+Roblox Studio Inicial: 10–13 años | 60 min/sesión | 32 sesiones | 32 horas totales.
+Roblox Studio Avanzado: 12–16 años | 75 min/sesión | 32 sesiones | 40 horas totales.
+Python Inicial: 13–15 años | 75 min/sesión | 32 sesiones | 40 horas totales.
+Python Avanzado: 14–17 años | 75 min/sesión | 32 sesiones | 40 horas totales.
+
+FRANJAS DE EXPERIENCIA (ORIENTATIVAS)
+Explorers 8–10: exploración guiada, bloques visuales, retos concretos, demostración y creación breve.
+Creators 11–13: construcción de proyectos, diseño, lógica, pruebas y colaboración.
+Innovators 14–17: abstracción, programación textual, resolución de problemas, depuración y proyectos integradores.
+Estas franjas no sustituyen la recomendación de curso ni crean prerequisitos nuevos.
+
+ORGANIZACIÓN CURRICULAR
+Cada curso se divide en cuatro módulos de ocho encuentros: 1 Discover (fundamentos y exploración), 2 Create (construcción guiada), 3 Level Up (retos, iteración y depuración), 4 Showcase (proyecto integrador, pruebas y presentación).
+
+FRECUENCIA Y CALENDARIO
+Una clase semanal. 32 semanas lectivas; el calendario real puede extenderse por feriados, recesos o pausas de cohorte. No comunicar “8 meses exactos” como duración contractual.
+
+HORAS TOTALES
+Scratch Inicial 24 h; Scratch Avanzado 32 h; Roblox Inicial 32 h; Roblox Avanzado 40 h; Python Inicial 40 h; Python Avanzado 40 h.
+
+CRITERIOS PEDAGÓGICOS
+- Las sesiones se diseñan con segmentos breves y alternancia entre explicación, demostración, práctica y puesta en común.
+- No usar la duración como sustituto de la atención: observar participación, fatiga, comprensión y avance.
+- Pausas activas y cambios de actividad cuando sean pertinentes.
+- KUBIQ METHOD: CREATE, THINK, SOLVE, SHARE presente en las experiencias, con peso distinto por edad y curso.
+- Evaluación mediante rúbricas, observación, proyectos y evidencias; no prometer resultados garantizados.
+
+PENDIENTE ANTES DE PUBLICAR COMO OFERTA DEFINITIVA
+- Pilotear duración de sesión y carga semanal con grupos reales.
+- Validar los 32 encuentros de cada curso contra los documentos curriculares completos y asegurar que no haya contenidos duplicados o vacíos.
+- Confirmar horarios y fechas de cada cohorte.
+- Ajustar precios a las nuevas horas totales.
+- Actualizar formularios de admisión, fichas comerciales, guía docente y KUBIQ PROGRESS.
