@@ -767,8 +767,8 @@
     .course-card:nth-child(1) .course-art,.course-card:nth-child(2) .course-art{background:linear-gradient(145deg,#e4faff,#f1eaff)}
     .course-card:nth-child(3) .course-art,.course-card:nth-child(4) .course-art{background:linear-gradient(145deg,#eaf0ff,#e9e7ff)}
     .course-card:nth-child(5) .course-art,.course-card:nth-child(6) .course-art{background:linear-gradient(145deg,#e4f8ff,#edf0ff)}
-    .showcase-actions{display:flex;align-items:center;gap:34px;flex-wrap:wrap;margin-top:22px}
-    .kids-showcase-copy .showcase-actions .btn{margin:0;flex:0 0 auto}
+    .showcase-actions{display:flex;align-items:center;justify-content:center;gap:34px;flex-wrap:wrap;margin-top:22px;width:100%}
+    .kids-showcase-copy .showcase-actions .btn{margin:0;flex:0 0 auto}.showcase-actions .floating-code{margin-inline:auto;text-align:center}
     .floating-code.code-decoration{display:inline-flex;align-items:center;position:static;margin:0;padding:12px 17px;border-radius:13px;box-shadow:0 10px 25px rgba(11,27,77,.14);animation:codePulse 3s ease-in-out infinite;white-space:nowrap;pointer-events:none}
     .one-to-one-callout .session-cta{display:inline-flex;align-items:center;gap:7px;margin-top:7px;padding:0;background:none;border:0;box-shadow:none;border-radius:0;color:#6845e8;font-size:13px;font-weight:800;text-decoration:none}
     .one-to-one-callout .session-cta:hover{transform:none;box-shadow:none;text-decoration:underline}
@@ -1036,6 +1036,15 @@ html,body{max-width:100%;overflow-x:hidden}.course-grid,.course-card,.course-con
   .v79-mission-cta{margin-top:22px}
 }
 
+
+/* V82 — FAQ en acordeón compacto, contenido completo presente en HTML para rastreo */
+.faq-list{gap:9px}
+.faq-item{border-radius:15px;box-shadow:0 5px 18px rgba(11,27,77,.035)}
+.faq-item summary{min-height:58px;padding:16px 19px;font-size:clamp(13px,1.15vw,15px);line-height:1.4}
+.faq-item summary:focus-visible{outline:3px solid rgba(0,200,255,.55);outline-offset:-3px;border-radius:14px}
+.faq-answer{padding:0 19px 17px;font-size:14px}
+.faq-item[open]{border-color:rgba(123,77,255,.38);box-shadow:0 10px 25px rgba(65,43,145,.07)}
+@media(max-width:760px){.faq-section{padding:48px 0}.faq-layout{gap:22px}.faq-item summary{padding:15px 16px}.faq-answer{padding:0 16px 15px}}
 </style></style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"KUBIQ ACADEMY","inLanguage":"es-419","description":"Academia digital online para niños y adolescentes de Latinoamérica. Programas de Scratch, Roblox Studio y Python basados en proyectos."},{"@type":"EducationalOrganization","name":"KUBIQ ACADEMY","description":"Academia digital online para niños y adolescentes de 8 a 17 años en Latinoamérica. Ofrece clases en vivo de Scratch, Roblox Studio y Python, con grupos pequeños y proyectos prácticos.","areaServed":{"@type":"Place","name":"Latinoamérica"},"availableLanguage":"Spanish","knowsAbout":["Programación para niños y jóvenes","Scratch","Roblox Studio","Python","Pensamiento computacional","Diseño de videojuegos","Educación tecnológica"]},{"@type":"Course","name":"Scratch Inicial","description":"Una primera experiencia con programación visual por bloques para crear historias, animaciones y juegos sencillos.","educationalLevel":"Inicial","audience":{"@type":"EducationalAudience","educationalRole":"student","suggestedMinAge":8,"suggestedMaxAge":12},"provider":{"@type":"EducationalOrganization","name":"KUBIQ ACADEMY"},"courseMode":"online","inLanguage":"es","keywords":"Scratch, programación por bloques, secuencias, eventos, animación, juegos"},{"@type":"Course","name":"Scratch Avanzado","description":"Proyectos interactivos con condiciones, ciclos, variables, puntajes, niveles y depuración.","educationalLevel":"Avanzado","audience":{"@type":"EducationalAudience","educationalRole":"student","suggestedMinAge":9,"suggestedMaxAge":12},"provider":{"@type":"EducationalOrganization","name":"KUBIQ ACADEMY"},"courseMode":"online","inLanguage":"es","keywords":"Scratch avanzado, variables, ciclos, condiciones, videojuegos"},{"@type":"Course","name":"Roblox Studio Inicial","description":"Introducción al diseño de mundos digitales en Roblox Studio: escenarios 3D, objetos, materiales e interacciones.","educationalLevel":"Inicial","audience":{"@type":"EducationalAudience","educationalRole":"student","suggestedMinAge":10,"suggestedMaxAge":14},"provider":{"@type":"EducationalOrganization","name":"KUBIQ ACADEMY"},"courseMode":"online","inLanguage":"es","keywords":"Roblox Studio, diseño 3D, construcción de mundos, experiencias interactivas"},{"@type":"Course","name":"Roblox Studio Avanzado","description":"Diseño de experiencias completas en Roblox Studio con scripting en Lua, eventos, mecánicas y pruebas.","educationalLevel":"Avanzado","audience":{"@type":"EducationalAudience","educationalRole":"student","suggestedMinAge":12,"suggestedMaxAge":17},"provider":{"@type":"EducationalOrganization","name":"KUBIQ ACADEMY"},"courseMode":"online","inLanguage":"es","keywords":"Roblox Studio avanzado, Lua, scripting, mecánicas de juego"},{"@type":"Course","name":"Python Inicial","description":"Introducción a Python con variables, tipos de datos, condicionales, ciclos, funciones y ejercicios prácticos.","educationalLevel":"Inicial","audience":{"@type":"EducationalAudience","educationalRole":"student","suggestedMinAge":13,"suggestedMaxAge":17},"provider":{"@type":"EducationalOrganization","name":"KUBIQ ACADEMY"},"courseMode":"online","inLanguage":"es","keywords":"Python para jóvenes, programación textual, variables, ciclos, funciones"},{"@type":"Course","name":"Python Avanzado","description":"Programación Python con funciones, módulos, estructuras de datos, depuración y proyectos integradores.","educationalLevel":"Avanzado","audience":{"@type":"EducationalAudience","educationalRole":"student","suggestedMinAge":13,"suggestedMaxAge":17},"provider":{"@type":"EducationalOrganization","name":"KUBIQ ACADEMY"},"courseMode":"online","inLanguage":"es","keywords":"Python avanzado, funciones, módulos, estructuras de datos, depuración"},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Necesita experiencia o preparación previa?","acceptedAnswer":{"@type":"Answer","text":"No. Los cursos iniciales están diseñados para comenzar desde cero; no se requieren conocimientos previos de programación. En los niveles avanzados, te orientaremos para comprobar que el curso encaje con la experiencia del estudiante."}},{"@type":"Question","name":"¿Qué necesita para conectarse a las clases?","acceptedAnswer":{"@type":"Answer","text":"Una computadora y conexión a internet. Recomendamos contar con mouse y cámara para facilitar la participación y la interacción durante las sesiones. La cámara es ideal, pero no la presentamos como requisito obligatorio."}},{"@type":"Question","name":"¿Cómo son las clases?","acceptedAnswer":{"@type":"Answer","text":"Son clases online en vivo, en grupos pequeños de 4 a 8 estudiantes. Cada programa tiene una duración de sesión adaptada a la edad y al tipo de proyecto. La duración de cada programa depende del nivel: algunos contemplan 32 clases y otros 40, con una sesión semanal."}},{"@type":"Question","name":"¿Qué habilidades puede desarrollar?","acceptedAnswer":{"@type":"Answer","text":"Según el curso, podrá practicar pensamiento lógico, creatividad, resolución de problemas y diseño de proyectos digitales. Son habilidades que pueden apoyar su aprendizaje en otras áreas y su preparación para un mundo cada vez más tecnológico."}},{"@type":"Question","name":"¿Cómo puedo monitorear el aprendizaje de mi hijo?","acceptedAnswer":{"@type":"Answer","text":"Durante el curso, los estudiantes practican mediante actividades y proyectos adecuados a su nivel. En la sesión informativa te explicaremos cómo acompañamos su aprendizaje, cómo reciben orientación y qué pueden desarrollar en la ruta que te interesa."}},{"@type":"Question","name":"¿Cómo puedo comprobar que KUBIQ ACADEMY es confiable?","acceptedAnswer":{"@type":"Answer","text":"Es razonable querer conocer una academia antes de pagar. Te invitamos a agendar una sesión informativa: podremos explicarte la metodología, el contenido del curso, la organización académica, los horarios, los costos, las condiciones de inscripción y la información del servicio antes de que tomes una decisión. Te recomendamos revisar toda esa información por escrito y confirmar los datos de pago a través de nuestros canales oficiales. No tienes que inscribirte durante la sesión. Agendar una sesión informativa ↗"}}]}]}</script>
 <style id="v52-transparent-cutout">
@@ -1246,10 +1255,33 @@ section:hover>.wrap>.intro-row .section-kicker{letter-spacing:.18em}
 </style>
 
 <style id="kubiq-v80-banner-styles">
-.v80-launch-banner{position:relative;display:flex;align-items:center;justify-content:center;gap:clamp(18px,4vw,54px);min-height:190px;padding:22px clamp(24px,6vw,90px);background:radial-gradient(circle at 84% 20%,rgba(0,200,255,.18),transparent 28%),linear-gradient(110deg,#0b1b4d 0%,#182b69 58%,#34206f 100%);color:#fff;overflow:hidden;line-height:1.35}
-.v80-launch-copy{width:min(100%,850px);position:relative;z-index:2}.v80-launch-kicker{display:block;color:#00c8ff;font:900 12px/1.2 Poppins,sans-serif;letter-spacing:.16em;margin-bottom:8px}.v80-launch-copy strong{display:block;font:800 clamp(18px,2.1vw,27px)/1.2 Poppins,sans-serif;max-width:760px}.v80-launch-copy p{margin:8px 0;color:#e3eaff;font-size:14px;line-height:1.5}.v80-launch-date{display:inline-flex;margin:3px 12px 0 0;color:#fff;font-weight:900;font-size:13px}.v80-launch-cta{display:inline-flex;align-items:center;justify-content:center;padding:10px 18px;border-radius:999px;background:#00c8ff;color:#0b1b4d;font-weight:900;text-decoration:none;font-size:13px;transition:transform .2s ease,box-shadow .2s ease}.v80-launch-cta:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,200,255,.24)}.v80-launch-gif{flex:0 0 auto;width:clamp(120px,17vw,190px);height:clamp(120px,17vw,190px);object-fit:contain;filter:drop-shadow(0 10px 18px rgba(0,0,0,.24))}.v80-launch-banner .launch-banner-close{position:absolute;right:12px;top:10px;z-index:4;border:0;background:rgba(255,255,255,.14);color:#fff;border-radius:50%;width:30px;height:30px;font-size:21px;cursor:pointer}
-@media(max-width:650px){.v80-launch-banner{min-height:0;padding:20px 44px 20px 18px;gap:8px}.v80-launch-copy{flex:1}.v80-launch-copy strong{font-size:16px}.v80-launch-copy p{font-size:11px;margin:6px 0}.v80-launch-kicker{font-size:9px}.v80-launch-date{display:block;font-size:11px;margin:4px 0 8px}.v80-launch-cta{font-size:11px;padding:8px 13px}.v80-launch-gif{width:92px;height:92px}.v80-launch-banner .launch-banner-close{right:6px;top:6px;width:23px;height:23px;font-size:17px}}
+.v80-launch-banner{position:relative;display:flex;align-items:center;justify-content:center;gap:clamp(18px,4vw,54px);min-height:156px;padding:15px clamp(24px,6vw,90px);background:radial-gradient(circle at 84% 20%,rgba(255,255,255,.16),transparent 28%),linear-gradient(110deg,#32118f 0%,#5422b9 58%,#702ed0 100%);color:#fff;overflow:hidden;line-height:1.35}
+.v80-launch-copy{width:min(100%,900px);position:relative;z-index:2}.v80-launch-kicker{display:block;color:#00c8ff;font:900 12px/1.2 Poppins,sans-serif;letter-spacing:.16em;margin-bottom:8px}.v80-launch-copy strong{display:block;font:800 clamp(18px,2.1vw,27px)/1.2 Poppins,sans-serif;max-width:760px}.v80-launch-copy p{margin:8px 0;color:#e3eaff;font-size:14px;line-height:1.5}.v80-launch-date{display:inline-flex;margin:3px 12px 0 0;color:#fff;font-weight:900;font-size:13px}.v80-launch-cta{display:inline-flex;align-items:center;justify-content:center;padding:10px 18px;border-radius:999px;background:#00c8ff;color:#0b1b4d;font-weight:900;text-decoration:none;font-size:13px;transition:transform .2s ease,box-shadow .2s ease}.v80-launch-cta:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,200,255,.24)}.v80-launch-gif{flex:0 0 auto;width:clamp(145px,20vw,225px);height:clamp(145px,20vw,225px);object-fit:contain;filter:drop-shadow(0 10px 18px rgba(0,0,0,.24))}.v80-launch-banner .launch-banner-close{position:absolute;right:12px;top:10px;z-index:4;border:0;background:rgba(255,255,255,.14);color:#fff;border-radius:50%;width:30px;height:30px;font-size:21px;cursor:pointer}
+@media(max-width:650px){.v80-launch-banner{min-height:0;padding:20px 44px 20px 18px;gap:8px}.v80-launch-copy{flex:1}.v80-launch-copy strong{font-size:16px}.v80-launch-copy p{font-size:11px;margin:6px 0}.v80-launch-kicker{font-size:9px}.v80-launch-date{display:block;font-size:11px;margin:4px 0 8px}.v80-launch-cta{font-size:11px;padding:8px 13px}.v80-launch-gif{width:108px;height:108px}.v80-launch-banner .launch-banner-close{right:6px;top:6px;width:23px;height:23px;font-size:17px}}
 </style>
+
+<style id="kubiq-v81-updates">
+.section-anchor{display:block;position:relative;top:-90px;visibility:hidden}
+.create-underline{text-decoration:underline;text-decoration-color:#7B4DFF;text-decoration-thickness:3px;text-underline-offset:5px;text-decoration-skip-ink:none}
+.course-more{align-self:center!important;justify-content:center!important;gap:0!important}
+.course-more::after{content:none!important;display:none!important}
+.kids-showcase-grid{align-items:center}.kids-showcase-copy .showcase-actions{justify-content:center}.showcase-actions .floating-code{margin-inline:auto;text-align:center}
+.v81-schedule-layout{display:grid;grid-template-columns:1.05fr .95fr;gap:24px;align-items:stretch;margin-top:32px}
+.v81-schedule-card{background:#fff;border:1px solid #dce6fa;border-radius:26px;padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:16px;box-shadow:0 16px 42px rgba(11,27,77,.08)}
+.v81-schedule-card article{padding:20px;border-radius:18px;background:linear-gradient(145deg,#f3faff,#f2edff);display:flex;flex-direction:column;justify-content:center;gap:8px;min-height:115px}
+.v81-schedule-card article span{font-size:11px;letter-spacing:.12em;font-weight:900;color:#7652df}.v81-schedule-card article strong{font:800 clamp(16px,2vw,21px) Poppins,sans-serif;color:#0b1b4d;white-space:nowrap}
+.v81-schedule-card small{grid-column:1/-1;color:#64708d;font-size:12px;line-height:1.55}
+.v81-schedule-side{border-radius:26px;padding:28px;background:linear-gradient(140deg,#f1faff,#f3efff);border:1px solid #dfe4fb}.v81-schedule-side h3{font:800 24px Poppins,sans-serif;color:#0b1b4d;margin:8px 0}.v81-schedule-side>p{color:#64708d;line-height:1.6;margin:0 0 16px}
+.v81-schedule-side .one-to-one-callout{margin:0;padding:18px;background:#fff;border:1px solid #ddd8ff;border-radius:18px}.v81-schedule-side .one-to-one-callout p{margin:6px 0 10px}
+.v74-progress-teaser{padding:68px 0;background:radial-gradient(circle at 10% 20%,rgba(0,200,255,.15),transparent 32%),linear-gradient(110deg,#effaff,#f4efff)}
+.v74-progress-inner{grid-template-columns:.9fr 1.1fr;gap:clamp(28px,4vw,56px);align-items:center}
+.v74-progress-art.v81-progress-gif-wrap{min-height:0;display:block;border-radius:26px;overflow:hidden;background:#3c1ba6;box-shadow:0 20px 48px rgba(43,24,116,.2)}
+.v81-progress-gif-wrap img{display:block;width:100%;height:auto;aspect-ratio:700/240;object-fit:contain}
+.v74-progress-inner>div:last-child{text-align:left}.v81-progress-action{display:flex;justify-content:center;width:100%;margin-top:24px}.v81-progress-action .btn{padding:17px 28px;border-radius:999px;box-shadow:0 12px 28px rgba(0,200,255,.25);font-weight:900}
+.v74-progress-inner h2{font-size:clamp(28px,3.4vw,42px)}
+@media(max-width:760px){.v81-schedule-layout{grid-template-columns:1fr}.v81-schedule-card{padding:16px;gap:10px}.v81-schedule-card article{padding:14px;min-height:100px}.v81-schedule-card article strong{font-size:15px;white-space:normal}.v81-schedule-side{padding:20px}.v74-progress-inner{grid-template-columns:1fr;gap:22px}.v81-progress-gif-wrap{order:0}.v74-progress-inner>div:last-child{order:1}.v81-progress-action{justify-content:center}.v81-progress-action .btn{width:100%;max-width:340px;text-align:center}}
+</style>
+
 </head>
 <body><a class="skip-link" href="#contenido-principal">Saltar al contenido principal</a>
 <div class="site-sticky-shell" id="siteStickyShell">
@@ -1261,7 +1293,7 @@ section:hover>.wrap>.intro-row .section-kicker{letter-spacing:.18em}
 <img alt="KUBIQ ACADEMY" class="brand-header-logo" decoding="async" fetchpriority="high" loading="eager" src="imagenes/kubiq-logo-header.jpeg"/>
 </a>
 <button aria-controls="nav-links" aria-expanded="false" aria-label="Abrir menú" class="menu-btn">☰</button>
-<nav aria-label="Navegación principal" class="nav-links" id="nav-links"><a href="#cursos">Cursos</a><a href="#misiones">Proyectos</a><a href="#familias">Para familias</a><a href="#faq">Preguntas frecuentes</a></nav>
+<nav aria-label="Navegación principal" class="nav-links" id="nav-links"><a href="#cursos">Cursos</a><a href="#cursos">Proyectos</a><a href="#faq">Preguntas frecuentes</a></nav>
 </div>
 </header>
 </div>
@@ -1284,7 +1316,7 @@ section:hover>.wrap>.intro-row .section-kicker{letter-spacing:.18em}
 </div>
 </div>
 <div aria-label="Un estudiante sostiene un átomo luminoso con el símbolo oficial de KUBIQ ACADEMY" class="hero-art hero-atom-scene">
-<img alt="Silueta de un niño con audífonos y computadora sosteniendo un átomo luminoso con el símbolo de KUBIQ ACADEMY" class="hero-kid-atom" decoding="async" fetchpriority="high" src="imagenes/hero-kid-atom-cutout.png"/>
+<img alt="Estudiantes de KUBIQ Academy creando proyectos de programación y videojuegos en equipo" class="hero-kid-atom" decoding="async" fetchpriority="high" src="imagenes/kubiq-home-community.jpeg"/>
 </div>
 </div>
 <div class="hero-bottom">
@@ -1299,7 +1331,7 @@ section:hover>.wrap>.intro-row .section-kicker{letter-spacing:.18em}
 <div class="reveal">
 <div class="section-kicker">01 / Nuestra esencia</div>
 <h2 class="section-title display">¿Alguna vez te has preguntado cómo se crean los <span class="yellow-accent">juegos</span> que tanto te sorprenden?</h2>
-<p class="section-intro">Los mundos increíbles, los personajes y los desafíos que tanto te gustan no aparecen por arte de magia. Detrás de ellos hay imaginación, diseño y código. En KUBIQ ACADEMY, tus primeras ideas pueden convertirse en tus primeros proyectos. Aprende las bases de la programación y descubre todo lo que eres capaz de crear.</p>
+<p class="section-intro">Los mundos increíbles, los personajes y los desafíos que tanto te gustan no aparecen por arte de magia. Detrás de ellos hay imaginación, diseño y código. En KUBIQ ACADEMY, tus primeras ideas pueden convertirse en tus primeros proyectos. Aprende las bases de la programación y <span class="create-underline">descubre todo lo que eres capaz de crear</span>.</p>
 </div>
 <div class="vision-quote reveal">
 <div aria-hidden="true" class="quote-mark">↗</div>
@@ -1314,6 +1346,7 @@ section:hover>.wrap>.intro-row .section-kicker{letter-spacing:.18em}
 </div>
 </section>
 <section class="section catalog" id="cursos">
+<span id="proyectos" class="section-anchor" aria-hidden="true"></span>
 <div class="wrap">
 <div class="catalog-head reveal">
 <div class="section-kicker">03 / Catálogo de cursos</div>
@@ -1335,49 +1368,23 @@ section:hover>.wrap>.intro-row .section-kicker{letter-spacing:.18em}
   <div class="wrap">
     <div class="section-kicker">ENCUENTRA TU RUTA</div>
     <h2 class="section-title display" id="v78-age-title">¿Qué puede aprender según su edad?</h2>
-    <p class="section-intro">Elige un rango para descubrir los programas que recomendamos. La elección final también considera sus intereses y conocimientos previos.</p>
+    <p class="section-intro">Edades orientativas y organización académica de cada programa.</p>
     <div class="v78-age-list">
-      <details class="v78-age-item" open>
-        <summary><span class="v78-age-label"><strong>8–12 años</strong><small>Primeros pasos para crear y experimentar</small></span><span class="v78-age-toggle" aria-hidden="true">+</span></summary>
-        <div class="v78-age-courses">
-          <article><span>SCRATCH</span><h3>Scratch Inicial</h3><p>Historias, animaciones y primeros videojuegos con programación visual.</p><a href="programas/scratch/index.html">Ver programa</a></article>
-        </div>
-      </details>
-      <details class="v78-age-item">
-        <summary><span class="v78-age-label"><strong>9–14 años</strong><small>Más retos, mundos y lógica de programación</small></span><span class="v78-age-toggle" aria-hidden="true">+</span></summary>
-        <div class="v78-age-courses">
-          <article><span>SCRATCH</span><h3>Scratch Avanzado</h3><p>Proyectos interactivos con mayor lógica, variables y diseño de juegos.</p><a href="programas/scratch/index.html">Ver programa</a></article>
-          <article><span>ROBLOX STUDIO</span><h3>Roblox Studio Inicial</h3><p>Construcción de escenarios, experiencias y mundos 3D.</p><a href="programas/roblox/index.html">Ver programa</a></article>
-          <article><span>PYTHON · DESDE LOS 13</span><h3>Python Inicial</h3><p>Primeros programas y resolución de retos mediante código.</p><a href="programas/python/index.html">Ver programa</a></article>
-        </div>
-      </details>
-      <details class="v78-age-item">
-        <summary><span class="v78-age-label"><strong>13–17 años</strong><small>Programación textual y proyectos más complejos</small></span><span class="v78-age-toggle" aria-hidden="true">+</span></summary>
-        <div class="v78-age-courses">
-          <article><span>ROBLOX STUDIO</span><h3>Roblox Studio Avanzado</h3><p>Diseño y programación de experiencias 3D más elaboradas.</p><a href="programas/roblox/index.html">Ver programa</a></article>
-          <article><span>PYTHON</span><h3>Python Inicial</h3><p>Aprende las bases del código y crea soluciones paso a paso.</p><a href="programas/python/index.html">Ver programa</a></article>
-          <article><span>PYTHON</span><h3>Python Avanzado</h3><p>Desarrolla programas con estructuras y lógica más avanzadas.</p><a href="programas/python/index.html">Ver programa</a></article>
-        </div>
-      </details>
+      <details class="v78-age-item"><summary><span class="v78-age-label"><strong>8–12 años</strong><small>Programación visual para comenzar</small></span><span class="v78-age-toggle" aria-hidden="true">+</span></summary><div class="v78-age-courses"><article><span>SCRATCH · INICIAL</span><h3>Scratch Inicial</h3><p>32 clases · 60 min por clase · 32 horas totales.</p><a href="programas/scratch/index.html">Ver programa</a></article></div></details>
+      <details class="v78-age-item"><summary><span class="v78-age-label"><strong>9–12 años</strong><small>Más lógica, reglas y videojuegos</small></span><span class="v78-age-toggle" aria-hidden="true">+</span></summary><div class="v78-age-courses"><article><span>SCRATCH · AVANZADO</span><h3>Scratch Avanzado</h3><p>32 clases · 75 min por clase · 40 horas totales.</p><a href="programas/scratch/index.html">Ver programa</a></article></div></details>
+      <details class="v78-age-item"><summary><span class="v78-age-label"><strong>10–14 años</strong><small>Diseño y construcción de mundos 3D</small></span><span class="v78-age-toggle" aria-hidden="true">+</span></summary><div class="v78-age-courses"><article><span>ROBLOX STUDIO · INICIAL</span><h3>Roblox Studio Inicial</h3><p>32 clases · 75 min por clase · 40 horas totales.</p><a href="programas/roblox/index.html">Ver programa</a></article></div></details>
+      <details class="v78-age-item"><summary><span class="v78-age-label"><strong>12–17 años</strong><small>Experiencias interactivas y scripting</small></span><span class="v78-age-toggle" aria-hidden="true">+</span></summary><div class="v78-age-courses"><article><span>ROBLOX STUDIO · AVANZADO</span><h3>Roblox Studio Avanzado</h3><p>40 clases · 90 min por clase · 60 horas totales.</p><a href="programas/roblox/index.html">Ver programa</a></article></div></details>
+      <details class="v78-age-item"><summary><span class="v78-age-label"><strong>13–17 años</strong><small>Programación textual con Python</small></span><span class="v78-age-toggle" aria-hidden="true">+</span></summary><div class="v78-age-courses"><article><span>PYTHON · INICIAL</span><h3>Python Inicial</h3><p>40 clases · 90 min por clase · 60 horas totales.</p><a href="programas/python/index.html">Ver programa</a></article><article><span>PYTHON · AVANZADO</span><h3>Python Avanzado</h3><p>40 clases · 90 min por clase · 60 horas totales.</p><a href="programas/python/index.html">Ver programa</a></article></div></details>
     </div>
-    <p class="v78-age-note">Las edades son orientativas y se superponen entre algunos niveles. Antes de recomendar un nivel avanzado, confirmamos la experiencia previa del estudiante.</p>
+    <p class="v78-age-note">Las edades son orientativas. Para recomendar un nivel avanzado, confirmamos los conocimientos previos del estudiante.</p>
   </div>
 </section>
 
-<section class="v78-availability" aria-labelledby="v78-hours-title">
- <div class="wrap v78-hours-inner">
-  <div><span class="section-kicker">ORGANIZA TU SEMANA</span><h2 id="v78-hours-title">Clases en horarios flexibles.</h2><p>Tenemos disponibilidad de clases durante la semana y los sábados. Consulta los grupos y horarios disponibles para el programa que te interesa.</p></div>
-  <div class="v78-hours-card">
-   <div><span class="v78-day">LUNES A VIERNES</span><strong>11:00 a. m. – 7:00 p. m.</strong></div>
-   <div><span class="v78-day">SÁBADOS</span><strong>11:00 a. m. – 7:00 p. m.</strong></div>
-   <small>Hora de Ecuador (UTC−5). Los horarios específicos dependen de la disponibilidad de cada grupo.</small>
-  </div>
- </div>
-</section>
-<section class="v74-family-proof" id="familias"><div class="wrap v74-proof-layout"><div><span class="section-kicker">PARA LAS FAMILIAS</span><h2>Aprender tecnología debe sentirse emocionante y ser una buena decisión.</h2><p>Clases en vivo, grupos pequeños y proyectos que permiten ver lo que cada estudiante crea.</p></div><div class="v74-proof-points"><article><strong>Información clara</strong><span>Conoce el programa, el precio y las condiciones antes de inscribirte.</span></article><article><strong>Acompañamiento</strong><span>Orientación durante las actividades y comunicación con la familia.</span></article><article><strong>Aprendizaje visible</strong><span>Proyectos y evidencias para conversar sobre lo aprendido.</span></article></div></div></section><section class="v74-progress-teaser" aria-labelledby="progress-teaser-title">
+
+<section class="v74-progress-teaser" aria-labelledby="progress-teaser-title">
 <div class="wrap v74-progress-inner">
-<div class="v74-progress-art" aria-hidden="true"><div class="v74-progress-orbit">✦</div><div class="v74-progress-screen"><span>APRENDIZAJE EN ACCIÓN</span><strong>Crear · Probar · Mejorar</strong><small>El progreso se refleja en sus proyectos.</small></div></div>
-<div><span class="section-kicker">KUBIQ PROGRESS</span><h2 id="progress-teaser-title">No solo aprende: puede mostrar lo que sabe hacer.</h2><p>Observamos cómo aplica sus conocimientos, qué logra construir y cómo mejora sus proyectos con la orientación del docente.</p><a class="btn btn-primary" href="kubiq-progress.html">Así acompañamos su progreso</a></div>
+<div class="v74-progress-art v81-progress-gif-wrap"><img src="imagenes/kubiq-progress-aprendizaje.gif" alt="Mascota KUBIQ junto al mensaje Aprendizaje en acción: crear, probar y mejorar" loading="lazy" width="700" height="240"></div>
+<div><span class="section-kicker">KUBIQ PROGRESS</span><h2 id="progress-teaser-title">No solo aprende: puede mostrar lo que sabe hacer.</h2><p>Observamos cómo aplica sus conocimientos, qué logra construir y cómo mejora sus proyectos con la orientación del docente.</p><div class="v81-progress-action"><a class="btn btn-primary" href="kubiq-progress.html">Así acompañamos su progreso</a></div></div>
 </div></section>
 <section class="section coming" id="metodologia">
 <div class="wrap coming-inner">
@@ -1400,21 +1407,21 @@ section:hover>.wrap>.intro-row .section-kicker{letter-spacing:.18em}
 <section aria-labelledby="certificate-title" class="certificate-section">
 <div class="wrap certificate-inner">
 <div aria-hidden="true" class="certificate-art">
-<img src="imagenes/kubiq-certificado-familia.gif" alt="Estudiantes de KUBIQ celebran sus logros de aprendizaje" loading="lazy" width="420" height="420"/>
+<img src="imagenes/kubiq-certificado-digital.gif" alt="Estudiantes de KUBIQ Academy celebran la obtención de su certificado digital" loading="lazy" width="420" height="420"/>
 </div>
 <div class="certificate-copy">
 <span class="section-kicker">UN LOGRO PARA CELEBRAR</span>
 <h2 id="certificate-title">¡Tu aprendizaje también merece un reconocimiento!</h2>
-<p>Al culminar satisfactoriamente cada curso, cada estudiante recibirá un <strong>certificado propio de finalización de KUBIQ Academy</strong> que reconoce su participación y los aprendizajes trabajados durante el programa.</p>
+<p>Al culminar satisfactoriamente cada curso, cada estudiante recibirá un <strong>certificado digital de finalización de KUBIQ Academy</strong> que reconoce su participación y los aprendizajes trabajados durante el programa.</p>
 </div>
 </div>
 </section>
-<section class="schedule-section" id="horarios"><div class="wrap"><div class="catalog-head"><span class="section-kicker">CONVOCATORIAS Y HORARIOS</span><h2 class="section-title display">Aprende en un grupo que encaje con tu semana.</h2><p class="section-intro">KUBIQ organiza cohortes por programa y nivel. Los días y horarios se confirman antes de la inscripción.</p></div><div class="v71-cohort-grid"><article class="v71-cohort-card"><span class="v71-cohort-label">PRÓXIMA CONVOCATORIA</span><strong>Próximas cohortes</strong><p>Inscripciones y orientación abiertas para las seis rutas de aprendizaje.</p></article><article class="v71-cohort-card"><span class="v71-cohort-label">FORMATO</span><strong>Duración adaptada por curso</strong><p>Una clase en vivo por semana. Cada programa define el tiempo de sesión según la edad y el tipo de proyecto.</p></article><article class="v71-cohort-card"><span class="v71-cohort-label">GRUPOS REDUCIDOS</span><strong>4 a 8 estudiantes</strong><p>Los grupos se abren según el mínimo de participantes y la compatibilidad de niveles.</p></article></div><p class="schedule-zone">Los horarios se comunicarán indicando la zona horaria correspondiente para cada familia. Las opciones de sábado se coordinan según demanda y formación del grupo.</p><div class="one-to-one-callout"><span aria-hidden="true" class="one-to-one-icon">✦</span><div><strong>¿Buscas clases personalizadas 1:1?</strong><p>También puedes consultar por clases individuales con horarios a convenir, sujetas a disponibilidad.</p><a class="session-cta session-calendar-link" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}' data-cal-link="kubiqacademy/sesion-informativa" data-cal-namespace="sesion-informativa" href="#">Consultar clases personalizadas</a></div></div></div></section>
+<section class="schedule-section" id="horarios"><div class="wrap"><div class="catalog-head"><span class="section-kicker">CONVOCATORIAS Y HORARIOS</span><h2 class="section-title display">Aprende en un grupo que encaje con tu semana.</h2><p class="section-intro">Tenemos disponibilidad de clases durante la semana y los sábados. Consulta los grupos y horarios disponibles para el programa que te interesa.</p></div><div class="v81-schedule-layout"><div class="v81-schedule-card"><article><span>LUNES A VIERNES</span><strong>11:00 a. m. – 7:00 p. m.</strong></article><article><span>SÁBADOS</span><strong>11:00 a. m. – 7:00 p. m.</strong></article><small>Hora de Ecuador (UTC−5). Los horarios específicos dependen de la disponibilidad de cada grupo.</small></div><div class="v81-schedule-side"><span class="section-kicker">GRUPOS REDUCIDOS</span><h3>De 4 a 8 estudiantes</h3><p>Una clase en vivo por semana. Los grupos se abren según el mínimo de participantes y la compatibilidad de niveles.</p><div class="one-to-one-callout"><div><strong>¿Buscas clases personalizadas 1:1?</strong><p>También puedes consultar por clases individuales con horarios a convenir, sujetas a disponibilidad.</p><a class="session-cta session-calendar-link" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}' data-cal-link="kubiqacademy/sesion-informativa" data-cal-namespace="sesion-informativa" href="#">Consultar clases personalizadas</a></div></div></div></div></div></section>
 
 <section class="v78-reviews" id="opiniones-familias" aria-labelledby="v78-reviews-title">
  <div class="wrap">
   <div class="v78-reviews-head"><span class="section-kicker">COMUNIDAD KUBIQ</span><h2 class="section-title display" id="v78-reviews-title">La experiencia de aprender también se comparte.</h2><p class="section-intro">Queremos que las familias puedan contar cómo viven el proceso, qué proyectos les sorprenden y qué avances observan en sus hijos.</p></div>
-  <div class="v78-review-panel"><div class="v78-review-mark">“</div><div><h3>Pronto, experiencias reales de nuestras familias.</h3><p>Estamos preparando este espacio para compartir opiniones auténticas de madres, padres y representantes que hayan vivido la experiencia KUBIQ.</p><a href="https://cal.com/kubiqacademy/sesion-informativa" target="_blank" rel="noopener">¿Quieres conocer KUBIQ? Agenda una sesión informativa ↗</a></div></div>
+  <div class="v78-review-panel"><div class="v78-review-mark">“</div><div><h3>Opiniones de familias KUBIQ</h3><p>Este espacio está preparado para mostrar las reseñas de familias. Los textos anteriores no están incluidos en los archivos de V80 disponibles, así que no los sustituimos por testimonios inventados.</p><a href="https://cal.com/kubiqacademy/sesion-informativa" target="_blank" rel="noopener">¿Quieres conocer KUBIQ? Agenda una sesión informativa ↗</a></div></div>
  </div>
 </section>
 <section class="faq-section" id="faq">
@@ -1426,7 +1433,7 @@ section:hover>.wrap>.intro-row .section-kicker{letter-spacing:.18em}
 <p><strong>¿Quieres conocer mejor nuestra metodología antes de decidir?</strong> Puedes agendar una sesión informativa para resolver tus dudas.</p>
 <div class="faq-contact"><a class="btn btn-primary session-calendar-link" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}' data-cal-link="kubiqacademy/sesion-informativa" data-cal-namespace="sesion-informativa" href="#">Agendar una sesión informativa</a></div>
 <p><a class="secondary-text-link" href="experiencia.html">Conoce la KUBIQ Family Experience</a></p></div>
-<div class="faq-list reveal">
+<div class="faq-list reveal" aria-label="Preguntas frecuentes desplegables">
 <details class="faq-item"><summary>¿Necesita experiencia o preparación previa?</summary><div class="faq-answer"><p>No. Los cursos iniciales están diseñados para comenzar desde cero; no se requieren conocimientos previos de programación. En los niveles avanzados, te orientaremos para comprobar que el curso encaje con la experiencia del estudiante.</p></div></details>
 <details class="faq-item"><summary>¿Qué necesita para conectarse a las clases?</summary><div class="faq-answer"><p>Una computadora y conexión a internet. Recomendamos contar con mouse y cámara para facilitar la participación y la interacción durante las sesiones. La cámara es ideal, pero no la presentamos como requisito obligatorio.</p></div></details>
 <details class="faq-item"><summary>¿Cómo son las clases?</summary><div class="faq-answer"><p>Son clases online en vivo, en grupos pequeños de 4 a 8 estudiantes. Cada programa tiene una duración de sesión adaptada a la edad y al tipo de proyecto. Cada programa contempla 32 o 40 clases, según el nivel, con una sesión semanal y duración adaptada.</p></div></details>

@@ -66,7 +66,7 @@ document.querySelectorAll('.course-card[data-course]').forEach(card=>{
     const textNode=[...age.childNodes].find(node=>node.nodeType===Node.TEXT_NODE);
     if(textNode) textNode.nodeValue=course.age;
     else age.append(document.createTextNode(course.age));
-    let duration=card.querySelector('.course-duration');if(!duration){duration=document.createElement('span');duration.className='course-duration';age.parentElement.appendChild(duration);}duration.textContent=(course.sessions||32)+' clases · '+course.duration+' min/clase';
+    let duration=card.querySelector('.course-duration');if(!duration){duration=document.createElement('span');duration.className='course-duration';age.parentElement.appendChild(duration);}duration.textContent=(course.sessions||32)+' clases · '+course.duration+' min/clase · '+course.totalHours+' h';
   }
 });
 const backdrop=document.getElementById('courseModalBackdrop'), closeBtn=backdrop.querySelector('.course-modal-close');const courseProgramLink=document.getElementById('courseProgramLink');if(courseProgramLink){courseProgramLink.addEventListener('click',event=>{event.preventDefault();const destination=courseProgramLink.href;if(destination&&destination!=='about:blank')window.location.assign(destination);});}let lastTrigger=null;let enrollmentReturnFocus=null;const syncModalScroll=()=>{document.body.style.overflow=(backdrop.classList.contains('open')||enrollBackdrop?.classList.contains('open'))?'hidden':''};
