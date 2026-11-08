@@ -1,0 +1,20 @@
+KUBIQ ACADEMY — V80
+Actualización sobre la base V79, preparada como ZIP independiente. No modifica GitHub.
+
+Cambios incluidos:
+1. Horarios: la sección se reorganizó como una agenda semanal por programa y nivel:
+   - Scratch: lunes inicial y miércoles avanzado.
+   - Roblox Studio: martes inicial y viernes avanzado.
+   - Python: jueves inicial y avanzado.
+   - Bloques de tarde y zona horaria UTC−5 visibles.
+   - Grupos de 4 a 8, opciones de sábado y franja adicional sujetas a demanda.
+   - Aviso claro de que la disponibilidad y apertura se confirman por escrito antes de cualquier pago.
+2. Preguntas frecuentes: acordeón con una sola respuesta abierta a la vez.
+3. Página para escuelas: encabezado reducido a “Volver a KUBIQ” y “Solicitar matrícula”.
+4. Se conserva el contenido, recursos visuales, páginas de programas y funcionalidades de V79.
+
+Pendiente por falta de material fuente:
+- Las ocho reseñas originales no están en el ZIP V78/V79 proporcionado ni en la versión local de trabajo. Se mantiene el espacio de experiencias auténticas sin inventar testimonios, nombres ni atribuciones. Para restaurarlas se necesitan los textos originales o un ZIP anterior que los contenga.
+
+Validación:
+- Se verificará sintaxis JavaScript y estructura del ZIP.

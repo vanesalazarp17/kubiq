@@ -302,3 +302,13 @@ document.addEventListener('keydown',e=>{if(e.key!=='Tab')return;const activeDial
     window.history.replaceState(null, '', window.location.pathname + '#inscripcion');
   }
 })();
+
+
+/* KUBIQ V80 — acordeón FAQ: una sola respuesta abierta a la vez */
+(() => {
+  const faqItems = [...document.querySelectorAll('.faq-list .faq-item')];
+  faqItems.forEach(item => item.addEventListener('toggle', () => {
+    if (!item.open) return;
+    faqItems.forEach(other => { if (other !== item) other.open = false; });
+  }));
+})();

@@ -20,3 +20,5 @@ VERSIÓN MÁS RECIENTE: KUBIQ V77. Incluye los cambios de experiencia familiar, 
 
 
 VERSIÓN MÁS RECIENTE: KUBIQ V78. Incluye los seis logos oficiales animados, enlaces directos a programas, selector por edad, horarios, sección de familias y galería de proyectos renovada. Consultar AUDITORIA_V78.txt.
+
+Esta entrega V80 es un ZIP independiente. No se ha publicado ni modificado el repositorio de GitHub.
