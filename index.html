@@ -1467,6 +1467,103 @@ section:hover>.wrap>.intro-row .section-kicker{letter-spacing:.18em}
 @media(prefers-reduced-motion:reduce){.v91-review-track{scroll-behavior:auto}.v91-review-card,.v91-review-arrow,.v91-review-dots button{transition:none}}
 </style>
 
+
+<style id="kubiq-v99-banner-emphasis">
+/* V99: mensaje principal en una sola línea, fecha prioritaria y GIF más visible */
+#launchBanner.v80-launch-banner{
+  min-height:116px!important;
+  padding:10px clamp(18px,4vw,58px)!important;
+  gap:clamp(18px,3vw,42px)!important;
+  align-items:center!important;
+}
+#launchBanner .v80-launch-copy{
+  flex:1 1 auto!important;
+  width:auto!important;
+  max-width:none!important;
+  min-width:0!important;
+}
+#launchBanner .v80-launch-copy strong{
+  max-width:none!important;
+  white-space:nowrap!important;
+  font-size:clamp(21px,2vw,30px)!important;
+  line-height:1.12!important;
+  letter-spacing:-.025em!important;
+}
+#launchBanner .v80-launch-copy p{
+  margin:5px 0 3px!important;
+  font-size:clamp(13px,1.15vw,16px)!important;
+  line-height:1.3!important;
+}
+#launchBanner .v80-launch-date{
+  display:inline-flex!important;
+  align-items:center!important;
+  margin:4px 12px 0 0!important;
+  padding:5px 12px!important;
+  border-radius:999px!important;
+  background:#0b1b4d!important;
+  color:#fff!important;
+  font-size:clamp(16px,1.45vw,21px)!important;
+  line-height:1.2!important;
+  font-weight:900!important;
+  box-shadow:0 4px 12px rgba(11,27,77,.15)!important;
+}
+#launchBanner .v80-launch-cta{margin-top:4px!important}
+#launchBanner .v80-launch-gif{
+  flex:0 0 auto!important;
+  width:clamp(155px,16vw,205px)!important;
+  max-width:205px!important;
+  max-height:132px!important;
+  height:auto!important;
+  object-fit:contain!important;
+}
+@media(max-width:900px){
+  #launchBanner .v80-launch-copy strong{
+    white-space:normal!important;
+    font-size:clamp(18px,3vw,24px)!important;
+  }
+  #launchBanner .v80-launch-gif{
+    width:clamp(105px,18vw,150px)!important;
+    max-height:105px!important;
+  }
+}
+@media(max-width:600px){
+  #launchBanner.v80-launch-banner{
+    padding:12px 38px 12px 14px!important;
+    gap:8px!important;
+    align-items:center!important;
+  }
+  #launchBanner .v80-launch-copy strong{
+    font-size:18px!important;
+    line-height:1.2!important;
+  }
+  #launchBanner .v80-launch-copy p{font-size:12px!important}
+  #launchBanner .v80-launch-date{
+    display:inline-flex!important;
+    font-size:15px!important;
+    padding:5px 9px!important;
+  }
+  #launchBanner .v80-launch-gif{
+    width:94px!important;
+    max-height:82px!important;
+  }
+}
+</style>
+
+
+<style id="kubiq-v100-cover-image">
+#inicio.hero{
+  background-image:
+    linear-gradient(90deg,rgba(8,14,72,.08) 0%,rgba(8,14,72,0) 52%),
+    url("imagenes/kubiq-portada-v93.jpeg")!important;
+  background-position:center center!important;
+  background-size:cover!important;
+  background-repeat:no-repeat!important;
+}
+@media(max-width:720px){
+  #inicio.hero{background-position:58% center!important}
+}
+</style>
+
 </head>
 <body><a class="skip-link" href="#contenido-principal">Saltar al contenido principal</a>
 <div class="site-sticky-shell" id="siteStickyShell">
@@ -1537,10 +1634,10 @@ section:hover>.wrap>.intro-row .section-kicker{letter-spacing:.18em}
 </div>
 </div>
 <div class="course-grid">
-<div class="course-area-heading"><h3>SCRATCH · CREA HISTORIAS Y VIDEOJUEGOS</h3></div><article class="course-card reveal course-open" data-course="scratch-inicial" id="card-scratch-inicial" tabindex="0"><div class="course-art"><div class="course-icon"><img alt="Logo animado de Scratch Inicial de KUBIQ Academy" decoding="async" loading="lazy" src="imagenes/course-scratch-inicial.gif"/></div></div><div class="course-content"><div class="course-main"><span class="course-level">Nivel inicial</span><h3>Scratch inicial</h3><div class="course-bottom"><span class="course-age"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24"><circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.8"></circle><path d="M5 20C5 16.7 8.1 14 12 14S19 16.7 19 20" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg>8–12 años</span><span class="course-code">K01</span></div></div><p class="course-description">Crea historias, animaciones y tus primeros videojuegos.</p><div class="course-quick-info"><span class="quick-label">Aprenderá:</span><ul><li>Bloques, secuencias e instrucciones</li><li>Personajes, escenarios y animaciones</li></ul></div><a aria-label="Ver programa completo de scratch inicial" class="course-more" href="programas/scratch/index.html">Ver programa</a></div></article>
-<article class="course-card reveal course-open" data-course="scratch-avanzado" id="card-scratch-avanzado" tabindex="0"><div class="course-art"><div class="course-icon"><img alt="Logo animado de Scratch Avanzado de KUBIQ Academy" decoding="async" loading="lazy" src="imagenes/course-scratch-avanzado.gif"/></div></div><div class="course-content"><div class="course-main"><span class="course-level">Nivel avanzado</span><h3>Scratch avanzado</h3><div class="course-bottom"><span class="course-age"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24"><circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.8"></circle><path d="M5 20C5 16.7 8.1 14 12 14S19 16.7 19 20" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg>9–12 años</span><span class="course-code">K02</span></div></div><p class="course-description">Diseña juegos con reglas, puntajes y nuevos desafíos.</p><div class="course-quick-info"><span class="quick-label">Aprenderá:</span><ul><li>Condiciones, ciclos y variables</li><li>Puntajes, vidas y niveles de juego</li></ul></div><a aria-label="Ver programa completo de scratch avanzado" class="course-more" href="programas/scratch/index.html">Ver programa</a></div></article>
-<div class="course-area-heading"><h3>ROBLOX STUDIO · CONSTRUYE MUNDOS 3D</h3></div><article class="course-card reveal course-open" data-course="roblox-inicial" id="card-roblox-inicial" tabindex="0"><div class="course-art"><div class="course-icon"><img alt="Logo animado de Roblox Studio Inicial de KUBIQ Academy" decoding="async" loading="lazy" src="imagenes/course-roblox-inicial.gif"/></div></div><div class="course-content"><div class="course-main"><span class="course-level">Nivel inicial</span><h3>Roblox Studio inicial</h3><div class="course-bottom"><span class="course-age"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24"><circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.8"></circle><path d="M5 20C5 16.7 8.1 14 12 14S19 16.7 19 20" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg>10–14 años</span><span class="course-code">K03</span></div></div><p class="course-description">Construye escenarios y mundos en 3D.</p><div class="course-quick-info"><span class="quick-label">Aprenderá:</span><ul><li>Herramientas de Roblox Studio</li><li>Construcción de mundos y escenarios 3D</li></ul></div><a aria-label="Ver programa completo de roblox inicial" class="course-more" href="programas/roblox/index.html">Ver programa</a></div></article>
-<article class="course-card reveal course-open" data-course="roblox-avanzado" id="card-roblox-avanzado" tabindex="0"><div class="course-art"><div class="course-icon"><img alt="Logo animado de Roblox Studio Avanzado de KUBIQ Academy" decoding="async" loading="lazy" src="imagenes/course-roblox-avanzado.gif"/></div></div><div class="course-content"><div class="course-main"><span class="course-level">Nivel avanzado</span><h3>Roblox Studio avanzado</h3><div class="course-bottom"><span class="course-age"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24"><circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.8"></circle><path d="M5 20C5 16.7 8.1 14 12 14S19 16.7 19 20" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg>12–17 años</span><span class="course-code">K04</span></div></div><p class="course-description">Programa interacciones y experiencias en Roblox.</p><div class="course-quick-info"><span class="quick-label">Aprenderá:</span><ul><li>Programación con lenguaje Lua</li><li>Variables, funciones y eventos</li></ul></div><a aria-label="Ver programa completo de roblox avanzado" class="course-more" href="programas/roblox/index.html">Ver programa</a></div></article>
+<div class="course-area-heading"><h3>SCRATCH · CREA HISTORIAS Y VIDEOJUEGOS</h3></div><article class="course-card reveal course-open" data-course="scratch-inicial" id="card-scratch-inicial" tabindex="0"><div class="course-art"><div class="course-icon"><img alt="Logo animado de Scratch Inicial de KUBIQ Academy" decoding="async" loading="lazy" src="imagenes/course-scratch-inicial.gif"/></div></div><div class="course-content"><div class="course-main"><span class="course-level">Nivel inicial</span><h3>Scratch inicial</h3><div class="course-bottom"><span class="course-age"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24"><circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.8"></circle><path d="M5 20C5 16.7 8.1 14 12 14S19 16.7 19 20" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg>8–11 años</span><span class="course-code">K01</span></div></div><p class="course-description">Crea historias, animaciones y tus primeros videojuegos.</p><div class="course-quick-info"><span class="quick-label">Aprenderá:</span><ul><li>Bloques, secuencias e instrucciones</li><li>Personajes, escenarios y animaciones</li></ul></div><a aria-label="Ver programa completo de scratch inicial" class="course-more" href="programas/scratch/index.html">Ver programa</a></div></article>
+<article class="course-card reveal course-open" data-course="scratch-avanzado" id="card-scratch-avanzado" tabindex="0"><div class="course-art"><div class="course-icon"><img alt="Logo animado de Scratch Avanzado de KUBIQ Academy" decoding="async" loading="lazy" src="imagenes/course-scratch-avanzado.gif"/></div></div><div class="course-content"><div class="course-main"><span class="course-level">Nivel avanzado</span><h3>Scratch avanzado</h3><div class="course-bottom"><span class="course-age"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24"><circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.8"></circle><path d="M5 20C5 16.7 8.1 14 12 14S19 16.7 19 20" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg>9–13 años</span><span class="course-code">K02</span></div></div><p class="course-description">Diseña juegos con reglas, puntajes y nuevos desafíos.</p><div class="course-quick-info"><span class="quick-label">Aprenderá:</span><ul><li>Condiciones, ciclos y variables</li><li>Puntajes, vidas y niveles de juego</li></ul></div><a aria-label="Ver programa completo de scratch avanzado" class="course-more" href="programas/scratch/index.html">Ver programa</a></div></article>
+<div class="course-area-heading"><h3>ROBLOX STUDIO · CONSTRUYE MUNDOS 3D</h3></div><article class="course-card reveal course-open" data-course="roblox-inicial" id="card-roblox-inicial" tabindex="0"><div class="course-art"><div class="course-icon"><img alt="Logo animado de Roblox Studio Inicial de KUBIQ Academy" decoding="async" loading="lazy" src="imagenes/course-roblox-inicial.gif"/></div></div><div class="course-content"><div class="course-main"><span class="course-level">Nivel inicial</span><h3>Roblox Studio inicial</h3><div class="course-bottom"><span class="course-age"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24"><circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.8"></circle><path d="M5 20C5 16.7 8.1 14 12 14S19 16.7 19 20" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg>10–15 años</span><span class="course-code">K03</span></div></div><p class="course-description">Construye escenarios y mundos en 3D.</p><div class="course-quick-info"><span class="quick-label">Aprenderá:</span><ul><li>Herramientas de Roblox Studio</li><li>Construcción de mundos y escenarios 3D</li></ul></div><a aria-label="Ver programa completo de roblox inicial" class="course-more" href="programas/roblox/index.html">Ver programa</a></div></article>
+<article class="course-card reveal course-open" data-course="roblox-avanzado" id="card-roblox-avanzado" tabindex="0"><div class="course-art"><div class="course-icon"><img alt="Logo animado de Roblox Studio Avanzado de KUBIQ Academy" decoding="async" loading="lazy" src="imagenes/course-roblox-avanzado.gif"/></div></div><div class="course-content"><div class="course-main"><span class="course-level">Nivel avanzado</span><h3>Roblox Studio avanzado</h3><div class="course-bottom"><span class="course-age"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24"><circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.8"></circle><path d="M5 20C5 16.7 8.1 14 12 14S19 16.7 19 20" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg>12–16 años</span><span class="course-code">K04</span></div></div><p class="course-description">Programa interacciones y experiencias en Roblox.</p><div class="course-quick-info"><span class="quick-label">Aprenderá:</span><ul><li>Programación con lenguaje Lua</li><li>Variables, funciones y eventos</li></ul></div><a aria-label="Ver programa completo de roblox avanzado" class="course-more" href="programas/roblox/index.html">Ver programa</a></div></article>
 <div class="course-area-heading"><h3>PYTHON · PROGRAMA TUS IDEAS</h3></div><article class="course-card reveal course-open" data-course="python-inicial" id="card-python-inicial" tabindex="0"><div class="course-art"><div class="course-icon"><img alt="Logo animado de Python Inicial de KUBIQ Academy" decoding="async" loading="lazy" src="imagenes/course-python-inicial.gif"/></div></div><div class="course-content"><div class="course-main"><span class="course-level">Nivel inicial</span><h3>Python inicial</h3><div class="course-bottom"><span class="course-age"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24"><circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.8"></circle><path d="M5 20C5 16.7 8.1 14 12 14S19 16.7 19 20" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg>13–17 años</span><span class="course-code">K05</span></div></div><p class="course-description">Aprende código creando programas y pequeños juegos.</p><div class="course-quick-info"><span class="quick-label">Aprenderá:</span><ul><li>Variables, datos y operaciones</li><li>Condicionales y ciclos</li></ul></div><a aria-label="Ver programa completo de python inicial" class="course-more" href="programas/python/index.html">Ver programa</a></div></article>
 <article class="course-card reveal course-open" data-course="python-avanzado" id="card-python-avanzado" tabindex="0"><div class="course-art"><div class="course-icon"><img alt="Logo animado de Python Avanzado de KUBIQ Academy" decoding="async" loading="lazy" src="imagenes/course-python-avanzado.gif"/></div></div><div class="course-content"><div class="course-main"><span class="course-level">Nivel avanzado</span><h3>Python avanzado</h3><div class="course-bottom"><span class="course-age"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24"><circle cx="12" cy="8" r="3.5" stroke="currentColor" stroke-width="1.8"></circle><path d="M5 20C5 16.7 8.1 14 12 14S19 16.7 19 20" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg>13–17 años</span><span class="course-code">K06</span></div></div><p class="course-description">Desarrolla programas para resolver retos más complejos.</p><div class="course-quick-info"><span class="quick-label">Aprenderá:</span><ul><li>Funciones, parámetros y módulos</li><li>Listas, diccionarios y estructuras de datos</li></ul></div><a aria-label="Ver programa completo de python avanzado" class="course-more" href="programas/python/index.html">Ver programa</a></div></article>
 </div>
@@ -1552,9 +1649,9 @@ section:hover>.wrap>.intro-row .section-kicker{letter-spacing:.18em}
 <h2 class="section-title display" id="v78-age-title">¿Qué puede aprender según su edad?</h2>
 <p class="section-intro">Edades orientativas y organización académica de cada programa.</p>
 <div class="v78-age-list">
-<details class="v78-age-item"><summary><span class="v78-age-label"><strong>8–12 años</strong><small>Scratch · Crea historias, animaciones y videojuegos</small></span><span aria-hidden="true" class="v78-age-toggle">+</span></summary><div class="v78-age-courses v85-age-courses"><article><img alt="" loading="lazy" src="imagenes/course-scratch-inicial.gif"/><span>SCRATCH · INICIAL · 8–12 AÑOS</span><h3>Scratch Inicial</h3><p>24 clases · 60 min por clase · 24 horas totales.</p><a href="programas/scratch/index.html">Ver programa</a></article><article><img alt="" loading="lazy" src="imagenes/course-scratch-avanzado.gif"/><span>SCRATCH · AVANZADO · 9–12 AÑOS</span><h3>Scratch Avanzado</h3><p>28 clases · 60 min por clase · 28 horas totales.</p><a href="programas/scratch/index.html">Ver programa</a></article></div></details>
-<details class="v78-age-item"><summary><span class="v78-age-label"><strong>10–17 años</strong><small>Roblox Studio · Construye mundos 3D y experiencias interactivas</small></span><span aria-hidden="true" class="v78-age-toggle">+</span></summary><div class="v78-age-courses v85-age-courses"><article><img alt="" loading="lazy" src="imagenes/course-roblox-inicial.gif"/><span>ROBLOX STUDIO · INICIAL · 10–14 AÑOS</span><h3>Roblox Studio Inicial</h3><p>28 clases · 60 min por clase · 28 horas totales.</p><a href="programas/roblox/index.html">Ver programa</a></article><article><img alt="" loading="lazy" src="imagenes/course-roblox-avanzado.gif"/><span>ROBLOX STUDIO · AVANZADO · 12–17 AÑOS</span><h3>Roblox Studio Avanzado</h3><p>32 clases · 70 min por clase · 37 h 20 min totales.</p><a href="programas/roblox/index.html">Ver programa</a></article></div></details>
-<details class="v78-age-item"><summary><span class="v78-age-label"><strong>13–17 años</strong><small>Python · Programa ideas y resuelve retos con código</small></span><span aria-hidden="true" class="v78-age-toggle">+</span></summary><div class="v78-age-courses v85-age-courses"><article><img alt="" loading="lazy" src="imagenes/course-python-inicial.gif"/><span>PYTHON · INICIAL · 13–17 AÑOS</span><h3>Python Inicial</h3><p>40 clases · 70 min por clase · 46 h 40 min totales.</p><a href="programas/python/index.html">Ver programa</a></article><article><img alt="" loading="lazy" src="imagenes/course-python-avanzado.gif"/><span>PYTHON · AVANZADO · 13–17 AÑOS</span><h3>Python Avanzado</h3><p>40 clases · 70 min por clase · 46 h 40 min totales.</p><a href="programas/python/index.html">Ver programa</a></article></div></details>
+<details class="v78-age-item"><summary><span class="v78-age-label"><strong>8–13 años</strong><small>Scratch · Crea historias, animaciones y videojuegos</small></span><span aria-hidden="true" class="v78-age-toggle">+</span></summary><div class="v78-age-courses v85-age-courses"><article><img alt="" loading="lazy" src="imagenes/course-scratch-inicial.gif"/><span>SCRATCH · INICIAL · 8 a 11 años</span><h3>Scratch Inicial</h3><p>24 clases · 60 min por clase · 24 horas totales.</p><a href="programas/scratch/index.html">Ver programa</a></article><article><img alt="" loading="lazy" src="imagenes/course-scratch-avanzado.gif"/><span>SCRATCH · AVANZADO · 9 a 13 años</span><h3>Scratch Avanzado</h3><p>28 clases · 60 min por clase · 28 horas totales.</p><a href="programas/scratch/index.html">Ver programa</a></article></div></details>
+<details class="v78-age-item"><summary><span class="v78-age-label"><strong>10–16 años</strong><small>Roblox Studio · Construye mundos 3D y experiencias interactivas</small></span><span aria-hidden="true" class="v78-age-toggle">+</span></summary><div class="v78-age-courses v85-age-courses"><article><img alt="" loading="lazy" src="imagenes/course-roblox-inicial.gif"/><span>ROBLOX STUDIO · INICIAL · 10 a 15 años</span><h3>Roblox Studio Inicial</h3><p>28 clases · 60 min por clase · 28 horas totales.</p><a href="programas/roblox/index.html">Ver programa</a></article><article><img alt="" loading="lazy" src="imagenes/course-roblox-avanzado.gif"/><span>ROBLOX STUDIO · AVANZADO · 12 a 16 años</span><h3>Roblox Studio Avanzado</h3><p>32 clases · 70 min por clase · 37 h 20 min totales.</p><a href="programas/roblox/index.html">Ver programa</a></article></div></details>
+<details class="v78-age-item"><summary><span class="v78-age-label"><strong>13–17 años</strong><small>Python · Programa ideas y resuelve retos con código</small></span><span aria-hidden="true" class="v78-age-toggle">+</span></summary><div class="v78-age-courses v85-age-courses"><article><img alt="" loading="lazy" src="imagenes/course-python-inicial.gif"/><span>PYTHON · INICIAL · 13 a 17 años</span><h3>Python Inicial</h3><p>40 clases · 70 min por clase · 46 h 40 min totales.</p><a href="programas/python/index.html">Ver programa</a></article><article><img alt="" loading="lazy" src="imagenes/course-python-avanzado.gif"/><span>PYTHON · AVANZADO · 13 a 17 años</span><h3>Python Avanzado</h3><p>40 clases · 70 min por clase · 46 h 40 min totales.</p><a href="programas/python/index.html">Ver programa</a></article></div></details>
 </div>
 
 <div aria-labelledby="creator-quiz-title" class="creator-quiz" id="kubiq-creator-quiz">

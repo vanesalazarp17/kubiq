@@ -8,10 +8,10 @@ DECISIONES CONFIRMADAS
 - Edades revisadas como recomendación orientativa; la asignación final considera conocimientos previos, intereses y madurez digital.
 
 CATÁLOGO
-Scratch Inicial: 8–10 años | 45 min/sesión | 32 sesiones | 24 horas totales.
+Scratch Inicial: 8 a 11 años | 45 min/sesión | 32 sesiones | 24 horas totales.
 Scratch Avanzado: 10–12 años | 60 min/sesión | 32 sesiones | 32 horas totales.
 Roblox Studio Inicial: 10–13 años | 60 min/sesión | 32 sesiones | 32 horas totales.
-Roblox Studio Avanzado: 12–16 años | 75 min/sesión | 32 sesiones | 40 horas totales.
+Roblox Studio Avanzado: 12 a 16 años | 75 min/sesión | 32 sesiones | 40 horas totales.
 Python Inicial: 13–15 años | 75 min/sesión | 32 sesiones | 40 horas totales.
 Python Avanzado: 14–17 años | 75 min/sesión | 32 sesiones | 40 horas totales.
 

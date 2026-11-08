@@ -11,10 +11,10 @@
 - Clases personalizadas 1:1 sujetas a coordinación de horarios.
 
 ## Programas oficiales
-1. Scratch Inicial — edad recomendada: 8–10 años; 32 encuentros semanales de 45 minutos (24 horas).
+1. Scratch Inicial — edad recomendada: 8 a 11 años; 32 encuentros semanales de 45 minutos (24 horas).
 2. Scratch Avanzado — edad recomendada: 10–12 años; 32 encuentros semanales de 60 minutos (32 horas).
 3. Roblox Studio Inicial — edad recomendada: 10–13 años; 32 encuentros semanales de 60 minutos (32 horas).
-4. Roblox Studio Avanzado — edad recomendada: 12–16 años; 32 encuentros semanales de 75 minutos (40 horas).
+4. Roblox Studio Avanzado — edad recomendada: 12 a 16 años; 32 encuentros semanales de 75 minutos (40 horas).
 5. Python Inicial — edad recomendada: 13–15 años; 32 encuentros semanales de 75 minutos (40 horas).
 6. Python Avanzado — edad recomendada: 14–17 años; 32 encuentros semanales de 75 minutos (40 horas).
 
