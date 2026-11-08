@@ -1,20 +1,48 @@
 KUBIQ ACADEMY — V80
-Actualización sobre la base V79, preparada como ZIP independiente. No modifica GitHub.
+Actualización consolidada sobre la base V78.
 
 Cambios incluidos:
-1. Horarios: la sección se reorganizó como una agenda semanal por programa y nivel:
-   - Scratch: lunes inicial y miércoles avanzado.
-   - Roblox Studio: martes inicial y viernes avanzado.
-   - Python: jueves inicial y avanzado.
-   - Bloques de tarde y zona horaria UTC−5 visibles.
-   - Grupos de 4 a 8, opciones de sábado y franja adicional sujetas a demanda.
-   - Aviso claro de que la disponibilidad y apertura se confirman por escrito antes de cualquier pago.
-2. Preguntas frecuentes: acordeón con una sola respuesta abierta a la vez.
-3. Página para escuelas: encabezado reducido a “Volver a KUBIQ” y “Solicitar matrícula”.
-4. Se conserva el contenido, recursos visuales, páginas de programas y funcionalidades de V79.
-
-Pendiente por falta de material fuente:
-- Las ocho reseñas originales no están en el ZIP V78/V79 proporcionado ni en la versión local de trabajo. Se mantiene el espacio de experiencias auténticas sin inventar testimonios, nombres ni atribuciones. Para restaurarlas se necesitan los textos originales o un ZIP anterior que los contenga.
+1. Banner de próximas cohortes con el GIF compartido y fecha de inicio: febrero de 2027.
+2. Texto principal ampliado para destacar el acompañamiento de docentes expertos en tecnología y programación.
+3. Experiencia KUBIQ: numeración simplificada de 01–04 a 1–4.
+4. Botón “Encuentra su ruta” dirigido a la guía de programas por edad, en lugar de saltar directamente al catálogo.
+5. Se conservan las ventanas informativas de los cursos y su botón “Ver programa”.
+6. Página de Scratch: se incorpora el GIF compartido.
+7. Páginas de Scratch, Roblox Studio y Python: botón “Solicitar matrícula” en cada nivel.
+   Los botones abren el formulario de inscripción en la página principal y preseleccionan el nivel elegido.
+8. Formulario: se asocia explícitamente el checkbox con su texto y se reduce el espacio vertical de ese bloque.
+9. Python Avanzado: se incorpora el GIF compartido en la tarjeta del nivel.
+10. Sección de certificados: se reemplaza la ilustración por el GIF compartido.
 
 Validación:
-- Se verificará sintaxis JavaScript y estructura del ZIP.
+- Se comprobaron los archivos y rutas de los cuatro GIF incorporados.
+- Se validó la sintaxis de scripts/main.js con Node.js.
+- Se comprobó la estructura del ZIP.
+
+
+Ajuste adicional V79.1:
+- Se reemplazó el GIF de Python Avanzado por la última imagen compartida por la usuaria, conservando el nombre de archivo y la ubicación en la página del programa.
+
+
+Ajuste V79.2:
+- Python inicial y Python avanzado quedan establecidos en 40 clases semanales por programa.
+- La página de Python muestra 40 encuentros; el modal del catálogo usa la cantidad de encuentros específica de cada curso.
+- Se actualizó el texto general para no afirmar que todos los programas tienen 32 encuentros.
+
+
+Ajuste V79.3 — sección de misiones:
+- Se ajustó el área de imagen a formato cuadrado y object-fit: contain para mostrar completos los GIF sin recortes.
+- Se quitaron los prefijos numéricos de las etiquetas; ahora solo se muestran Scratch, Roblox Studio y Python.
+- Las tarjetas completas enlazan directamente con la página de su programa, sin botones adicionales.
+- El botón “Encuentra tu próxima misión” queda centrado.
+
+
+Ajuste V79.4 — sección de horarios:
+- Se sustituyeron las tarjetas de misiones por el bloque de disponibilidad flexible según la referencia visual.
+- Se muestra únicamente disponibilidad general: lunes a viernes y sábados, de 11:00 a. m. a 7:00 p. m., hora de Ecuador (UTC−5).
+- No se publica una distribución de cursos por día ni horarios específicos por nivel.
+- Se eliminó la repetición del bloque de disponibilidad en su ubicación anterior.
+
+
+VERSIÓN DE ENTREGA: KUBIQ V80
+Esta versión consolida todos los cambios aprobados durante esta ronda de revisión, incluidos los ajustes de catálogo, páginas de programas, imágenes, matrículas, formulario, duraciones de Python, tarjetas de misión y sección de horarios flexibles.
