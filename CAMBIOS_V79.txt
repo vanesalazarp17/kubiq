@@ -1,0 +1,20 @@
+KUBIQ ACADEMY — V79
+Actualización consolidada sobre la base V78.
+
+Cambios incluidos:
+1. Banner de próximas cohortes con el GIF compartido y fecha de inicio: febrero de 2027.
+2. Texto principal ampliado para destacar el acompañamiento de docentes expertos en tecnología y programación.
+3. Experiencia KUBIQ: numeración simplificada de 01–04 a 1–4.
+4. Botón “Encuentra su ruta” dirigido a la guía de programas por edad, en lugar de saltar directamente al catálogo.
+5. Se conservan las ventanas informativas de los cursos y su botón “Ver programa”.
+6. Página de Scratch: se incorpora el GIF compartido.
+7. Páginas de Scratch, Roblox Studio y Python: botón “Solicitar matrícula” en cada nivel.
+   Los botones abren el formulario de inscripción en la página principal y preseleccionan el nivel elegido.
+8. Formulario: se asocia explícitamente el checkbox con su texto y se reduce el espacio vertical de ese bloque.
+9. Python Avanzado: se incorpora el GIF compartido en la tarjeta del nivel.
+10. Sección de certificados: se reemplaza la ilustración por el GIF compartido.
+
+Validación:
+- Se comprobaron los archivos y rutas de los cuatro GIF incorporados.
+- Se validó la sintaxis de scripts/main.js con Node.js.
+- Se comprobó la estructura del ZIP.

@@ -290,3 +290,15 @@ document.addEventListener('keydown',e=>{if(e.key!=='Tab')return;const activeDial
     });
   }
 })();
+
+
+// KUBIQ V79 — deep links from individual program pages to the enrollment form.
+(() => {
+  const params = new URLSearchParams(window.location.search);
+  const requestedCourse = params.get('matricula');
+  if (!requestedCourse) return;
+  if (typeof openEnrollment === 'function') {
+    openEnrollment(requestedCourse);
+    window.history.replaceState(null, '', window.location.pathname + '#inscripcion');
+  }
+})();
