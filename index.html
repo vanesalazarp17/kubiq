@@ -1276,7 +1276,6 @@ section:hover>.wrap>.intro-row .section-kicker{letter-spacing:.18em}
 .v74-progress-inner h2{font-size:clamp(28px,3.4vw,42px)}
 @media(max-width:760px){.v81-schedule-layout{grid-template-columns:1fr}.v81-schedule-card{padding:16px;gap:10px}.v81-schedule-card article{padding:14px;min-height:100px}.v81-schedule-card article strong{font-size:15px;white-space:normal}.v81-schedule-side{padding:20px}.v74-progress-inner{grid-template-columns:1fr;gap:22px}.v81-progress-gif-wrap{order:0}.v74-progress-inner>div:last-child{order:1}.v81-progress-action{justify-content:center}.v81-progress-action .btn{width:100%;max-width:340px;text-align:center}}
 </style>
-
 <style id="kubiq-v83-restoration-styles">
 /* V83: cohort banner compact, vivid violet */
 #launchBanner.v80-launch-banner{min-height:0!important;min-height:88px!important;padding:6px clamp(18px,4vw,58px)!important;gap:14px!important;background:radial-gradient(circle at 82% 20%,rgba(255,255,255,.2),transparent 27%),linear-gradient(105deg,#4213a8 0%,#6326cf 55%,#8b36dc 100%)!important;}
@@ -1323,7 +1322,41 @@ section:hover>.wrap>.intro-row .section-kicker{letter-spacing:.18em}
 #launchBanner.v80-launch-banner{min-height:88px!important}
 @media(max-width:560px){.enroll-dialog{max-height:94vh}.preference-fieldset{padding:13px}.preference-options{gap:7px}.preference-option{font-size:12px;padding:8px 10px}}
 </style>
-</head>
+<style id="kubiq-v85-audit-improvements">
+/* V85: visual clarity, child-friendly course discovery and accessible layout */
+.v85-mission-cta{display:flex;justify-content:center;align-items:center;width:100%;margin:24px auto 0;text-align:center}
+.v85-mission-cta .btn{margin:0!important;min-width:250px;box-shadow:0 12px 28px rgba(0,200,255,.24)}
+.v85-age-courses{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+.v85-age-courses article{position:relative;display:grid;grid-template-columns:86px minmax(0,1fr);column-gap:14px;align-items:center;overflow:hidden;border:1px solid rgba(117,82,223,.12);transition:transform .2s ease,box-shadow .2s ease}
+.v85-age-courses article:hover{transform:translateY(-3px);box-shadow:0 12px 24px rgba(35,28,90,.10)}
+.v85-age-courses article img{grid-column:1;grid-row:1/5;width:86px;height:86px;object-fit:contain;mix-blend-mode:multiply}
+.v85-age-courses article>span,.v85-age-courses article h3,.v85-age-courses article p,.v85-age-courses article a{grid-column:2}
+.v85-age-courses article>span{align-self:end;font-size:9px;line-height:1.35}
+.v85-age-courses article h3{margin:4px 0;font-size:15px}
+.v85-age-courses article p{margin:0 0 7px;font-size:12px}
+.v85-age-courses article a{align-self:start}
+.hero-community-image{mix-blend-mode:normal;filter:drop-shadow(0 18px 28px rgba(9,18,70,.18));border-radius:0!important}
+.program-hero-art img,.program-hero-image,.program-hero-visual img{background:transparent!important;object-fit:contain;mix-blend-mode:multiply;}
+.kubiq-principio{transition:transform .22s ease,box-shadow .22s ease}
+.kubiq-principio:hover{transform:translateY(-4px);box-shadow:0 16px 30px rgba(30,24,90,.10)}
+.v71-mission-card{transition:transform .22s ease,box-shadow .22s ease}
+.v71-mission-card:hover{transform:translateY(-5px);box-shadow:0 18px 34px rgba(0,0,0,.20)}
+@media(max-width:760px){.v85-age-courses{grid-template-columns:1fr!important}.v85-age-courses article{grid-template-columns:72px minmax(0,1fr);padding:13px}.v85-age-courses article img{width:72px;height:72px}.v85-mission-cta .btn{width:min(100%,320px)}.hero-community-image{max-height:390px}}
+@media(prefers-reduced-motion:reduce){.v85-age-courses article,.kubiq-principio,.v71-mission-card{transition:none}.v85-age-courses article:hover,.kubiq-principio:hover,.v71-mission-card:hover{transform:none}}
+</style>
+<style>
+/* KUBIQ V86 · exploración interactiva, carrusel y microinteracciones */
+.creator-quiz{margin:clamp(30px,5vw,64px) auto 22px;max-width:1120px;padding:clamp(22px,4vw,42px);display:grid;grid-template-columns:minmax(220px,.8fr) minmax(0,1.2fr);gap:clamp(22px,4vw,54px);align-items:center;position:relative;isolation:isolate;overflow:hidden;border:1px solid rgba(123,77,255,.18);border-radius:30px;background:radial-gradient(circle at 8% 0%,rgba(0,200,255,.16),transparent 32%),radial-gradient(circle at 100% 100%,rgba(123,77,255,.16),transparent 38%),linear-gradient(135deg,#fff,#f3f1ff 55%,#eefaff);box-shadow:0 20px 55px rgba(11,27,77,.08)}
+.creator-quiz:after{content:"";position:absolute;width:240px;height:240px;border:1px solid rgba(123,77,255,.13);border-radius:50%;right:-95px;top:-110px;z-index:-1;box-shadow:0 0 0 20px rgba(123,77,255,.035),0 0 0 42px rgba(0,200,255,.025)}
+.quiz-kicker{display:inline-flex;color:#754cff;font-weight:850;font-size:.75rem;letter-spacing:.16em;text-transform:uppercase}.creator-quiz-intro h3{font-size:clamp(1.65rem,3vw,2.45rem);line-height:1.05;letter-spacing:-.045em;color:var(--navy);margin:12px 0}.creator-quiz-intro p{color:#647294;line-height:1.7;margin:0;max-width:38ch}
+.creator-quiz-panel{padding:clamp(18px,3vw,30px);border-radius:24px;background:rgba(255,255,255,.88);border:1px solid #e0e5ff;box-shadow:0 12px 32px rgba(11,27,77,.07);backdrop-filter:blur(12px)}.creator-quiz-progress{height:7px;border-radius:20px;background:#e9edfb;overflow:hidden;margin-bottom:14px}.creator-quiz-progress-fill{display:block;width:33.333%;height:100%;border-radius:inherit;background:linear-gradient(90deg,#00c8ff,#7b4dff,#ffbf35);transition:width .35s ease}.creator-quiz-step-label{font-size:.76rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#7b4dff}.creator-quiz-question{font-size:clamp(1.12rem,2vw,1.42rem);font-weight:850;color:var(--navy);margin:9px 0 16px}.creator-quiz-options{display:grid;grid-template-columns:1fr;gap:10px}.creator-quiz-option{border:1px solid #e0e7fb;border-radius:15px;background:linear-gradient(110deg,#fff,#f7f9ff);padding:14px 16px;text-align:left;font:inherit;font-weight:700;color:#26365f;cursor:pointer;transition:transform .2s,border-color .2s,box-shadow .2s,background .2s}.creator-quiz-option:hover,.creator-quiz-option:focus-visible{transform:translateX(4px);border-color:#8a6aff;background:linear-gradient(100deg,#f0fbff,#f3efff);box-shadow:0 8px 22px rgba(123,77,255,.12);outline:none}.creator-quiz-result{display:flex;align-items:center;gap:20px;padding:10px 0}.creator-quiz-result[hidden]{display:none}.creator-quiz-result img{width:clamp(100px,16vw,155px);height:auto;object-fit:contain;filter:drop-shadow(0 12px 15px rgba(11,27,77,.13))}.creator-quiz-result h4{font-size:1.45rem;color:var(--navy);margin:5px 0}.creator-quiz-result p{color:#647294;line-height:1.6;margin:0 0 14px}.creator-quiz-controls{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:17px;color:#7783a0;font-size:.76rem}.quiz-reset{border:0;background:transparent;color:#6845d9;font-weight:800;cursor:pointer;padding:5px 0}.quiz-reset:hover{text-decoration:underline}
+.mission-carousel-controls{display:flex;align-items:center;justify-content:flex-end;gap:12px;margin:0 0 15px;color:#657394;font-size:.85rem;font-weight:700}.mission-arrow{width:42px;height:42px;border-radius:50%;border:1px solid rgba(123,77,255,.22);background:#fff;color:#7049e8;font-size:1.35rem;font-weight:800;cursor:pointer;box-shadow:0 6px 18px rgba(11,27,77,.07);transition:transform .2s,background .2s,color .2s}.mission-arrow:hover,.mission-arrow:focus-visible{transform:scale(1.08);background:#7049e8;color:#fff;outline:none}.mission-track{scroll-behavior:smooth;scroll-snap-type:x mandatory}.mission-track>.v71-mission-card{scroll-snap-align:start;position:relative;transition:transform .25s,box-shadow .25s,border-color .25s}.mission-track>.v71-mission-card:hover{transform:translateY(-7px);box-shadow:0 22px 48px rgba(11,27,77,.15);border-color:rgba(123,77,255,.4)}.mission-card-link{display:inline-flex;margin-top:13px;color:#6542dc;font-weight:850;text-decoration:none;align-items:center;gap:6px}.mission-card-link:hover{text-decoration:underline}.v85-mission-cta{justify-content:center!important;text-align:center}.v85-mission-cta .btn{min-width:275px;justify-content:center}
+.v85-age-courses article{transition:transform .22s,box-shadow .22s}.v85-age-courses article:hover{transform:translateY(-5px);box-shadow:0 18px 35px rgba(11,27,77,.13)}.v85-age-courses article img{filter:drop-shadow(0 8px 12px rgba(11,27,77,.12));transition:transform .25s}.v85-age-courses article:hover img{transform:scale(1.06) rotate(-2deg)}
+.course-card{transition:transform .25s,box-shadow .25s,border-color .25s}.course-card:hover{transform:translateY(-7px);box-shadow:0 22px 48px rgba(11,27,77,.14)}.course-icon img{filter:drop-shadow(0 9px 14px rgba(11,27,77,.14))}
+@media(max-width:850px){.creator-quiz{grid-template-columns:1fr}.creator-quiz-intro p{max-width:58ch}}
+@media(max-width:680px){.mission-carousel-controls{justify-content:space-between}.mission-track{display:flex!important;overflow-x:auto!important;gap:16px!important;padding:6px 3px 20px!important;scrollbar-width:thin}.mission-track>.v71-mission-card{flex:0 0 min(84vw,350px);min-width:min(84vw,350px)}.creator-quiz{border-radius:22px;padding:20px}.creator-quiz-panel{padding:17px}.creator-quiz-result{align-items:flex-start;flex-direction:column}.creator-quiz-result img{width:118px}.creator-quiz-controls{align-items:flex-start;flex-direction:column}.v85-mission-cta .btn{width:100%;min-width:0}}
+@media(prefers-reduced-motion:reduce){.creator-quiz-progress-fill,.creator-quiz-option,.mission-arrow,.mission-track>.v71-mission-card,.v85-age-courses article,.v85-age-courses article img,.course-card{transition:none!important;scroll-behavior:auto!important}}
+</style></head>
 <body><a class="skip-link" href="#contenido-principal">Saltar al contenido principal</a>
 <div class="site-sticky-shell" id="siteStickyShell">
 <aside aria-label="Próximas cohortes KUBIQ: inicio en febrero de 2027" class="launch-banner v80-launch-banner" id="launchBanner"><div class="v80-launch-copy"><span class="v80-launch-kicker">NUEVAS COHORTES KUBIQ</span><strong>¡Nuevos grupos en preparación! Tu próxima aventura empieza creando.</strong><p>Explora Scratch, Roblox Studio y Python y encuentra tu próximo proyecto.</p><span class="v80-launch-date">Iniciamos en febrero de 2027</span><a class="v80-launch-cta" href="#cursos">Explorar cursos</a></div><img alt="Mascota KUBIQ invitando a descubrir los próximos cursos" class="v80-launch-gif" height="150" src="imagenes/kubiq-proximas-cohortes.gif" style="width:clamp(92px,12vw,150px);height:auto;max-height:112px;object-fit:contain;" width="150"/><button aria-label="Cerrar anuncio" class="launch-banner-close" type="button">×</button></aside>
@@ -1357,7 +1390,7 @@ section:hover>.wrap>.intro-row .section-kicker{letter-spacing:.18em}
 </div>
 </div>
 <div aria-label="Un estudiante sostiene un átomo luminoso con el símbolo oficial de KUBIQ ACADEMY" class="hero-art hero-atom-scene">
-<img alt="Estudiantes de KUBIQ Academy creando videojuegos y proyectos de programación junto a Qbo." class="hero-kid-atom hero-community-image" decoding="async" fetchpriority="high" src="imagenes/kubiq-home-community-v83.jpeg"/>
+<img alt="Estudiantes de KUBIQ Academy creando videojuegos y proyectos de programación junto a Qbo." class="hero-kid-atom hero-community-image" decoding="async" fetchpriority="high" src="imagenes/kubiq-home-community-v85.png"/>
 </div>
 </div>
 <div class="hero-bottom">
@@ -1410,13 +1443,33 @@ section:hover>.wrap>.intro-row .section-kicker{letter-spacing:.18em}
 <h2 class="section-title display" id="v78-age-title">¿Qué puede aprender según su edad?</h2>
 <p class="section-intro">Edades orientativas y organización académica de cada programa.</p>
 <div class="v78-age-list">
-<details class="v78-age-item"><summary><span class="v78-age-label"><strong>8–12 años</strong><small>Programación visual para comenzar</small></span><span aria-hidden="true" class="v78-age-toggle">+</span></summary><div class="v78-age-courses"><article><span>SCRATCH · INICIAL</span><h3>Scratch Inicial</h3><p>32 clases · 60 min por clase · 32 horas totales.</p><a href="programas/scratch/index.html">Ver programa</a></article></div></details>
-<details class="v78-age-item"><summary><span class="v78-age-label"><strong>9–12 años</strong><small>Más lógica, reglas y videojuegos</small></span><span aria-hidden="true" class="v78-age-toggle">+</span></summary><div class="v78-age-courses"><article><span>SCRATCH · AVANZADO</span><h3>Scratch Avanzado</h3><p>32 clases · 75 min por clase · 40 horas totales.</p><a href="programas/scratch/index.html">Ver programa</a></article></div></details>
-<details class="v78-age-item"><summary><span class="v78-age-label"><strong>10–14 años</strong><small>Diseño y construcción de mundos 3D</small></span><span aria-hidden="true" class="v78-age-toggle">+</span></summary><div class="v78-age-courses"><article><span>ROBLOX STUDIO · INICIAL</span><h3>Roblox Studio Inicial</h3><p>32 clases · 75 min por clase · 40 horas totales.</p><a href="programas/roblox/index.html">Ver programa</a></article></div></details>
-<details class="v78-age-item"><summary><span class="v78-age-label"><strong>12–17 años</strong><small>Experiencias interactivas y scripting</small></span><span aria-hidden="true" class="v78-age-toggle">+</span></summary><div class="v78-age-courses"><article><span>ROBLOX STUDIO · AVANZADO</span><h3>Roblox Studio Avanzado</h3><p>40 clases · 90 min por clase · 60 horas totales.</p><a href="programas/roblox/index.html">Ver programa</a></article></div></details>
-<details class="v78-age-item"><summary><span class="v78-age-label"><strong>13–17 años</strong><small>Programación textual con Python</small></span><span aria-hidden="true" class="v78-age-toggle">+</span></summary><div class="v78-age-courses"><article><span>PYTHON · INICIAL</span><h3>Python Inicial</h3><p>40 clases · 90 min por clase · 60 horas totales.</p><a href="programas/python/index.html">Ver programa</a></article><article><span>PYTHON · AVANZADO</span><h3>Python Avanzado</h3><p>40 clases · 90 min por clase · 60 horas totales.</p><a href="programas/python/index.html">Ver programa</a></article></div></details>
+<details class="v78-age-item"><summary><span class="v78-age-label"><strong>8–12 años</strong><small>Scratch · Crea historias, animaciones y videojuegos</small></span><span aria-hidden="true" class="v78-age-toggle">+</span></summary><div class="v78-age-courses v85-age-courses"><article><img alt="" loading="lazy" src="imagenes/course-scratch-inicial.gif"/><span>SCRATCH · INICIAL · 8–12 AÑOS</span><h3>Scratch Inicial</h3><p>32 clases · 60 min por clase · 32 horas totales.</p><a href="programas/scratch/index.html">Ver programa</a></article><article><img alt="" loading="lazy" src="imagenes/course-scratch-avanzado.gif"/><span>SCRATCH · AVANZADO · 9–12 AÑOS</span><h3>Scratch Avanzado</h3><p>32 clases · 75 min por clase · 40 horas totales.</p><a href="programas/scratch/index.html">Ver programa</a></article></div></details>
+<details class="v78-age-item"><summary><span class="v78-age-label"><strong>10–17 años</strong><small>Roblox Studio · Construye mundos 3D y experiencias interactivas</small></span><span aria-hidden="true" class="v78-age-toggle">+</span></summary><div class="v78-age-courses v85-age-courses"><article><img alt="" loading="lazy" src="imagenes/course-roblox-inicial.gif"/><span>ROBLOX STUDIO · INICIAL · 10–14 AÑOS</span><h3>Roblox Studio Inicial</h3><p>32 clases · 75 min por clase · 40 horas totales.</p><a href="programas/roblox/index.html">Ver programa</a></article><article><img alt="" loading="lazy" src="imagenes/course-roblox-avanzado.gif"/><span>ROBLOX STUDIO · AVANZADO · 12–17 AÑOS</span><h3>Roblox Studio Avanzado</h3><p>40 clases · 90 min por clase · 60 horas totales.</p><a href="programas/roblox/index.html">Ver programa</a></article></div></details>
+<details class="v78-age-item"><summary><span class="v78-age-label"><strong>13–17 años</strong><small>Python · Programa ideas y resuelve retos con código</small></span><span aria-hidden="true" class="v78-age-toggle">+</span></summary><div class="v78-age-courses v85-age-courses"><article><img alt="" loading="lazy" src="imagenes/course-python-inicial.gif"/><span>PYTHON · INICIAL · 13–17 AÑOS</span><h3>Python Inicial</h3><p>40 clases · 90 min por clase · 60 horas totales.</p><a href="programas/python/index.html">Ver programa</a></article><article><img alt="" loading="lazy" src="imagenes/course-python-avanzado.gif"/><span>PYTHON · AVANZADO · 13–17 AÑOS</span><h3>Python Avanzado</h3><p>40 clases · 90 min por clase · 60 horas totales.</p><a href="programas/python/index.html">Ver programa</a></article></div></details>
 </div>
-<p class="v78-age-note">Las edades son orientativas. Para recomendar un nivel avanzado, confirmamos los conocimientos previos del estudiante.</p>
+
+<div aria-labelledby="creator-quiz-title" class="creator-quiz" id="kubiq-creator-quiz">
+<div class="creator-quiz-intro">
+<span class="quiz-kicker">TU PRÓXIMA AVENTURA</span>
+<h3 id="creator-quiz-title">¿Qué tipo de creador llevas dentro?</h3>
+<p>Responde tres preguntas rápidas y descubre qué ruta puede inspirar tu próximo proyecto.</p>
+</div>
+<div class="creator-quiz-panel">
+<div aria-label="Progreso del test" class="creator-quiz-progress"><span class="creator-quiz-progress-fill" data-quiz-progress=""></span></div>
+<div class="creator-quiz-step-label" data-quiz-step-label="">Pregunta 1 de 3</div>
+<div class="creator-quiz-question" data-quiz-question="">¿Qué te gustaría crear?</div>
+<div class="creator-quiz-options" data-quiz-options="">
+<button class="creator-quiz-option" data-route="scratch" type="button">Un videojuego con personajes e historias</button>
+<button class="creator-quiz-option" data-route="roblox" type="button">Un mundo 3D que otros puedan explorar</button>
+<button class="creator-quiz-option" data-route="python" type="button">Un programa que resuelva un reto</button>
+</div>
+<div aria-live="polite" class="creator-quiz-result" data-quiz-result="" hidden="">
+<img alt="Logo del programa recomendado" data-quiz-logo="" loading="lazy" src="imagenes/course-scratch-inicial.gif"/>
+<div><span class="quiz-kicker">TU RUTA SUGERIDA</span><h4 data-quiz-result-title=""></h4><p data-quiz-result-copy=""></p><a class="btn btn-primary" data-quiz-result-link="" href="programas/scratch/index.html">Explorar programa</a></div>
+</div>
+<div class="creator-quiz-controls"><button class="quiz-reset" data-quiz-reset="" hidden="" type="button">Volver a empezar</button><span>Es una orientación inicial; la edad y los conocimientos previos ayudan a elegir el nivel.</span></div>
+</div>
+</div><p class="v78-age-note">Las edades son orientativas. Para recomendar un nivel avanzado, confirmamos los conocimientos previos del estudiante.</p>
 </div>
 </section>
 <section aria-labelledby="progress-teaser-title" class="v74-progress-teaser">
@@ -1428,13 +1481,13 @@ section:hover>.wrap>.intro-row .section-kicker{letter-spacing:.18em}
 <div class="section-kicker">NO SOLO MIRES LA TECNOLOGÍA. HAZ QUE SUCEDA.</div>
 <h2 class="section-title display" id="v71-missions-title">¿Qué te gustaría crear primero?</h2>
 <p class="section-intro">Cada programa convierte la curiosidad en pequeños desafíos. El estudiante prueba ideas, toma decisiones, encuentra errores y mejora su proyecto con acompañamiento.</p>
-<div class="v71-mission-grid">
-<article class="v71-mission-card v71-mission-scratch"><span class="v71-mission-tag">MISIÓN 1 · SCRATCH</span><div aria-hidden="true" class="v71-mission-icon"><img alt="Ilustración animada de estudiante creando un videojuego con KUBIQ" loading="lazy" src="imagenes/scratch-disenia-videojuego.gif"/></div><h3>Diseña un videojuego</h3><p>Diseña personajes, crea reglas y programa cómo funciona tu juego.</p></article>
-<article class="v71-mission-card v71-mission-roblox"><span class="v71-mission-tag">MISIÓN 2 · ROBLOX STUDIO</span><div aria-hidden="true" class="v71-mission-icon"><img alt="Ilustración animada de estudiante construyendo un mundo 3D con KUBIQ" loading="lazy" src="imagenes/roblox-construye-mundo-3d.gif"/></div><h3>Construye un mundo 3D</h3><p>Construye escenarios, recorridos y experiencias en 3D.</p></article>
-<article class="v71-mission-card v71-mission-python"><span class="v71-mission-tag">MISIÓN 3 · PYTHON</span><div aria-hidden="true" class="v71-mission-icon"><img alt="Ilustración animada de estudiantes programando una solución con Python" loading="lazy" src="imagenes/python-programa-solucion.gif"/></div><h3>Programa una solución</h3><p>Escribe código para crear pequeños programas y resolver retos.</p></article>
+<div aria-label="Controles de proyectos" class="mission-carousel-controls"><button aria-label="Ver proyecto anterior" class="mission-arrow" data-mission-prev="" type="button">←</button><span>Explora las tres rutas creativas</span><button aria-label="Ver proyecto siguiente" class="mission-arrow" data-mission-next="" type="button">→</button></div><div class="v71-mission-grid mission-track">
+<article class="v71-mission-card v71-mission-scratch"><span class="v71-mission-tag">MISIÓN 1 · SCRATCH</span><div aria-hidden="true" class="v71-mission-icon"><img alt="Ilustración animada de estudiante creando un videojuego con KUBIQ" loading="lazy" src="imagenes/scratch-disenia-videojuego.gif"/></div><h3>Diseña un videojuego</h3><p>Diseña personajes, crea reglas y programa cómo funciona tu juego.</p><a class="mission-card-link" href="programas/scratch/index.html">Explorar Scratch →</a></article>
+<article class="v71-mission-card v71-mission-roblox"><span class="v71-mission-tag">MISIÓN 2 · ROBLOX STUDIO</span><div aria-hidden="true" class="v71-mission-icon"><img alt="Ilustración animada de estudiante construyendo un mundo 3D con KUBIQ" loading="lazy" src="imagenes/roblox-construye-mundo-3d.gif"/></div><h3>Construye un mundo 3D</h3><p>Construye escenarios, recorridos y experiencias en 3D.</p><a class="mission-card-link" href="programas/roblox/index.html">Explorar Roblox Studio →</a></article>
+<article class="v71-mission-card v71-mission-python"><span class="v71-mission-tag">MISIÓN 3 · PYTHON</span><div aria-hidden="true" class="v71-mission-icon"><img alt="Ilustración animada de estudiantes programando una solución con Python" loading="lazy" src="imagenes/python-programa-solucion.gif"/></div><h3>Programa una solución</h3><p>Escribe código para crear pequeños programas y resolver retos.</p><a class="mission-card-link" href="programas/python/index.html">Explorar Python →</a></article>
 </div>
 <p class="v71-mission-note">Los proyectos concretos se ajustan al nivel y avance de cada grupo; estos ejemplos muestran posibilidades de creación.</p>
-<a class="btn btn-primary" href="#cursos">Encuentra tu próxima misión</a>
+<div class="v85-mission-cta"><a class="btn btn-primary" href="#cursos">Encuentra tu próxima misión</a></div>
 </div>
 </section>
 <section class="section coming" id="metodologia">
@@ -1456,8 +1509,8 @@ section:hover>.wrap>.intro-row .section-kicker{letter-spacing:.18em}
 <section aria-labelledby="certificate-title" class="certificate-section">
 <div class="wrap certificate-inner">
 <div aria-hidden="true" class="certificate-art">
-<img alt="Familias y estudiantes de KUBIQ celebrando su certificado digital." height="420" loading="lazy" src="imagenes/kubiq-certificado-digital-v83.gif" width="420">
-</img></div>
+<img alt="Familias y estudiantes de KUBIQ celebrando su certificado digital." height="420" loading="lazy" src="imagenes/kubiq-certificado-digital-v83.gif" width="420"/>
+</div>
 <div class="certificate-copy">
 <span class="section-kicker">UN LOGRO PARA CELEBRAR</span>
 <h2 id="certificate-title">¡Tu aprendizaje también merece un reconocimiento!</h2>
@@ -1539,17 +1592,17 @@ section:hover>.wrap>.intro-row .section-kicker{letter-spacing:.18em}
 <div class="enroll-field"><label for="enrollFrequency">Frecuencia preferida *</label><select id="enrollFrequency" name="frecuencia" required=""><option value="">Selecciona una opción</option><option>Una clase por semana (modalidad del programa)</option><option>Quisiera asesoría</option></select></div>
 <div class="enroll-field"><label for="enrollCountry">¿En qué país resides? *</label><select id="enrollCountry" name="pais" required=""><option value="">Selecciona un país</option><option>Ecuador</option><option>Colombia</option><option>Perú</option><option>México</option><option>Chile</option><option>Argentina</option><option>Estados Unidos</option><option>Otro país de LATAM</option><option>Otro país</option></select></div>
 <fieldset class="enroll-field full preference-fieldset"><legend>Días preferidos (puedes elegir varios)</legend><div class="preference-options days-options">
-<label class="preference-option"><input type="checkbox" name="dias" value="Lunes"/><span>Lunes</span></label>
-<label class="preference-option"><input type="checkbox" name="dias" value="Martes"/><span>Martes</span></label>
-<label class="preference-option"><input type="checkbox" name="dias" value="Miércoles"/><span>Miércoles</span></label>
-<label class="preference-option"><input type="checkbox" name="dias" value="Jueves"/><span>Jueves</span></label>
-<label class="preference-option"><input type="checkbox" name="dias" value="Viernes"/><span>Viernes</span></label>
-<label class="preference-option"><input type="checkbox" name="dias" value="Sábado"/><span>Sábado</span></label>
+<label class="preference-option"><input name="dias" type="checkbox" value="Lunes"/><span>Lunes</span></label>
+<label class="preference-option"><input name="dias" type="checkbox" value="Martes"/><span>Martes</span></label>
+<label class="preference-option"><input name="dias" type="checkbox" value="Miércoles"/><span>Miércoles</span></label>
+<label class="preference-option"><input name="dias" type="checkbox" value="Jueves"/><span>Jueves</span></label>
+<label class="preference-option"><input name="dias" type="checkbox" value="Viernes"/><span>Viernes</span></label>
+<label class="preference-option"><input name="dias" type="checkbox" value="Sábado"/><span>Sábado</span></label>
 </div></fieldset>
 <fieldset class="enroll-field full preference-fieldset"><legend>Horarios preferidos</legend><div class="preference-options time-options">
-<label class="preference-option"><input type="checkbox" name="franja" value="Mañana"/><span>Mañana</span></label>
-<label class="preference-option"><input type="checkbox" name="franja" value="Tarde"/><span>Tarde</span></label>
-<label class="preference-option"><input type="checkbox" name="franja" value="Cualquier horario disponible"/><span>Cualquier horario disponible</span></label>
+<label class="preference-option"><input name="franja" type="checkbox" value="Mañana"/><span>Mañana</span></label>
+<label class="preference-option"><input name="franja" type="checkbox" value="Tarde"/><span>Tarde</span></label>
+<label class="preference-option"><input name="franja" type="checkbox" value="Cualquier horario disponible"/><span>Cualquier horario disponible</span></label>
 </div><small>Los horarios se confirman según la disponibilidad de cada grupo (hora de Ecuador, UTC−5).</small></fieldset>
 <div class="enroll-field full"><label for="enrollSchedule">Otro detalle de disponibilidad (opcional)</label><input id="enrollSchedule" name="horario" placeholder="Ej.: después de las 4:00 p. m."/></div>
 <p class="enroll-note">Enviar esta solicitud no confirma la matrícula ni genera un cobro. Primero recibirás información sobre el precio total, disponibilidad, condiciones y opciones de pago. No incluyas información bancaria en este formulario.</p>
@@ -1559,9 +1612,9 @@ section:hover>.wrap>.intro-row .section-kicker{letter-spacing:.18em}
 <footer>
 <div class="wrap footer-main">
 <div class="footer-col">
-<img alt="KUBIQ ACADEMY — Mentes que programan el futuro" class="footer-logo-lockup" decoding="async" loading="lazy" src="imagenes/kubiq-logo-completo-footer.jpg">
+<img alt="KUBIQ ACADEMY — Mentes que programan el futuro" class="footer-logo-lockup" decoding="async" loading="lazy" src="imagenes/kubiq-logo-completo-footer.jpg"/>
 <p>Programación online para aprender creando, con clases en vivo y acompañamiento cercano.</p>
-</img></div>
+</div>
 <div class="footer-col"><h3>Explora</h3><div class="footer-links"><a href="index.html#propuesta">Nuestra esencia</a><a href="index.html#cursos">Cursos</a><a href="index.html#faq">Preguntas frecuentes</a><a href="index.html#contacto">Contacto</a><a href="experiencia.html">KUBIQ Family Experience</a><a href="kubiq-progress.html">KUBIQ PROGRESS</a></div></div>
 <div class="footer-col"><h3>¿Representas una escuela?</h3><div class="footer-school-card"><strong>La programación también puede llegar a tu institución.</strong><p>Conoce opciones de convenio, clases en vivo, beneficios para estudiantes y formación docente.</p><a href="escuelas.html">Conocer propuesta para escuelas</a></div></div>
 <div class="footer-col"><h3>Conecta con KUBIQ</h3><p>¿Quieres orientación sobre un curso o explorar una colaboración?</p><div class="footer-links"><a class="session-calendar-link" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}' data-cal-link="kubiqacademy/sesion-informativa" data-cal-namespace="sesion-informativa" href="#">Agenda una sesión informativa</a></div><div aria-label="Redes sociales de KUBIQ ACADEMY; enlaces oficiales próximamente" class="social-links">
@@ -1577,5 +1630,5 @@ section:hover>.wrap>.intro-row .section-kicker{letter-spacing:.18em}
 <!-- Cal.com element-click embed: KUBIQ ACADEMY trial booking -->
 <script defer="" src="scripts/main.js"></script>
 <script defer="" src="scripts/cal-embed.js"></script>
-</body>
+<script defer="True" src="scripts/kubiq-interactions.js"></script></body>
 </html>
