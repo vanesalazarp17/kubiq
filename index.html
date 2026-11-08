@@ -67,6 +67,30 @@
     .hero-actions { display:flex; flex-wrap:wrap; align-items:center; gap:13px; margin-top:32px; }
     .btn { padding:16px 22px; font-size:14px; }
     .btn-primary { background:var(--cyan); color:var(--navy); box-shadow:0 10px 26px rgba(0,200,255,.16); }
+
+    .btn-experience {
+      display:inline-flex; align-items:center; justify-content:center; gap:13px;
+      padding:17px 25px; border:1px solid rgba(255,255,255,.42);
+      border-radius:999px; color:#fff;
+      background:linear-gradient(112deg,#5B35E8 0%,#7547F5 48%,#08BFEF 100%);
+      box-shadow:0 12px 28px rgba(83,55,221,.28),0 0 0 5px rgba(117,71,245,.10),inset 0 1px 0 rgba(255,255,255,.3);
+      font-weight:800; letter-spacing:.01em;
+      transition:transform .24s ease,box-shadow .24s ease,filter .24s ease;
+    }
+    .btn-experience .experience-arrow {
+      display:grid; place-items:center; width:29px; height:29px; flex:0 0 29px;
+      border-radius:50%; color:#5432CF; background:#fff;
+      font-size:18px; line-height:1; transition:transform .24s ease;
+    }
+    .btn-experience:hover {
+      color:#fff; filter:saturate(1.12) brightness(1.06);
+      transform:translateY(-4px);
+      box-shadow:0 17px 34px rgba(83,55,221,.36),0 0 0 7px rgba(117,71,245,.12),inset 0 1px 0 rgba(255,255,255,.38);
+    }
+    .btn-experience:hover .experience-arrow { transform:translate(2px,-2px); }
+    .btn-experience:focus-visible { outline:3px solid #FFC928; outline-offset:4px; }
+    @media(max-width:560px){.btn-experience{padding:15px 19px;gap:10px;font-size:13px}.btn-experience .experience-arrow{width:26px;height:26px;flex-basis:26px}}
+
     .btn-ghost { color:white; border:1px solid rgba(255,255,255,.28); background:rgba(255,255,255,.06); }
     .btn-ghost:hover { background:rgba(255,255,255,.13); }
     .hero-note { margin-top:22px; color:#AEBCE7; font-size:12px; display:flex; gap:8px; align-items:center; }
@@ -1588,7 +1612,7 @@ section:hover>.wrap>.intro-row .section-kicker{letter-spacing:.18em}
 <h1 class="display">La próxima generación<br/><span class="gradient">no solo usa tecnología.</span><br/>La crea.</h1>
 <p class="hero-copy">Una academia digital para niños y adolescentes. Explora la <span class="hero-highlight">programación</span>, crea videojuegos y mundos digitales, y transforma tu curiosidad en habilidades que puedes demostrar. Aprende de la mano de <span class="hero-highlight">docentes expertos</span>, que te guían en cada proyecto y te ayudan a desarrollar tu <span class="hero-highlight">potencial</span>.</p>
 <div class="hero-actions">
-<a class="btn btn-primary" href="experiencia.html">Conocer la experiencia KUBIQ</a>
+<a class="btn btn-primary btn-experience" href="experiencia.html"><span>Conocer la experiencia KUBIQ</span><span class="experience-arrow" aria-hidden="true">↗</span></a>
 <a class="btn btn-ghost" href="#cursos">Ver los cursos <span aria-hidden="true">↘</span></a>
 </div>
 <div class="hero-note"><span aria-hidden="true" class="community-dot"></span>Clases en vivo · Grupos pequeños · Proyectos reales</div>
@@ -1756,12 +1780,14 @@ section:hover>.wrap>.intro-row .section-kicker{letter-spacing:.18em}
 <details class="faq-item" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question"><summary itemprop="name">¿Qué necesita para conectarse a las clases?</summary><div class="faq-answer" itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer"><p itemprop="text">Una computadora y conexión a internet. Recomendamos contar con mouse y cámara para facilitar la participación y la interacción durante las sesiones. La cámara es ideal, pero no la presentamos como requisito obligatorio.</p></div></details>
 <details class="faq-item" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question"><summary itemprop="name">¿Cómo son las clases?</summary><div class="faq-answer" itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer"><p itemprop="text">Son clases online en vivo, en grupos pequeños de 4 a 8 estudiantes. Cada programa tiene una duración de sesión adaptada a la edad y al tipo de proyecto. Cada nivel tiene su propio número de clases y duración de sesión. Los detalles se muestran en la página de cada programa.</p></div></details>
 <details class="faq-item" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question"><summary itemprop="name">¿Qué habilidades puede desarrollar?</summary><div class="faq-answer" itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer"><p itemprop="text">Según el curso, podrá practicar pensamiento lógico, creatividad, resolución de problemas y diseño de proyectos digitales. Son habilidades que pueden apoyar su aprendizaje en otras áreas y su preparación para un mundo cada vez más tecnológico.</p></div></details>
+<details class="faq-more"><summary class="faq-more-summary">Ver más preguntas frecuentes <span aria-hidden="true">＋</span></summary>
 <details class="faq-item" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question"><summary itemprop="name">¿Cómo puedo monitorear el aprendizaje de mi hijo?</summary><div class="faq-answer" itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer"><p itemprop="text">Durante el curso, los estudiantes practican mediante actividades y proyectos adecuados a su nivel. En la sesión informativa te explicaremos cómo acompañamos su aprendizaje, cómo reciben orientación y qué pueden desarrollar en la ruta que te interesa.</p></div></details>
 <details class="faq-item" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question"><summary itemprop="name">¿Cómo conoceré quién estará a cargo de las clases?</summary><div class="faq-answer" itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer"><p itemprop="text">Antes de confirmar una matrícula, la familia recibirá información sobre la organización académica, la modalidad de acompañamiento y las personas responsables del servicio. Queremos que puedas revisar esa información y resolver tus preguntas antes de realizar cualquier pago.</p></div></details>
 <details class="faq-item" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question"><summary itemprop="name">¿En qué consiste la experiencia introductoria?</summary><div class="faq-answer" itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer"><p itemprop="text">Es una experiencia guiada de 30 minutos: conocemos los intereses del estudiante, realiza un pequeño desafío creativo, explicamos qué conceptos se trabajan y conversamos con la familia. El representante puede acompañar como observador y no existe compromiso de matrícula.</p></div></details>
 <details class="faq-item" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question"><summary itemprop="name">¿Cuánto cuesta cada programa?</summary><div class="faq-answer" itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer"><p itemprop="text">El valor se comparte durante la orientación para que la familia conozca el precio total del programa, lo que incluye, las opciones de pago y las condiciones antes de decidir. No solicitamos pagos para enviar una consulta ni para recibir información.</p></div></details>
 <details class="faq-item" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question"><summary itemprop="name">¿Cuándo comienzan los grupos?</summary><div class="faq-answer" itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer"><p itemprop="text">Las nuevas cohortes se organizan por programa, nivel y disponibilidad. Consulta las opciones antes de inscribirte.</p></div></details>
 <details class="faq-item" itemprop="mainEntity" itemscope="" itemtype="https://schema.org/Question"><summary itemprop="name">¿Cómo puedo comprobar que KUBIQ ACADEMY es confiable?</summary><div class="faq-answer" itemprop="acceptedAnswer" itemscope="" itemtype="https://schema.org/Answer"><p itemprop="text">Es razonable querer conocer una academia antes de pagar. Te invitamos a agendar una sesión informativa: podremos explicarte la metodología, el contenido del curso, la organización académica, los horarios, los costos, las condiciones de inscripción y la información del servicio antes de que tomes una decisión. Te recomendamos revisar toda esa información por escrito y confirmar los datos de pago a través de nuestros canales oficiales. No tienes que inscribirte durante la sesión.</p><p itemprop="text"><a class="session-cta session-calendar-link" data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}' data-cal-link="kubiqacademy/sesion-informativa" data-cal-namespace="sesion-informativa" href="#">Agendar una sesión informativa</a></p></div></details>
+</details>
 </div>
 </div>
 </section>
@@ -1847,7 +1873,21 @@ section:hover>.wrap>.intro-row .section-kicker{letter-spacing:.18em}
 <!-- Cal.com element-click embed: KUBIQ ACADEMY trial booking -->
 <script defer="" src="scripts/main.js"></script>
 <script defer="" src="scripts/cal-embed.js"></script>
-<script defer="True" src="scripts/kubiq-interactions.js"></script></body>
+<script defer="True" src="scripts/kubiq-interactions.js"></script>
+<style id="kubiq-v106-faq-more">
+.faq-more{margin-top:14px;border:1px solid rgba(116,76,255,.22);border-radius:18px;background:rgba(255,255,255,.72);overflow:hidden}
+.faq-more-summary{list-style:none;display:flex;align-items:center;justify-content:center;gap:12px;padding:17px 20px;color:#5733d3;font-weight:800;cursor:pointer;transition:background .2s ease,color .2s ease}
+.faq-more-summary::-webkit-details-marker{display:none}
+.faq-more-summary:hover{background:rgba(116,76,255,.07)}
+.faq-more-summary span{font-size:1.25em;line-height:1;transition:transform .2s ease}
+.faq-more[open]>.faq-more-summary span{transform:rotate(45deg)}
+.faq-more>.faq-item{margin:0 14px 12px}
+.faq-more>.faq-item:first-of-type{margin-top:12px}
+.faq-more>.faq-item:last-child{margin-bottom:14px}
+@media(max-width:640px){.faq-more-summary{padding:15px 12px;font-size:.95rem}.faq-more>.faq-item{margin-left:9px;margin-right:9px}}
+</style>
+
+</body>
 </html>
 <style id="kubiq-v93-final-polish">
 /* Cover V93: supplied image is the full hero background. */
