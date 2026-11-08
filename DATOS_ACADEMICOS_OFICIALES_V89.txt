@@ -1,0 +1,15 @@
+KUBIQ ACADEMY – DATOS ACADÉMICOS OFICIALES V89
+Estos datos son la referencia única para Home, tarjetas, modales, páginas de programas y formularios informativos.
+
+Programa | Edad orientativa | Duración por clase | Número de clases | Duración total
+Scratch Inicial | 8–12 años | 60 minutos | 24 | 24 horas
+Scratch Avanzado | 9–12 años | 60 minutos | 28 | 28 horas
+Roblox Studio Inicial | 10–14 años | 60 minutos | 28 | 28 horas
+Roblox Studio Avanzado | 12–17 años | 70 minutos | 32 | 37 h 20 min
+Python Inicial | 13–17 años | 70 minutos | 40 | 46 h 40 min
+Python Avanzado | 13–17 años | 70 minutos | 40 | 46 h 40 min
+
+Regla de consistencia:
+- Mantener estos datos iguales en todas las páginas y ventanas.
+- No reutilizar duraciones de versiones anteriores.
+- Si se modifica un dato, actualizar la fuente central de scripts y los textos visibles de Home y páginas individuales.

@@ -1385,6 +1385,88 @@ section:hover>.wrap>.intro-row .section-kicker{letter-spacing:.18em}
 .program-hero-copy p{font-size:clamp(16px,1.35vw,19px);line-height:1.65}
 @media(max-width:760px){.sales-benefit-row{grid-template-columns:1fr}.program-sales-showcase{padding:40px 0}.sales-project img{height:190px}.program-sales-showcase .sales-head p{font-size:15px}}
 </style>
+
+<style id="kubiq-v90-full-cover">
+/* KUBIQ V90: la imagen es la portada completa; el texto ocupa el espacio azul izquierdo. */
+#inicio.hero{
+  position:relative!important;
+  isolation:isolate;
+  overflow:hidden;
+  min-height:clamp(650px, min(56.25vw, 860px), 860px);
+  background:#10105b url("imagenes/kubiq-portada-v90.jpeg") center center / cover no-repeat!important;
+}
+#inicio.hero:before{
+  content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background:linear-gradient(90deg,rgba(13,8,82,.18) 0%,rgba(13,8,82,.08) 42%,transparent 68%);
+}
+#inicio.hero>.wrap{width:100%!important;max-width:none!important;padding:0!important}
+#inicio .hero-grid{
+  width:100%;max-width:1500px;margin:0 auto;
+  min-height:clamp(650px, min(56.25vw, 860px), 860px)!important;
+  display:flex!important;align-items:center!important;
+  padding:70px clamp(28px,7.2vw,120px) 54px!important;
+}
+#inicio .hero-content{
+  width:min(100%,650px)!important;max-width:650px!important;
+  position:relative;z-index:2;
+}
+#inicio .hero-content h1{max-width:640px;text-shadow:0 3px 24px rgba(4,8,54,.22)}
+#inicio .hero-copy{max-width:610px;color:#f0f3ff!important;text-shadow:0 2px 15px rgba(4,8,54,.28)}
+#inicio .hero-highlight{color:#52e5ff!important;font-weight:800}
+#inicio .live-badge{background:rgba(7,16,85,.34)!important;border-color:rgba(255,255,255,.24)!important;color:#fff!important;backdrop-filter:blur(8px)}
+#inicio .hero-note{color:#e0e8ff!important}
+#inicio .small-group-highlight{background:rgba(10,17,91,.36)!important;border-color:rgba(116,213,255,.45)!important;color:#fff!important;backdrop-filter:blur(9px)}
+#inicio .small-group-highlight strong,#inicio .small-group-highlight span{color:#fff!important}
+#inicio .hero-art{display:none!important}
+#inicio .hero-bottom{max-width:1500px;margin:0 auto;padding:0 clamp(28px,7.2vw,120px) 24px!important;color:#e2e8ff!important}
+@media(max-width:900px){
+  #inicio.hero{min-height:760px;background-position:62% center!important}
+  #inicio.hero:before{background:linear-gradient(90deg,rgba(9,7,67,.80) 0%,rgba(9,7,67,.66) 55%,rgba(9,7,67,.12) 100%)}
+  #inicio .hero-grid{min-height:700px!important;padding:76px 28px 38px!important}
+  #inicio .hero-content{max-width:590px!important}
+}
+@media(max-width:600px){
+  #inicio.hero{min-height:790px;background-position:66% center!important}
+  #inicio.hero:before{background:linear-gradient(90deg,rgba(8,7,65,.88) 0%,rgba(8,7,65,.76) 62%,rgba(8,7,65,.34) 100%)}
+  #inicio .hero-grid{min-height:740px!important;padding:58px 22px 34px!important}
+  #inicio .hero-content{width:100%!important}
+  #inicio .hero-content h1{font-size:clamp(36px,10vw,54px)!important;line-height:1.02}
+  #inicio .hero-copy{font-size:15px!important;line-height:1.62!important}
+  #inicio .hero-actions{gap:10px;margin-top:24px}
+  #inicio .hero-actions .btn{font-size:12px;padding:13px 15px}
+  #inicio .small-group-highlight{margin-top:14px;padding:10px 12px}
+  #inicio .hero-bottom{padding:0 22px 18px!important;font-size:10px}
+}
+@media(prefers-reduced-motion:reduce){#inicio *{animation:none!important;transition:none!important}}
+</style>
+
+
+<style id="kubiq-v91-updates">
+/* Quiz: one creator illustration under the introductory question */
+.creator-quiz-intro{display:flex;flex-direction:column;align-items:flex-start;min-width:0}
+.creator-quiz-kid{display:block;width:min(100%,350px);height:auto;object-fit:contain;margin:20px auto 0;align-self:center;border-radius:24px;filter:drop-shadow(0 16px 24px rgba(11,27,77,.16))}
+/* Progress: text and the learning-in-action artwork side by side */
+.v74-progress-inner{grid-template-columns:minmax(0,1.08fr) minmax(300px,.92fr)!important;gap:clamp(28px,4vw,56px)!important;align-items:center!important}
+.v74-progress-copy{min-width:0}.v74-progress-copy h2{max-width:18ch}.v74-progress-copy p{max-width:62ch}
+.v74-progress-art.v81-progress-gif-wrap{align-self:center;width:100%}
+/* Family reviews carousel */
+.v91-reviews-shell{position:relative}
+.v91-review-track{display:grid;grid-auto-columns:minmax(270px,calc((100% - 36px)/3));grid-auto-flow:column;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:4px 3px 20px;scrollbar-width:thin;scrollbar-color:#8c72f4 #e8eafa}
+.v91-review-card{scroll-snap-align:start;min-width:0;display:flex;flex-direction:column;gap:12px;padding:22px;border:1px solid #dce4fa;border-radius:22px;background:linear-gradient(150deg,#fff,#f7f8ff);box-shadow:0 12px 30px rgba(11,27,77,.07);transition:transform .22s ease,box-shadow .22s ease}
+.v91-review-card:hover{transform:translateY(-5px);box-shadow:0 18px 36px rgba(11,27,77,.12)}
+.v91-sample-label{align-self:flex-start;border-radius:999px;padding:5px 9px;background:#fff1d6;color:#815300;font-size:9px;letter-spacing:.09em;font-weight:900}
+.v91-stars{color:#f3ad22;letter-spacing:3px;font-size:16px}
+.v91-review-card blockquote{margin:0;color:#24345f;font-size:14px;line-height:1.65;font-weight:600}
+.v91-review-author{margin:auto 0 0;padding-top:8px;color:#0b1b4d;font-size:12px;font-weight:900}.v91-review-author span{color:#7b849d;font-weight:600}
+.v91-review-controls{display:flex;align-items:center;justify-content:center;gap:18px;margin-top:4px}
+.v91-review-arrow{width:40px;height:40px;border:0;border-radius:50%;background:#714cff;color:#fff;font-size:22px;font-weight:900;cursor:pointer;box-shadow:0 8px 20px rgba(113,76,255,.22);transition:transform .2s,background .2s}
+.v91-review-arrow:hover{transform:scale(1.08);background:#5634d1}
+.v91-review-dots{display:flex;gap:8px;align-items:center}.v91-review-dots button{width:8px;height:8px;border:0;border-radius:99px;padding:0;background:#c8cfe2;cursor:pointer;transition:width .2s,background .2s}.v91-review-dots button.is-active{width:24px;background:#714cff}
+@media(max-width:900px){.v91-review-track{grid-auto-columns:minmax(260px,calc((100% - 18px)/2))}}
+@media(max-width:760px){.creator-quiz-kid{width:min(100%,300px);margin-top:16px}.v74-progress-inner{grid-template-columns:1fr!important;gap:20px!important}.v74-progress-copy{order:0}.v74-progress-art.v81-progress-gif-wrap{order:1}.v74-progress-copy h2{max-width:none}.v91-review-track{grid-auto-columns:minmax(260px,84%);gap:13px}.v91-review-card{padding:18px}.v91-review-controls{gap:14px}}
+@media(prefers-reduced-motion:reduce){.v91-review-track{scroll-behavior:auto}.v91-review-card,.v91-review-arrow,.v91-review-dots button{transition:none}}
+</style>
+
 </head>
 <body><a class="skip-link" href="#contenido-principal">Saltar al contenido principal</a>
 <div class="site-sticky-shell" id="siteStickyShell">
@@ -1418,9 +1500,7 @@ section:hover>.wrap>.intro-row .section-kicker{letter-spacing:.18em}
 <div><strong>Aprendizaje personalizado</strong><span>Clases en vivo · Grupos de 4 a 8 estudiantes</span></div>
 </div>
 </div>
-<div aria-label="Un estudiante sostiene un átomo luminoso con el símbolo oficial de KUBIQ ACADEMY" class="hero-art hero-atom-scene">
-<img alt="Estudiantes de KUBIQ Academy creando videojuegos y proyectos de programación junto a Qbo." class="hero-kid-atom hero-community-image" decoding="async" fetchpriority="high" src="imagenes/kubiq-portada-comunidad-v88.jpeg"/>
-</div>
+<div class="hero-art hero-atom-scene" aria-hidden="true"></div>
 </div>
 <div class="hero-bottom">
 <div><strong>KUBIQ ACADEMY</strong>   /   MENTES QUE PROGRAMAN EL FUTURO</div>
@@ -1482,6 +1562,7 @@ section:hover>.wrap>.intro-row .section-kicker{letter-spacing:.18em}
 <span class="quiz-kicker">TU PRÓXIMA AVENTURA</span>
 <h3 id="creator-quiz-title">¿Qué tipo de creador llevas dentro?</h3>
 <p>Responde tres preguntas rápidas y descubre qué ruta puede inspirar tu próximo proyecto.</p>
+<img class="creator-quiz-kid" src="imagenes/hero-kid-atom-cutout.png" alt="Niño creador de KUBIQ imaginando y construyendo proyectos digitales" loading="lazy" width="500" height="500"/>
 </div>
 <div class="creator-quiz-panel">
 <div aria-label="Progreso del test" class="creator-quiz-progress"><span class="creator-quiz-progress-fill" data-quiz-progress=""></span></div>
@@ -1503,14 +1584,14 @@ section:hover>.wrap>.intro-row .section-kicker{letter-spacing:.18em}
 </section>
 <section aria-labelledby="progress-teaser-title" class="v74-progress-teaser">
 <div class="wrap v74-progress-inner">
+<div class="v74-progress-copy"><span class="section-kicker">KUBIQ PROGRESS</span><h2 id="progress-teaser-title">No solo aprende: puede mostrar lo que sabe hacer.</h2><p>Observamos cómo aplica sus conocimientos, qué logra construir y cómo mejora sus proyectos con la orientación del docente.</p><div class="v81-progress-action"><a class="btn btn-primary" href="kubiq-progress.html">Así acompañamos su progreso</a></div></div>
 <div class="v74-progress-art v81-progress-gif-wrap"><img alt="Mascota KUBIQ junto al mensaje Aprendizaje en acción: crear, probar y mejorar" height="240" loading="lazy" src="imagenes/kubiq-progress-aprendizaje.gif" width="700"/></div>
-<div><span class="section-kicker">KUBIQ PROGRESS</span><h2 id="progress-teaser-title">No solo aprende: puede mostrar lo que sabe hacer.</h2><p>Observamos cómo aplica sus conocimientos, qué logra construir y cómo mejora sus proyectos con la orientación del docente.</p><div class="v81-progress-action"><a class="btn btn-primary" href="kubiq-progress.html">Así acompañamos su progreso</a></div></div>
 </div></section><section aria-labelledby="v71-missions-title" class="v71-missions" id="misiones">
 <div class="wrap">
 <div class="section-kicker">NO SOLO MIRES LA TECNOLOGÍA. HAZ QUE SUCEDA.</div>
 <h2 class="section-title display" id="v71-missions-title">¿Qué te gustaría crear primero?</h2>
 <p class="section-intro">Cada programa convierte la curiosidad en pequeños desafíos. El estudiante prueba ideas, toma decisiones, encuentra errores y mejora su proyecto con acompañamiento.</p>
-<div aria-label="Controles de proyectos" class="mission-carousel-controls"><button aria-label="Ver proyecto anterior" class="mission-arrow" data-mission-prev="" type="button">←</button><span>Explora las tres rutas creativas</span><button aria-label="Ver proyecto siguiente" class="mission-arrow" data-mission-next="" type="button">→</button></div><div class="v71-mission-grid mission-track">
+<div class="v71-mission-grid mission-track">
 <article class="v71-mission-card v71-mission-scratch"><span class="v71-mission-tag">MISIÓN 1 · SCRATCH</span><div aria-hidden="true" class="v71-mission-icon"><img alt="Ilustración animada de estudiante creando un videojuego con KUBIQ" loading="lazy" src="imagenes/scratch-disenia-videojuego.gif"/></div><h3>Diseña un videojuego</h3><p>Diseña personajes, crea reglas y programa cómo funciona tu juego.</p><a class="mission-card-link" href="programas/scratch/index.html">Explorar Scratch →</a></article>
 <article class="v71-mission-card v71-mission-roblox"><span class="v71-mission-tag">MISIÓN 2 · ROBLOX STUDIO</span><div aria-hidden="true" class="v71-mission-icon"><img alt="Ilustración animada de estudiante construyendo un mundo 3D con KUBIQ" loading="lazy" src="imagenes/roblox-construye-mundo-3d.gif"/></div><h3>Construye un mundo 3D</h3><p>Construye escenarios, recorridos y experiencias en 3D.</p><a class="mission-card-link" href="programas/roblox/index.html">Explorar Roblox Studio →</a></article>
 <article class="v71-mission-card v71-mission-python"><span class="v71-mission-tag">MISIÓN 3 · PYTHON</span><div aria-hidden="true" class="v71-mission-icon"><img alt="Ilustración animada de estudiantes programando una solución con Python" loading="lazy" src="imagenes/python-programa-solucion.gif"/></div><h3>Programa una solución</h3><p>Escribe código para crear pequeños programas y resolver retos.</p><a class="mission-card-link" href="programas/python/index.html">Explorar Python →</a></article>
@@ -1551,7 +1632,19 @@ section:hover>.wrap>.intro-row .section-kicker{letter-spacing:.18em}
 <section aria-labelledby="v78-reviews-title" class="v78-reviews" id="opiniones-familias">
 <div class="wrap">
 <div class="v78-reviews-head"><span class="section-kicker">COMUNIDAD KUBIQ</span><h2 class="section-title display" id="v78-reviews-title">La experiencia de aprender también se comparte.</h2><p class="section-intro">Queremos que las familias puedan contar cómo viven el proceso, qué proyectos les sorprenden y qué avances observan en sus hijos.</p></div>
-<div class="v78-review-panel"><div class="v78-review-mark">“</div><div><h3>Opiniones de familias KUBIQ</h3><p>Este espacio está preparado para mostrar las reseñas de familias. Los textos anteriores no están incluidos en los archivos de V80 disponibles, así que no los sustituimos por testimonios inventados.</p><a href="https://cal.com/kubiqacademy/sesion-informativa" rel="noopener" target="_blank">¿Quieres conocer KUBIQ? Agenda una sesión informativa ↗</a></div></div>
+<div class="v91-reviews-shell">
+<div class="v91-review-track" aria-label="Opiniones de ejemplo para la sección de familias" tabindex="0">
+<article class="v91-review-card"><span class="v91-sample-label">OPINIÓN DE EJEMPLO</span><div class="v91-stars" aria-label="Cinco estrellas">★★★★★</div><blockquote>“Me gusta que no se quede solo en teoría: mi hijo tiene la oportunidad de crear algo propio y explicar cómo funciona.”</blockquote><p class="v91-review-author">Familia KUBIQ <span>· Texto provisional</span></p></article>
+<article class="v91-review-card"><span class="v91-sample-label">OPINIÓN DE EJEMPLO</span><div class="v91-stars" aria-label="Cinco estrellas">★★★★★</div><blockquote>“La programación se presenta como un reto divertido. Eso ayuda a que los chicos se involucren y quieran seguir aprendiendo.”</blockquote><p class="v91-review-author">Familia KUBIQ <span>· Texto provisional</span></p></article>
+<article class="v91-review-card"><span class="v91-sample-label">OPINIÓN DE EJEMPLO</span><div class="v91-stars" aria-label="Cinco estrellas">★★★★★</div><blockquote>“Valoramos que las clases sean en vivo y que puedan preguntar, equivocarse y volver a intentar con orientación.”</blockquote><p class="v91-review-author">Familia KUBIQ <span>· Texto provisional</span></p></article>
+<article class="v91-review-card"><span class="v91-sample-label">OPINIÓN DE EJEMPLO</span><div class="v91-stars" aria-label="Cinco estrellas">★★★★★</div><blockquote>“Es emocionante ver cómo una idea que tenía en la cabeza empieza a convertirse en un videojuego o proyecto digital.”</blockquote><p class="v91-review-author">Familia KUBIQ <span>· Texto provisional</span></p></article>
+<article class="v91-review-card"><span class="v91-sample-label">OPINIÓN DE EJEMPLO</span><div class="v91-stars" aria-label="Cinco estrellas">★★★★★</div><blockquote>“Los grupos pequeños y el acompañamiento hacen que aprender tecnología se sienta cercano y motivador.”</blockquote><p class="v91-review-author">Familia KUBIQ <span>· Texto provisional</span></p></article>
+<article class="v91-review-card"><span class="v91-sample-label">OPINIÓN DE EJEMPLO</span><div class="v91-stars" aria-label="Cinco estrellas">★★★★★</div><blockquote>“Nos gusta que cada actividad tenga un propósito y que el estudiante pueda mostrar lo que logró construir.”</blockquote><p class="v91-review-author">Familia KUBIQ <span>· Texto provisional</span></p></article>
+<article class="v91-review-card"><span class="v91-sample-label">OPINIÓN DE EJEMPLO</span><div class="v91-stars" aria-label="Cinco estrellas">★★★★★</div><blockquote>“Ha sido una forma diferente de acercarse a la tecnología: no solo consume contenido, también aprende a crear.”</blockquote><p class="v91-review-author">Familia KUBIQ <span>· Texto provisional</span></p></article>
+<article class="v91-review-card"><span class="v91-sample-label">OPINIÓN DE EJEMPLO</span><div class="v91-stars" aria-label="Cinco estrellas">★★★★★</div><blockquote>“La experiencia combina creatividad y aprendizaje. Nos parece valioso que pueda desarrollar sus propias ideas paso a paso.”</blockquote><p class="v91-review-author">Familia KUBIQ <span>· Texto provisional</span></p></article>
+</div>
+<div class="v91-review-controls"><button type="button" class="v91-review-arrow" data-review-prev aria-label="Opinión anterior">←</button><div class="v91-review-dots" aria-label="Seleccionar opinión"><button type="button" aria-label="Ir a opinión 1" data-review-dot="0" class="is-active"></button><button type="button" aria-label="Ir a opinión 2" data-review-dot="1"></button><button type="button" aria-label="Ir a opinión 3" data-review-dot="2"></button><button type="button" aria-label="Ir a opinión 4" data-review-dot="3"></button><button type="button" aria-label="Ir a opinión 5" data-review-dot="4"></button><button type="button" aria-label="Ir a opinión 6" data-review-dot="5"></button><button type="button" aria-label="Ir a opinión 7" data-review-dot="6"></button><button type="button" aria-label="Ir a opinión 8" data-review-dot="7"></button></div><button type="button" class="v91-review-arrow" data-review-next aria-label="Siguiente opinión">→</button></div>
+</div>
 </div>
 </section>
 <section class="faq-section" id="faq">
