@@ -17,3 +17,6 @@ La página modelo-academico.html se retiró porque no tenía enlaces entrantes y
 
 
 VERSIÓN MÁS RECIENTE: KUBIQ V77. Incluye los cambios de experiencia familiar, KUBIQ PROGRESS, imágenes animadas de cursos, docente y página para escuelas. Consultar AUDITORIA_V77.txt.
+
+
+VERSIÓN MÁS RECIENTE: KUBIQ V78. Incluye los seis logos oficiales animados, enlaces directos a programas, selector por edad, horarios, sección de familias y galería de proyectos renovada. Consultar AUDITORIA_V78.txt.

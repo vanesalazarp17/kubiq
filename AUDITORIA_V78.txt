@@ -1,0 +1,48 @@
+KUBIQ V78 · CAMBIOS Y AUDITORÍA
+Base: KUBIQ V77 · Actualización completa mobile
+Fecha: 2026-11-07
+
+CAMBIOS IMPLEMENTADOS
+1. Catálogo de cursos
+- Se reemplazaron los seis logos por los GIF oficiales proporcionados:
+  Scratch Inicial, Scratch Avanzado, Roblox Studio Inicial, Roblox Studio Avanzado, Python Inicial y Python Avanzado.
+- Los mismos logos se utilizan en las tarjetas y en la ventana de detalle de cada curso.
+- Se compactó la altura de las tarjetas manteniendo anchos consistentes y distribución adaptable.
+
+2. Navegación de programas
+- Los seis botones visibles "Ver programa" ahora son enlaces directos a la página de su ruta.
+- Los destinos usan rutas explícitas a programas/{scratch|roblox|python}/index.html.
+- El enlace "Ver programa completo" del modal también utiliza la ruta explícita.
+- Se corrigió un comentario JavaScript que estaba absorbiendo el resto de la función de apertura del modal; este era un error que impedía completar la acción.
+- El cuerpo de cada tarjeta conserva la apertura de la vista previa del curso.
+
+3. Selector por edad
+- Se añadieron tres desplegables: 8–10, 11–13 y 14–17 años.
+- Cada rango muestra los cursos recomendados y sus páginas de programa.
+- Se aclara que las edades son orientativas y que los niveles avanzados dependen de conocimientos previos.
+
+4. Horarios
+- Se muestra disponibilidad de lunes a viernes y sábados, de 11:00 a. m. a 7:00 p. m. (hora de Ecuador, UTC−5).
+- Se aclara que la asignación concreta depende de la disponibilidad de grupos.
+
+5. Reseñas
+- Se reincorporó una sección para las experiencias de las familias.
+- No se inventaron testimonios, nombres ni valoraciones; queda preparada para opiniones auténticas.
+
+6. Galería de proyectos
+- Se dio mayor protagonismo a los GIF de Scratch, Roblox Studio y Python.
+- Se cambió la franja a fondo navy/degradado violeta, con tarjetas contrastadas.
+- Se ajustó el encuadre para que las imágenes no se recorten ni deformen.
+
+VALIDACIONES ESTÁTICAS
+- Se verificaron las rutas de los seis cursos y sus archivos index.html.
+- Se verificaron todos los enlaces y recursos locales de las páginas HTML: 0 referencias rotas detectadas.
+- Se comprobó la sintaxis de scripts/main.js con Node.js: correcta.
+- Se comprobó la presencia de los seis GIF oficiales en tarjetas y datos de detalle.
+- Se comprobó la presencia de selector de edad, horarios y sección de familias.
+- Se verificó la integridad del archivo ZIP.
+
+PENDIENTE DE VALIDACIÓN EN PRODUCCIÓN
+- No se ha subido esta versión a GitHub ni al dominio.
+- No se ha realizado prueba visual en dispositivos físicos ni navegador remoto.
+- Los enlaces externos de Cal.com y WhatsApp requieren prueba en el sitio publicado.
