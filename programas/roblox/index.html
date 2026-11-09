@@ -494,12 +494,77 @@ section{padding:64px 0}.intro{max-width:760px;margin-bottom:30px}.intro h2{color
 .program-enroll-form button[type=submit],#programEnrollForm button[type=submit],form button[type=submit]{display:flex!important;align-items:center!important;justify-content:center!important;text-align:center!important;line-height:1.2!important}
 @media(max-width:760px){.program-nav{gap:7px!important}.program-nav a{min-height:38px!important;padding:8px 12px!important;font-size:12px!important}}
 </style>
+
+<style id="kubiq-v155-project-card-fit">
+/* V155: project cards size to their own content on every screen. */
+.program-sales-showcase .sales-projects{align-items:start!important;grid-auto-rows:max-content!important;grid-auto-flow:row!important}
+.program-sales-showcase .sales-project{height:auto!important;min-height:0!important;align-self:start!important;flex:0 0 auto!important}
+.program-sales-showcase .project-image-wrap{height:auto!important;aspect-ratio:16/10!important;flex:0 0 auto!important}
+.program-sales-showcase .project-image-wrap img{display:block;width:100%;height:100%;object-fit:cover}
+.program-sales-showcase .project-copy{height:auto!important;min-height:0!important;flex:0 0 auto!important;align-self:stretch}
+.program-sales-showcase .project-copy p{margin:8px 0 0}
+@media(max-width:650px){
+ .program-sales-showcase .sales-projects{display:grid!important;grid-template-columns:minmax(0,1fr)!important;grid-auto-rows:max-content!important;align-items:start!important;gap:14px!important}
+ .program-sales-showcase .sales-project{width:100%!important;max-width:100%!important;height:auto!important;min-height:0!important}
+ .program-sales-showcase .project-image-wrap{aspect-ratio:16/9!important;height:auto!important}
+ .program-sales-showcase .project-copy{padding:15px 16px 17px!important}
+ .program-sales-showcase .project-copy strong{font-size:17px!important;line-height:1.25!important;margin:5px 0 7px!important}
+ .program-sales-showcase .project-copy p{font-size:14px!important;line-height:1.55!important}
+}
+</style>
+
+<style id="kubiq-v157-project-carousel-mobile-fix">
+/* V157: project cards use intrinsic height and a horizontal mobile carousel. */
+.program-sales-showcase .sales-projects{
+  display:grid!important; grid-template-columns:repeat(3,minmax(0,1fr));
+  grid-auto-flow:row; grid-auto-rows:max-content; align-items:start; align-content:start;
+  height:auto!important; min-height:0!important;
+}
+.program-sales-showcase .sales-project{
+  display:flex!important; flex-direction:column!important; justify-content:flex-start!important;
+  align-self:start!important; height:auto!important; min-height:0!important;
+  max-height:none!important; box-sizing:border-box!important;
+}
+.program-sales-showcase .project-image-wrap{
+  width:100%!important; height:auto!important; aspect-ratio:16/9!important;
+  flex:0 0 auto!important;
+}
+.program-sales-showcase .project-copy{
+  display:block!important; height:auto!important; min-height:0!important;
+  flex:0 0 auto!important; margin:0!important;
+}
+.program-sales-showcase .project-copy strong,.program-sales-showcase .project-copy p{
+  height:auto!important; min-height:0!important;
+}
+@media(max-width:650px){
+  .program-sales-showcase .sales-projects{
+    display:grid!important; grid-template-columns:none!important;
+    grid-auto-flow:column!important; grid-auto-columns:minmax(82%,330px)!important;
+    grid-auto-rows:max-content!important; align-items:start!important; align-content:start!important;
+    gap:14px!important; width:100%!important; height:auto!important; min-height:0!important;
+    overflow-x:auto!important; overflow-y:hidden!important;
+    padding:8px 4px 18px!important; box-sizing:border-box!important;
+    scroll-snap-type:x mandatory!important; scroll-padding-inline:4px!important;
+    -webkit-overflow-scrolling:touch!important; overscroll-behavior-x:contain!important;
+  }
+  .program-sales-showcase .sales-project{
+    width:auto!important; min-width:0!important; max-width:none!important;
+    height:auto!important; min-height:0!important; align-self:start!important;
+    scroll-snap-align:start!important;
+  }
+  .program-sales-showcase .project-image-wrap{aspect-ratio:16/9!important;height:auto!important}
+  .program-sales-showcase .project-image-wrap img{width:100%!important;height:100%!important;object-fit:cover!important}
+  .program-sales-showcase .project-copy{padding:15px 16px 17px!important}
+  .program-sales-showcase .project-copy strong{font-size:17px!important;line-height:1.25!important;margin:5px 0 7px!important}
+  .program-sales-showcase .project-copy p{font-size:14px!important;line-height:1.55!important;margin:0!important}
+}
+</style>
 </head>
 <body>
 <header><div class="wrap nav"><a aria-label="KUBIQ Academy, inicio" class="brand" href="../../"><img alt="KUBIQ ACADEMY" class="brand-header-logo" src="../../imagenes/kubiq-logo-header.png"/></a><nav class="program-nav"><a href="../../#cursos">Programas</a><a href="../../index.html">Volver al inicio</a></nav></div></header>
 <main>
 <section class="hero program-hero-split"><div class="wrap program-hero-layout"><div class="program-hero-copy"><span class="eyebrow">KUBIQ ACADEMY · DISEÑO 3D Y DESARROLLO</span><h1>No solo juegues en mundos digitales. Aprende a construirlos.</h1><p>En Roblox Studio, los estudiantes pasan de explorar mundos a diseñar sus propios espacios 3D y experiencias interactivas. Aprenden a construir, probar y mejorar escenarios, y a descubrir cómo el código puede dar vida a sus ideas. Los docentes expertos acompañan cada reto para que desarrollen habilidades mientras crean.</p><div class="program-hero-actions"><a class="btn" href="https://cal.com/kubiqacademy/30min">Vivir la experiencia KUBIQ (30 min)</a><a class="btn" href="https://wa.me/593984538209?text=Hola%20KUBIQ%2C%20quiero%20informaci%C3%B3n%20sobre%20roblox">Consultar por WhatsApp</a></div></div><div class="program-hero-visual"><img alt="Logo oficial del programa Roblox de KUBIQ Academy" class="program-hero-image program-brand-logo-v83" loading="eager" src="../../imagenes/course-roblox-brand-v85.png"/></div></div></section>
-<section class="skills skills-transfer"><div class="wrap"><div class="intro"><span class="sales-mini-label">HABILIDADES PARA LA VIDA</span><h2>Mucho más que aprender a programar</h2><p>Mientras crea proyectos, desarrolla capacidades cognitivas y habilidades blandas que puede aplicar en el colegio, en equipo y ante nuevos desafíos.</p></div><div class="life-skills-grid" aria-label="Ocho habilidades que desarrolla el estudiante"><article class="life-skill-card"><span class="life-skill-icon" aria-hidden="true">✦</span><span class="life-skill-kicker">IMAGINA</span><h3>Creatividad espacial</h3><p>Diseña mundos, escenarios y recorridos originales en tres dimensiones.</p></article><article class="life-skill-card"><span class="life-skill-icon" aria-hidden="true">⌘</span><span class="life-skill-kicker">RAZONA</span><h3>Pensamiento lógico</h3><p>Relaciona objetos, propiedades y reglas para comprender cómo funciona una experiencia.</p></article><article class="life-skill-card"><span class="life-skill-icon" aria-hidden="true">↗</span><span class="life-skill-kicker">PLANIFICA</span><h3>Diseño y planificación</h3><p>Organiza espacios, recursos y etapas antes de construir su mundo 3D.</p></article><article class="life-skill-card"><span class="life-skill-icon" aria-hidden="true">◎</span><span class="life-skill-kicker">RESUELVE</span><h3>Resolución de problemas</h3><p>Identifica fallos en escenarios o mecánicas, prueba cambios y verifica resultados.</p></article><article class="life-skill-card"><span class="life-skill-icon" aria-hidden="true">★</span><span class="life-skill-kicker">PERSEVERA</span><h3>Perseverancia</h3><p>Itera sus construcciones, corrige detalles y mejora la experiencia después de probarla.</p></article><article class="life-skill-card"><span class="life-skill-icon" aria-hidden="true">☼</span><span class="life-skill-kicker">COMUNICA</span><h3>Comunicación de ideas</h3><p>Presenta su mundo, explica sus reglas y describe cómo quiere que jueguen otras personas.</p></article><article class="life-skill-card"><span class="life-skill-icon" aria-hidden="true">♧</span><span class="life-skill-kicker">COLABORA</span><h3>Colaboración y empatía</h3><p>Considera la experiencia de otros jugadores y aprovecha comentarios para mejorar.</p></article><article class="life-skill-card"><span class="life-skill-icon" aria-hidden="true">✓</span><span class="life-skill-kicker">SE ADAPTA</span><h3>Autonomía y adaptabilidad</h3><p>Toma decisiones de diseño, aprende herramientas nuevas y ajusta su plan cuando lo necesita.</p></article></div></div></section>
+<section class="skills skills-transfer"><div class="wrap"><div class="intro"><span class="sales-mini-label">HABILIDADES PARA LA VIDA</span><h2>Mucho más que aprender a programar</h2><p>Al construir mundos 3D y experiencias jugables, aprende a diseñar espacios, probar mecánicas y pensar en cómo otras personas explorarán sus creaciones.</p></div><div class="life-skills-grid" aria-label="Ocho habilidades que desarrolla el estudiante"><article class="life-skill-card"><span class="life-skill-icon" aria-hidden="true">✦</span><span class="life-skill-kicker">IMAGINA</span><h3>Creatividad espacial</h3><p>Diseña mundos, escenarios y recorridos originales en tres dimensiones.</p></article><article class="life-skill-card"><span class="life-skill-icon" aria-hidden="true">⌘</span><span class="life-skill-kicker">RAZONA</span><h3>Pensamiento lógico</h3><p>Relaciona objetos, propiedades y reglas para comprender cómo funciona una experiencia.</p></article><article class="life-skill-card"><span class="life-skill-icon" aria-hidden="true">↗</span><span class="life-skill-kicker">PLANIFICA</span><h3>Diseño y planificación</h3><p>Organiza espacios, recursos y etapas antes de construir su mundo 3D.</p></article><article class="life-skill-card"><span class="life-skill-icon" aria-hidden="true">◎</span><span class="life-skill-kicker">RESUELVE</span><h3>Resolución de problemas</h3><p>Identifica fallos en escenarios o mecánicas, prueba cambios y verifica resultados.</p></article><article class="life-skill-card"><span class="life-skill-icon" aria-hidden="true">★</span><span class="life-skill-kicker">PERSEVERA</span><h3>Perseverancia</h3><p>Itera sus construcciones, corrige detalles y mejora la experiencia después de probarla.</p></article><article class="life-skill-card"><span class="life-skill-icon" aria-hidden="true">☼</span><span class="life-skill-kicker">COMUNICA</span><h3>Comunicación de ideas</h3><p>Presenta su mundo, explica sus reglas y describe cómo quiere que jueguen otras personas.</p></article><article class="life-skill-card"><span class="life-skill-icon" aria-hidden="true">♧</span><span class="life-skill-kicker">COLABORA</span><h3>Colaboración y empatía</h3><p>Considera la experiencia de otros jugadores y aprovecha comentarios para mejorar.</p></article><article class="life-skill-card"><span class="life-skill-icon" aria-hidden="true">✓</span><span class="life-skill-kicker">SE ADAPTA</span><h3>Autonomía y adaptabilidad</h3><p>Toma decisiones de diseño, aprende herramientas nuevas y ajusta su plan cuando lo necesita.</p></article></div></div></section>
 <section class="program-sales-showcase" aria-labelledby="sales-title-roblox">
  <div class="wrap">
   <div class="sales-head"><span class="eyebrow">APRENDER CREANDO · KUBIQ ACADEMY</span><h2 id="sales-title-roblox">No solo explorar mundos: construir experiencias propias.</h2><p>Tu hijo descubrirá cómo se diseñan los espacios 3D y cómo convertir sus ideas en experiencias interactivas que otros pueden explorar.</p></div>

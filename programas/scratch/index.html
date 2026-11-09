@@ -222,12 +222,77 @@ section{padding:64px 0}.intro{max-width:760px;margin-bottom:30px}.intro h2{color
 @media(max-width:650px){.program-sales-showcase .wrap{width:calc(100% - 32px)}.program-sales-showcase .sales-projects{grid-template-columns:1fr;gap:16px}.program-sales-showcase .project-image-wrap{aspect-ratio:16/9}.program-sales-showcase .project-copy{padding:16px}.life-skills-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.life-skill-card{min-height:0;padding:14px 13px;border-radius:15px}.life-skill-card h3{font-size:13px}.life-skill-card p{font-size:11px;line-height:1.5}.life-skill-icon{width:34px;height:34px;margin-bottom:9px}}
 @media(max-width:360px){.life-skills-grid{grid-template-columns:1fr}.life-skill-card{padding:16px}}
 </style>
-<style id="kubiq-v154-header-button-fix">.program-nav{display:flex;align-items:center;justify-content:flex-end;gap:10px;flex-wrap:wrap}.program-nav a{display:inline-flex;align-items:center;justify-content:center;text-align:center;min-height:42px;padding:10px 16px;line-height:1.2;white-space:nowrap;border-radius:999px}#programEnrollForm button[type=submit],form button[type=submit]{display:flex;align-items:center;justify-content:center;text-align:center;line-height:1.2}@media(max-width:760px){.program-nav{gap:7px}.program-nav a{min-height:38px;padding:8px 12px;font-size:12px}}</style></head>
+<style id="kubiq-v154-header-button-fix">.program-nav{display:flex;align-items:center;justify-content:flex-end;gap:10px;flex-wrap:wrap}.program-nav a{display:inline-flex;align-items:center;justify-content:center;text-align:center;min-height:42px;padding:10px 16px;line-height:1.2;white-space:nowrap;border-radius:999px}#programEnrollForm button[type=submit],form button[type=submit]{display:flex;align-items:center;justify-content:center;text-align:center;line-height:1.2}@media(max-width:760px){.program-nav{gap:7px}.program-nav a{min-height:38px;padding:8px 12px;font-size:12px}}</style>
+<style id="kubiq-v155-project-card-fit">
+/* V155: project cards size to their own content on every screen. */
+.program-sales-showcase .sales-projects{align-items:start!important;grid-auto-rows:max-content!important;grid-auto-flow:row!important}
+.program-sales-showcase .sales-project{height:auto!important;min-height:0!important;align-self:start!important;flex:0 0 auto!important}
+.program-sales-showcase .project-image-wrap{height:auto!important;aspect-ratio:16/10!important;flex:0 0 auto!important}
+.program-sales-showcase .project-image-wrap img{display:block;width:100%;height:100%;object-fit:cover}
+.program-sales-showcase .project-copy{height:auto!important;min-height:0!important;flex:0 0 auto!important;align-self:stretch}
+.program-sales-showcase .project-copy p{margin:8px 0 0}
+@media(max-width:650px){
+ .program-sales-showcase .sales-projects{display:grid!important;grid-template-columns:minmax(0,1fr)!important;grid-auto-rows:max-content!important;align-items:start!important;gap:14px!important}
+ .program-sales-showcase .sales-project{width:100%!important;max-width:100%!important;height:auto!important;min-height:0!important}
+ .program-sales-showcase .project-image-wrap{aspect-ratio:16/9!important;height:auto!important}
+ .program-sales-showcase .project-copy{padding:15px 16px 17px!important}
+ .program-sales-showcase .project-copy strong{font-size:17px!important;line-height:1.25!important;margin:5px 0 7px!important}
+ .program-sales-showcase .project-copy p{font-size:14px!important;line-height:1.55!important}
+}
+</style>
+
+<style id="kubiq-v157-project-carousel-mobile-fix">
+/* V157: project cards use intrinsic height and a horizontal mobile carousel. */
+.program-sales-showcase .sales-projects{
+  display:grid!important; grid-template-columns:repeat(3,minmax(0,1fr));
+  grid-auto-flow:row; grid-auto-rows:max-content; align-items:start; align-content:start;
+  height:auto!important; min-height:0!important;
+}
+.program-sales-showcase .sales-project{
+  display:flex!important; flex-direction:column!important; justify-content:flex-start!important;
+  align-self:start!important; height:auto!important; min-height:0!important;
+  max-height:none!important; box-sizing:border-box!important;
+}
+.program-sales-showcase .project-image-wrap{
+  width:100%!important; height:auto!important; aspect-ratio:16/9!important;
+  flex:0 0 auto!important;
+}
+.program-sales-showcase .project-copy{
+  display:block!important; height:auto!important; min-height:0!important;
+  flex:0 0 auto!important; margin:0!important;
+}
+.program-sales-showcase .project-copy strong,.program-sales-showcase .project-copy p{
+  height:auto!important; min-height:0!important;
+}
+@media(max-width:650px){
+  .program-sales-showcase .sales-projects{
+    display:grid!important; grid-template-columns:none!important;
+    grid-auto-flow:column!important; grid-auto-columns:minmax(82%,330px)!important;
+    grid-auto-rows:max-content!important; align-items:start!important; align-content:start!important;
+    gap:14px!important; width:100%!important; height:auto!important; min-height:0!important;
+    overflow-x:auto!important; overflow-y:hidden!important;
+    padding:8px 4px 18px!important; box-sizing:border-box!important;
+    scroll-snap-type:x mandatory!important; scroll-padding-inline:4px!important;
+    -webkit-overflow-scrolling:touch!important; overscroll-behavior-x:contain!important;
+  }
+  .program-sales-showcase .sales-project{
+    width:auto!important; min-width:0!important; max-width:none!important;
+    height:auto!important; min-height:0!important; align-self:start!important;
+    scroll-snap-align:start!important;
+  }
+  .program-sales-showcase .project-image-wrap{aspect-ratio:16/9!important;height:auto!important}
+  .program-sales-showcase .project-image-wrap img{width:100%!important;height:100%!important;object-fit:cover!important}
+  .program-sales-showcase .project-copy{padding:15px 16px 17px!important}
+  .program-sales-showcase .project-copy strong{font-size:17px!important;line-height:1.25!important;margin:5px 0 7px!important}
+  .program-sales-showcase .project-copy p{font-size:14px!important;line-height:1.55!important;margin:0!important}
+}
+</style>
+</head>
 <body>
 <header><div class="wrap nav"><a aria-label="KUBIQ Academy, inicio" class="brand" href="../../"><img alt="KUBIQ ACADEMY" class="brand-header-logo" src="../../imagenes/kubiq-logo-header.png"/></a><nav class="program-nav"><a href="../../#cursos">Programas</a><a href="../../index.html">Volver al inicio</a></nav></div></header>
 <main>
 <section class="hero program-hero-split"><div class="wrap program-hero-layout"><div class="program-hero-copy"><span class="eyebrow">KUBIQ ACADEMY · PROGRAMACIÓN CREATIVA</span><h1>De una idea a una historia interactiva.</h1><p>En Scratch, la imaginación se convierte en historias, animaciones y videojuegos propios. Los estudiantes aprenden a dar vida a sus ideas, tomar decisiones y resolver retos mientras crean. Con la guía de docentes expertos, cada avance se transforma en un proyecto que pueden mostrar con orgullo.</p><div class="program-hero-actions"><a class="btn" href="https://cal.com/kubiqacademy/30min">Vivir la experiencia KUBIQ (30 min)</a><a class="btn" href="https://wa.me/593984538209?text=Hola%20KUBIQ%2C%20quiero%20informaci%C3%B3n%20sobre%20scratch">Consultar por WhatsApp</a></div></div><div class="program-hero-visual"><img class="program-hero-image" src="../../imagenes/logo-scratch-kubiq.gif" alt="Logo oficial de Scratch de KUBIQ Academy" loading="eager"/></div></div></section>
-<section class="skills skills-transfer"><div class="wrap"><div class="intro"><span class="sales-mini-label">HABILIDADES PARA LA VIDA</span><h2>Mucho más que aprender a programar</h2><p>Mientras crea proyectos, desarrolla capacidades cognitivas y habilidades blandas que puede aplicar en el colegio, en equipo y ante nuevos desafíos.</p></div><div class="life-skills-grid" aria-label="Ocho habilidades que desarrolla el estudiante"><article class="life-skill-card"><span class="life-skill-icon" aria-hidden="true">✦</span><span class="life-skill-kicker">CREATIVIDAD</span><h3>Creatividad e imaginación</h3><p>Inventa personajes, escenarios e historias y encuentra formas originales de expresar sus ideas.</p></article><article class="life-skill-card"><span class="life-skill-icon" aria-hidden="true">⌘</span><span class="life-skill-kicker">RAZONAMIENTO</span><h3>Pensamiento lógico</h3><p>Ordena bloques, reconoce secuencias y anticipa qué ocurrirá al ejecutar sus instrucciones.</p></article><article class="life-skill-card"><span class="life-skill-icon" aria-hidden="true">↗</span><span class="life-skill-kicker">PLANIFICA</span><h3>Organización y planificación</h3><p>Divide una idea en pasos y organiza los elementos necesarios para completar su proyecto.</p></article><article class="life-skill-card"><span class="life-skill-icon" aria-hidden="true">◎</span><span class="life-skill-kicker">RESUELVE</span><h3>Resolución de problemas</h3><p>Detecta cuándo algo no funciona, prueba alternativas y ajusta su programación.</p></article><article class="life-skill-card"><span class="life-skill-icon" aria-hidden="true">★</span><span class="life-skill-kicker">PERSEVERA</span><h3>Perseverancia</h3><p>Aprende que equivocarse es parte del proceso y continúa hasta mejorar su creación.</p></article><article class="life-skill-card"><span class="life-skill-icon" aria-hidden="true">☼</span><span class="life-skill-kicker">SE EXPRESA</span><h3>Comunicación</h3><p>Explica cómo funciona su historia o videojuego y comparte las decisiones que tomó.</p></article><article class="life-skill-card"><span class="life-skill-icon" aria-hidden="true">♧</span><span class="life-skill-kicker">COLABORA</span><h3>Trabajo en equipo</h3><p>Escucha ideas, intercambia sugerencias y construye a partir de la retroalimentación.</p></article><article class="life-skill-card"><span class="life-skill-icon" aria-hidden="true">✓</span><span class="life-skill-kicker">CONFÍA</span><h3>Autonomía y confianza</h3><p>Toma pequeñas decisiones, prueba ideas propias y reconoce sus avances.</p></article></div></div></section>
+<section class="skills skills-transfer"><div class="wrap"><div class="intro"><span class="sales-mini-label">HABILIDADES PARA LA VIDA</span><h2>Mucho más que aprender a programar</h2><p>Al crear historias, animaciones y videojuegos, practica cómo expresar ideas, ordenar instrucciones y compartir sus creaciones con confianza.</p></div><div class="life-skills-grid" aria-label="Ocho habilidades que desarrolla el estudiante"><article class="life-skill-card"><span class="life-skill-icon" aria-hidden="true">✦</span><span class="life-skill-kicker">CREATIVIDAD</span><h3>Creatividad e imaginación</h3><p>Inventa personajes, escenarios e historias y encuentra formas originales de expresar sus ideas.</p></article><article class="life-skill-card"><span class="life-skill-icon" aria-hidden="true">⌘</span><span class="life-skill-kicker">RAZONAMIENTO</span><h3>Pensamiento lógico</h3><p>Ordena bloques, reconoce secuencias y anticipa qué ocurrirá al ejecutar sus instrucciones.</p></article><article class="life-skill-card"><span class="life-skill-icon" aria-hidden="true">↗</span><span class="life-skill-kicker">PLANIFICA</span><h3>Organización y planificación</h3><p>Divide una idea en pasos y organiza los elementos necesarios para completar su proyecto.</p></article><article class="life-skill-card"><span class="life-skill-icon" aria-hidden="true">◎</span><span class="life-skill-kicker">RESUELVE</span><h3>Resolución de problemas</h3><p>Detecta cuándo algo no funciona, prueba alternativas y ajusta su programación.</p></article><article class="life-skill-card"><span class="life-skill-icon" aria-hidden="true">★</span><span class="life-skill-kicker">PERSEVERA</span><h3>Perseverancia</h3><p>Aprende que equivocarse es parte del proceso y continúa hasta mejorar su creación.</p></article><article class="life-skill-card"><span class="life-skill-icon" aria-hidden="true">☼</span><span class="life-skill-kicker">SE EXPRESA</span><h3>Comunicación</h3><p>Explica cómo funciona su historia o videojuego y comparte las decisiones que tomó.</p></article><article class="life-skill-card"><span class="life-skill-icon" aria-hidden="true">♧</span><span class="life-skill-kicker">COLABORA</span><h3>Trabajo en equipo</h3><p>Escucha ideas, intercambia sugerencias y construye a partir de la retroalimentación.</p></article><article class="life-skill-card"><span class="life-skill-icon" aria-hidden="true">✓</span><span class="life-skill-kicker">CONFÍA</span><h3>Autonomía y confianza</h3><p>Toma pequeñas decisiones, prueba ideas propias y reconoce sus avances.</p></article></div></div></section>
 
 <section class="program-sales-showcase" aria-labelledby="sales-title-scratch">
  <div class="wrap">
