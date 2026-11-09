@@ -188,6 +188,54 @@ section{padding:64px 0}.intro{max-width:760px;margin-bottom:30px}.intro h2{color
 (function(){const form=document.getElementById('programEnrollForm');if(!form)return;const select=document.getElementById('programSelect');document.querySelectorAll('[data-program]').forEach(btn=>btn.addEventListener('click',()=>{if(select)select.value=btn.dataset.program;}));form.addEventListener('submit',function(e){e.preventDefault();const d=new FormData(form);const msg='Hola KUBIQ ACADEMY, deseo solicitar información de matrícula.\nRepresentante: '+d.get('representante')+'\nWhatsApp: '+d.get('whatsapp')+'\nEdad del estudiante: '+d.get('edad')+'\nPrograma: '+d.get('programa')+'\nDías preferidos: '+(d.getAll('dias').join(', ')||'Por coordinar')+'\nHorario preferido: '+(d.get('horario')||'Por coordinar')+'\nMensaje: '+(d.get('mensaje')||'Sin mensaje adicional');window.open('https://wa.me/593964210182?text='+encodeURIComponent(msg),'_blank','noopener');});const params=new URLSearchParams(location.search);if(params.get('programa')&&select)select.value=params.get('programa');})();
 </script>
 
+
+<style id="kubiq-v138-mobile-review-cards-fix">
+/* V138: fix mobile benefit/review carousel — cards must use readable full-width columns */
+@media (max-width:760px){
+  .v91-reviews-shell{width:100%;max-width:100%;min-width:0;overflow:hidden}
+  .v91-review-track{
+    display:flex!important;
+    flex-flow:row nowrap!important;
+    align-items:stretch!important;
+    width:100%!important;
+    max-width:100%!important;
+    min-width:0!important;
+    grid-template-columns:none!important;
+    grid-auto-columns:unset!important;
+    grid-auto-flow:unset!important;
+    gap:14px!important;
+    overflow-x:auto!important;
+    overflow-y:hidden!important;
+    padding:8px 4px 20px!important;
+    box-sizing:border-box!important;
+    scroll-snap-type:x mandatory!important;
+    scroll-padding-inline:4px!important;
+    -webkit-overflow-scrolling:touch!important;
+  }
+  .v91-review-track>.v91-review-card{
+    display:flex!important;
+    flex:0 0 88%!important;
+    width:88%!important;
+    min-width:88%!important;
+    max-width:88%!important;
+    box-sizing:border-box!important;
+    white-space:normal!important;
+    overflow-wrap:break-word!important;
+    word-break:normal!important;
+    scroll-snap-align:center!important;
+    padding:20px!important;
+  }
+  .v91-review-card h3,.v91-review-card p{
+    width:100%!important;
+    max-width:100%!important;
+    white-space:normal!important;
+    word-break:normal!important;
+    overflow-wrap:break-word!important;
+    writing-mode:horizontal-tb!important;
+  }
+}
+</style>
+
 </body></html>
 <style id="kubiq-v93-scratch-transparent-logo">
 .program-hero-visual{background:transparent!important;box-shadow:none!important;border:0!important}

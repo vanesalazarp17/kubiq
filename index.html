@@ -1957,6 +1957,17 @@ section:hover>.wrap>.intro-row .section-kicker{letter-spacing:.18em}
 <section aria-labelledby="v78-reviews-title" class="v78-reviews" id="opiniones-familias">
 <div class="wrap">
 <div class="v78-reviews-head"><span class="section-kicker">EXPERIENCIA KUBIQ</span><h2 class="section-title display" id="v78-reviews-title">Una experiencia para aprender creando.</h2><p class="section-intro">Así se construye una experiencia de aprendizaje que combina creatividad, acompañamiento y resultados que se pueden mostrar.</p></div>
+<div class="kubiq-live-class-moment" aria-label="Un momento de una clase en vivo de KUBIQ">
+  <div class="kubiq-live-class-copy">
+    <span class="section-kicker">APRENDER EN VIVO</span>
+    <h3>Conectados, creando y aprendiendo.</h3>
+    <p>En las clases en vivo, cada estudiante participa, comparte sus ideas y recibe acompañamiento mientras descubre todo lo que puede crear con tecnología.</p>
+  </div>
+  <figure class="kubiq-live-class-visual">
+    <img src="imagenes/kubiq-clase-en-vivo-estudiante.gif" alt="Estudiante participando en una clase online en vivo con auriculares" loading="lazy" decoding="async">
+    <figcaption>Así se vive el aprendizaje en línea.</figcaption>
+  </figure>
+</div>
 <div class="v91-reviews-shell">
 <div class="v91-review-track" aria-label="Beneficios de la experiencia KUBIQ" tabindex="0">
 <article class="v91-review-card"><span class="v91-stars">✦</span><h3>Ideas que se convierten en proyectos</h3><p>Los estudiantes transforman su imaginación en historias, videojuegos, mundos y programas propios.</p></article>
@@ -2203,6 +2214,80 @@ section:hover>.wrap>.intro-row .section-kicker{letter-spacing:.18em}
 (()=>{const dock=document.querySelector('.mobile-action-dock');if(!dock)return;const mq=window.matchMedia('(max-width:760px)');const footer=document.querySelector('footer');const modalBackdrops=[document.getElementById('courseModalBackdrop'),document.getElementById('enrollBackdrop')].filter(Boolean);const update=()=>{document.body.classList.toggle('mobile-dialog-open',modalBackdrops.some(el=>el.classList.contains('open')));};if(footer&&'IntersectionObserver'in window){const io=new IntersectionObserver(entries=>dock.classList.toggle('is-hidden',entries.some(e=>e.isIntersecting)),{threshold:.08});io.observe(footer);}document.addEventListener('click',e=>{if(e.target.closest('.course-open,.course-more,.enroll-submit,.course-modal-close,.enroll-close'))setTimeout(update,80);});const observer=new MutationObserver(update);modalBackdrops.forEach(el=>observer.observe(el,{attributes:true,attributeFilter:['class','style','aria-hidden']}));window.addEventListener('resize',()=>{if(!mq.matches)dock.classList.remove('is-hidden');});update();})();
 </script>
 
+
+<style id="kubiq-v138-mobile-review-cards-fix">
+/* V138: fix mobile benefit/review carousel — cards must use readable full-width columns */
+@media (max-width:760px){
+  .v91-reviews-shell{width:100%;max-width:100%;min-width:0;overflow:hidden}
+  .v91-review-track{
+    display:flex!important;
+    flex-flow:row nowrap!important;
+    align-items:stretch!important;
+    width:100%!important;
+    max-width:100%!important;
+    min-width:0!important;
+    grid-template-columns:none!important;
+    grid-auto-columns:unset!important;
+    grid-auto-flow:unset!important;
+    gap:14px!important;
+    overflow-x:auto!important;
+    overflow-y:hidden!important;
+    padding:8px 4px 20px!important;
+    box-sizing:border-box!important;
+    scroll-snap-type:x mandatory!important;
+    scroll-padding-inline:4px!important;
+    -webkit-overflow-scrolling:touch!important;
+  }
+  .v91-review-track>.v91-review-card{
+    display:flex!important;
+    flex:0 0 88%!important;
+    width:88%!important;
+    min-width:88%!important;
+    max-width:88%!important;
+    box-sizing:border-box!important;
+    white-space:normal!important;
+    overflow-wrap:break-word!important;
+    word-break:normal!important;
+    scroll-snap-align:center!important;
+    padding:20px!important;
+  }
+  .v91-review-card h3,.v91-review-card p{
+    width:100%!important;
+    max-width:100%!important;
+    white-space:normal!important;
+    word-break:normal!important;
+    overflow-wrap:break-word!important;
+    writing-mode:horizontal-tb!important;
+  }
+}
+</style>
+
+
+<style id="kubiq-v140-hide-method-card-mobile">
+/* Solo móvil: ocultar la tarjeta destacada de Aprendizaje personalizado solicitada.
+   Se conserva el encabezado y la explicación de la sección; escritorio queda intacto. */
+@media screen and (max-width: 760px) {
+  #metodologia > .wrap > .status-card {
+    display: none !important;
+  }
+}
+</style>
+
+<style id="kubiq-v141-live-class-gif">
+/* Nueva pieza visual de experiencia; en móvil acompaña la sección Experiencia KUBIQ.
+   Se oculta en escritorio para respetar la versión desktop previamente aprobada. */
+.kubiq-live-class-moment{display:none}
+@media screen and (max-width:760px){
+  .kubiq-live-class-moment{display:flex;flex-direction:column;gap:16px;margin:24px 0 26px;padding:18px;background:linear-gradient(145deg,#0B1B4D,#172b67);border:1px solid rgba(255,255,255,.14);border-radius:22px;box-shadow:0 14px 34px rgba(11,27,77,.16);overflow:hidden}
+  .kubiq-live-class-copy .section-kicker{color:#79e9ff;font-size:10px;letter-spacing:.16em;font-weight:800}
+  .kubiq-live-class-copy h3{margin:8px 0 7px;color:#fff;font:800 21px/1.2 Poppins,sans-serif;letter-spacing:-.035em}
+  .kubiq-live-class-copy p{margin:0;color:#d5def7;font-size:14px;line-height:1.6}
+  .kubiq-live-class-visual{margin:0;border-radius:15px;overflow:hidden;background:#07143b}
+  .kubiq-live-class-visual img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;object-position:center}
+  .kubiq-live-class-visual figcaption{padding:9px 12px;color:#d5def7;font-size:11px;line-height:1.4}
+}
+</style>
+
 </body>
 </html>
 <style id="kubiq-v93-final-polish">
@@ -2247,7 +2332,7 @@ section:hover>.wrap>.intro-row .section-kicker{letter-spacing:.18em}
 @media screen and (max-width: 760px) {
   #inicio.hero {
     background-color: #10105b !important;
-    background-image: url("imagenes/kubiq-portada-mobile-v135.jpeg") !important;
+    background-image: url("imagenes/kubiq-portada-mobile-v139.jpeg") !important;
     background-position: center top !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
