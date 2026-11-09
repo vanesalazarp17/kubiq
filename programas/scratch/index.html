@@ -287,7 +287,24 @@ section{padding:64px 0}.intro{max-width:760px;margin-bottom:30px}.intro h2{color
   .program-sales-showcase .project-copy p{font-size:14px!important;line-height:1.55!important;margin:0!important}
 }
 </style>
-</head>
+<style id="kubiq-v158-refinements">
+/* KUBIQ V158: desktop skills carousel + refined program navigation */
+@media (min-width: 901px){
+ .skills-transfer .life-skills-grid{display:flex!important;flex-wrap:nowrap!important;gap:16px!important;overflow-x:auto!important;overflow-y:hidden!important;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:10px 4px 22px!important;scrollbar-width:none;}
+ .skills-transfer .life-skills-grid::-webkit-scrollbar{display:none}
+ .skills-transfer .life-skill-card{flex:0 0 calc((100% - 48px)/4)!important;min-height:190px;scroll-snap-align:start;}
+ .skills-transfer .skills-carousel-controls{display:flex;justify-content:flex-end;gap:10px;margin:0 4px 8px}
+ .skills-transfer .skills-carousel-controls button{width:42px;height:42px;border:1px solid rgba(11,27,77,.14);border-radius:50%;background:#fff;color:#0b1b4d;font-size:22px;line-height:1;display:grid;place-items:center;cursor:pointer;box-shadow:0 6px 16px rgba(11,27,77,.08);transition:transform .2s,background .2s}
+ .skills-transfer .skills-carousel-controls button:hover{background:#eefaff;transform:translateY(-2px)}
+}
+.program-nav{display:flex!important;align-items:center!important;justify-content:flex-end;gap:12px!important;flex-wrap:wrap}
+.program-nav a{display:inline-flex!important;align-items:center;justify-content:center;min-height:44px;padding:11px 19px!important;border:1px solid transparent;border-radius:999px!important;font-family:Nunito,sans-serif;font-size:14px!important;font-weight:900!important;line-height:1.15;text-decoration:none!important;white-space:nowrap;box-shadow:0 5px 14px rgba(11,27,77,.07);transition:transform .2s,box-shadow .2s,background .2s}
+.program-nav a:first-child{background:#f0edff!important;color:#5634c8!important;border-color:#e5ddff}
+.program-nav a:last-child{background:linear-gradient(110deg,#00c8ff,#62dcff)!important;color:#0b1b4d!important;border-color:rgba(0,200,255,.35)}
+.program-nav a:hover{transform:translateY(-2px);box-shadow:0 9px 20px rgba(11,27,77,.13)}
+@media(max-width:760px){.program-nav{gap:8px!important}.program-nav a{min-height:40px;padding:9px 13px!important;font-size:12px!important}}
+@media(prefers-reduced-motion:reduce){.skills-transfer .life-skills-grid{scroll-behavior:auto}.program-nav a{transition:none}}
+</style></head>
 <body>
 <header><div class="wrap nav"><a aria-label="KUBIQ Academy, inicio" class="brand" href="../../"><img alt="KUBIQ ACADEMY" class="brand-header-logo" src="../../imagenes/kubiq-logo-header.png"/></a><nav class="program-nav"><a href="../../#cursos">Programas</a><a href="../../index.html">Volver al inicio</a></nav></div></header>
 <main>
@@ -396,6 +413,23 @@ section{padding:64px 0}.intro{max-width:760px;margin-bottom:30px}.intro h2{color
 }
 </style>
 
+
+<script id="kubiq-v158-skills-carousel">(()=>{
+ const section=document.querySelector('.skills-transfer'); if(!section)return;
+ const track=section.querySelector('.life-skills-grid'); if(!track)return;
+ if(!window.matchMedia('(min-width: 901px)').matches)return;
+ const cards=[...track.querySelectorAll('.life-skill-card')]; if(cards.length<5)return;
+ const controls=document.createElement('div'); controls.className='skills-carousel-controls'; controls.setAttribute('aria-label','Controles de habilidades');
+ controls.innerHTML='<button type="button" class="skills-prev" aria-label="Habilidades anteriores">‹</button><button type="button" class="skills-next" aria-label="Más habilidades">›</button>';
+ track.parentNode.insertBefore(controls,track);
+ const step=()=>{const card=track.querySelector('.life-skill-card');return card?card.getBoundingClientRect().width+16:300};
+ let pauseUntil=0; const pause=()=>{pauseUntil=Date.now()+6500};
+ controls.querySelector('.skills-prev').addEventListener('click',()=>{pause();track.scrollBy({left:-step(),behavior:'smooth'})});
+ controls.querySelector('.skills-next').addEventListener('click',()=>{pause();track.scrollBy({left:step(),behavior:'smooth'})});
+ track.addEventListener('pointerdown',pause); track.addEventListener('wheel',pause,{passive:true});
+ let last=0; const tick=(now)=>{if(!document.hidden&&Date.now()>pauseUntil&&now-last>42){track.scrollLeft+=.35;last=now;if(track.scrollLeft+track.clientWidth>=track.scrollWidth-2)track.scrollTo({left:0,behavior:'smooth'})}requestAnimationFrame(tick)};
+ if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches)requestAnimationFrame(tick);
+})();</script>
 </body></html>
 <style id="kubiq-v93-scratch-transparent-logo">
 .program-hero-visual{background:transparent!important;box-shadow:none!important;border:0!important}
