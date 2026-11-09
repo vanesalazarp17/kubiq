@@ -1591,7 +1591,7 @@ section:hover>.wrap>.intro-row .section-kicker{letter-spacing:.18em}
 </head>
 <body><a class="skip-link" href="#contenido-principal">Saltar al contenido principal</a>
 <div class="site-sticky-shell" id="siteStickyShell">
-<aside aria-label="Próximas cohortes KUBIQ: inicio en febrero de 2027" class="launch-banner v80-launch-banner" id="launchBanner"><div class="v80-launch-copy"><span class="v80-launch-kicker">NUEVAS COHORTES KUBIQ</span><strong>¡Nuevos grupos en preparación! Tu próxima aventura empieza creando.</strong><p>Explora Scratch, Roblox Studio y Python y encuentra tu próximo proyecto.</p><span class="v80-launch-date">Iniciamos en febrero de 2027</span><a class="v80-launch-cta" href="#cursos">Explorar cursos</a></div><img alt="Mascota KUBIQ invitando a descubrir los próximos cursos" class="v80-launch-gif" height="150" src="imagenes/kubiq-proximas-cohortes.gif" style="width:clamp(92px,12vw,150px);height:auto;max-height:112px;object-fit:contain;" width="150"/><button aria-label="Cerrar anuncio" class="launch-banner-close" type="button">×</button></aside>
+<aside aria-label="Próximas cohortes KUBIQ: inicio en febrero de 2027" class="launch-banner v80-launch-banner" id="launchBanner"><div class="v80-launch-copy"><span class="v80-launch-kicker">NUEVAS COHORTES KUBIQ</span><strong>¡Nuevos grupos en preparación! Tu próxima aventura empieza creando.</strong><p>Explora Scratch, Roblox Studio y Python y encuentra tu próximo proyecto.</p><span class="v80-launch-date cohort-date-highlight">Iniciamos en febrero de 2027</span><a class="v80-launch-cta" href="#cursos">Explorar cursos</a></div><img alt="Mascota KUBIQ invitando a descubrir los próximos cursos" class="v80-launch-gif" height="150" src="imagenes/kubiq-proximas-cohortes.gif" style="width:clamp(92px,12vw,150px);height:auto;max-height:112px;object-fit:contain;" width="150"/><button aria-label="Cerrar anuncio" class="launch-banner-close" type="button">×</button></aside>
 <div class="topline"></div>
 <header>
 <div class="wrap nav">
@@ -1885,6 +1885,69 @@ section:hover>.wrap>.intro-row .section-kicker{letter-spacing:.18em}
 .faq-more>.faq-item:first-of-type{margin-top:12px}
 .faq-more>.faq-item:last-child{margin-bottom:14px}
 @media(max-width:640px){.faq-more-summary{padding:15px 12px;font-size:.95rem}.faq-more>.faq-item{margin-left:9px;margin-right:9px}}
+</style>
+
+
+<style id="kubiq-v108-cohort-date">
+.cohort-date-highlight{
+  color:#fff!important;
+  font-weight:900;
+  text-shadow:0 1px 0 rgba(11,27,77,.18),0 2px 10px rgba(11,27,77,.16);
+  letter-spacing:.005em;
+}
+</style>
+
+
+<style id="kubiq-v109-launch-gif-size">
+#launchBanner .v80-launch-gif{
+  width:clamp(180px,18vw,250px)!important;
+  height:auto!important;
+  max-height:150px!important;
+  object-fit:contain!important;
+}
+@media(max-width:650px){
+  #launchBanner .v80-launch-gif{
+    width:clamp(96px,25vw,124px)!important;
+    height:auto!important;
+    max-height:108px!important;
+  }
+}
+</style>
+
+
+<style id="kubiq-v110-hero-image-position">
+/* Desplaza la ilustración de portada hacia la izquierda para evitar cortar a la niña del extremo derecho. */
+.hero-atom-scene .hero-kid-atom{object-position:60% center!important}
+@media(max-width:900px){.hero-atom-scene .hero-kid-atom{object-position:56% center!important}}
+@media(max-width:760px){.hero-atom-scene .hero-kid-atom{object-position:54% center!important}}
+</style>
+
+
+<style id="kubiq-v111-progress-cta">
+.v81-progress-action .btn{
+  display:inline-flex!important;align-items:center;justify-content:center;gap:14px;
+  padding:19px 30px!important;min-height:66px;
+  color:#fff!important;
+  background:linear-gradient(110deg,#5d35e8 0%,#7548f5 48%,#05bde9 100%)!important;
+  border:1px solid rgba(255,255,255,.65)!important;
+  border-radius:999px!important;
+  font-weight:900!important;letter-spacing:.01em;
+  box-shadow:0 13px 28px rgba(91,55,220,.25),0 0 0 6px rgba(117,72,245,.09),inset 0 1px 0 rgba(255,255,255,.35)!important;
+  transition:transform .22s ease,box-shadow .22s ease,filter .22s ease!important;
+}
+.v81-progress-action .btn::after{
+  content:"↗";display:grid;place-items:center;width:29px;height:29px;flex:0 0 29px;
+  border-radius:50%;background:#fff;color:#5633d2;font-size:19px;font-weight:900;
+  transition:transform .22s ease;
+}
+.v81-progress-action .btn:hover{
+  color:#fff!important;filter:brightness(1.07) saturate(1.1);
+  transform:translateY(-4px);
+  box-shadow:0 18px 34px rgba(91,55,220,.32),0 0 0 8px rgba(117,72,245,.12),inset 0 1px 0 rgba(255,255,255,.4)!important;
+}
+.v81-progress-action .btn:hover::after{transform:translate(2px,-2px)}
+.v81-progress-action .btn:focus-visible{outline:3px solid #ffc928;outline-offset:5px}
+@media(max-width:560px){.v81-progress-action .btn{width:100%;max-width:360px;padding:16px 20px!important;min-height:60px}}
 </style>
 
 </body>
