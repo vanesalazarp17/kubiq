@@ -21,6 +21,64 @@ section{padding:54px 0}.intro{max-width:780px;color:var(--muted);line-height:1.7
 .btn-family{background:#7b4dff;color:#fff}.btn-family:hover{filter:brightness(1.08)}footer{padding:24px 0;background:#071234;color:#dbe4ff;font-size:12px}
 @media(max-width:760px){.nav{min-height:66px;flex-wrap:wrap;padding:10px 0}.logo{width:175px}.navlinks{width:100%;order:3}.navlinks a{font-size:11px}.hero{padding:44px 0}.hero p{font-size:15px}section{padding:42px 0}.steps{grid-template-columns:1fr}.step{padding:18px}.evidence-grid{grid-template-columns:1fr;gap:14px}.family{padding:19px}.cta-actions{flex-direction:column;align-items:stretch}.cta-actions .btn{justify-content:center}.progress-family-image{max-height:300px;border-radius:16px;margin-top:22px}}
 </style>
+<style id="kubiq-v137-mobile-ux">
+/* KUBIQ V137 · Mobile-first polish. All rules are intentionally mobile-only. */
+@media (max-width:760px){
+  :root{scroll-padding-top:82px;--kubiq-mobile-gutter:clamp(18px,5vw,26px)}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+  body{overflow-x:hidden;padding-bottom:calc(82px + env(safe-area-inset-bottom,0px))}
+  main,section,header,footer{min-width:0}
+  img,video,svg{max-width:100%}
+  p,li,a,button,h1,h2,h3,h4{overflow-wrap:break-word}
+  a,button,[role="button"],summary{-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+  a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid rgba(0,200,255,.8)!important;outline-offset:3px!important}
+  section[id]{scroll-margin-top:84px}
+  .wrap{width:calc(100% - 2 * var(--kubiq-mobile-gutter))!important;max-width:100%!important}
+  .section,.schedule-section,.faq-section,.final-cta,.certificate-section,.kids-showcase,.v78-reviews{padding-top:clamp(42px,9vw,64px)!important;padding-bottom:clamp(42px,9vw,64px)!important}
+  .section-intro{margin-bottom:22px!important}
+  .section-title,h1{font-size:clamp(29px,8vw,42px)!important;line-height:1.08!important;letter-spacing:-.04em!important;text-wrap:balance}
+  h2,h3{ text-wrap:balance }
+  p{line-height:1.65}
+  .btn,.course-more,.course-open,.session-calendar-link,.faq-contact,.v85-mission-cta .btn{min-height:48px}
+  .btn{padding:13px 20px!important;white-space:normal;line-height:1.25!important}
+  input,select,textarea{font-size:16px!important;min-height:48px;max-width:100%}
+  .course-modal,.enroll-dialog{width:calc(100vw - 20px)!important;max-width:calc(100vw - 20px)!important;max-height:88svh!important;overflow:auto!important;border-radius:22px!important}
+  .course-modal-body,.enroll-form{padding:18px!important}
+  .course-modal-actions,.enroll-submit-wrap{display:grid!important;grid-template-columns:1fr!important;gap:10px!important}
+  .course-modal-actions>*{width:100%!important}
+  .creator-quiz-option{min-height:54px!important;padding:15px 16px!important;border-radius:16px!important}
+  .mission-track,.v91-review-track{scroll-snap-type:x mandatory!important;scroll-padding-inline:var(--kubiq-mobile-gutter)!important;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;scrollbar-width:none!important}
+  .mission-track::-webkit-scrollbar,.v91-review-track::-webkit-scrollbar{display:none}
+  .mission-track>.v71-mission-card,.v91-review-card{scroll-snap-align:center!important}
+  .v91-review-track{grid-auto-columns:minmax(0,88%)!important;padding:8px 2px 18px!important}
+  .v91-review-card{min-height:0!important;height:100%;box-shadow:0 10px 26px rgba(11,27,77,.07)!important}
+  .v91-review-controls{padding:4px 0 0}
+  .v91-review-arrow{width:46px!important;height:46px!important}
+  .v91-review-dots button{width:10px!important;height:10px!important}
+  .v91-review-dots button.is-active{width:26px!important}
+  .faq-item{border-radius:18px!important;margin-bottom:12px!important}
+  .faq-item summary{min-height:68px!important;padding:18px 20px!important;gap:14px}
+  .faq-answer{padding:0 20px 20px!important;line-height:1.7}
+  .contact-grid,.contact-channels{grid-template-columns:1fr!important}
+  .contact-panel,.contact-booking-panel{border-radius:22px!important;padding:20px!important}
+  footer{padding-bottom:calc(28px + env(safe-area-inset-bottom,0px))!important}
+  footer .footer-logo-lockup{max-width:min(100%,390px)!important}
+  .mobile-action-dock{position:fixed;z-index:999;left:12px;right:12px;bottom:calc(10px + env(safe-area-inset-bottom,0px));display:grid;grid-template-columns:1fr 1fr;gap:9px;padding:8px;border:1px solid rgba(255,255,255,.72);border-radius:20px;background:rgba(255,255,255,.9);box-shadow:0 10px 35px rgba(7,18,52,.22);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);transition:transform .25s ease,opacity .25s ease}
+  .mobile-action-dock a{display:flex;align-items:center;justify-content:center;min-height:48px;padding:10px 12px;border-radius:14px;text-decoration:none;font-size:14px;font-weight:850;line-height:1.15;text-align:center}
+  .mobile-action-dock a:first-child{background:#0b1b4d;color:#fff}
+  .mobile-action-dock a:last-child{background:linear-gradient(110deg,#5b37e8,#7b4dff);color:#fff}
+  .mobile-action-dock.is-hidden{opacity:0;transform:translateY(130%);pointer-events:none}
+  body.mobile-dialog-open .mobile-action-dock{opacity:0;pointer-events:none}
+}
+@media(max-width:390px){
+  .mobile-action-dock{left:9px;right:9px;gap:7px;padding:7px}
+  .mobile-action-dock a{font-size:13px;min-height:46px;padding:9px 7px}
+}
+@media(prefers-reduced-motion:reduce){
+  @media(max-width:760px){html{scroll-behavior:auto}.mobile-action-dock{transition:none}}
+}
+
+</style>
 </head>
 <body>
 <header><div class="wrap nav">
