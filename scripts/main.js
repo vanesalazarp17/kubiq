@@ -86,7 +86,7 @@ enrollForm.addEventListener('submit',event=>{event.preventDefault();if(!enrollFo
 'Solicitud de inscripción — KUBIQ ACADEMY','',
 'Representante: '+data.get('representante'),'Correo: '+data.get('email'),'WhatsApp: '+data.get('whatsapp'),'Estudiante: '+data.get('estudiante'),'Edad: '+data.get('edad'),'Curso: '+data.get('curso'),'Frecuencia: '+data.get('frecuencia'),'País: '+data.get('pais'),'Días preferidos: '+(data.getAll('dias').join(', ')||'Sin preferencia indicada'),'Franjas horarias: '+(data.getAll('franja').join(', ')||'Sin preferencia indicada'),'Detalle de disponibilidad: '+(data.get('horario')||'Sin detalle adicional'),
 'Por favor, compartir el precio total del programa, disponibilidad, condiciones y opciones de pago por escrito. Esta solicitud no confirma matrícula ni pago.'
-].join('\n');document.getElementById('enrollStatus').textContent='Se abrirá WhatsApp con tu solicitud. Envíala para recibir orientación y el detalle de precios y condiciones. No se realiza ningún cobro en este paso.';window.open('https://wa.me/593964210182?text='+encodeURIComponent(details),'_blank','noopener');});
+].join('\n');document.getElementById('enrollStatus').textContent='Se abrirá WhatsApp con tu solicitud. Envíala para recibir orientación y el detalle de precios y condiciones. No se realiza ningún cobro en este paso.';window.open('https://wa.me/593984538209?text='+encodeURIComponent(details),'_blank','noopener');});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&enrollBackdrop.classList.contains('open'))closeEnrollment()});
 // Keep keyboard focus inside the topmost dialog while it is open.
 document.addEventListener('keydown',e=>{if(e.key!=='Tab')return;const activeDialog=enrollBackdrop.classList.contains('open')?enrollBackdrop.querySelector('[role=dialog]'):(backdrop.classList.contains('open')?backdrop.querySelector('[role=dialog]'):null);if(!activeDialog)return;const items=[...activeDialog.querySelectorAll('a[href],button:not([disabled]),input:not([disabled]),select:not([disabled]),textarea:not([disabled]),[tabindex]:not([tabindex="-1"])')].filter(el=>el.offsetParent!==null);if(!items.length)return;const first=items[0],last=items[items.length-1];if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}});
@@ -211,7 +211,7 @@ document.addEventListener('keydown',e=>{if(e.key!=='Tab')return;const activeDial
       const email = document.getElementById('newsletterEmail').value.trim();
       if (!email || !document.getElementById('newsletterConsent').checked) return;
       const message = `Hola KUBIQ ACADEMY. Quiero solicitar mi suscripción a novedades y promociones. Mi correo es: ${email}. Acepto recibir comunicaciones y puedo solicitar la baja cuando quiera.`;
-      window.open('https://wa.me/593964210182?text=' + encodeURIComponent(message), '_blank', 'noopener');
+      window.open('https://wa.me/593984538209?text=' + encodeURIComponent(message), '_blank', 'noopener');
       document.getElementById('newsletterStatus').textContent = 'Se abrió WhatsApp para confirmar tu solicitud. La suscripción se completará cuando el equipo registre tu correo.';
     });
 
