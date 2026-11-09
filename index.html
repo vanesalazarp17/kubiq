@@ -177,6 +177,19 @@
     .cta-box h2 { font:700 clamp(29px,3.5vw,42px)/1.08 "Poppins",sans-serif; letter-spacing:-.055em; color:var(--navy); margin:0; max-width:610px; }
     .cta-box p { margin:12px 0 0; color:var(--muted); line-height:1.6; font-size:14px; }
     .cta-box .btn { flex-shrink:0; background:var(--navy); color:white; padding:17px 22px; }
+
+    .cta-box .btn-experience-final {
+      flex-shrink:0; min-width:340px; min-height:76px; padding:22px 30px;
+      font-size:18px; letter-spacing:.005em;
+      background:linear-gradient(112deg,#5B35E8 0%,#7547F5 48%,#08BFEF 100%);
+      box-shadow:0 16px 34px rgba(83,55,221,.30),0 0 0 6px rgba(117,71,245,.09),inset 0 1px 0 rgba(255,255,255,.32);
+    }
+    .cta-box .btn-experience-final .experience-arrow { width:36px;height:36px;flex-basis:36px;font-size:21px; }
+    @media(max-width:760px){
+      .cta-box { flex-direction:column; align-items:stretch; gap:25px; padding:30px 24px; }
+      .cta-box .btn-experience-final { width:100%; min-width:0; min-height:70px; padding:18px 20px; font-size:16px; }
+    }
+
     footer { background:#071234; color:white; padding:32px 0; }
     .footer-row { display:flex; align-items:center; justify-content:space-between; gap:25px; }
     .footer-brand { display:flex; align-items:center; gap:10px; }
@@ -1715,7 +1728,7 @@ section:hover>.wrap>.intro-row .section-kicker{letter-spacing:.18em}
 <div class="v71-mission-grid mission-track">
 <article class="v71-mission-card v71-mission-scratch"><span class="v71-mission-tag">MISIÓN 1 · SCRATCH</span><div aria-hidden="true" class="v71-mission-icon"><img alt="Ilustración animada de estudiante creando un videojuego con KUBIQ" loading="lazy" src="imagenes/scratch-disenia-videojuego.gif"/></div><h3>Diseña un videojuego</h3><p>Diseña personajes, crea reglas y programa cómo funciona tu juego.</p><a class="mission-card-link" href="programas/scratch/index.html">Explorar Scratch →</a></article>
 <article class="v71-mission-card v71-mission-roblox"><span class="v71-mission-tag">MISIÓN 2 · ROBLOX STUDIO</span><div aria-hidden="true" class="v71-mission-icon"><img alt="Ilustración animada de estudiante construyendo un mundo 3D con KUBIQ" loading="lazy" src="imagenes/roblox-construye-mundo-3d.gif"/></div><h3>Construye un mundo 3D</h3><p>Construye escenarios, recorridos y experiencias en 3D.</p><a class="mission-card-link" href="programas/roblox/index.html">Explorar Roblox Studio →</a></article>
-<article class="v71-mission-card v71-mission-python"><span class="v71-mission-tag">MISIÓN 3 · PYTHON</span><div aria-hidden="true" class="v71-mission-icon"><img alt="Ilustración animada de estudiantes programando una solución con Python" loading="lazy" src="imagenes/python-programa-solucion.gif"/></div><h3>Programa una solución</h3><p>Escribe código para crear pequeños programas y resolver retos.</p><a class="mission-card-link" href="programas/python/index.html">Explorar Python →</a></article>
+<article class="v71-mission-card v71-mission-python"><span class="v71-mission-tag">MISIÓN 3 · PYTHON</span><div aria-hidden="true" class="v71-mission-icon"><img alt="Ilustración animada de estudiantes programando una solución con Python" loading="lazy" src="imagenes/python-programa-solucion-v114.gif"/></div><h3>Programa una solución</h3><p>Escribe código para crear pequeños programas y resolver retos.</p><a class="mission-card-link" href="programas/python/index.html">Explorar Python →</a></article>
 </div>
 <p class="v71-mission-note">Los proyectos concretos se ajustan al nivel y avance de cada grupo; estos ejemplos muestran posibilidades de creación.</p>
 <div class="v85-mission-cta"><a class="btn btn-primary" href="#cursos">Encuentra tu próxima misión</a></div>
@@ -1798,7 +1811,7 @@ section:hover>.wrap>.intro-row .section-kicker{letter-spacing:.18em}
 <h2 class="display">Que la tecnología sea una herramienta, no solo entretenimiento.</h2>
 <p>Con KUBIQ ACADEMY, niños y jóvenes pueden empezar a construir habilidades digitales desde casa, con cursos pensados para sus edades y niveles.</p>
 </div>
-<a class="btn btn-primary" href="experiencia.html">Conocer la experiencia KUBIQ</a>
+<a class="btn btn-primary btn-experience btn-experience-final" href="experiencia.html"><span>Conocer la experiencia KUBIQ</span><span class="experience-arrow" aria-hidden="true">↗</span></a>
 </div>
 </div>
 </section>
@@ -1948,6 +1961,46 @@ section:hover>.wrap>.intro-row .section-kicker{letter-spacing:.18em}
 .v81-progress-action .btn:hover::after{transform:translate(2px,-2px)}
 .v81-progress-action .btn:focus-visible{outline:3px solid #ffc928;outline-offset:5px}
 @media(max-width:560px){.v81-progress-action .btn{width:100%;max-width:360px;padding:16px 20px!important;min-height:60px}}
+</style>
+
+
+<style id="kubiq-v113-banner-date-gif">
+/* Fecha de inicio con contraste alto sobre el banner violeta */
+#launchBanner .v80-launch-date{
+  color:#fff7bd!important;
+  background:rgba(11,27,77,.72)!important;
+  border:1px solid rgba(255,247,189,.58)!important;
+  text-shadow:0 1px 2px rgba(11,27,77,.28)!important;
+  box-shadow:0 5px 16px rgba(11,27,77,.18)!important;
+  padding:8px 15px!important;
+  font-size:clamp(17px,1.55vw,23px)!important;
+  font-weight:900!important;
+  line-height:1.15!important;
+}
+#launchBanner .v80-launch-gif{
+  flex:0 0 auto!important;
+  align-self:stretch!important;
+  width:clamp(175px,21vw,275px)!important;
+  max-width:275px!important;
+  max-height:none!important;
+  height:auto!important;
+  object-fit:contain!important;
+  filter:drop-shadow(0 12px 20px rgba(11,27,77,.28))!important;
+}
+#launchBanner.v80-launch-banner{min-height:150px!important}
+@media(max-width:900px){
+  #launchBanner .v80-launch-gif{width:clamp(135px,20vw,190px)!important}
+  #launchBanner .v80-launch-date{font-size:17px!important}
+}
+@media(max-width:600px){
+  #launchBanner.v80-launch-banner{min-height:0!important;align-items:center!important}
+  #launchBanner .v80-launch-gif{width:clamp(105px,28vw,145px)!important;max-height:none!important;align-self:center!important}
+  #launchBanner .v80-launch-date{font-size:14px!important;padding:7px 10px!important}
+}
+@media(max-width:390px){
+  #launchBanner .v80-launch-gif{width:92px!important}
+  #launchBanner .v80-launch-date{font-size:12px!important}
+}
 </style>
 
 </body>
