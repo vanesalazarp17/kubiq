@@ -152,6 +152,18 @@ section{padding:54px 0}.intro{max-width:780px;color:var(--muted);line-height:1.7
 <footer><div class="wrap">KUBIQ ACADEMY · Mentes que programan el futuro</div></footer>
 <nav class="mobile-action-dock" aria-label="Acciones rápidas para móvil"><a href="index.html#cursos">Explorar cursos</a><a href="https://cal.com/kubiqacademy/sesion-informativa" target="_blank" rel="noopener">Agendar sesión</a></nav>
 <script id="kubiq-v142-mobile-dock-behavior">(()=>{const d=document.querySelector('.mobile-action-dock');if(!d)return;const footer=document.querySelector('footer');if(footer&&'IntersectionObserver'in window){const io=new IntersectionObserver(es=>d.classList.toggle('is-hidden',es.some(e=>e.isIntersecting)),{threshold:.05});io.observe(footer)}document.addEventListener('focusin',e=>{if(e.target.matches('input,select,textarea'))document.body.classList.add('mobile-form-focus')});document.addEventListener('focusout',e=>{if(e.target.matches('input,select,textarea'))setTimeout(()=>{if(!document.activeElement.matches('input,select,textarea'))document.body.classList.remove('mobile-form-focus')},120)});})();</script>
+
+<style id="kubiq-v163-progress-family-gif-smaller">
+/* Desktop: imagen más compacta y centrada verticalmente respecto al texto. */
+.family{grid-template-columns:minmax(0,320px) minmax(0,1fr)!important;align-items:center!important;gap:32px!important}
+.progress-family-image{width:100%!important;max-width:300px!important;height:auto!important;aspect-ratio:478/358;object-fit:cover;justify-self:center!important;align-self:center!important;margin:0!important}
+.family-copy{align-self:center!important}
+@media(max-width:760px){
+  .family{grid-template-columns:1fr!important;gap:16px!important}
+  .progress-family-image{width:100%!important;max-width:100%!important;max-height:300px!important;margin:0 auto!important;justify-self:center!important}
+  .family-copy{align-self:start!important}
+}
+</style>
 </body></html>
 <style id="kubiq-v156-progress-family-alignment">
 .family{align-items:start!important}

@@ -576,6 +576,20 @@ section{padding:64px 0}.intro{max-width:760px;margin-bottom:30px}.intro h2{color
 .program-nav a:hover{transform:translateY(-2px);box-shadow:0 9px 20px rgba(11,27,77,.13)}
 @media(max-width:760px){.program-nav{gap:8px!important}.program-nav a{min-height:40px;padding:9px 13px!important;font-size:12px!important}}
 @media(prefers-reduced-motion:reduce){.skills-transfer .life-skills-grid{scroll-behavior:auto}.program-nav a{transition:none}}
+
+/* KUBIQ V161: jerarquía visual de niveles y navegación de programas */
+.level-route-intro{max-width:900px!important;margin:0 auto 34px!important;text-align:center!important}
+.level-route-intro .eyebrow{display:block;text-align:center!important;margin:0 auto 12px!important}
+.level-route-intro h2{max-width:850px;margin:0 auto 14px!important;text-align:center!important}
+.level-route-intro p{max-width:760px;margin:0 auto!important;text-align:center!important}
+.program-nav{gap:12px!important;justify-content:flex-end!important}
+.program-nav a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:11px 20px!important;border:1px solid rgba(123,77,255,.18);border-radius:999px!important;font-size:13px!important;font-weight:900!important;letter-spacing:.01em;line-height:1.15;text-decoration:none!important;white-space:nowrap;box-shadow:0 5px 14px rgba(11,27,77,.08);transition:transform .2s ease,box-shadow .2s ease,background .2s ease!important}
+.program-nav a:first-child{background:#f0edff!important;color:#5532c8!important}
+.program-nav a:last-child{background:linear-gradient(110deg,#00c8ff,#62e2f5)!important;color:#0b1b4d!important;border-color:rgba(0,200,255,.45)!important}
+.program-nav a:hover{transform:translateY(-2px);box-shadow:0 9px 20px rgba(11,27,77,.14)}
+@media(max-width:700px){.level-route-intro{padding-inline:8px!important;margin-bottom:24px!important}.level-route-intro h2{font-size:clamp(26px,7vw,34px)!important}.program-nav{justify-content:flex-end!important;gap:8px!important}.program-nav a{flex:0 1 auto!important;min-height:40px;padding:9px 13px!important;font-size:12px!important}}
+@media(prefers-reduced-motion:reduce){.program-nav a{transition:none!important}}
+
 </style></head>
 <body>
 <header><div class="wrap nav"><a aria-label="KUBIQ Academy, inicio" class="brand" href="../../"><img alt="KUBIQ ACADEMY" class="brand-header-logo" src="../../imagenes/kubiq-logo-header.png"/></a><nav class="program-nav"><a href="../../#cursos">Programas</a><a href="../../index.html">Volver al inicio</a></nav></div></header>
@@ -586,12 +600,12 @@ section{padding:64px 0}.intro{max-width:760px;margin-bottom:30px}.intro h2{color
  <div class="wrap">
   <div class="sales-head"><span class="eyebrow">APRENDER CREANDO · KUBIQ ACADEMY</span><h2 id="sales-title-roblox">No solo explorar mundos: construir experiencias propias.</h2><p>Tu hijo descubrirá cómo se diseñan los espacios 3D y cómo convertir sus ideas en experiencias interactivas que otros pueden explorar.</p></div>
   <div class="sales-project-heading"><div><span class="sales-mini-label">¡MANOS A LA OBRA!</span><h3>De imaginar mundos a crear experiencias jugables</h3><p>Descubre algunos de los proyectos que podrá desarrollar durante el programa.</p></div></div>
-  <div class="sales-projects" aria-label="Ejemplos de proyectos que podrá crear el estudiante" tabindex="0"><article class="sales-project"><div class="project-image-wrap"><img src="../../imagenes/roblox-construye-mundo-3d.gif" alt="Mundos que cobran vida" loading="lazy"><span class="project-chip">MUNDOS 3D</span></div><div class="project-copy"><span class="project-number">PROYECTO 1</span><strong>Mundos que cobran vida</strong><p>Diseña escenarios, plataformas y recorridos con espacios que otros pueden explorar.</p></div></article><article class="sales-project"><div class="project-image-wrap"><img src="../../imagenes/project-roblox-world.jpg" alt="Desafíos para jugar" loading="lazy"><span class="project-chip">RETOS INTERACTIVOS</span></div><div class="project-copy"><span class="project-number">PROYECTO 2</span><strong>Desafíos para jugar</strong><p>Crea objetivos, obstáculos y reglas que convierten cada mundo en una experiencia.</p></div></article><article class="sales-project"><div class="project-image-wrap"><img src="../../imagenes/roblox-ideas-reaccionan-v158.gif" alt="Estudiante imagina scripts y objetos que reaccionan en Roblox Studio" loading="lazy"><span class="project-chip">PROGRAMA CON LUA</span></div><div class="project-copy"><span class="project-number">PROYECTO 3</span><strong>Ideas que reaccionan</strong><p>Da vida a objetos y personajes mediante scripts y mecánicas programadas.</p></div></article></div>
+  <div class="sales-projects" aria-label="Ejemplos de proyectos que podrá crear el estudiante" tabindex="0"><article class="sales-project"><div class="project-image-wrap"><img src="../../imagenes/roblox-construye-mundo-3d.gif" alt="Mundos que cobran vida" loading="lazy"><span class="project-chip">MUNDOS 3D</span></div><div class="project-copy"><span class="project-number">PROYECTO 1</span><strong>Mundos que cobran vida</strong><p>Diseña escenarios, plataformas y recorridos con espacios que otros pueden explorar.</p></div></article><article class="sales-project"><div class="project-image-wrap"><img src="../../imagenes/project-roblox-world.jpg" alt="Desafíos para jugar" loading="lazy"><span class="project-chip">RETOS INTERACTIVOS</span></div><div class="project-copy"><span class="project-number">PROYECTO 2</span><strong>Desafíos para jugar</strong><p>Crea objetivos, obstáculos y reglas que convierten cada mundo en una experiencia.</p></div></article><article class="sales-project"><div class="project-image-wrap"><img src="../../imagenes/roblox-ideas-reaccionan-v159.jpeg" alt="Estudiante imagina scripts y objetos que reaccionan en Roblox Studio" loading="lazy"><span class="project-chip">PROGRAMA CON LUA</span></div><div class="project-copy"><span class="project-number">PROYECTO 3</span><strong>Ideas que reaccionan</strong><p>Da vida a objetos y personajes mediante scripts y mecánicas programadas.</p></div></article></div>
   <p class="sales-trustline">Dos niveles para avanzar desde la construcción de mundos 3D hasta experiencias interactivas con scripts. · Clases en vivo, grupos pequeños y acompañamiento docente.</p>
  </div>
 </section>
 
-<section><div class="wrap"><div class="intro"><span class="eyebrow" style="color:#7B4DFF">DOS NIVELES · UNA RUTA</span><h2>Elige el nivel que acompaña su siguiente desafío.</h2><p>Cada estudiante avanza desde sus conocimientos e intereses. Te orientamos para elegir el nivel adecuado antes de la matrícula.</p></div><div class="levels"><article class="level-card"><span class="level-age">10 a 15 años</span><span class="session-length">28 clases · 60 min por sesión · 28 horas totales</span><h3>Roblox Studio inicial</h3><p>No es necesario haber creado juegos antes.</p><p>Construye escenarios, organiza objetos y comprende cómo se representa un mundo tridimensional.</p><div class="level-tags">Interfaz y herramientas · escenarios 3D · objetos y propiedades · coordenadas y escalas · geometría aplicada.</div><a class="btn btn-outline" data-program="Roblox Studio inicial" href="#solicitar-matricula">Solicitar matrícula</a></article><article class="level-card"><span class="level-age">12 a 16 años</span><span class="session-length">32 clases · 75 min por sesión · 40 h totales</span><h3>Roblox Studio avanzado</h3><p>Recomendado para quienes ya manejan las herramientas básicas de Roblox Studio.</p><p>Programa comportamientos y mecánicas con scripts en Lua para crear experiencias más completas.</p><div class="level-tags">Lua: variables y funciones · eventos y scripts · mecánicas de juego · pruebas y depuración · lógica algorítmica.</div><a class="btn btn-outline" data-program="Roblox Studio avanzado" href="#solicitar-matricula">Solicitar matrícula</a></article></div>
+<section><div class="wrap"><div class="intro level-route-intro"><span class="eyebrow" style="color:#7B4DFF">DOS NIVELES · UNA RUTA</span><h2>Elige el nivel que acompaña su siguiente desafío.</h2><p>Cada estudiante avanza desde sus conocimientos e intereses. Te orientamos para elegir el nivel adecuado antes de la matrícula.</p></div><div class="levels"><article class="level-card"><span class="level-age">10 a 15 años</span><span class="session-length">28 clases · 60 min por sesión · 28 horas totales</span><h3>Roblox Studio inicial</h3><p>No es necesario haber creado juegos antes.</p><p>Construye escenarios, organiza objetos y comprende cómo se representa un mundo tridimensional.</p><div class="level-tags">Interfaz y herramientas · escenarios 3D · objetos y propiedades · coordenadas y escalas · geometría aplicada.</div><a class="btn btn-outline" data-program="Roblox Studio inicial" href="#solicitar-matricula">Solicitar matrícula</a></article><article class="level-card"><span class="level-age">12 a 16 años</span><span class="session-length">32 clases · 75 min por sesión · 40 h totales</span><h3>Roblox Studio avanzado</h3><p>Recomendado para quienes ya manejan las herramientas básicas de Roblox Studio.</p><p>Programa comportamientos y mecánicas con scripts en Lua para crear experiencias más completas.</p><div class="level-tags">Lua: variables y funciones · eventos y scripts · mecánicas de juego · pruebas y depuración · lógica algorítmica.</div><a class="btn btn-outline" data-program="Roblox Studio avanzado" href="#solicitar-matricula">Solicitar matrícula</a></article></div>
 <div class="facts"><div><strong>28 / 32 clases</strong><span>Inicial / Avanzado</span></div><div><strong>1 por semana</strong><span>sesión en vivo</span></div><div><strong>60 / 75 min</strong><span>Inicial / Avanzado</span></div><div><strong>28 h / 40 h</strong><span>horas totales por nivel</span></div></div></div></section>
 <section class="program-enroll" id="solicitar-matricula"><div class="wrap"><div class="intro"><span class="eyebrow" style="color:#7B4DFF">SOLICITUD DE MATRÍCULA</span><h2>Cuéntanos sobre el estudiante.</h2><p>Completa estos datos para recibir información del programa, horarios y condiciones. La solicitud no genera un cobro.</p></div><form class="program-enroll-form" id="programEnrollForm"><label>Nombre del representante<input name="representante" placeholder="Tu nombre" required=""/></label><label>WhatsApp de contacto<input name="whatsapp" placeholder="Número con código de país" required="" type="tel"/></label><label>Edad del estudiante<input max="18" min="6" name="edad" placeholder="Edad" required="" type="number"/></label><label>Programa de interés<select id="programSelect" name="programa" required=""><option value="">Selecciona un programa</option><option value="Roblox Studio inicial">Roblox Studio inicial</option><option value="Roblox Studio avanzado">Roblox Studio avanzado</option></select></label><fieldset class="full program-preferences"><legend>Días preferidos</legend><div class="program-day-options"><label><input type="checkbox" name="dias" value="Lunes"/> Lunes</label><label><input type="checkbox" name="dias" value="Martes"/> Martes</label><label><input type="checkbox" name="dias" value="Miércoles"/> Miércoles</label><label><input type="checkbox" name="dias" value="Jueves"/> Jueves</label><label><input type="checkbox" name="dias" value="Viernes"/> Viernes</label><label><input type="checkbox" name="dias" value="Sábado"/> Sábado</label><label><input type="checkbox" name="dias" value="Domingo"/> Domingo</label></div></fieldset><label class="full">Horarios preferidos<select name="horario" required><option value="">Selecciona una opción</option><option>Lunes a viernes: 11:00 a. m. – 7:00 p. m.</option><option>Sábados y domingos: 9:00 a. m. – 5:00 p. m.</option><option>Cualquier horario disponible</option></select></label><label class="full">Mensaje (opcional)<textarea name="mensaje" placeholder="Cuéntanos si tienes alguna consulta." rows="3"></textarea></label><button class="btn btn-outline" type="submit">Enviar solicitud</button></form></div></section>
 
@@ -620,20 +634,54 @@ document.querySelectorAll('.program-sales-showcase').forEach(section=>{
 @media(max-width:760px){.sales-benefit-row{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:14px!important;margin:20px 0 28px!important}.sales-benefit{width:100%;min-width:0;min-height:0;padding:21px!important;border-radius:20px}.sales-benefit strong{display:block;line-height:1.25}.sales-benefit p{line-height:1.55}.sales-benefit-intro{margin:18px auto 14px}.program-hero-image{max-width:min(78vw,330px);height:auto}}
 </style>
 
-<script id="kubiq-v158-skills-carousel">(()=>{
- const section=document.querySelector('.skills-transfer'); if(!section)return;
- const track=section.querySelector('.life-skills-grid'); if(!track)return;
- if(!window.matchMedia('(min-width: 901px)').matches)return;
- const cards=[...track.querySelectorAll('.life-skill-card')]; if(cards.length<5)return;
- const controls=document.createElement('div'); controls.className='skills-carousel-controls'; controls.setAttribute('aria-label','Controles de habilidades');
+<script id="kubiq-v160-skills-carousel">
+(()=> {
+ const section=document.querySelector('.skills-transfer');
+ if(!section) return;
+ const track=section.querySelector('.life-skills-grid');
+ if(!track) return;
+ if(!window.matchMedia('(min-width: 901px)').matches) return;
+ const cards=[...track.querySelectorAll('.life-skill-card')];
+ if(cards.length<5) return;
+ const controls=document.createElement('div');
+ controls.className='skills-carousel-controls';
+ controls.setAttribute('aria-label','Controles de habilidades');
  controls.innerHTML='<button type="button" class="skills-prev" aria-label="Habilidades anteriores">‹</button><button type="button" class="skills-next" aria-label="Más habilidades">›</button>';
  track.parentNode.insertBefore(controls,track);
- const step=()=>{const card=track.querySelector('.life-skill-card');return card?card.getBoundingClientRect().width+16:300};
- let pauseUntil=0; const pause=()=>{pauseUntil=Date.now()+6500};
- controls.querySelector('.skills-prev').addEventListener('click',()=>{pause();track.scrollBy({left:-step(),behavior:'smooth'})});
- controls.querySelector('.skills-next').addEventListener('click',()=>{pause();track.scrollBy({left:step(),behavior:'smooth'})});
- track.addEventListener('pointerdown',pause); track.addEventListener('wheel',pause,{passive:true});
- let last=0; const tick=(now)=>{if(!document.hidden&&Date.now()>pauseUntil&&now-last>42){track.scrollLeft+=.35;last=now;if(track.scrollLeft+track.clientWidth>=track.scrollWidth-2)track.scrollTo({left:0,behavior:'smooth'})}requestAnimationFrame(tick)};
- if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches)requestAnimationFrame(tick);
-})();</script>
+ const step=()=> {
+   const card=track.querySelector('.life-skill-card');
+   return card ? card.getBoundingClientRect().width+16 : 300;
+ };
+ let pauseUntil=0;
+ const pause=()=>{ pauseUntil=performance.now()+7000; };
+ controls.querySelector('.skills-prev').addEventListener('click',()=>{
+   pause(); track.scrollBy({left:-step(),behavior:'smooth'});
+ });
+ controls.querySelector('.skills-next').addEventListener('click',()=>{
+   pause(); track.scrollBy({left:step(),behavior:'smooth'});
+ });
+ track.addEventListener('pointerdown',pause);
+ track.addEventListener('wheel',pause,{passive:true});
+ track.addEventListener('mouseenter',pause);
+ track.addEventListener('focusin',pause);
+ track.addEventListener('touchstart',pause,{passive:true});
+ let previous=0;
+ const speed=14; // pixels per second: slow, continuous movement
+ const tick=(now)=>{
+   if(!document.hidden && now>pauseUntil && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+     if(previous){
+       const elapsed=Math.min(now-previous,50);
+       track.scrollLeft += speed*elapsed/1000;
+       if(track.scrollLeft+track.clientWidth>=track.scrollWidth-2){
+         track.scrollTo({left:0,behavior:'smooth'});
+         pauseUntil=now+500;
+       }
+     }
+   }
+   previous=now;
+   requestAnimationFrame(tick);
+ };
+ if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches) requestAnimationFrame(tick);
+})();
+</script>
 </body></html>

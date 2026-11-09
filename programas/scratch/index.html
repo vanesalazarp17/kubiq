@@ -304,6 +304,20 @@ section{padding:64px 0}.intro{max-width:760px;margin-bottom:30px}.intro h2{color
 .program-nav a:hover{transform:translateY(-2px);box-shadow:0 9px 20px rgba(11,27,77,.13)}
 @media(max-width:760px){.program-nav{gap:8px!important}.program-nav a{min-height:40px;padding:9px 13px!important;font-size:12px!important}}
 @media(prefers-reduced-motion:reduce){.skills-transfer .life-skills-grid{scroll-behavior:auto}.program-nav a{transition:none}}
+
+/* KUBIQ V161: jerarquía visual de niveles y navegación de programas */
+.level-route-intro{max-width:900px!important;margin:0 auto 34px!important;text-align:center!important}
+.level-route-intro .eyebrow{display:block;text-align:center!important;margin:0 auto 12px!important}
+.level-route-intro h2{max-width:850px;margin:0 auto 14px!important;text-align:center!important}
+.level-route-intro p{max-width:760px;margin:0 auto!important;text-align:center!important}
+.program-nav{gap:12px!important;justify-content:flex-end!important}
+.program-nav a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:11px 20px!important;border:1px solid rgba(123,77,255,.18);border-radius:999px!important;font-size:13px!important;font-weight:900!important;letter-spacing:.01em;line-height:1.15;text-decoration:none!important;white-space:nowrap;box-shadow:0 5px 14px rgba(11,27,77,.08);transition:transform .2s ease,box-shadow .2s ease,background .2s ease!important}
+.program-nav a:first-child{background:#f0edff!important;color:#5532c8!important}
+.program-nav a:last-child{background:linear-gradient(110deg,#00c8ff,#62e2f5)!important;color:#0b1b4d!important;border-color:rgba(0,200,255,.45)!important}
+.program-nav a:hover{transform:translateY(-2px);box-shadow:0 9px 20px rgba(11,27,77,.14)}
+@media(max-width:700px){.level-route-intro{padding-inline:8px!important;margin-bottom:24px!important}.level-route-intro h2{font-size:clamp(26px,7vw,34px)!important}.program-nav{justify-content:flex-end!important;gap:8px!important}.program-nav a{flex:0 1 auto!important;min-height:40px;padding:9px 13px!important;font-size:12px!important}}
+@media(prefers-reduced-motion:reduce){.program-nav a{transition:none!important}}
+
 </style></head>
 <body>
 <header><div class="wrap nav"><a aria-label="KUBIQ Academy, inicio" class="brand" href="../../"><img alt="KUBIQ ACADEMY" class="brand-header-logo" src="../../imagenes/kubiq-logo-header.png"/></a><nav class="program-nav"><a href="../../#cursos">Programas</a><a href="../../index.html">Volver al inicio</a></nav></div></header>
@@ -322,7 +336,7 @@ section{padding:64px 0}.intro{max-width:760px;margin-bottom:30px}.intro h2{color
  </div>
 </section>
 
-<section><div class="wrap"><div class="intro"><span class="eyebrow" style="color:#7B4DFF">DOS NIVELES · UNA RUTA</span><h2>Elige el nivel que acompaña su siguiente desafío.</h2><p>Cada estudiante avanza desde sus conocimientos e intereses. Te orientamos para elegir el nivel adecuado antes de la matrícula.</p></div><div class="levels"><article class="level-card"><span class="level-age">8 a 11 años</span><span class="session-length">24 clases · 60 min por sesión · 24 horas totales</span><h3>Scratch inicial</h3><p>No requiere experiencia previa.</p><p>Conoce el entorno, organiza bloques y crea historias, animaciones y juegos sencillos.</p><div class="level-tags">Interfaz y bloques · secuencias y eventos · movimiento y sonidos · animación · lógica matemática.</div><a class="btn btn-outline" href="#solicitar-matricula" data-program="Scratch inicial">Solicitar matrícula</a></article><article class="level-card"><span class="level-age">9 a 13 años</span><span class="session-length">28 clases · 60 min por sesión · 28 horas totales</span><h3>Scratch avanzado</h3><p>Recomendado para quienes ya conocen los fundamentos de Scratch.</p><p>Diseña experiencias interactivas con reglas, variables, condiciones y varios niveles.</p><div class="level-tags">Condiciones y ciclos · variables y operadores · mensajes entre objetos · puntajes y niveles · depuración.</div><a class="btn btn-outline" href="#solicitar-matricula" data-program="Scratch avanzado">Solicitar matrícula</a></article></div>
+<section><div class="wrap"><div class="intro level-route-intro"><span class="eyebrow" style="color:#7B4DFF">DOS NIVELES · UNA RUTA</span><h2>Elige el nivel que acompaña su siguiente desafío.</h2><p>Cada estudiante avanza desde sus conocimientos e intereses. Te orientamos para elegir el nivel adecuado antes de la matrícula.</p></div><div class="levels"><article class="level-card"><span class="level-age">8 a 11 años</span><span class="session-length">24 clases · 60 min por sesión · 24 horas totales</span><h3>Scratch inicial</h3><p>No requiere experiencia previa.</p><p>Conoce el entorno, organiza bloques y crea historias, animaciones y juegos sencillos.</p><div class="level-tags">Interfaz y bloques · secuencias y eventos · movimiento y sonidos · animación · lógica matemática.</div><a class="btn btn-outline" href="#solicitar-matricula" data-program="Scratch inicial">Solicitar matrícula</a></article><article class="level-card"><span class="level-age">9 a 13 años</span><span class="session-length">28 clases · 60 min por sesión · 28 horas totales</span><h3>Scratch avanzado</h3><p>Recomendado para quienes ya conocen los fundamentos de Scratch.</p><p>Diseña experiencias interactivas con reglas, variables, condiciones y varios niveles.</p><div class="level-tags">Condiciones y ciclos · variables y operadores · mensajes entre objetos · puntajes y niveles · depuración.</div><a class="btn btn-outline" href="#solicitar-matricula" data-program="Scratch avanzado">Solicitar matrícula</a></article></div>
 <div class="facts"><div><strong>24 / 28 clases</strong><span>por cada nivel</span></div><div><strong>1 por semana</strong><span>sesión en vivo</span></div><div><strong>60 min</strong><span>Inicial / Avanzado</span></div><div><strong>24 / 28 h</strong><span>horas totales por nivel</span></div></div></div></section>
 <section class="program-enroll" id="solicitar-matricula"><div class="wrap"><div class="intro"><span class="eyebrow" style="color:#7B4DFF">SOLICITUD DE MATRÍCULA</span><h2>Cuéntanos sobre el estudiante.</h2><p>Completa estos datos para recibir información del programa, horarios y condiciones. La solicitud no genera un cobro.</p></div><form class="program-enroll-form" id="programEnrollForm"><label>Nombre del representante<input name="representante" required placeholder="Tu nombre"/></label><label>WhatsApp de contacto<input name="whatsapp" type="tel" required placeholder="Número con código de país"/></label><label>Edad del estudiante<input name="edad" type="number" min="6" max="18" required placeholder="Edad"/></label><label>Programa de interés<select name="programa" id="programSelect" required><option value="">Selecciona un programa</option><option value="Scratch inicial">Scratch inicial</option><option value="Scratch avanzado">Scratch avanzado</option></select></label><fieldset class="full program-preferences"><legend>Días preferidos</legend><div class="program-day-options"><label><input type="checkbox" name="dias" value="Lunes"/> Lunes</label><label><input type="checkbox" name="dias" value="Martes"/> Martes</label><label><input type="checkbox" name="dias" value="Miércoles"/> Miércoles</label><label><input type="checkbox" name="dias" value="Jueves"/> Jueves</label><label><input type="checkbox" name="dias" value="Viernes"/> Viernes</label><label><input type="checkbox" name="dias" value="Sábado"/> Sábado</label><label><input type="checkbox" name="dias" value="Domingo"/> Domingo</label></div></fieldset><label class="full">Horarios preferidos<select name="horario" required><option value="">Selecciona una opción</option><option>Lunes a viernes: 11:00 a. m. – 7:00 p. m.</option><option>Sábados y domingos: 9:00 a. m. – 5:00 p. m.</option><option>Cualquier horario disponible</option></select></label><label class="full">Mensaje (opcional)<textarea name="mensaje" rows="3" placeholder="Cuéntanos si tienes alguna consulta."></textarea></label><button class="btn btn-outline" type="submit">Enviar solicitud</button></form></div></section>
 <section class="faq"><div class="wrap"><div class="intro"><h2>Preguntas frecuentes</h2><p>Información práctica para que puedas decidir con tranquilidad.</p></div><details><summary>¿Necesita saber programar?</summary><p>No para Scratch inicial. Para Scratch avanzado se revisan los conocimientos previos antes de confirmar el nivel.</p></details><details><summary>¿Qué necesita para las clases?</summary><p>Una computadora con conexión estable a internet. Se recomienda usar mouse y mantener la cámara disponible durante la clase.</p></details><details><summary>¿Qué puede crear?</summary><p>Historias animadas, escenas interactivas y videojuegos con personajes, reglas y sonidos.</p></details></div></section>
@@ -414,22 +428,56 @@ section{padding:64px 0}.intro{max-width:760px;margin-bottom:30px}.intro h2{color
 </style>
 
 
-<script id="kubiq-v158-skills-carousel">(()=>{
- const section=document.querySelector('.skills-transfer'); if(!section)return;
- const track=section.querySelector('.life-skills-grid'); if(!track)return;
- if(!window.matchMedia('(min-width: 901px)').matches)return;
- const cards=[...track.querySelectorAll('.life-skill-card')]; if(cards.length<5)return;
- const controls=document.createElement('div'); controls.className='skills-carousel-controls'; controls.setAttribute('aria-label','Controles de habilidades');
+<script id="kubiq-v160-skills-carousel">
+(()=> {
+ const section=document.querySelector('.skills-transfer');
+ if(!section) return;
+ const track=section.querySelector('.life-skills-grid');
+ if(!track) return;
+ if(!window.matchMedia('(min-width: 901px)').matches) return;
+ const cards=[...track.querySelectorAll('.life-skill-card')];
+ if(cards.length<5) return;
+ const controls=document.createElement('div');
+ controls.className='skills-carousel-controls';
+ controls.setAttribute('aria-label','Controles de habilidades');
  controls.innerHTML='<button type="button" class="skills-prev" aria-label="Habilidades anteriores">‹</button><button type="button" class="skills-next" aria-label="Más habilidades">›</button>';
  track.parentNode.insertBefore(controls,track);
- const step=()=>{const card=track.querySelector('.life-skill-card');return card?card.getBoundingClientRect().width+16:300};
- let pauseUntil=0; const pause=()=>{pauseUntil=Date.now()+6500};
- controls.querySelector('.skills-prev').addEventListener('click',()=>{pause();track.scrollBy({left:-step(),behavior:'smooth'})});
- controls.querySelector('.skills-next').addEventListener('click',()=>{pause();track.scrollBy({left:step(),behavior:'smooth'})});
- track.addEventListener('pointerdown',pause); track.addEventListener('wheel',pause,{passive:true});
- let last=0; const tick=(now)=>{if(!document.hidden&&Date.now()>pauseUntil&&now-last>42){track.scrollLeft+=.35;last=now;if(track.scrollLeft+track.clientWidth>=track.scrollWidth-2)track.scrollTo({left:0,behavior:'smooth'})}requestAnimationFrame(tick)};
- if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches)requestAnimationFrame(tick);
-})();</script>
+ const step=()=> {
+   const card=track.querySelector('.life-skill-card');
+   return card ? card.getBoundingClientRect().width+16 : 300;
+ };
+ let pauseUntil=0;
+ const pause=()=>{ pauseUntil=performance.now()+7000; };
+ controls.querySelector('.skills-prev').addEventListener('click',()=>{
+   pause(); track.scrollBy({left:-step(),behavior:'smooth'});
+ });
+ controls.querySelector('.skills-next').addEventListener('click',()=>{
+   pause(); track.scrollBy({left:step(),behavior:'smooth'});
+ });
+ track.addEventListener('pointerdown',pause);
+ track.addEventListener('wheel',pause,{passive:true});
+ track.addEventListener('mouseenter',pause);
+ track.addEventListener('focusin',pause);
+ track.addEventListener('touchstart',pause,{passive:true});
+ let previous=0;
+ const speed=14; // pixels per second: slow, continuous movement
+ const tick=(now)=>{
+   if(!document.hidden && now>pauseUntil && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+     if(previous){
+       const elapsed=Math.min(now-previous,50);
+       track.scrollLeft += speed*elapsed/1000;
+       if(track.scrollLeft+track.clientWidth>=track.scrollWidth-2){
+         track.scrollTo({left:0,behavior:'smooth'});
+         pauseUntil=now+500;
+       }
+     }
+   }
+   previous=now;
+   requestAnimationFrame(tick);
+ };
+ if(!window.matchMedia('(prefers-reduced-motion: reduce)').matches) requestAnimationFrame(tick);
+})();
+</script>
 </body></html>
 <style id="kubiq-v93-scratch-transparent-logo">
 .program-hero-visual{background:transparent!important;box-shadow:none!important;border:0!important}
