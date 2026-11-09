@@ -1634,10 +1634,22 @@ section:hover>.wrap>.intro-row .section-kicker{letter-spacing:.18em}
 @media(max-width:900px){#inicio.hero{background-position:58% center!important}}
 @media(max-width:600px){#inicio.hero{background-position:61% center!important}}
 </style>
+
+<style id="kubiq-v120-banner-layout">
+/* Banner sin GIF: el CTA ocupa el espacio visual derecho. */
+#launchBanner.v80-launch-banner{display:grid!important;grid-template-columns:minmax(0,1fr) auto!important;align-items:center!important;justify-content:stretch!important;gap:clamp(20px,4vw,64px)!important;padding-right:clamp(62px,5vw,90px)!important}
+#launchBanner .v80-launch-copy{width:auto!important;max-width:none!important}
+#launchBanner .v80-launch-cta{justify-self:end;min-width:clamp(190px,18vw,270px);min-height:64px;padding:17px 30px!important;font-size:clamp(16px,1.5vw,20px)!important;box-shadow:0 10px 24px rgba(11,27,77,.2);white-space:nowrap}
+#launchBanner .cohort-date-highlight{background:#fff!important;color:#0b1b4d!important;border:1px solid rgba(11,27,77,.08)!important;box-shadow:0 5px 16px rgba(11,27,77,.12),inset 0 1px 0 rgba(255,255,255,.95)!important}
+@media(max-width:650px){
+ #launchBanner.v80-launch-banner{grid-template-columns:minmax(0,1fr)!important;gap:12px!important;padding:16px 48px 17px 18px!important}
+ #launchBanner .v80-launch-cta{justify-self:start;min-width:0;min-height:48px;padding:12px 22px!important;font-size:15px!important}
+}
+</style>
 </head>
 <body><a class="skip-link" href="#contenido-principal">Saltar al contenido principal</a>
 <div class="site-sticky-shell" id="siteStickyShell">
-<aside aria-label="Próximas cohortes KUBIQ: inicio en febrero de 2027" class="launch-banner v80-launch-banner" id="launchBanner"><div class="v80-launch-copy"><span class="v80-launch-kicker">NUEVAS COHORTES KUBIQ</span><strong>¡Nuevos grupos en preparación! Tu próxima aventura empieza creando.</strong><p>Explora Scratch, Roblox Studio y Python y encuentra tu próximo proyecto.</p><span class="v80-launch-date cohort-date-highlight">Iniciamos en febrero de 2027</span><a class="v80-launch-cta" href="#cursos">Explorar cursos</a></div><img alt="Mascota KUBIQ invitando a descubrir los próximos cursos" class="v80-launch-gif" height="150" src="imagenes/kubiq-banner-calendario-v116.gif" style="width:clamp(92px,12vw,150px);height:auto;max-height:112px;object-fit:contain;" width="150"/><button aria-label="Cerrar anuncio" class="launch-banner-close" type="button">×</button></aside>
+<aside aria-label="Próximas cohortes KUBIQ: inicio en febrero de 2027" class="launch-banner v80-launch-banner" id="launchBanner"><div class="v80-launch-copy"><span class="v80-launch-kicker">NUEVAS COHORTES KUBIQ</span><strong>¡Nuevos grupos en preparación! Tu próxima aventura empieza creando.</strong><p>Explora Scratch, Roblox Studio y Python y encuentra tu próximo proyecto.</p><span class="v80-launch-date cohort-date-highlight">Iniciamos en febrero de 2027</span></div><a class="v80-launch-cta" href="#cursos">Explorar cursos</a><button aria-label="Cerrar anuncio" class="launch-banner-close" type="button">×</button></aside>
 <div class="topline"></div>
 <header>
 <div class="wrap nav">
@@ -1645,7 +1657,7 @@ section:hover>.wrap>.intro-row .section-kicker{letter-spacing:.18em}
 <img alt="KUBIQ ACADEMY" class="brand-header-logo" decoding="async" fetchpriority="high" loading="eager" src="imagenes/kubiq-logo-header.jpeg"/>
 </a>
 <button aria-controls="nav-links" aria-expanded="false" aria-label="Abrir menú" class="menu-btn">☰</button>
-<nav aria-label="Navegación principal" class="nav-links" id="nav-links"><a href="#propuesta">1 / Nuestra esencia</a><a href="#cursos">2 / Catálogo de cursos</a><a href="#progress-teaser">3 / KUBIQ Progress</a><a href="#metodologia">4 / Nuestra propuesta</a><a href="#horarios">5 / Convocatorias y horarios</a><a href="#faq">6 / Preguntas frecuentes</a><a href="#contacto">7 / Hablemos</a></nav>
+<nav aria-label="Navegación principal" class="nav-links" id="nav-links"><a href="#propuesta">Nuestra esencia</a><a href="#cursos">Catálogo de cursos</a><a href="#metodologia">Nuestra propuesta</a><a href="#contacto">Contacto</a></nav>
 </div>
 </header>
 </div>
