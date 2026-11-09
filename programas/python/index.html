@@ -131,10 +131,44 @@ section{padding:64px 0}.intro{max-width:760px;margin-bottom:30px}.intro h2{color
   .mobile-action-dock{left:9px;right:9px;gap:7px;padding:7px}
   .mobile-action-dock a{font-size:13px;min-height:46px;padding:9px 7px}
 }
-@media(prefers-reduced-motion:reduce){
-  @media(max-width:760px){html{scroll-behavior:auto}.mobile-action-dock{transition:none}}
-}
+@media(prefers-reduced-motion:reduce) and (max-width:760px){html{scroll-behavior:auto}.mobile-action-dock{transition:none!important}}
 
+</style>
+
+<style id="kubiq-v142-mobile-final-audit">
+/* V142: mobile QA consolidation. Desktop is deliberately untouched. */
+.mobile-action-dock{display:none}
+@media screen and (max-width:760px){
+  html,body{width:100%;max-width:100%;overflow-x:clip}
+  body{padding-bottom:calc(88px + env(safe-area-inset-bottom,0px))}
+  .mobile-action-dock{display:grid;position:fixed;z-index:1500;left:max(10px,env(safe-area-inset-left,0px));right:max(10px,env(safe-area-inset-right,0px));bottom:calc(9px + env(safe-area-inset-bottom,0px));grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:8px;border:1px solid rgba(255,255,255,.82);border-radius:19px;background:rgba(255,255,255,.94);box-shadow:0 8px 28px rgba(7,18,52,.2);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+  .mobile-action-dock a{display:flex;min-width:0;min-height:48px;align-items:center;justify-content:center;padding:10px 8px;border-radius:13px;text-align:center;text-decoration:none;font:800 13px/1.2 Nunito,Arial,sans-serif;overflow-wrap:anywhere}
+  .mobile-action-dock a:first-child{background:#0b1b4d;color:#fff}
+  .mobile-action-dock a:last-child{background:linear-gradient(110deg,#5b37e8,#7b4dff);color:#fff}
+  .mobile-action-dock.is-hidden{opacity:0;transform:translateY(130%);pointer-events:none}
+  body.mobile-dialog-open .mobile-action-dock,body.mobile-form-focus .mobile-action-dock{opacity:0;pointer-events:none;transform:translateY(130%)}
+  main,section,header,footer,.wrap,.container{min-width:0;max-width:100%}
+  img,video,iframe{max-width:100%}
+  input,select,textarea{font-size:16px!important;max-width:100%}
+  button,a,[role=button],summary{touch-action:manipulation}
+  .course-modal,.enroll-dialog,.trial-dialog{width:calc(100% - 20px)!important;max-width:calc(100% - 20px)!important;max-height:calc(100dvh - 24px)!important;max-height:calc(100svh - 24px)!important;overflow:auto!important;overscroll-behavior:contain}
+  .course-modal-backdrop,.enroll-backdrop,.trial-backdrop{padding:10px!important;align-items:center!important}
+  .course-modal-actions,.enroll-submit-wrap{grid-template-columns:minmax(0,1fr)!important}
+  .course-modal-actions>*{min-width:0;width:100%!important}
+  .payment-choices{grid-template-columns:1fr!important}
+  .trial-weekdays,.trial-calendar-grid{gap:3px!important}
+  .trial-day{min-width:0;min-height:38px!important}
+  .status-proof-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  .status-proof-grid>div:last-child:nth-child(odd){grid-column:1/-1}
+  .mobile-action-dock a:focus-visible{outline:3px solid #00c8ff;outline-offset:3px}
+}
+@media screen and (max-width:390px){
+  .mobile-action-dock{left:8px;right:8px;gap:6px;padding:7px}
+  .mobile-action-dock a{font-size:12px;min-height:46px;padding:9px 6px}
+}
+@media(prefers-reduced-motion:reduce){
+  @media screen and (max-width:760px){html{scroll-behavior:auto}.mobile-action-dock{transition:none!important}}
+}
 </style>
 </head>
 <body>
@@ -174,6 +208,8 @@ document.querySelectorAll('.program-sales-showcase').forEach(section=>{
  next.addEventListener('click',()=>move(1));
 });
 </script>
+<nav class="mobile-action-dock" aria-label="Acciones rápidas para móvil"><a href="../../index.html#cursos">Ver cursos</a><a href="https://cal.com/kubiqacademy/30min" target="_blank" rel="noopener">Reservar experiencia</a></nav>
+<script id="kubiq-v142-mobile-dock-behavior">(()=>{const d=document.querySelector('.mobile-action-dock');if(!d)return;const footer=document.querySelector('footer');if(footer&&'IntersectionObserver'in window){const io=new IntersectionObserver(es=>d.classList.toggle('is-hidden',es.some(e=>e.isIntersecting)),{threshold:.05});io.observe(footer)}document.addEventListener('focusin',e=>{if(e.target.matches('input,select,textarea'))document.body.classList.add('mobile-form-focus')});document.addEventListener('focusout',e=>{if(e.target.matches('input,select,textarea'))setTimeout(()=>{if(!document.activeElement.matches('input,select,textarea'))document.body.classList.remove('mobile-form-focus')},120)});})();</script>
 </body></html>
 
 <style id="kubiq-v93-python-layout">
