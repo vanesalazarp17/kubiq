@@ -2114,24 +2114,6 @@ section:hover>.wrap>.intro-row .section-kicker{letter-spacing:.18em}
   #launchBanner .v80-launch-date{font-size:12px!important}
 }
 </style>
-
-
-<style id="kubiq-v129-mobile-cover">
-/* Portada vertical exclusiva para teléfonos; escritorio conserva su imagen actual. */
-@media (max-width: 760px){
-  #inicio.hero{
-    background-image:url("imagenes/kubiq-portada-mobile-v128.jpeg")!important;
-    background-position:center top!important;
-    background-size:cover!important;
-    background-repeat:no-repeat!important;
-    min-height:790px!important;
-  }
-  #inicio.hero:before{
-    background:linear-gradient(180deg,rgba(7,10,75,.12) 0%,rgba(7,10,75,.08) 48%,rgba(7,10,75,.24) 100%)!important;
-  }
-}
-</style>
-
 </body>
 </html>
 <style id="kubiq-v93-final-polish">
@@ -2169,4 +2151,43 @@ section:hover>.wrap>.intro-row .section-kicker{letter-spacing:.18em}
 #launchBanner .launch-banner-close{background:rgba(11,27,77,.10)!important;color:#0b1b4d!important}
 @media(max-width:850px){#launchBanner .v80-launch-gif{width:116px!important;max-height:82px!important}}
 @media(max-width:560px){#launchBanner .v80-launch-gif{width:88px!important;max-height:76px!important}}
+</style>
+
+<style id="kubiq-v132-mobile-cover-fix">
+/* Solo móvil: fuerza la imagen vertical al final de la cascada para que ninguna regla anterior la reemplace. */
+@media screen and (max-width: 760px) {
+  #inicio.hero {
+    background-color: #10105b !important;
+    background-image: url("imagenes/kubiq-portada-mobile-v128.jpeg") !important;
+    background-position: center top !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    min-height: max(790px, 100svh) !important;
+  }
+  #inicio.hero::before {
+    background: linear-gradient(
+      180deg,
+      rgba(7, 10, 75, 0.04) 0%,
+      rgba(7, 10, 75, 0.02) 48%,
+      rgba(7, 10, 75, 0.16) 100%
+    ) !important;
+  }
+}
+</style>
+
+<style id="kubiq-v133-course-logos-mobile">
+/* En teléfonos, los logos de los seis programas tienen mayor presencia visual. */
+@media screen and (max-width: 760px) {
+  #catalogo .course-icon {
+    min-height: 142px !important;
+    padding: 8px !important;
+  }
+  #catalogo .course-icon img {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 112px !important;
+    max-height: 112px !important;
+    object-fit: contain !important;
+  }
+}
 </style>
