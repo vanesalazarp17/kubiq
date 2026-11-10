@@ -15,7 +15,7 @@
 *{box-sizing:border-box}body{margin:0;font-family:Nunito,sans-serif;color:var(--ink);background:#fff}.wrap{width:min(1080px,calc(100% - 36px));margin:auto}
 header{background:#fff;border-bottom:1px solid var(--line)}.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:14px}.logo{width:230px;max-width:55vw}.navlinks{display:flex;gap:10px;align-items:center}.navlinks a,.back{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:900;color:#0b1b4d;text-decoration:none;padding:12px 17px;border-radius:999px;background:linear-gradient(100deg,#00c8ff,#8cecff);box-shadow:0 8px 22px #00c8ff40;transition:transform .2s,box-shadow .2s}.back:hover{transform:translateY(-2px);box-shadow:0 12px 26px #00c8ff66}
 .hero{padding:62px 0;background:radial-gradient(circle at 82% 15%,#00c8ff38,transparent 25%),linear-gradient(120deg,#0b1b4d,#29206d);color:#fff}.tag{color:#8cecff;font-size:11px;letter-spacing:.16em;font-weight:900}h1,h2,h3{font-family:Poppins,sans-serif;line-height:1.16}h1{font-size:clamp(34px,6vw,56px);max-width:800px;margin:16px 0}.hero p{font-size:17px;line-height:1.7;color:#dce5ff;max-width:760px;margin:0}
-section{padding:54px 0}.intro{max-width:780px;color:var(--muted);line-height:1.75;font-size:16px}.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:28px}.step{background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:0 10px 28px #0b1b4d0b}.num{display:grid;place-items:center;width:38px;height:38px;border-radius:12px;background:#e9e6ff;color:var(--violet);font-weight:900}.step h3{font-size:18px;color:var(--navy);margin:15px 0 8px}.step p{font-size:14px;line-height:1.65;color:var(--muted);margin:0}
+section{padding:54px 0}.intro{max-width:780px;color:var(--muted);line-height:1.75;font-size:16px}.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:28px}.step{background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:0 10px 28px #0b1b4d0b}.num{display:grid;place-items:center;width:38px;height:38px;border-radius:12px;background:#e9e6ff;color:var(--violet);font-weight:900}.step h3{font-size:18px;color:var(--navy);margin:15px 0 8px}.step p{font-size:14px;line-height:1.65;color:var(--muted);margin:0}
 .evidence{background:#f6f8ff}.evidence-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}.evidence h2,.section-title{font-size:clamp(26px,4vw,38px);color:var(--navy);margin:0 0 12px}.evidence p{color:var(--muted);line-height:1.7}.list{display:grid;gap:12px}.item{display:flex;gap:13px;padding:15px;background:#fff;border:1px solid var(--line);border-radius:15px}.check{flex:0 0 28px;height:28px;border-radius:9px;display:grid;place-items:center;background:#e5faff;color:#087e9d;font-weight:900}.item strong{display:block;color:var(--navy);font-size:14px}.item span{display:block;color:var(--muted);font-size:13px;line-height:1.5;margin-top:3px}
 .family{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:28px;border:1px solid #dfe6f5;border-radius:22px;padding:24px;background:linear-gradient(135deg,#fff,#f5f8ff);margin-top:28px}.progress-family-image{display:block;width:100%;height:auto;aspect-ratio:478/358;object-fit:cover;border-radius:18px;box-shadow:0 18px 40px #0b1b4d18}.family h3{font-size:20px;color:var(--navy);margin:0 0 8px}.family p{margin:0;color:var(--muted);line-height:1.7}.clarity{font-size:12px;color:#697590;background:#f7f8fc;border-left:3px solid var(--violet);padding:13px 15px;border-radius:0 10px 10px 0;margin-top:20px;line-height:1.6}
 .cta{background:var(--navy);color:#fff;text-align:center}.cta h2{font-size:clamp(26px,4vw,36px);margin:0 0 10px}.cta p{color:#dce5ff;line-height:1.65}.cta-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;margin-top:12px;padding:14px 22px;border-radius:999px;background:var(--cyan);color:var(--navy);font-weight:900;text-decoration:none}
@@ -113,7 +113,27 @@ section{padding:54px 0}.intro{max-width:780px;color:var(--muted);line-height:1.7
   @media screen and (max-width:760px){html{scroll-behavior:auto}.mobile-action-dock{transition:none!important}}
 }
 </style>
-</head>
+
+<style id="kubiq-v182-progress-family-copy-center">
+@media (min-width:761px){
+  .family{align-items:center!important}
+  .family-copy{align-self:center!important}
+}
+</style>
+
+
+<style id="kubiq-v183-progress-footer-fix">
+footer .kubiq-footer-inner{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;min-width:0}
+footer .kubiq-footer-inner a{color:#dbe4ff;text-decoration:underline;text-decoration-color:#9b8cff;text-underline-offset:3px;display:inline-block;max-width:100%;overflow-wrap:anywhere}
+footer .kubiq-footer-inner a:hover,footer .kubiq-footer-inner a:focus-visible{color:#00c8ff}
+@media(max-width:760px){footer .kubiq-footer-inner{justify-content:center;text-align:center;gap:10px}footer .kubiq-footer-inner a{padding:6px 10px}}
+</style>
+
+<style id="kubiq-v189-footer-privacy-gutter">
+footer .footer-privacy-link,footer .experience-footer-inner a,footer .kubiq-footer-inner>a{display:inline-block;box-sizing:border-box;max-width:100%;margin:12px auto 0;padding:8px 0;color:#dbe4ff;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+footer .wrap .footer-privacy-link{margin-left:0}
+@media(max-width:760px){footer .footer-privacy-link,footer .experience-footer-inner a,footer .kubiq-footer-inner>a{margin:10px 0 0;padding:8px 0}footer .wrap,footer .experience-footer-inner{box-sizing:border-box;max-width:100%;min-width:0}}
+</style></head>
 <body>
 <header><div class="wrap nav">
 <a href="index.html"><img alt="KUBIQ ACADEMY" class="logo" src="imagenes/kubiq-logo-header.png"/></a>
@@ -141,11 +161,11 @@ section{padding:54px 0}.intro{max-width:780px;color:var(--muted);line-height:1.7
 </div>
 </div>
 <div class="wrap"><div class="family"><img alt="Familia acompañando a sus hijos mientras aprenden y crean con KUBIQ" class="progress-family-image" loading="lazy" src="imagenes/kubiq-progress-familia-v156.gif"/><div class="family-copy"><h3>Evidencias que muestran el aprendizaje</h3><p>Los proyectos realizados, los contenidos trabajados y las observaciones del docente permiten comprender qué ha aprendido el estudiante y cómo aplica esos conocimientos.</p></div></div>
-<p class="clarity">KUBIQ PROGRESS describe nuestro enfoque de seguimiento académico. No es un portal de acceso para estudiantes ni un panel de seguimiento en tiempo real.</p></div>
+</div>
 </section>
 <section class="cta"><div class="wrap"><h2>Cada avance cuenta. Cada creación también.</h2><p>En KUBIQ creemos que aprender tecnología es mucho más que completar lecciones. Es descubrir nuevas habilidades, superar desafíos y convertir ideas en proyectos propios.</p></div></section>
 </main>
-<footer><div class="wrap">KUBIQ ACADEMY · Mentes que programan el futuro</div><a href="privacidad.html">Aviso de privacidad</a></footer>
+<footer><div class="wrap kubiq-footer-inner"><span>KUBIQ ACADEMY · Mentes que programan el futuro</span><a href="privacidad.html">Aviso de privacidad</a></div></footer>
 <nav aria-label="Acciones rápidas para móvil" class="mobile-action-dock"><a href="index.html#cursos">Explorar cursos</a><a href="https://cal.com/kubiqacademy/sesion-informativa" rel="noopener" target="_blank">Agendar sesión</a></nav>
 <script id="kubiq-v142-mobile-dock-behavior">(()=>{const d=document.querySelector('.mobile-action-dock');if(!d)return;const footer=document.querySelector('footer');if(footer&&'IntersectionObserver'in window){const io=new IntersectionObserver(es=>d.classList.toggle('is-hidden',es.some(e=>e.isIntersecting)),{threshold:.05});io.observe(footer)}document.addEventListener('focusin',e=>{if(e.target.matches('input,select,textarea'))document.body.classList.add('mobile-form-focus')});document.addEventListener('focusout',e=>{if(e.target.matches('input,select,textarea'))setTimeout(()=>{if(!document.activeElement.matches('input,select,textarea'))document.body.classList.remove('mobile-form-focus')},120)});})();</script>
 <style id="kubiq-v163-progress-family-gif-smaller">
