@@ -99,7 +99,256 @@
 footer .footer-privacy-link,footer .experience-footer-inner a,footer .kubiq-footer-inner>a{display:inline-block;box-sizing:border-box;max-width:100%;margin:12px auto 0;padding:8px 0;color:#dbe4ff;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
 footer .wrap .footer-privacy-link{margin-left:0}
 @media(max-width:760px){footer .footer-privacy-link,footer .experience-footer-inner a,footer .kubiq-footer-inner>a{margin:10px 0 0;padding:8px 0}footer .wrap,footer .experience-footer-inner{box-sizing:border-box;max-width:100%;min-width:0}}
-</style></head><body><header><div class="wrap nav"><a href="index.html"><img class="logo" src="imagenes/kubiq-logo-header.png" alt="KUBIQ ACADEMY"></a><nav class="subnav"><a href="index.html#cursos">Programas</a></nav><a class="back" href="index.html#cursos">← Volver a KUBIQ</a></div></header><main><section class="hero"><div class="wrap hero-grid"><div><span class="tag">KUBIQ FAMILY EXPERIENCE · 30 MINUTOS</span><h1>Una misión para descubrir lo que puedes crear.</h1><p>Una experiencia introductoria en línea de 30 minutos: el estudiante prueba un reto creativo guiado y la familia descubre cómo aprende, qué programa podría continuar y cómo funcionan las clases de KUBIQ.</p><a class="btn" href="https://cal.com/kubiqacademy/30min" target="_blank" rel="noopener">Reservar mi experiencia</a></div><img class="hero-visual" src="imagenes/kubiq-family-experience.gif" alt="Familia acompañando a una estudiante durante una experiencia de aprendizaje en KUBIQ Academy" loading="eager"></div></section><section><div class="wrap"><span class="tag" style="color:#7652df">ASÍ FUNCIONA</span><h2>Cuatro momentos. Una primera creación.</h2><div class="steps"><article><b>1</b><h3>Conocemos sus intereses</h3><p>Conversamos sobre su edad, experiencia y lo que le gustaría crear.</p></article><article><b>2</b><h3>Prueba un reto creativo</h3><p>Realiza una actividad introductoria de Scratch, Roblox Studio o Python, elegida según su edad, intereses y experiencia. No es una clase completa del programa.</p></article><article><b>3</b><h3>Descubre qué aprendió</h3><p>Conectamos el reto con conceptos de programación y pensamiento lógico.</p></article><article><b>4</b><h3>Orientamos a la familia</h3><p>Explicamos qué conceptos exploró, orientamos sobre el nivel y programa adecuados y respondemos dudas sobre metodología, horarios y costos. La familia decide libremente si desea continuar.</p></article></div><div class="info"><strong>Antes de reservar:</strong> prepara una computadora con conexión a internet. El padre, madre o representante puede acompañar durante la experiencia. No se requiere experiencia previa. Son 30 minutos de exploración y orientación, no una evaluación ni una matrícula; participar no obliga a contratar un programa.</div></div></section><section class="cta"><div class="wrap"><h2>¿Listos para probar una idea?</h2><p>Reserva un espacio de 30 minutos para que tu hijo pruebe una actividad creativa y tú conozcas la propuesta educativa de KUBIQ.</p><a class="btn" href="https://cal.com/kubiqacademy/30min" target="_blank" rel="noopener">Elegir horario</a></div></section></main><footer><div class="wrap">KUBIQ ACADEMY · Mentes que programan el futuro<div class="wrap experience-footer-inner"><a href="privacidad.html">Aviso de privacidad</a></div></footer><nav class="mobile-action-dock" aria-label="Acciones rápidas para móvil"><a href="index.html#cursos">Explorar cursos</a><a href="https://cal.com/kubiqacademy/30min" target="_blank" rel="noopener">Reservar experiencia</a></nav>
+</style><style id="kubiq-v219-family-experience-redesign">
+.family-page{background:#fff;color:#172344;overflow:hidden}
+.family-page .wrap{width:min(1120px,calc(100% - 48px));margin-inline:auto}
+.family-page section{padding:76px 0}
+.family-page h1,.family-page h2,.family-page h3{font-family:Poppins,sans-serif;letter-spacing:-.035em}
+.family-hero{position:relative;padding:76px 0!important;background:radial-gradient(circle at 83% 16%,rgba(0,200,255,.24),transparent 26%),radial-gradient(circle at 5% 90%,rgba(123,77,255,.25),transparent 32%),linear-gradient(125deg,#091744 0%,#17276b 58%,#302078 100%);color:#fff}
+.family-hero:after{content:"";position:absolute;inset:auto 0 0;height:5px;background:linear-gradient(90deg,#00c8ff,#7b4dff,#ffcf35)}
+.family-hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(320px,.9fr);gap:54px;align-items:center}
+.family-eyebrow,.family-kicker{display:inline-block;color:#078db8;font-size:11px;font-weight:900;letter-spacing:.15em;line-height:1.5}
+.family-eyebrow{color:#8cecff}
+.family-hero h1{max-width:650px;margin:18px 0 16px;font-size:clamp(38px,5.1vw,62px);line-height:1.08;color:#fff}
+.family-hero h1 em{font-style:normal;color:#66e4ff}
+.family-hero-copy>p{max-width:610px;margin:0;color:#e0e8ff;font-size:17px;line-height:1.75}
+.family-hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.family-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:14px 22px;border-radius:15px;font-size:14px;font-weight:900;text-align:center;text-decoration:none;transition:transform .2s,box-shadow .2s}
+.family-btn:hover{transform:translateY(-2px)}
+.family-btn-primary{background:linear-gradient(105deg,#00c8ff,#77eaff);color:#071944;box-shadow:0 12px 26px rgba(0,200,255,.2)}
+.family-btn-secondary{border:1px solid rgba(255,255,255,.45);background:rgba(255,255,255,.08);color:#fff}
+.family-hero-facts{display:flex;flex-wrap:wrap;gap:26px;margin:30px 0 0;padding:0;list-style:none}
+.family-hero-facts li{display:grid;gap:2px}
+.family-hero-facts strong{font-family:Poppins,sans-serif;font-size:17px;color:#fff}
+.family-hero-facts span{font-size:12px;color:#bdcafa}
+.family-hero-media{position:relative}
+.family-hero-media>img{display:block;width:100%;aspect-ratio:1.13;object-fit:cover;border:1px solid rgba(255,255,255,.25);border-radius:28px;box-shadow:0 25px 60px rgba(0,0,0,.28)}
+.family-media-note{position:absolute;left:18px;right:18px;bottom:18px;padding:13px 16px;border:1px solid rgba(255,255,255,.25);border-radius:14px;background:rgba(7,18,52,.78);backdrop-filter:blur(12px);color:#fff;font-size:13px;font-weight:800}
+.family-media-note span{margin-right:7px;color:#ffd54a}
+.family-section-heading{max-width:760px;margin:0 auto 34px;text-align:center}
+.family-section-heading h2,.family-takeaway h2,.family-final-cta h2{margin:12px 0;color:#0b1b4d;font-size:clamp(29px,4vw,43px);line-height:1.14}
+.family-section-heading>p{max-width:690px;margin:0 auto;color:#64718f;font-size:15px;line-height:1.7}
+.family-discover{background:linear-gradient(180deg,#fff,#f8faff)}
+.family-discover-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.family-discover-card{overflow:hidden;border:1px solid #e0e8fa;border-radius:22px;background:#fff;box-shadow:0 14px 36px rgba(11,27,77,.07)}
+.family-card-image{height:210px;overflow:hidden;background:#eef3ff}
+.family-card-image img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .35s}
+.family-discover-card:hover .family-card-image img{transform:scale(1.035)}
+.family-card-body{padding:22px 22px 24px}
+.family-course-label{display:inline-flex;padding:6px 10px;border-radius:999px;font-size:10px;font-weight:900;letter-spacing:.1em}
+.scratch-label{background:#e6faff;color:#0085aa}.roblox-label{background:#f0ebff;color:#6440d5}.python-label{background:#fff5d9;color:#8a6200}
+.family-card-body h3{margin:13px 0 8px;color:#0b1b4d;font-size:19px;line-height:1.3}
+.family-card-body p{margin:0;color:#65718e;font-size:14px;line-height:1.7}
+.family-steps-section{background:#f3f6ff}
+.family-steps-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.family-step{padding:23px 20px 22px;border:1px solid #e0e7f8;border-radius:19px;background:#fff;box-shadow:0 10px 28px rgba(11,27,77,.045)}
+.family-step-number{display:grid;place-items:center;width:42px;height:42px;border-radius:14px;background:#eae5ff;color:#7048e8;font-family:Poppins,sans-serif;font-size:18px;font-weight:900}
+.family-step h3{margin:17px 0 8px;color:#0b1b4d;font-size:17px;line-height:1.3}
+.family-step p{margin:0;color:#64718f;font-size:13px;line-height:1.7}
+.family-takeaway{background:#fff}
+.family-takeaway-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:72px;align-items:center}
+.family-takeaway-copy h2{max-width:420px}
+.family-takeaway-copy>p{max-width:440px;color:#64718f;font-size:15px;line-height:1.75}
+.family-takeaway-list{display:grid;gap:13px}
+.family-takeaway-list article{display:flex;gap:14px;align-items:flex-start;padding:18px;border:1px solid #e1e9fa;border-radius:17px;background:#fbfcff}
+.family-takeaway-list article>span{display:grid;place-items:center;flex:0 0 30px;height:30px;border-radius:10px;background:#e4faff;color:#008db2;font-size:18px;font-weight:900}
+.family-takeaway-list h3{margin:1px 0 4px;color:#0b1b4d;font-size:15px}
+.family-takeaway-list p{margin:0;color:#66728f;font-size:13px;line-height:1.6}
+.family-why{background:linear-gradient(135deg,#f7f9ff,#f0edff)}
+.family-why-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.family-why-grid article{padding:26px;border:1px solid #e0e6f8;border-radius:20px;background:#fff}
+.family-why-icon{display:grid;place-items:center;width:44px;height:44px;border-radius:14px;background:#eeeaff;color:#7048e8;font-size:22px;font-weight:900}
+.family-why-grid h3{margin:17px 0 8px;color:#0b1b4d;font-size:18px}
+.family-why-grid p{margin:0;color:#65718e;font-size:14px;line-height:1.7}
+.family-faq{background:#fff}
+.family-faq-wrap{max-width:900px!important}
+.family-faq-list{display:grid;gap:11px}
+.family-faq-list details{border:1px solid #e1e8f7;border-radius:16px;background:#fff;overflow:hidden}
+.family-faq-list summary{position:relative;padding:19px 54px 19px 20px;color:#0b1b4d;font-size:15px;font-weight:900;cursor:pointer;list-style:none}
+.family-faq-list summary::-webkit-details-marker{display:none}
+.family-faq-list summary:after{content:"+";position:absolute;right:20px;top:50%;transform:translateY(-50%);display:grid;place-items:center;width:27px;height:27px;border-radius:9px;background:#eeeaff;color:#7048e8;font-size:19px}
+.family-faq-list details[open] summary:after{content:"−"}
+.family-faq-list details p{margin:0;padding:0 20px 19px;color:#64718f;font-size:14px;line-height:1.7}
+.family-final-cta{background:radial-gradient(circle at 82% 20%,rgba(0,200,255,.2),transparent 28%),linear-gradient(120deg,#0b1b4d,#28206d);color:#fff}
+.family-final-grid{display:grid;grid-template-columns:1fr 340px;gap:48px;align-items:center}
+.family-final-cta .family-kicker{color:#8cecff}
+.family-final-cta h2{max-width:670px;color:#fff}
+.family-final-cta p{max-width:650px;color:#dbe5ff;font-size:16px;line-height:1.75}
+.family-final-cta .family-btn{margin-top:12px}
+.family-final-grid>img{display:block;width:100%;max-height:280px;object-fit:contain;filter:drop-shadow(0 16px 25px rgba(0,0,0,.2))}
+@media(max-width:900px){
+ .family-hero-grid{grid-template-columns:1fr 0.85fr;gap:28px}
+ .family-steps-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .family-takeaway-grid{gap:35px}
+ .family-card-image{height:175px}
+}
+@media(max-width:700px){
+ .family-page .wrap{width:calc(100% - 36px)}
+ .family-page section{padding:52px 0}
+ .family-hero{padding:48px 0 54px!important}
+ .family-hero-grid{grid-template-columns:1fr;gap:27px}
+ .family-hero h1{font-size:clamp(34px,9vw,45px)}
+ .family-hero-copy>p{font-size:15px}
+ .family-hero-actions{display:grid;grid-template-columns:1fr;gap:10px}
+ .family-btn{width:100%;min-height:50px}
+ .family-hero-facts{justify-content:space-between;gap:12px;margin-top:24px}
+ .family-hero-facts strong{font-size:15px}
+ .family-hero-facts span{font-size:11px}
+ .family-hero-media>img{aspect-ratio:1.15;border-radius:21px}
+ .family-media-note{left:10px;right:10px;bottom:10px;font-size:11px}
+ .family-section-heading{margin-bottom:25px;text-align:left}
+ .family-section-heading h2,.family-takeaway h2,.family-final-cta h2{font-size:clamp(28px,8vw,36px)}
+ .family-section-heading>p{font-size:14px}
+ .family-discover-grid{grid-template-columns:1fr;gap:15px}
+ .family-discover-card{display:grid;grid-template-columns:112px minmax(0,1fr);min-height:148px}
+ .family-card-image{height:100%;min-height:148px}
+ .family-card-body{padding:14px 14px 15px}
+ .family-card-body h3{font-size:15px;margin:8px 0 5px}
+ .family-card-body p{font-size:12px;line-height:1.55}
+ .family-course-label{font-size:9px;padding:5px 8px}
+ .family-steps-grid{grid-template-columns:1fr;gap:12px}
+ .family-step{display:grid;grid-template-columns:42px minmax(0,1fr);column-gap:13px;padding:17px}
+ .family-step-number{grid-row:1 / span 2}
+ .family-step h3{margin:1px 0 5px;font-size:16px}
+ .family-step p{grid-column:2;font-size:13px}
+ .family-takeaway-grid{grid-template-columns:1fr;gap:22px}
+ .family-takeaway-list{gap:10px}
+ .family-takeaway-list article{padding:15px}
+ .family-why-grid{grid-template-columns:1fr;gap:12px}
+ .family-why-grid article{padding:20px}
+ .family-why-grid h3{margin:12px 0 6px}
+ .family-faq-list summary{padding:17px 48px 17px 16px;font-size:14px}
+ .family-faq-list details p{padding:0 16px 17px}
+ .family-final-grid{grid-template-columns:1fr;gap:22px}
+ .family-final-grid>img{max-width:230px;max-height:190px;margin:0 auto}
+}
+@media(max-width:390px){
+ .family-discover-card{grid-template-columns:96px minmax(0,1fr)}
+ .family-card-image{min-height:155px}
+ .family-card-body{padding:12px}
+ .family-hero-facts{gap:8px}
+ .family-hero-facts strong{font-size:14px}
+}
+@media(prefers-reduced-motion:reduce){.family-btn,.family-card-image img{transition:none!important}.family-btn:hover,.family-discover-card:hover .family-card-image img{transform:none!important}}
+</style></head><body><header><div class="wrap nav"><a href="index.html"><img class="logo" src="imagenes/kubiq-logo-header.png" alt="KUBIQ ACADEMY"></a><nav class="subnav"><a href="index.html#cursos">Programas</a></nav><a class="back" href="index.html#cursos">← Volver a KUBIQ</a></div></header><main class="family-page">
+<section class="family-hero">
+  <div class="wrap family-hero-grid">
+    <div class="family-hero-copy">
+      <span class="family-eyebrow">KUBIQ FAMILY EXPERIENCE · 30 MINUTOS · GRATUITA</span>
+      <h1>No imagines lo que podría crear. <em>¡Deja que lo descubra!</em></h1>
+      <p>Una experiencia online para que tu hijo explore la programación, pruebe un reto creativo y descubra todo lo que puede construir con tecnología. Mientras tanto, tú conocerás cómo aprende KUBIQ y qué programa puede ser adecuado para él.</p>
+      <div class="family-hero-actions">
+        <a class="family-btn family-btn-primary" href="https://cal.com/kubiqacademy/30min" target="_blank" rel="noopener">Reservar mi experiencia gratuita <span aria-hidden="true">↗</span></a>
+        <a class="family-btn family-btn-secondary" href="#que-descubrira">Descubrir la experiencia</a>
+      </div>
+      <ul class="family-hero-facts" aria-label="Características de la experiencia">
+        <li><strong>30 min</strong><span>de exploración</span></li>
+        <li><strong>Online</strong><span>en vivo</span></li>
+        <li><strong>Sin costo</strong><span>y sin compromiso</span></li>
+      </ul>
+    </div>
+    <div class="family-hero-media">
+      <img src="imagenes/family-experience-familia-real.jpg" alt="Imagen ilustrativa de una familia descubriendo una actividad tecnológica" loading="eager">
+      <div class="family-media-note"><span aria-hidden="true">✦</span> Una primera experiencia para crear, explorar y descubrir</div>
+    </div>
+  </div>
+</section>
+
+<section class="family-discover" id="que-descubrira">
+  <div class="wrap">
+    <div class="family-section-heading">
+      <span class="family-kicker">UNA EXPERIENCIA, MUCHAS POSIBILIDADES</span>
+      <h2>¿Qué puede descubrir tu hijo?</h2>
+      <p>La actividad se elige según su edad, intereses y experiencia. No necesita conocimientos previos y no tiene que realizar las tres actividades.</p>
+    </div>
+    <div class="family-discover-grid">
+      <article class="family-discover-card">
+        <div class="family-card-image"><img src="imagenes/family-experience-scratch-real.jpg" alt="Imagen ilustrativa de una niña explorando programación visual" loading="lazy"></div>
+        <div class="family-card-body"><span class="family-course-label scratch-label">SCRATCH</span><h3>Crea una historia o videojuego</h3><p>Descubre cómo dar vida a personajes, animaciones e ideas usando bloques de programación.</p></div>
+      </article>
+      <article class="family-discover-card">
+        <div class="family-card-image"><img src="imagenes/family-experience-roblox-real.jpg" alt="Imagen ilustrativa de un niño aprendiendo con una computadora" loading="lazy"></div>
+        <div class="family-card-body"><span class="family-course-label roblox-label">ROBLOX STUDIO</span><h3>Explora un mundo en 3D</h3><p>Conoce cómo se construyen escenarios, objetos y experiencias interactivas.</p></div>
+      </article>
+      <article class="family-discover-card">
+        <div class="family-card-image"><img src="imagenes/family-experience-python-real.jpg" alt="Imagen ilustrativa de una niña y su padre explorando tecnología" loading="lazy"></div>
+        <div class="family-card-body"><span class="family-course-label python-label">PYTHON</span><h3>Convierte instrucciones en soluciones</h3><p>Explora cómo escribir instrucciones sencillas para resolver retos paso a paso.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="family-steps-section">
+  <div class="wrap">
+    <div class="family-section-heading">
+      <span class="family-kicker">ASÍ FUNCIONA</span>
+      <h2>30 minutos para descubrir una nueva posibilidad</h2>
+      <p>Una experiencia breve, práctica y guiada para que el estudiante explore y la familia conozca nuestra propuesta.</p>
+    </div>
+    <div class="family-steps-grid">
+      <article class="family-step"><span class="family-step-number">1</span><h3>Conocemos sus intereses</h3><p>Conversamos sobre su edad, experiencia y aquello que le gustaría crear.</p></article>
+      <article class="family-step"><span class="family-step-number">2</span><h3>Prueba un reto creativo</h3><p>Participa en una actividad introductoria de Scratch, Roblox Studio o Python, elegida para él.</p></article>
+      <article class="family-step"><span class="family-step-number">3</span><h3>Descubre lo que puede hacer</h3><p>Relacionamos la actividad con ideas de programación, pensamiento lógico y creación digital.</p></article>
+      <article class="family-step"><span class="family-step-number">4</span><h3>Orientamos a la familia</h3><p>Conversamos sobre el nivel y programa adecuados, la metodología, los horarios y las dudas que tengan.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="family-takeaway">
+  <div class="wrap family-takeaway-grid">
+    <div class="family-takeaway-copy">
+      <span class="family-kicker">TAMBIÉN ES PARA LA FAMILIA</span>
+      <h2>¿Qué se lleva tu familia?</h2>
+      <p>No se trata solo de probar una actividad. Queremos que conozcan cómo aprende el estudiante y puedan tomar una decisión informada.</p>
+    </div>
+    <div class="family-takeaway-list">
+      <article><span aria-hidden="true">✓</span><div><h3>Una primera experiencia práctica</h3><p>El estudiante explora la creación tecnológica haciendo, probando y descubriendo.</p></div></article>
+      <article><span aria-hidden="true">✓</span><div><h3>Orientación sobre el programa adecuado</h3><p>Conversamos sobre la edad, los intereses y el punto de partida del estudiante.</p></div></article>
+      <article><span aria-hidden="true">✓</span><div><h3>Una mirada a la metodología KUBIQ</h3><p>Conocerán cómo trabajamos con retos, proyectos y acompañamiento en clases en vivo.</p></div></article>
+      <article><span aria-hidden="true">✓</span><div><h3>Respuestas para decidir con tranquilidad</h3><p>Podrán consultar sobre programas, horarios, requisitos y costos, sin compromiso de inscripción.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="family-why">
+  <div class="wrap">
+    <div class="family-section-heading">
+      <span class="family-kicker">¿POR QUÉ CONOCER KUBIQ?</span>
+      <h2>La tecnología se aprende creando</h2>
+      <p>Queremos que los estudiantes pasen de usar la tecnología a descubrir lo que pueden hacer con ella.</p>
+    </div>
+    <div class="family-why-grid">
+      <article><span class="family-why-icon">✦</span><h3>Aprender haciendo</h3><p>Los retos y proyectos convierten los conceptos en experiencias que el estudiante puede explorar y construir.</p></article>
+      <article><span class="family-why-icon">⌘</span><h3>Retos según su etapa</h3><p>La actividad y la ruta de aprendizaje se orientan considerando su edad, intereses y experiencia.</p></article>
+      <article><span class="family-why-icon">♡</span><h3>Acompañamiento en vivo</h3><p>Las clases se desarrollan online, con guía docente y espacios para preguntar, probar y mejorar.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="family-faq">
+  <div class="wrap family-faq-wrap">
+    <div class="family-section-heading">
+      <span class="family-kicker">ANTES DE RESERVAR</span>
+      <h2>Preguntas frecuentes</h2>
+      <p>Lo esencial para que tu familia participe con tranquilidad.</p>
+    </div>
+    <div class="family-faq-list">
+      <details><summary>¿La Family Experience tiene algún costo?</summary><p>No. Es una experiencia introductoria gratuita de 30 minutos para que el estudiante explore una actividad y la familia conozca KUBIQ.</p></details>
+      <details><summary>¿Mi hijo necesita saber programar?</summary><p>No necesita experiencia previa. La actividad se elige según su edad, intereses y punto de partida.</p></details>
+      <details><summary>¿Qué necesita para participar?</summary><p>Una computadora con conexión a internet. Antes de la sesión compartiremos cualquier indicación necesaria para realizar la actividad.</p></details>
+      <details><summary>¿Puedo acompañarlo durante la experiencia?</summary><p>¡Por supuesto! La participación del padre, madre o representante es bienvenida, especialmente para conocer la propuesta y resolver dudas.</p></details>
+      <details><summary>¿Reservar implica matricularse?</summary><p>No. La experiencia no es una evaluación ni una matrícula. La familia decide libremente si desea continuar con alguno de los programas.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="family-final-cta">
+  <div class="wrap family-final-grid">
+    <div><span class="family-kicker">EL PRIMER PASO COMIENZA AQUÍ</span><h2>Las grandes ideas comienzan con una primera experiencia.</h2><p>Dale a tu hijo la oportunidad de descubrir lo que puede crear. En solo 30 minutos, puede comenzar una nueva aventura digital.</p><a class="family-btn family-btn-primary" href="https://cal.com/kubiqacademy/30min" target="_blank" rel="noopener">Quiero reservar mi Family Experience <span aria-hidden="true">↗</span></a></div>
+    <img src="imagenes/family-experience-aprendizaje-online.jpg" alt="Imagen ilustrativa de niños participando en aprendizaje tecnológico online" loading="lazy">
+  </div>
+</section>
+</main><footer><div class="wrap">KUBIQ ACADEMY · Mentes que programan el futuro<div class="wrap experience-footer-inner"><a href="privacidad.html">Aviso de privacidad</a></div></footer><nav class="mobile-action-dock" aria-label="Acciones rápidas para móvil"><a href="index.html#cursos">Explorar cursos</a><a href="https://cal.com/kubiqacademy/30min" target="_blank" rel="noopener">Reservar experiencia</a></nav>
 <script id="kubiq-v142-mobile-dock-behavior">(()=>{const d=document.querySelector('.mobile-action-dock');if(!d)return;const footer=document.querySelector('footer');if(footer&&'IntersectionObserver'in window){const io=new IntersectionObserver(es=>d.classList.toggle('is-hidden',es.some(e=>e.isIntersecting)),{threshold:.05});io.observe(footer)}document.addEventListener('focusin',e=>{if(e.target.matches('input,select,textarea'))document.body.classList.add('mobile-form-focus')});document.addEventListener('focusout',e=>{if(e.target.matches('input,select,textarea'))setTimeout(()=>{if(!document.activeElement.matches('input,select,textarea'))document.body.classList.remove('mobile-form-focus')},120)});})();</script>
 <style id="kubiq-v156-experience-button-and-number-fixes">
 .cta .btn,.hero .btn{text-decoration:none!important;text-align:center!important;display:flex!important;align-items:center!important;justify-content:center!important}

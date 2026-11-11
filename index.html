@@ -1983,6 +1983,55 @@ footer .footer-bottom-links a:focus-visible{
 @media(prefers-reduced-motion:reduce){
   footer .footer-bottom-links a{transition:none!important}
 }
+</style><style id="kubiq-v217-mobile-hero-height">
+/* Ajuste exclusivo para móvil: elimina la altura mínima que generaba el gran vacío bajo el texto. */
+@media screen and (max-width: 760px) {
+  #inicio.hero {
+    min-height: 0 !important;
+    height: auto !important;
+    background-position: center top !important;
+    background-size: 100% auto !important;
+  }
+  #inicio .hero-grid {
+    min-height: 0 !important;
+    height: auto !important;
+    padding: 28px 22px 20px !important;
+  }
+  #inicio .hero-content {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  #inicio .hero-bottom {
+    margin-top: 0 !important;
+    padding: 0 22px 22px !important;
+  }
+}
+</style><style id="kubiq-v218-mobile-hero-ctas">
+/* En móvil también se muestran los CTA principales de la portada. */
+@media screen and (max-width: 760px) {
+  #inicio .hero-actions {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    width: min(100%, 245px) !important;
+    max-width: 245px !important;
+    gap: 9px !important;
+    margin-top: 18px !important;
+  }
+  #inicio .hero-actions .btn {
+    display: flex !important;
+    width: 100% !important;
+    min-height: 46px !important;
+    padding: 10px 12px !important;
+    justify-content: center !important;
+    text-align: center !important;
+    font-size: 11px !important;
+    line-height: 1.2 !important;
+    white-space: normal !important;
+  }
+  #inicio .hero-actions .btn-ghost {
+    display: flex !important;
+  }
+}
 </style></head>
 <body><a class="skip-link" href="#contenido-principal">Saltar al contenido principal</a>
 <div class="site-sticky-shell" id="siteStickyShell">
