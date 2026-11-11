@@ -2032,90 +2032,6 @@ footer .footer-bottom-links a:focus-visible{
     display: flex !important;
   }
 }
-</style><style id="kubiq-v221-mobile-home-hero-fix">
-/* V221: el hero móvil respeta el encabezado fijo, recupera los CTA de escritorio y elimina el vacío excesivo. */
-@media screen and (max-width:760px){
-  #inicio.hero{
-    min-height:0!important;
-    height:auto!important;
-    padding-top:142px!important;
-    padding-bottom:0!important;
-    background-position:center top!important;
-    background-size:100% auto!important;
-    background-repeat:no-repeat!important;
-  }
-  #inicio .hero-grid{
-    display:flex!important;
-    align-items:flex-start!important;
-    justify-content:flex-start!important;
-    min-height:0!important;
-    height:auto!important;
-    padding:0 22px 18px!important;
-  }
-  #inicio .hero-content{
-    width:100%!important;
-    max-width:100%!important;
-    padding:0!important;
-    margin:0!important;
-    position:relative!important;
-    z-index:3!important;
-  }
-  #inicio .hero-content h1{
-    max-width:12.5ch!important;
-    font-size:clamp(34px,9.2vw,46px)!important;
-    line-height:1.04!important;
-    margin-bottom:14px!important;
-  }
-  #inicio .hero-copy{
-    max-width:34ch!important;
-    font-size:15px!important;
-    line-height:1.55!important;
-  }
-  #inicio .hero-copy-break{display:none!important}
-  #inicio .hero-actions{
-    display:grid!important;
-    visibility:visible!important;
-    opacity:1!important;
-    grid-template-columns:1fr!important;
-    width:min(100%,330px)!important;
-    max-width:330px!important;
-    gap:10px!important;
-    margin:20px 0 0!important;
-    position:relative!important;
-    z-index:5!important;
-  }
-  #inicio .hero-actions .btn,
-  #inicio .hero-actions .btn-primary,
-  #inicio .hero-actions .btn-ghost{
-    display:flex!important;
-    visibility:visible!important;
-    opacity:1!important;
-    align-items:center!important;
-    justify-content:center!important;
-    width:100%!important;
-    min-height:50px!important;
-    height:auto!important;
-    padding:13px 16px!important;
-    font-size:14px!important;
-    line-height:1.25!important;
-    text-align:center!important;
-    white-space:normal!important;
-    border-radius:15px!important;
-  }
-  #inicio .hero-note{display:flex!important;margin-top:13px!important;font-size:11px!important}
-  #inicio .small-group-highlight{display:flex!important;max-width:330px!important;margin-top:12px!important}
-  #inicio .hero-bottom{
-    margin-top:0!important;
-    padding:0 22px 20px!important;
-    font-size:10px!important;
-  }
-}
-@media screen and (max-width:390px){
-  #inicio.hero{padding-top:132px!important}
-  #inicio .hero-content h1{font-size:34px!important}
-  #inicio .hero-copy{font-size:14px!important}
-  #inicio .hero-actions{max-width:100%!important}
-}
 </style></head>
 <body><a class="skip-link" href="#contenido-principal">Saltar al contenido principal</a>
 <div class="site-sticky-shell" id="siteStickyShell">
@@ -2838,6 +2754,91 @@ footer .footer-bottom-links a:focus-visible{
   }
   /* The fixed mobile bar already offers Explore courses and Book a session. */
   #inicio .hero-actions, #inicio .hero-note, #inicio .small-group-highlight { display: none !important; }
+}
+</style>
+
+<style id="kubiq-v222-mobile-hero-final-cascade">
+/* V222: este bloque va al final del documento para prevalecer sobre los estilos heredados V132 y V172. */
+@media screen and (max-width:760px){
+  #inicio.hero{
+    min-height:0!important;
+    height:auto!important;
+    padding:0!important;
+    background-image:url("imagenes/kubiq-portada-mobile-v154.jpeg")!important;
+    background-position:center top!important;
+    background-size:100% auto!important;
+    background-repeat:no-repeat!important;
+  }
+  #inicio.hero::before{display:none!important}
+  #inicio .hero-grid{
+    min-height:0!important;
+    height:auto!important;
+    display:flex!important;
+    align-items:flex-start!important;
+    padding:24px 22px 18px!important;
+  }
+  #inicio .hero-content{
+    width:min(100%,330px)!important;
+    max-width:330px!important;
+    padding:0!important;
+    margin:0!important;
+    align-items:flex-start!important;
+  }
+  #inicio .live-badge{
+    width:auto!important;
+    max-width:100%!important;
+    font-size:9px!important;
+  }
+  #inicio .hero-content h1{
+    width:100%!important;
+    max-width:12ch!important;
+    font-size:clamp(34px,9vw,43px)!important;
+    line-height:1.04!important;
+  }
+  #inicio .hero-copy{
+    width:100%!important;
+    max-width:32ch!important;
+    font-size:14px!important;
+    line-height:1.5!important;
+  }
+  #inicio .hero-copy-break{display:none!important}
+  #inicio .hero-actions{
+    display:grid!important;
+    visibility:visible!important;
+    opacity:1!important;
+    grid-template-columns:1fr!important;
+    width:min(100%,320px)!important;
+    max-width:320px!important;
+    gap:10px!important;
+    margin:18px 0 0!important;
+  }
+  #inicio .hero-actions .btn,
+  #inicio .hero-actions .btn-ghost{
+    display:flex!important;
+    visibility:visible!important;
+    opacity:1!important;
+    width:100%!important;
+    min-height:50px!important;
+    height:auto!important;
+    justify-content:center!important;
+    align-items:center!important;
+    padding:13px 15px!important;
+    font-size:14px!important;
+    line-height:1.25!important;
+    white-space:normal!important;
+    text-align:center!important;
+  }
+  #inicio .hero-note,
+  #inicio .small-group-highlight{display:none!important}
+  #inicio .hero-bottom{
+    margin:0!important;
+    padding:0 22px 20px!important;
+  }
+}
+@media screen and (max-width:390px){
+  #inicio .hero-grid{padding-left:18px!important;padding-right:18px!important}
+  #inicio .hero-content h1{font-size:33px!important}
+  #inicio .hero-copy{font-size:13px!important}
 }
 </style>
 </body>
