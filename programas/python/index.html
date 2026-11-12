@@ -772,5 +772,77 @@ document.querySelectorAll('.program-sales-showcase').forEach(section=>{
 <style id="kubiq-program-form-note">.program-form-note{max-width:620px;margin:12px auto 0;color:#586786;font-size:13px;line-height:1.55;text-align:center}@media(max-width:760px){.program-form-note{font-size:12px;padding:0 8px}}</style>
 
 
+
+<style id="kubiq-v226-course-mobile-header">
+/* V226: navegación móvil coherente en Scratch, Roblox Studio y Python. */
+@media screen and (max-width:760px){
+  header .wrap.nav{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;
+    grid-template-areas:
+      "brand brand"
+      "programas volver"!important;
+    align-items:center!important;
+    justify-content:stretch!important;
+    gap:12px!important;
+    height:auto!important;
+    min-height:0!important;
+    padding:14px 0!important;
+    box-sizing:border-box!important;
+  }
+  header .wrap.nav .course-header-logo{
+    grid-area:brand!important;
+    justify-self:center!important;
+    width:auto!important;
+    min-width:0!important;
+    margin:0!important;
+    line-height:0!important;
+  }
+  header .wrap.nav .course-header-logo img{
+    display:block!important;
+    width:clamp(145px,42vw,175px)!important;
+    max-width:100%!important;
+    height:auto!important;
+  }
+  header .wrap.nav .course-subnav{
+    grid-area:programas!important;
+    display:flex!important;
+    width:100%!important;
+    min-width:0!important;
+    margin:0!important;
+    justify-content:stretch!important;
+  }
+  header .wrap.nav .course-subnav a,
+  header .wrap.nav .course-back{
+    display:flex!important;
+    width:100%!important;
+    min-width:0!important;
+    min-height:48px!important;
+    align-items:center!important;
+    justify-content:center!important;
+    box-sizing:border-box!important;
+    margin:0!important;
+    padding:10px 8px!important;
+    border:0!important;
+    border-radius:15px!important;
+    background:#e9e6ff!important;
+    color:#5935bd!important;
+    box-shadow:none!important;
+    font:800 13px/1.2 Nunito,Arial,sans-serif!important;
+    text-align:center!important;
+    white-space:normal!important;
+    overflow-wrap:anywhere!important;
+  }
+  header .wrap.nav .course-back{
+    grid-area:volver!important;
+  }
+}
+@media screen and (max-width:360px){
+  header .wrap.nav{gap:9px!important;padding:12px 0!important}
+  header .wrap.nav .course-subnav a,
+  header .wrap.nav .course-back{font-size:12px!important;padding:9px 6px!important}
+}
+</style>
+
 </body>
 </html>

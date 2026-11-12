@@ -282,7 +282,7 @@ form .consent label a{
 <meta name="twitter:description" content="Lleva programación, creatividad digital y experiencias tecnológicas guiadas a tu institución educativa."/>
 <link rel="canonical" href="https://vanesalazarp17.github.io/kubiq/escuelas.html"/>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"Programas de programación para escuelas | KUBIQ ACADEMY","description":"Programas de programación y tecnología para escuelas y colegios: Scratch, Roblox Studio, Python, talleres tecnológicos y propuestas educativas para grupos.","url":"https://vanesalazarp17.github.io/kubiq/escuelas.html","inLanguage":"es","isPartOf":{"@type":"WebSite","name":"KUBIQ ACADEMY","url":"https://vanesalazarp17.github.io/kubiq/"}}</script>
-</head><body><a class="skip-link" href="#contenido-principal">Saltar al contenido principal</a><div class="topline"></div><header><div class="wrap nav"><a aria-label="KUBIQ ACADEMY, inicio" class="brand" href="index.html"><img alt="KUBIQ ACADEMY" src="imagenes/kubiq-logo-header.png"/></a><nav aria-label="Navegación para instituciones" class="nav-links"><a href="index.html#cursos">Programas</a><a href="#contenido-principal">Propuesta</a><a href="#modalidades">Modalidades</a><a class="btn" href="#solicitud">Solicitar propuesta ↗</a></nav></div></header>
+</head><body><a class="skip-link" href="#contenido-principal">Saltar al contenido principal</a><div class="topline"></div><header><div class="wrap nav"><a aria-label="KUBIQ ACADEMY, inicio" class="brand" href="index.html"><img alt="KUBIQ ACADEMY" src="imagenes/kubiq-logo-header.png"/></a><nav aria-label="Navegación para instituciones" class="nav-links"><a href="index.html#cursos">Programas</a><a href="#modalidades">Modalidades</a><a class="btn" href="#solicitud">Solicitar propuesta ↗</a></nav></div></header>
 <main id="contenido-principal"><section class="hero"><div class="wrap school-hero-grid"><div><div class="eyebrow">KUBIQ ACADEMY · Alianzas educativas</div><h1>Llevemos la educación tecnológica más allá del aula.</h1><p>En KUBIQ Academy ayudamos a las instituciones educativas a acercar la programación, la creatividad y la innovación a sus estudiantes. Diseñamos experiencias de aprendizaje con Scratch, Roblox Studio y Python, adaptadas a las edades, objetivos y necesidades de cada comunidad educativa.</p><a class="btn" href="#modalidades">Explorar propuestas para escuelas</a></div><img alt="Imagen animada de una escuela, representando las alianzas educativas de KUBIQ" class="school-hero-image" loading="eager" src="imagenes/kubiq-escuelas.gif"/></div></section>
 <section class="section" id="modalidades"><div class="wrap"><div class="intro"><h2>Propuestas educativas para cada institución</h2><p>Diseñamos experiencias según las edades, los objetivos de aprendizaje, la disponibilidad y las necesidades de cada comunidad educativa.</p></div><div class="grid"><article class="card"><div class="icon">🧑‍💻</div><h3>Programas extracurriculares</h3><p>Cursos de Scratch, Roblox Studio o Python fuera del horario regular, organizados por edades y niveles para que los estudiantes aprendan creando.</p></article><article class="card"><div class="icon">⚡</div><h3>Talleres tecnológicos</h3><p>Experiencias prácticas de corta duración para acercar a los estudiantes a la programación, la creatividad y la creación digital.</p></article><article class="card"><div class="icon">🎯</div><h3>Programas personalizados</h3><p>Propuestas adaptadas a los objetivos de la institución, las edades de los estudiantes, la disponibilidad y las necesidades de su comunidad.</p></article><article class="card"><div class="icon">🏫</div><h3>Grupos institucionales de más de 40 estudiantes</h3><p>Las instituciones que incorporen a más de 40 estudiantes podrán acceder a tarifas preferenciales. Diseñamos propuestas para cursos completos o grupos numerosos, adaptando la organización, los horarios y la metodología a cada institución.</p></article></div></div></section>
 <section class="section school-benefits"><div class="wrap"><div class="intro"><h2>¿Qué aporta KUBIQ a tu institución?</h2><p>Una propuesta que complementa la formación escolar y acerca a los estudiantes a la creación tecnológica.</p></div><div class="school-benefits-grid">
@@ -372,5 +372,79 @@ header .nav-links .btn{padding:12px 18px;border-radius:999px}
 </style>
 <script id="kubiq-v195-school-process-carousel-script">
 (()=>{const track=document.getElementById('schoolProcessTrack');if(!track)return;const slides=Array.from(track.querySelectorAll('.school-process-slide'));const prev=document.getElementById('schoolProcessPrev');const next=document.getElementById('schoolProcessNext');const count=document.getElementById('schoolProcessCount');let index=0;const update=()=>{count.textContent=(index+1)+' / '+slides.length;prev.disabled=index===0;next.disabled=index===slides.length-1;};const go=(n)=>{index=Math.max(0,Math.min(slides.length-1,n));track.scrollTo({left:slides[index].offsetLeft-track.offsetLeft,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});update();};prev.addEventListener('click',()=>go(index-1));next.addEventListener('click',()=>go(index+1));track.addEventListener('keydown',e=>{if(e.key==='ArrowRight'){e.preventDefault();go(index+1)}if(e.key==='ArrowLeft'){e.preventDefault();go(index-1)}});track.addEventListener('scroll',()=>{const nearest=slides.reduce((best,slide,i)=>Math.abs(slide.offsetLeft-track.offsetLeft-track.scrollLeft)<Math.abs(slides[best].offsetLeft-track.offsetLeft-track.scrollLeft)?i:best,0);if(nearest!==index){index=nearest;update();}},{passive:true});update();})();
-</script></body>
+</script>
+<style id="kubiq-v226-schools-mobile-header">
+/* V226: header institucional compacto; navegación distribuida en móvil. */
+@media screen and (max-width:760px){
+  header .wrap.nav{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;
+    grid-template-areas:
+      "brand brand"
+      "programas modalidades"
+      "cta cta"!important;
+    align-items:center!important;
+    justify-content:stretch!important;
+    gap:10px!important;
+    height:auto!important;
+    min-height:0!important;
+    padding:12px 0!important;
+    box-sizing:border-box!important;
+  }
+  header .wrap.nav .brand{
+    grid-area:brand!important;
+    justify-self:center!important;
+    min-width:0!important;
+    margin:0!important;
+    line-height:0!important;
+  }
+  header .wrap.nav .brand img{
+    display:block!important;
+    width:clamp(145px,42vw,175px)!important;
+    max-width:100%!important;
+    height:auto!important;
+  }
+  header .wrap.nav .nav-links{
+    display:contents!important;
+  }
+  header .wrap.nav .nav-links a{
+    display:flex!important;
+    width:100%!important;
+    min-width:0!important;
+    min-height:46px!important;
+    align-items:center!important;
+    justify-content:center!important;
+    box-sizing:border-box!important;
+    margin:0!important;
+    padding:9px 7px!important;
+    border-radius:13px!important;
+    font:800 12px/1.2 Nunito,Arial,sans-serif!important;
+    text-align:center!important;
+    white-space:normal!important;
+    overflow-wrap:anywhere!important;
+  }
+  header .wrap.nav .nav-links a[href="index.html#cursos"]{
+    grid-area:programas!important;
+    background:#e9e6ff!important;
+    color:#5935bd!important;
+  }
+  header .wrap.nav .nav-links a[href="#modalidades"]{
+    grid-area:modalidades!important;
+    background:#e9e6ff!important;
+    color:#5935bd!important;
+  }
+  header .wrap.nav .nav-links a.btn{
+    grid-area:cta!important;
+    background:#00c8ff!important;
+    color:#0b1b4d!important;
+    min-height:48px!important;
+  }
+}
+@media screen and (max-width:360px){
+  header .wrap.nav{gap:8px!important;padding:10px 0!important}
+  header .wrap.nav .nav-links a{font-size:11px!important;padding:8px 5px!important}
+}
+</style>
+
+</body>
 </html>
