@@ -1,7 +1,0 @@
-SEO técnico pendiente del dominio:
-1. Confirmar el dominio definitivo (por ejemplo, kubiqacademy.com solo si se registra y controla).
-2. Añadir la etiqueta canonical absoluta a index.html y escuelas.html.
-3. Añadir og:url y og:image con URLs absolutas.
-4. Crear sitemap.xml con las URLs públicas reales y añadir su ruta a robots.txt.
-5. Verificar el dominio en Google Search Console y Bing Webmaster Tools y enviar el sitemap.
-No se inventó un dominio ni se publicaron URLs canónicas ficticias.
