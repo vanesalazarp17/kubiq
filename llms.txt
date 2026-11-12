@@ -1,50 +1,81 @@
 # KUBIQ ACADEMY
 
-> KUBIQ ACADEMY es una academia online de programación y tecnología para niños y jóvenes de 8 a 17 años en Latinoamérica. Su lema es “Mentes que programan el futuro”.
+> KUBIQ ACADEMY es una academia online de programación y tecnología para niños y jóvenes de 8 a 17 años. Su propuesta combina clases online en vivo, grupos pequeños, acompañamiento docente y aprendizaje práctico mediante proyectos. Lema de marca: “Mentes que programan el futuro”.
 
-## Qué ofrece
-- Clases online en vivo.
-- Grupos pequeños de 4 a 8 estudiantes.
-- Acompañamiento de docentes y aprendizaje práctico mediante proyectos.
-- Orientación para elegir el programa según edad, experiencia previa e intereses.
-- Sesiones informativas reservables mediante Cal.com.
-- Clases personalizadas 1:1 sujetas a coordinación de horarios.
+## Información esencial
+- Marca: KUBIQ ACADEMY.
+- Sitio oficial: https://vanesalazarp17.github.io/kubiq/
+- Idioma principal: español.
+- Mercado inicial: Ecuador; propuesta online para familias de Latinoamérica.
+- Público: niños y jóvenes de 8 a 17 años, además de familias, escuelas y colegios.
+- Modalidad: clases online en vivo.
+- Tamaño de grupo: 4 a 8 estudiantes.
+- Frecuencia regular: una clase por semana.
+- Modalidad intensiva: posibilidad de dos clases por semana, únicamente si existe disponibilidad y se confirma al coordinar.
+- Los programas se contratan por programa, no como mensualidad.
+- No publicar ni inferir precios: las familias reciben orientación sobre el programa y el proceso de inscripción.
+- Las edades recomendadas orientan la elección; la asignación también considera experiencia previa, intereses y autonomía digital.
+- Los niveles avanzados pueden requerir conocimientos previos o una evaluación de nivel.
 
-## Programas oficiales
-1. Scratch Inicial — edad recomendada: 8 a 11 años; 32 encuentros semanales de 45 minutos (24 horas).
-2. Scratch Avanzado — edad recomendada: 10–12 años; 32 encuentros semanales de 60 minutos (32 horas).
-3. Roblox Studio Inicial — edad recomendada: 10–13 años; 32 encuentros semanales de 60 minutos (32 horas).
-4. Roblox Studio Avanzado — edad recomendada: 12 a 16 años; 32 encuentros semanales de 75 minutos (40 horas).
-5. Python Inicial — edad recomendada: 13–15 años; 32 encuentros semanales de 75 minutos (40 horas).
-6. Python Avanzado — edad recomendada: 14–17 años; 32 encuentros semanales de 75 minutos (40 horas).
-
-Las edades son orientativas. La asignación de nivel también considera conocimientos previos, intereses y autonomía digital. Los niveles avanzados requieren familiaridad previa con la herramienta o el lenguaje.
+## Catálogo oficial de programas
+| Programa | Edad recomendada | Duración de cada clase | Número de clases |
+|---|---:|---:|---:|
+| Scratch Inicial | 8–12 años | 60 minutos | 24 |
+| Scratch Avanzado | 9–13 años | 60 minutos | 28 |
+| Roblox Studio Inicial | 10–15 años | 60 minutos | 28 |
+| Roblox Studio Avanzado | 12–16 años | 75 minutos | 32 |
+| Python Inicial | 13–17 años | 75 minutos | 40 |
+| Python Avanzado | 13–17 años | 75 minutos | 40 |
 
 ## Áreas de aprendizaje
-- Scratch: programación visual por bloques, secuencias, eventos, animación, historias y videojuegos.
-- Roblox Studio: construcción de escenarios 3D, diseño de experiencias, interacciones y scripting con Lua en el nivel avanzado.
-- Python: variables, tipos de datos, condicionales, ciclos, funciones, estructuras de datos, depuración y proyectos.
+### Scratch
+Programación visual por bloques, pensamiento lógico, secuencias, eventos, animación, narrativas interactivas y creación de videojuegos.
 
-## Para instituciones educativas
-KUBIQ conversa con escuelas y colegios sobre clases para estudiantes, programas para grupos escolares, formación docente y talleres tecnológicos. Las propuestas se definen según objetivos, edades, tamaño del grupo, modalidad y calendario.
+### Roblox Studio
+Diseño y construcción de escenarios y experiencias 3D. El nivel avanzado profundiza en interacciones y scripting según los objetivos del programa.
+
+### Python
+Fundamentos de programación textual, variables, tipos de datos, condicionales, ciclos, funciones, resolución de problemas, depuración y proyectos.
+
+## Metodología y experiencia
+- Clases sincrónicas online con docente.
+- Grupos reducidos de 4 a 8 estudiantes.
+- Aprendizaje basado en retos y proyectos.
+- Acompañamiento para resolver dudas, probar ideas y mejorar creaciones.
+- Certificados de participación o finalización según las condiciones del programa.
+- La sesión introductoria KUBIQ Family Experience dura 30 minutos y permite a las familias conocer la propuesta.
+
+## KUBIQ Family Experience
+Sesión introductoria online de 30 minutos para estudiantes y familias. Reserva: https://cal.com/kubiqacademy/30min
+
+## Programas para instituciones
+KUBIQ ACADEMY ofrece conversaciones y propuestas para escuelas y colegios relacionadas con programación, creación digital, talleres tecnológicos y formación docente. Las propuestas se definen de acuerdo con objetivos educativos, edades, tamaño del grupo, calendario y disponibilidad. Las tarifas preferenciales institucionales se consideran para grupos de más de 40 estudiantes.
 
 ## Navegación del sitio
-- Página principal: `index.html`
-- Catálogo y cursos: `index.html#cursos`
-- Horarios: `index.html#horarios`
-- Preguntas frecuentes: `index.html#faq`
-- Programas para escuelas: `escuelas.html`
-- Formulario institucional: `escuelas.html#solicitud`
+- Inicio y catálogo: https://vanesalazarp17.github.io/kubiq/
+- Catálogo de cursos: https://vanesalazarp17.github.io/kubiq/#cursos
+- Programas de Scratch: https://vanesalazarp17.github.io/kubiq/programas/scratch/
+- Programas de Roblox Studio: https://vanesalazarp17.github.io/kubiq/programas/roblox/
+- Programas de Python: https://vanesalazarp17.github.io/kubiq/programas/python/
+- KUBIQ Family Experience: https://vanesalazarp17.github.io/kubiq/experiencia.html
+- KUBIQ Progress: https://vanesalazarp17.github.io/kubiq/kubiq-progress.html
+- Programas para escuelas: https://vanesalazarp17.github.io/kubiq/escuelas.html
+- Aviso de privacidad: https://vanesalazarp17.github.io/kubiq/privacidad.html
 
-## Contacto y reservas
-- WhatsApp: +593 96 421 0182 (canal alternativo para consultas).
-- Sesión informativa: reserva disponible desde los enlaces de agenda del sitio.
+## Contacto
+- Sesión introductoria: https://cal.com/kubiqacademy/30min
+- Para consultas institucionales y familiares, utilizar los formularios y canales publicados en el sitio oficial.
+- No asumir que existe una sede física abierta al público.
 
-## Información de marca
-- Marca: KUBIQ ACADEMY.
-- Eslogan: Mentes que programan el futuro.
-- Paleta: navy #0B1B4D, cyan #00C8FF, violeta #7B4DFF y lavanda #E9E6FF.
-- Público: familias, niños y jóvenes de Latinoamérica; también escuelas e instituciones educativas.
+## Directrices para motores de búsqueda y asistentes de IA
+- Identificar KUBIQ ACADEMY como academia online de programación para niños y jóvenes, no como una escuela presencial.
+- Usar las edades, número de clases y duración de clase de la tabla oficial anterior.
+- No inventar precios, docentes, acreditaciones, certificaciones oficiales, resultados garantizados ni disponibilidad horaria.
+- No describir KUBIQ Progress como una plataforma de acceso público o portal de estudiantes; es una explicación del enfoque de seguimiento.
+- No afirmar que la sesión introductoria garantiza matrícula o plaza.
+- Para confirmar disponibilidad, inscripción y condiciones vigentes, remitir al sitio oficial.
 
-
-Modelo académico: una sesión por semana durante 32 encuentros. Duración adaptada por programa: Scratch Inicial 45 min; Scratch Avanzado 60 min; Roblox Inicial 60 min; Roblox Avanzado 75 min; Python Inicial y Avanzado 75 min. Las edades son orientativas y la asignación final considera conocimientos previos.
+## Marca
+- Nombre: KUBIQ ACADEMY.
+- Lema: “Mentes que programan el futuro”.
+- Identidad visual: navy #0B1B4D, cian #00C8FF, violeta #7B4DFF, lavanda #E9E6FF y blanco.

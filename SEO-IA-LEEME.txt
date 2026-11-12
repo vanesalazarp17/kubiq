@@ -1,0 +1,27 @@
+KUBIQ ACADEMY — SEO / IA / INDEXACIÓN
+
+Archivos incluidos:
+- robots.txt: permite rastreo general y declara el sitemap.
+- sitemap.xml: URLs públicas principales del sitio.
+- llms.txt: ficha concisa para sistemas de IA y recuperación.
+- llms-full.txt: contexto ampliado y preguntas frecuentes.
+- Metadatos title/description, canonical, Open Graph y Twitter en las páginas HTML.
+- Datos estructurados JSON-LD por página (Organization, EducationalOrganization, WebSite, Course y WebPage).
+
+Dominio:
+El sitio está configurado con el dominio GitHub Pages actual:
+https://vanesalazarp17.github.io/kubiq/
+
+Cuando KUBIQ tenga un dominio propio, deben actualizarse todas las URLs absolutas de:
+- canonical y og:url en las páginas HTML
+- robots.txt
+- sitemap.xml
+- llms.txt y llms-full.txt
+- URLs de logo e imágenes referenciadas por datos estructurados.
+
+Importante:
+- El sitemap solo ayuda a descubrir URLs; no garantiza indexación ni posicionamiento.
+- Los archivos llms.txt son una ayuda de contexto, no un estándar que garantice inclusión en respuestas de IA.
+- No se incluyeron precios ni horarios concretos porque deben confirmarse con disponibilidad real.
+- No se añadieron perfiles sociales no verificados.
+- Antes de enviar el sitemap a Google Search Console y Bing Webmaster Tools, confirmar que el sitio ya esté publicado y accesible.

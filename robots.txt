@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vanesalazarp17.github.io/kubiq/sitemap.xml
