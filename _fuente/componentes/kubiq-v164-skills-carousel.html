@@ -1,0 +1,45 @@
+<script id="kubiq-v164-skills-carousel">
+(()=>{
+ const section=document.querySelector('.skills-transfer');
+ const track=section?.querySelector('.life-skills-grid');
+ if(!section||!track) return;
+ const desktop=window.matchMedia('(min-width: 901px)');
+ if(!desktop.matches) return; // Mobile keeps its existing touch-scroll layout.
+ const originals=[...track.querySelectorAll('.life-skill-card')];
+ if(originals.length<5) return;
+ const controls=section.querySelector('.skills-carousel-controls')||document.createElement('div');
+ controls.className='skills-carousel-controls';
+ controls.setAttribute('aria-label','Controles de habilidades');
+ controls.innerHTML='<button type="button" class="skills-prev" aria-label="Habilidades anteriores">‹</button><button type="button" class="skills-next" aria-label="Más habilidades">›</button>';
+ if(!controls.parentNode) track.parentNode.insertBefore(controls,track);
+ // Duplicate a complete set on both ends so the carousel loops without a visible jump.
+ const originalsWidth=()=>track.scrollWidth;
+ const before=document.createDocumentFragment();
+ originals.slice(-4).forEach(card=>{const clone=card.cloneNode(true);clone.setAttribute('aria-hidden','true');before.appendChild(clone);});
+ track.insertBefore(before,track.firstChild);
+ const after=document.createDocumentFragment();
+ originals.slice(0,4).forEach(card=>{const clone=card.cloneNode(true);clone.setAttribute('aria-hidden','true');after.appendChild(clone);});
+ track.appendChild(after);
+ const originalSpan=originalsWidth()/2;
+ const cardStep=()=>{const card=track.querySelector('.life-skill-card');const gap=parseFloat(getComputedStyle(track).gap)||16;return (card?.getBoundingClientRect().width||260)+gap;};
+ track.scrollLeft=originalSpan;
+ let pauseUntil=0, previous=0, raf=0;
+ const pause=(ms=4500)=>{pauseUntil=performance.now()+ms;};
+ const move=dir=>{pause(5000);track.scrollBy({left:dir*cardStep(),behavior:'smooth'});};
+ controls.querySelector('.skills-prev').addEventListener('click',()=>move(-1));
+ controls.querySelector('.skills-next').addEventListener('click',()=>move(1));
+ ['pointerdown','touchstart','wheel','mouseenter','focusin'].forEach(evt=>track.addEventListener(evt,()=>pause(),{passive:true}));
+ controls.addEventListener('mouseenter',()=>pause());
+ const reduced=window.matchMedia('(prefers-reduced-motion: reduce)');
+ const tick=now=>{
+   if(!document.hidden&&!reduced.matches&&now>pauseUntil){
+     if(previous){const elapsed=Math.min(now-previous,50);track.scrollLeft+=12*elapsed/1000;}
+     if(track.scrollLeft>=originalSpan*2) track.scrollLeft-=originalSpan;
+     else if(track.scrollLeft<=0) track.scrollLeft+=originalSpan;
+   }
+   previous=now;raf=requestAnimationFrame(tick);
+ };
+ if(!reduced.matches) raf=requestAnimationFrame(tick);
+ document.addEventListener('visibilitychange',()=>{previous=0;});
+})();
+</script>

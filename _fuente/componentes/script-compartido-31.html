@@ -1,0 +1,11 @@
+<script>
+document.querySelectorAll('.program-sales-showcase').forEach(section=>{
+ const track=section.querySelector('.sales-projects');
+ const prev=section.querySelector('.sales-prev');
+ const next=section.querySelector('.sales-next');
+ if(!track||!prev||!next)return;
+ const move=direction=>track.scrollBy({left:direction*Math.min(track.clientWidth*.82,390),behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
+ prev.addEventListener('click',()=>move(-1));
+ next.addEventListener('click',()=>move(1));
+});
+</script>

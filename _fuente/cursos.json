@@ -1,0 +1,422 @@
+[
+  {
+    "id": "scratch",
+    "nombre": "Scratch",
+    "encabezado": "SCRATCH · CREA HISTORIAS Y VIDEOJUEGOS",
+    "guiaEdad": {
+      "rango": "8–12 años",
+      "texto": "Scratch · Crea historias, animaciones y videojuegos"
+    },
+    "tituloPagina": "Cursos de Scratch para niños de 8 a 13 años | KUBIQ ACADEMY",
+    "seo": {
+      "nombre": "Programas de Scratch | KUBIQ ACADEMY",
+      "descripcion": "Aprende programación visual con Scratch en clases online en vivo. Programas inicial y avanzado para crear historias, animaciones y videojuegos.",
+      "tituloSocial": "Programación con Scratch | KUBIQ ACADEMY",
+      "descripcionSocial": "Dos niveles para aprender lógica, secuencias, eventos y creación de videojuegos con Scratch."
+    },
+    "datosRapidos": [
+      {
+        "etiqueta": "por nivel",
+        "dato": "sesiones",
+        "sufijo": " clases"
+      },
+      {
+        "valor": "1 por semana",
+        "etiqueta": "sesión en vivo"
+      },
+      {
+        "etiqueta": "por clase en ambos niveles",
+        "dato": "minutos",
+        "sufijo": " min"
+      }
+    ],
+    "llamadaAccion": "¿Listo para convertir sus ideas en videojuegos?",
+    "niveles": [
+      {
+        "id": "scratch-inicial",
+        "nombre": "Scratch inicial",
+        "titulo": "Scratch Inicial",
+        "nivel": "Nivel inicial",
+        "edad": "8 a 11 años",
+        "sesiones": 24,
+        "minutos": 60,
+        "imagen": "imagenes/course-scratch-inicial.gif",
+        "tarjeta": {
+          "resumen": "Crea historias, animaciones y tus primeros videojuegos.",
+          "temas": [
+            "Bloques, secuencias e instrucciones",
+            "Personajes, escenarios y animaciones",
+            "Historias interactivas con personajes y sonidos"
+          ],
+          "etiquetaEnlace": "Ver programa completo de scratch inicial"
+        },
+        "ficha": {
+          "requisitos": "No requiere experiencia previa.",
+          "aprendizaje": "Conoce el entorno, organiza bloques y crea historias, animaciones y juegos sencillos.",
+          "temas": [
+            "Interfaz y bloques",
+            "Secuencias y eventos",
+            "Movimiento y sonidos",
+            "Animación",
+            "Lógica matemática."
+          ]
+        },
+        "modal": {
+          "description": "Una primera experiencia con la programación visual por bloques. El estudiante aprende a dar instrucciones paso a paso y convierte sus ideas en historias, animaciones y juegos sencillos. Explora cómo una secuencia de instrucciones puede dar vida a personajes y situaciones.",
+          "topics": [
+            "Interfaz de Scratch: escenario, objetos, disfraces y bloques",
+            "Secuencias, eventos, movimiento, sonidos y apariencia",
+            "Animaciones, diálogos e historias interactivas",
+            "Reglas, pruebas y depuración de programas",
+            "Aplicaciones de la lógica secuencial en retos matemáticos"
+          ],
+          "skills": [
+            "Pensamiento lógico y secuencial",
+            "Creatividad para diseñar personajes e historias",
+            "Descomposición de retos en pasos pequeños",
+            "Autonomía para probar, detectar y corregir errores"
+          ],
+          "project": "Al finalizar, podrá crear una historia animada o un videojuego sencillo con personajes, escenarios, sonidos e interacciones.",
+          "prerequisites": "No requiere experiencia previa. Recomendado para quienes comienzan a explorar la programación."
+        }
+      },
+      {
+        "id": "scratch-avanzado",
+        "nombre": "Scratch avanzado",
+        "titulo": "Scratch Avanzado",
+        "nivel": "Nivel avanzado",
+        "edad": "9 a 12 años",
+        "sesiones": 28,
+        "minutos": 60,
+        "imagen": "imagenes/course-scratch-avanzado.gif",
+        "tarjeta": {
+          "resumen": "Diseña juegos con reglas, puntajes y nuevos desafíos.",
+          "temas": [
+            "Condiciones, ciclos y variables",
+            "Puntajes, vidas y niveles de juego",
+            "Mensajes entre objetos y sincronización de acciones"
+          ],
+          "etiquetaEnlace": "Ver programa completo de scratch avanzado"
+        },
+        "ficha": {
+          "requisitos": "Recomendado para quienes ya conocen los fundamentos de Scratch.",
+          "aprendizaje": "Diseña experiencias interactivas con reglas, variables, condiciones y varios niveles.",
+          "temas": [
+            "Condiciones y ciclos",
+            "Variables y operadores",
+            "Mensajes entre objetos",
+            "Puntajes y niveles",
+            "Depuración."
+          ]
+        },
+        "modal": {
+          "description": "Para estudiantes que ya conocen los fundamentos de Scratch y quieren crear proyectos con más interacciones, reglas y desafíos. Se profundiza en la lógica que organiza los juegos y en cómo hacer que los elementos respondan a distintas situaciones.",
+          "topics": [
+            "Condiciones, ciclos, variables y operadores",
+            "Mensajes entre objetos y sincronización de acciones",
+            "Diseño de niveles, puntajes, vidas y reglas de juego",
+            "Depuración, pruebas y mejora de proyectos interactivos",
+            "Descomposición de problemas y razonamiento lógico-matemático"
+          ],
+          "skills": [
+            "Razonamiento lógico y pensamiento algorítmico",
+            "Diseño de soluciones con varias condiciones",
+            "Planificación y organización de proyectos",
+            "Persistencia y análisis al corregir errores"
+          ],
+          "project": "Podrá desarrollar un videojuego de varios niveles con puntajes, reglas, personajes interactivos y condiciones de victoria o desafío.",
+          "prerequisites": "Conviene conocer los bloques básicos de Scratch o realizar una orientación previa para confirmar el nivel."
+        }
+      }
+    ],
+    "portada": {
+      "etiqueta": "KUBIQ ACADEMY · PROGRAMACIÓN CREATIVA",
+      "titulo": "De una idea a una historia interactiva.",
+      "descripcion": "En Scratch, la imaginación se convierte en historias, animaciones y videojuegos propios. Los estudiantes aprenden a dar vida a sus ideas, tomar decisiones y resolver retos mientras crean. Con la guía de docentes expertos, cada avance se transforma en un proyecto que pueden mostrar con orgullo.",
+      "alternativo": "Logo oficial de Scratch de KUBIQ Academy",
+      "clase": "program-hero-image",
+      "imagen": "../../imagenes/logo-scratch-kubiq.gif"
+    },
+    "sitemapPrioridad": "0.9"
+  },
+  {
+    "id": "roblox",
+    "nombre": "Roblox Studio",
+    "encabezado": "ROBLOX STUDIO · CONSTRUYE MUNDOS 3D",
+    "guiaEdad": {
+      "rango": "10–16 años",
+      "texto": "Roblox Studio · Construye mundos 3D y experiencias interactivas"
+    },
+    "tituloPagina": "Cursos de Roblox Studio para niños y jóvenes | KUBIQ ACADEMY",
+    "seo": {
+      "nombre": "Programas de Roblox Studio | KUBIQ ACADEMY",
+      "descripcion": "Aprende a crear mundos y experiencias interactivas con Roblox Studio. Clases online en vivo para estudiantes de 10 a 16 años, según nivel.",
+      "tituloSocial": "Roblox Studio | Crea mundos y experiencias",
+      "descripcionSocial": "Programas inicial y avanzado de Roblox Studio con proyectos y acompañamiento docente."
+    },
+    "datosRapidos": [
+      {
+        "etiqueta": "Inicial / Avanzado",
+        "dato": "sesiones",
+        "sufijo": " clases"
+      },
+      {
+        "valor": "1 por semana",
+        "etiqueta": "sesión en vivo"
+      },
+      {
+        "etiqueta": "por clase",
+        "dato": "minutos",
+        "sufijo": " min"
+      }
+    ],
+    "llamadaAccion": "¿Listo para construir sus propios mundos en Roblox Studio?",
+    "niveles": [
+      {
+        "id": "roblox-inicial",
+        "nombre": "Roblox Studio inicial",
+        "titulo": "Roblox Studio Inicial",
+        "nivel": "Nivel inicial",
+        "edad": "10 a 13 años",
+        "sesiones": 28,
+        "minutos": 60,
+        "imagen": "imagenes/course-roblox-inicial.gif",
+        "tarjeta": {
+          "resumen": "Construye escenarios y mundos en 3D.",
+          "temas": [
+            "Herramientas de Roblox Studio",
+            "Construcción de mundos y escenarios 3D",
+            "Objetos, propiedades y organización espacial"
+          ],
+          "etiquetaEnlace": "Ver programa completo de roblox inicial"
+        },
+        "ficha": {
+          "requisitos": "No es necesario haber creado juegos antes.",
+          "aprendizaje": "Construye escenarios, organiza objetos y comprende cómo se representa un mundo tridimensional.",
+          "temas": [
+            "Interfaz y herramientas",
+            "Escenarios 3D",
+            "Objetos y propiedades",
+            "Coordenadas y escalas",
+            "Geometría aplicada."
+          ]
+        },
+        "modal": {
+          "description": "Una introducción al entorno de Roblox Studio para aprender cómo se construyen mundos digitales. El estudiante explora herramientas de construcción, organiza objetos y comprende los elementos que forman una experiencia interactiva.",
+          "topics": [
+            "Interfaz, paneles y herramientas principales de Roblox Studio",
+            "Construcción de escenarios, terrenos y espacios tridimensionales",
+            "Objetos, propiedades, materiales e iluminación básica",
+            "Coordenadas, escalas y organización espacial",
+            "Principios de geometría aplicados al diseño 3D"
+          ],
+          "skills": [
+            "Pensamiento espacial y diseño 3D",
+            "Creatividad para construir mundos y escenarios",
+            "Atención al detalle y organización de elementos",
+            "Resolución de problemas mediante pruebas"
+          ],
+          "project": "Podrá construir un escenario o pequeño recorrido interactivo en Roblox Studio y presentarlo como una experiencia propia.",
+          "prerequisites": "No es indispensable haber creado juegos antes; interés por el diseño y la creación digital es suficiente."
+        }
+      },
+      {
+        "id": "roblox-avanzado",
+        "nombre": "Roblox Studio avanzado",
+        "titulo": "Roblox Studio Avanzado",
+        "nivel": "Nivel avanzado",
+        "edad": "12 a 16 años",
+        "sesiones": 32,
+        "minutos": 75,
+        "imagen": "imagenes/course-roblox-avanzado.gif",
+        "tarjeta": {
+          "resumen": "Programa interacciones y experiencias en Roblox.",
+          "temas": [
+            "Programación con lenguaje Lua",
+            "Variables, funciones y eventos",
+            "Scripts en Lua para crear interacciones"
+          ],
+          "etiquetaEnlace": "Ver programa completo de roblox avanzado"
+        },
+        "ficha": {
+          "requisitos": "Recomendado para quienes ya manejan las herramientas básicas de Roblox Studio.",
+          "aprendizaje": "Programa comportamientos y mecánicas con scripts en Lua para crear experiencias más completas.",
+          "temas": [
+            "Lua: variables y funciones",
+            "Eventos y scripts",
+            "Mecánicas de juego",
+            "Pruebas y depuración",
+            "Lógica algorítmica."
+          ]
+        },
+        "modal": {
+          "description": "Una ruta para desarrollar experiencias más completas en Roblox Studio, combinando construcción, lógica de juego y scripts en Lua. El estudiante aprende a programar comportamientos y a conectar las acciones del jugador con los elementos del mundo.",
+          "topics": [
+            "Fundamentos de scripting con Lua: variables, funciones y eventos",
+            "Scripts para controlar objetos, acciones y comportamientos",
+            "Mecánicas de juego, interacción y lógica de experiencia",
+            "Pruebas, depuración y optimización de una experiencia",
+            "Pensamiento algorítmico y resolución estructurada de problemas"
+          ],
+          "skills": [
+            "Pensamiento computacional y programación textual",
+            "Comprensión de eventos y relaciones causa-efecto",
+            "Diseño de mecánicas y experiencias de usuario",
+            "Depuración y trabajo iterativo"
+          ],
+          "project": "Podrá crear una experiencia jugable con mecánicas programadas, interacciones y comportamientos personalizados mediante scripts.",
+          "prerequisites": "Recomendado para quienes ya manejan las herramientas básicas de Roblox Studio; el nivel se confirma antes de la inscripción."
+        }
+      }
+    ],
+    "portada": {
+      "etiqueta": "KUBIQ ACADEMY · DISEÑO 3D Y DESARROLLO",
+      "titulo": "No solo juegues en mundos digitales. Aprende a construirlos.",
+      "descripcion": "En Roblox Studio, los estudiantes pasan de explorar mundos a diseñar sus propios espacios 3D y experiencias interactivas. Aprenden a construir, probar y mejorar escenarios, y a descubrir cómo el código puede dar vida a sus ideas. Los docentes expertos acompañan cada reto para que desarrollen habilidades mientras crean.",
+      "alternativo": "Logo oficial del programa Roblox de KUBIQ Academy",
+      "clase": "program-hero-image program-brand-logo-v83",
+      "imagen": "../../imagenes/course-roblox-brand-v85.png"
+    },
+    "sitemapPrioridad": "0.9"
+  },
+  {
+    "id": "python",
+    "nombre": "Python",
+    "encabezado": "PYTHON · PROGRAMA TUS IDEAS",
+    "guiaEdad": {
+      "rango": "13–17 años",
+      "texto": "Python · Programa ideas y resuelve retos con código"
+    },
+    "tituloPagina": "Cursos de Python para jóvenes de 13 a 17 años | KUBIQ ACADEMY",
+    "seo": {
+      "nombre": "Programas de Python | KUBIQ ACADEMY",
+      "descripcion": "Aprende Python desde cero o desarrolla habilidades de programación textual en clases online en vivo para jóvenes de 13 a 17 años.",
+      "tituloSocial": "Aprende Python | KUBIQ ACADEMY",
+      "descripcionSocial": "Programas inicial y avanzado para aprender lógica, código y desarrollo de proyectos con Python."
+    },
+    "datosRapidos": [
+      {
+        "etiqueta": "por nivel",
+        "dato": "sesiones",
+        "sufijo": " clases"
+      },
+      {
+        "etiqueta": "por sesión · 1 por semana",
+        "dato": "minutos",
+        "sufijo": " minutos"
+      },
+      {
+        "valor": "4 a 8",
+        "etiqueta": "estudiantes por grupo"
+      }
+    ],
+    "llamadaAccion": "¿Listo para convertir sus ideas en programas con Python?",
+    "niveles": [
+      {
+        "id": "python-inicial",
+        "nombre": "Python inicial",
+        "titulo": "Python Inicial",
+        "nivel": "Nivel inicial",
+        "edad": "13 a 17 años",
+        "sesiones": 40,
+        "minutos": 75,
+        "imagen": "imagenes/course-python-inicial.gif",
+        "tarjeta": {
+          "resumen": "Aprende código creando programas y pequeños juegos.",
+          "temas": [
+            "Variables, datos y operaciones",
+            "Condicionales y ciclos",
+            "Funciones básicas y ejercicios prácticos"
+          ],
+          "etiquetaEnlace": "Ver programa completo de python inicial"
+        },
+        "ficha": {
+          "requisitos": "No exige experiencia previa en Python.",
+          "aprendizaje": "Aprende sintaxis, variables, decisiones y ciclos para desarrollar programas sencillos.",
+          "temas": [
+            "Variables y tipos de datos",
+            "Operadores y expresiones",
+            "Condicionales y ciclos",
+            "Funciones básicas",
+            "Matemáticas con código."
+          ]
+        },
+        "modal": {
+          "description": "Una introducción a la programación textual con Python. El estudiante aprende a escribir instrucciones, interpretar resultados y resolver problemas pequeños usando un lenguaje utilizado en múltiples áreas tecnológicas.",
+          "topics": [
+            "Sintaxis, variables, tipos de datos y entrada/salida",
+            "Operadores y expresiones para procesar información",
+            "Condicionales y ciclos para controlar el flujo del programa",
+            "Funciones básicas y ejercicios prácticos",
+            "Resolución de problemas y aplicación de operaciones matemáticas con código"
+          ],
+          "skills": [
+            "Pensamiento lógico y estructuración de instrucciones",
+            "Lectura y escritura de código",
+            "Resolución paso a paso de problemas",
+            "Análisis de resultados y corrección de errores"
+          ],
+          "project": "Podrá desarrollar programas sencillos como cuestionarios, calculadoras, juegos de preguntas o herramientas que procesen datos básicos.",
+          "prerequisites": "No exige experiencia previa en Python. Se recomienda comodidad básica usando una computadora y seguir instrucciones escritas."
+        }
+      },
+      {
+        "id": "python-avanzado",
+        "nombre": "Python avanzado",
+        "titulo": "Python Avanzado",
+        "nivel": "Nivel avanzado",
+        "edad": "14 a 17 años",
+        "sesiones": 40,
+        "minutos": 75,
+        "imagen": "imagenes/course-python-avanzado.gif",
+        "tarjeta": {
+          "resumen": "Desarrolla programas para resolver retos más complejos.",
+          "temas": [
+            "Funciones, parámetros y módulos",
+            "Listas, diccionarios y estructuras de datos",
+            "Manejo de errores y depuración"
+          ],
+          "etiquetaEnlace": "Ver programa completo de python avanzado"
+        },
+        "ficha": {
+          "requisitos": "Requiere bases de Python: variables, condicionales, ciclos y funciones.",
+          "aprendizaje": "Organiza programas con funciones y estructuras de datos, maneja errores y analiza información.",
+          "temas": [
+            "Funciones y módulos",
+            "Listas y diccionarios",
+            "Manejo de errores",
+            "Código modular",
+            "Análisis básico de datos."
+          ]
+        },
+        "modal": {
+          "description": "Para estudiantes que ya conocen las bases de Python y quieren escribir programas mejor organizados y resolver retos de mayor complejidad. La práctica se centra en estructurar soluciones, reutilizar código y construir proyectos con varias partes.",
+          "topics": [
+            "Funciones, parámetros, retorno y módulos",
+            "Listas, diccionarios y otras estructuras de datos",
+            "Manejo de errores, depuración y lectura de mensajes",
+            "Organización del código y desarrollo de proyectos integradores",
+            "Lectura, organización y análisis básico de datos"
+          ],
+          "skills": [
+            "Abstracción y pensamiento algorítmico",
+            "Diseño de programas modulares y reutilizables",
+            "Análisis y depuración sistemática",
+            "Planificación de proyectos de mayor complejidad"
+          ],
+          "project": "Podrá desarrollar un programa estructurado que combine funciones y estructuras de datos para resolver una necesidad concreta, documentando y probando su funcionamiento.",
+          "prerequisites": "Requiere bases de Python: variables, condicionales, ciclos y funciones. Si hay dudas, KUBIQ orientará sobre el nivel adecuado."
+        }
+      }
+    ],
+    "portada": {
+      "etiqueta": "KUBIQ ACADEMY · PROGRAMACIÓN TEXTUAL",
+      "titulo": "Escribe código. Resuelve problemas. Construye soluciones.",
+      "descripcion": "Con Python, los jóvenes descubren que el código puede resolver problemas reales y convertir ideas en herramientas digitales. Aprenden a pensar con claridad, dividir desafíos en pasos y construir programas propios. Con el acompañamiento de docentes expertos, ganan confianza para experimentar, corregir y desarrollar soluciones cada vez más completas.",
+      "alternativo": "Logo oficial del programa Python de KUBIQ Academy",
+      "clase": "program-hero-image program-brand-logo-v83",
+      "imagen": "../../imagenes/python-logo-portada-v158.png"
+    },
+    "sitemapPrioridad": "0.9"
+  }
+]

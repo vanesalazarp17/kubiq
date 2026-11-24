@@ -1,0 +1,46 @@
+<style id="kubiq-v157-project-carousel-mobile-fix">
+/* V157: project cards use intrinsic height and a horizontal mobile carousel. */
+.program-sales-showcase .sales-projects{
+  display:grid!important; grid-template-columns:repeat(3,minmax(0,1fr));
+  grid-auto-flow:row; grid-auto-rows:max-content; align-items:start; align-content:start;
+  height:auto!important; min-height:0!important;
+}
+.program-sales-showcase .sales-project{
+  display:flex!important; flex-direction:column!important; justify-content:flex-start!important;
+  align-self:start!important; height:auto!important; min-height:0!important;
+  max-height:none!important; box-sizing:border-box!important;
+}
+.program-sales-showcase .project-image-wrap{
+  width:100%!important; height:auto!important; aspect-ratio:16/9!important;
+  flex:0 0 auto!important;
+}
+.program-sales-showcase .project-copy{
+  display:block!important; height:auto!important; min-height:0!important;
+  flex:0 0 auto!important; margin:0!important;
+}
+.program-sales-showcase .project-copy strong,.program-sales-showcase .project-copy p{
+  height:auto!important; min-height:0!important;
+}
+@media(max-width:650px){
+  .program-sales-showcase .sales-projects{
+    display:grid!important; grid-template-columns:none!important;
+    grid-auto-flow:column!important; grid-auto-columns:minmax(82%,330px)!important;
+    grid-auto-rows:max-content!important; align-items:start!important; align-content:start!important;
+    gap:14px!important; width:100%!important; height:auto!important; min-height:0!important;
+    overflow-x:auto!important; overflow-y:hidden!important;
+    padding:8px 4px 18px!important; box-sizing:border-box!important;
+    scroll-snap-type:x mandatory!important; scroll-padding-inline:4px!important;
+    -webkit-overflow-scrolling:touch!important; overscroll-behavior-x:contain!important;
+  }
+  .program-sales-showcase .sales-project{
+    width:auto!important; min-width:0!important; max-width:none!important;
+    height:auto!important; min-height:0!important; align-self:start!important;
+    scroll-snap-align:start!important;
+  }
+  .program-sales-showcase .project-image-wrap{aspect-ratio:16/9!important;height:auto!important}
+  .program-sales-showcase .project-image-wrap img{width:100%!important;height:100%!important;object-fit:cover!important}
+  .program-sales-showcase .project-copy{padding:15px 16px 17px!important}
+  .program-sales-showcase .project-copy strong{font-size:17px!important;line-height:1.25!important;margin:5px 0 7px!important}
+  .program-sales-showcase .project-copy p{font-size:14px!important;line-height:1.55!important;margin:0!important}
+}
+</style>

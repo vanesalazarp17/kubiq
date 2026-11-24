@@ -1,0 +1,17 @@
+<style id="kubiq-v155-project-card-fit">
+/* V155: project cards size to their own content on every screen. */
+.program-sales-showcase .sales-projects{align-items:start!important;grid-auto-rows:max-content!important;grid-auto-flow:row!important}
+.program-sales-showcase .sales-project{height:auto!important;min-height:0!important;align-self:start!important;flex:0 0 auto!important}
+.program-sales-showcase .project-image-wrap{height:auto!important;aspect-ratio:16/10!important;flex:0 0 auto!important}
+.program-sales-showcase .project-image-wrap img{display:block;width:100%;height:100%;object-fit:cover}
+.program-sales-showcase .project-copy{height:auto!important;min-height:0!important;flex:0 0 auto!important;align-self:stretch}
+.program-sales-showcase .project-copy p{margin:8px 0 0}
+@media(max-width:650px){
+ .program-sales-showcase .sales-projects{display:grid!important;grid-template-columns:minmax(0,1fr)!important;grid-auto-rows:max-content!important;align-items:start!important;gap:14px!important}
+ .program-sales-showcase .sales-project{width:100%!important;max-width:100%!important;height:auto!important;min-height:0!important}
+ .program-sales-showcase .project-image-wrap{aspect-ratio:16/9!important;height:auto!important}
+ .program-sales-showcase .project-copy{padding:15px 16px 17px!important}
+ .program-sales-showcase .project-copy strong{font-size:17px!important;line-height:1.25!important;margin:5px 0 7px!important}
+ .program-sales-showcase .project-copy p{font-size:14px!important;line-height:1.55!important}
+}
+</style>
