@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/>
+
+
+<title>IA Exploradores e IA Creadores | KUBIQ ACADEMY</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&amp;family=Poppins:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<style>
+:root{--navy:#0B1B4D;--cyan:#00C8FF;--violet:#7B4DFF;--ink:#18213d;--muted:#65708b;--line:#e6eaf5}
+*{box-sizing:border-box}body{margin:0;font-family:Nunito,sans-serif;color:var(--ink);line-height:1.65}a{color:inherit;text-decoration:none}.wrap{width:min(1080px,calc(100% - 40px));margin:auto}
+header{border-bottom:1px solid var(--line);background:#fff}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{font:900 clamp(21px,3vw,30px) Poppins,sans-serif;letter-spacing:-.045em;color:var(--navy);white-space:nowrap}.brand span{color:var(--violet)}.nav a:last-child{font-weight:800;color:var(--navy)}
+.hero{background:radial-gradient(circle at 85% 15%,#7b4dff55,transparent 30%),linear-gradient(125deg,#0B1B4D,#101a52);color:#fff;padding:72px 0 68px}.eyebrow{color:#9cecff;font-size:12px;letter-spacing:.15em;font-weight:900}h1,h2,h3{font-family:Poppins,sans-serif;line-height:1.15}h1{font-size:clamp(36px,6vw,62px);letter-spacing:-.055em;max-width:850px;margin:16px 0}.hero p{font-size:17px;color:#d9e2ff;max-width:780px}.btn{display:inline-flex;padding:14px 20px;border-radius:999px;background:var(--cyan);color:var(--navy);font-weight:900;margin:12px 10px 0 0}.btn-outline{background:#f0f2ff;color:var(--navy)}
+section{padding:64px 0}.intro{max-width:760px;margin-bottom:30px}.intro h2{color:var(--navy);font-size:clamp(27px,4vw,40px);margin:0 0 12px}.intro p{color:var(--muted)}.levels{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.level-card{border:1px solid var(--line);border-radius:22px;padding:26px;background:#fff;box-shadow:0 14px 35px #0b1b4d0b}.level-age{display:inline-block;padding:6px 11px;background:#e9e6ff;border-radius:999px;color:var(--navy);font-weight:900;font-size:12px}.level-card h3{color:var(--navy);font-size:22px;margin:14px 0 8px}.level-card p{color:var(--muted);font-size:14px}.level-tags{padding:12px;background:#f6f8ff;border-radius:12px;color:#364365;font-size:13px;line-height:1.7}.skills{background:#f6f8ff}.skill-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.skill-grid li{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;color:var(--navy);font-weight:800;font-size:13px;list-style:none}.skill-grid{padding:0}.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:28px}.facts div{text-align:center;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}.facts strong{display:block;color:var(--navy);font:800 18px Poppins}.facts span{font-size:12px;color:var(--muted)}.faq details{border-bottom:1px solid var(--line);padding:17px 0}.faq summary{font-weight:900;color:var(--navy);cursor:pointer}.faq p{color:var(--muted)}.cta{background:#0B1B4D;color:#fff;text-align:center;padding:58px 0}.cta h2{font-size:clamp(26px,4vw,40px);max-width:780px;margin:0 auto 12px}.cta p{color:#d9e2ff;max-width:650px;margin:0 auto}footer{background:#071234;color:#cbd5f5;padding:24px 0;font-size:13px}footer .wrap{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}@media(max-width:760px){.levels{grid-template-columns:1fr}.skill-grid{grid-template-columns:repeat(2,1fr)}.facts{grid-template-columns:repeat(2,1fr)}.hero{padding:54px 0}}
+
+/* KUBIQ V73 — páginas de programa: mundos visuales más vivos y navegación clara */
+.nav{min-height:82px;height:auto;padding:10px 0}.nav a:last-child{font-size:13px;padding:10px 15px;border-radius:999px;background:#f0edff;color:#5532c8;transition:background .2s,transform .2s}.nav a:last-child:hover{background:#e3dcff;transform:translateX(-2px)}
+.hero{position:relative;isolation:isolate;overflow:hidden;background:radial-gradient(circle at 82% 18%,rgba(0,200,255,.30),transparent 24%),radial-gradient(circle at 15% 88%,rgba(123,77,255,.42),transparent 30%),linear-gradient(125deg,#0B1B4D 0%,#172b69 56%,#35216e 100%)}
+.hero:before,.hero:after{content:"";position:absolute;z-index:-1;border:1px solid rgba(255,255,255,.18);border-radius:28px;transform:rotate(28deg);pointer-events:none}.hero:before{width:190px;height:190px;right:8%;top:10%;box-shadow:0 0 0 18px rgba(0,200,255,.045),0 0 0 38px rgba(123,77,255,.04)}.hero:after{width:90px;height:90px;right:27%;bottom:5%;border-color:rgba(0,200,255,.32)}
+.hero .wrap{position:relative}.hero .eyebrow{display:inline-flex;padding:7px 12px;border:1px solid rgba(156,236,255,.28);border-radius:999px;background:rgba(255,255,255,.07)}
+.btn{padding:14px 22px;border-radius:14px;box-shadow:0 9px 22px rgba(0,200,255,.18);transition:transform .2s,box-shadow .2s,background .2s}.btn:hover{transform:translateY(-3px);box-shadow:0 14px 26px rgba(0,200,255,.26)}.btn-outline{background:#f0edff;color:#5634c7;border:1px solid #ded6ff;box-shadow:none}.btn-outline:hover{background:#e6e0ff;box-shadow:0 10px 20px rgba(123,77,255,.15)}
+.level-card{position:relative;overflow:hidden;border:1px solid #e1e6fb;border-radius:24px;background:linear-gradient(155deg,#fff 0%,#f8faff 100%);box-shadow:0 14px 35px rgba(11,27,77,.08);transition:transform .25s,box-shadow .25s}.level-card:before{content:"";position:absolute;left:0;right:0;top:0;height:6px;background:linear-gradient(90deg,#00C8FF,#7B4DFF,#FFC928)}.level-card:hover{transform:translateY(-5px);box-shadow:0 20px 42px rgba(11,27,77,.13)}.level-age{background:#e8f9ff;color:#08799b}.level-card:nth-child(2) .level-age{background:#eee9ff;color:#6845c8}.level-tags{background:linear-gradient(110deg,#eefaff,#f3efff);border:1px solid #e3e9ff;color:#34466e}
+.skills{background:linear-gradient(135deg,#eefaff 0%,#f4f0ff 55%,#fff8e8 100%)}.skill-grid li{position:relative;border-radius:17px;box-shadow:0 8px 22px rgba(11,27,77,.06);transition:transform .2s,box-shadow .2s}.skill-grid li:hover{transform:translateY(-4px);box-shadow:0 13px 27px rgba(11,27,77,.11)}.skill-grid li:nth-child(3n+1){border-top:4px solid #00C8FF}.skill-grid li:nth-child(3n+2){border-top:4px solid #7B4DFF}.skill-grid li:nth-child(3n){border-top:4px solid #FFC928}
+.facts div{background:linear-gradient(150deg,#fff,#f7f8ff);border-color:#e3e8f7;box-shadow:0 8px 22px rgba(11,27,77,.05)}.facts div:nth-child(2n) strong{color:#7049df}.facts div:nth-child(2n+1) strong{color:#078cb2}
+.faq details{padding:18px 16px;border:1px solid #e6eaf5;border-radius:14px;margin:9px 0;background:#fff}.faq summary{list-style:none}.faq summary::-webkit-details-marker{display:none}.faq summary:after{content:"+";float:right;color:#7B4DFF;font-size:21px;line-height:1}.faq details[open] summary:after{content:"−"}.faq details[open]{background:#fafaff;border-color:#dcd5ff}
+.cta{background:radial-gradient(circle at 80% 20%,rgba(0,200,255,.22),transparent 28%),linear-gradient(120deg,#0B1B4D,#251c63)}
+@media(max-width:760px){.nav{min-height:72px}.brand{font-size:23px}.hero:before{right:-45px;top:12%;width:130px;height:130px}.hero:after{right:16%;bottom:3%;width:65px;height:65px}.level-card{padding:22px}.btn{margin-right:6px}}
+@media(prefers-reduced-motion:reduce){.level-card,.skill-grid li,.btn,.nav a:last-child{transition:none!important}.level-card:hover,.skill-grid li:hover,.btn:hover{transform:none}}
+ .program-nav{display:flex;gap:9px;align-items:center}.program-nav a{font-size:12px;font-weight:900;color:#5532c8;text-decoration:none;padding:9px 12px;border-radius:999px;background:#f0edff}.session-length{display:inline-block;margin:8px 0;padding:5px 9px;border-radius:20px;background:#e4f8ff;color:#08799b;font-size:11px;font-weight:900}
+
+.program-hero-gif{display:block;width:clamp(150px,25vw,250px);height:auto;max-height:250px;object-fit:contain;margin:22px 0 0 auto;border-radius:22px;filter:drop-shadow(0 12px 22px rgba(0,0,0,.18))}
+.level-card .python-advanced-gif{display:block;width:min(100%,210px);height:auto;max-height:210px;object-fit:contain;margin:14px auto 0;border-radius:16px}
+.level-card .btn-outline{display:inline-flex;align-items:center;justify-content:center}
+@media(max-width:650px){.program-hero-gif{margin:20px auto 0;width:min(65vw,220px)}}
+
+
+/* Habilidades fuera de pantalla: tarjetas visuales, sin carrusel */
+.skills.skills-benefits{background:linear-gradient(135deg,#eefaff 0%,#f4f0ff 55%,#fff8e8 100%);padding:54px 0 58px}
+.skills-benefits .intro{max-width:900px;text-align:center;margin:0 auto 24px}
+.skills-benefits .intro h2{font-size:clamp(26px,3.4vw,38px);letter-spacing:-.035em}
+.skills-benefits .intro p{max-width:720px;margin:0 auto;color:#647293}
+.sales-benefit-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:22px 0 0}
+.sales-benefit{position:relative;isolation:isolate;min-height:210px;overflow:hidden;padding:24px 23px 26px;border:1px solid rgba(123,77,255,.16);border-radius:24px;background:#fff;box-shadow:0 13px 28px rgba(11,27,77,.07);transition:transform .25s ease,box-shadow .25s ease}
+.sales-benefit:hover{transform:translateY(-7px) rotate(-.4deg);box-shadow:0 20px 38px rgba(11,27,77,.13)}
+.sales-benefit:after{content:"";position:absolute;z-index:-1;width:150px;height:150px;right:-54px;bottom:-70px;border-radius:50%;background:rgba(255,255,255,.45)}
+.benefit-creative{background:linear-gradient(145deg,#effbff,#e7f5ff 58%,#f0eaff)}.benefit-logic{background:linear-gradient(145deg,#f3edff,#f1edff 55%,#e8faff)}.benefit-confidence{background:linear-gradient(145deg,#fff8e7,#fff2d6 60%,#f4eaff)}
+.benefit-icon{display:grid;place-items:center;width:48px;height:48px;border-radius:16px;background:#fff;color:#7548f6;font-size:25px;font-weight:1000;box-shadow:0 6px 15px rgba(11,27,77,.08);margin-bottom:13px}.benefit-logic .benefit-icon{color:#0797bd}.benefit-confidence .benefit-icon{color:#d58a00}
+.benefit-kicker{display:block;margin-bottom:5px;color:#7650e8;font-size:10px;font-weight:1000;letter-spacing:.14em}.benefit-logic .benefit-kicker{color:#0787a8}.benefit-confidence .benefit-kicker{color:#a56a00}
+.sales-benefit strong{display:block;color:var(--navy);font:800 19px Poppins,sans-serif;letter-spacing:-.025em}.sales-benefit p{margin:9px 0 0;color:#52617f;font-size:14px;line-height:1.65;max-width:34ch}.benefit-spark{position:absolute;right:19px;top:15px;color:#8c70ff;font-size:32px;opacity:.7}
+@media(max-width:760px){.sales-benefit-row{grid-template-columns:1fr;gap:12px}.sales-benefit{min-height:0;padding:20px}.sales-benefit p{max-width:48ch}}
+
+</style>
+<style>.brand-header-logo{display:block;width:245px;max-width:48vw;height:auto;object-fit:contain}@media(max-width:560px){.brand-header-logo{width:170px}.nav{flex-wrap:wrap;gap:8px}.program-nav{width:100%;padding-bottom:5px}.program-nav a{flex:1;text-align:center}}</style>
+<style id="kubiq-v80-page-overrides">
+.level-card{display:flex;flex-direction:column;align-items:stretch}.level-card .btn{align-self:center!important;justify-content:center!important;margin:18px auto 0!important;min-width:250px;text-align:center}
+.program-nav a:last-child{background:#00c8ff;color:#0b1b4d}
+.hero .wrap{display:block}
+.hero .eyebrow,.hero h1,.hero p{grid-column:auto}.hero .program-hero-gif{display:none}
+.hero .btn{grid-column:1;justify-self:start;margin:8px 10px 0 0}
+@media(max-width:700px){.hero .wrap{display:flex;flex-direction:column;align-items:flex-start}.hero .program-hero-gif{order:2;align-self:center;margin:16px auto!important;width:min(68vw,240px)}.hero .btn{order:3;align-self:stretch;text-align:center}.level-card .btn{min-width:0;width:min(100%,280px)}}
+
+/* V82 — identidad visual del programa alineada con el texto */
+.hero.program-hero-split .program-hero-layout{display:grid!important;grid-template-columns:minmax(0,1.15fr) minmax(260px,.85fr)!important;gap:36px!important;align-items:center!important}
+.program-hero-copy{min-width:0}.program-hero-copy h1{max-width:760px}.program-hero-copy p{max-width:760px}.program-hero-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}.program-hero-actions .btn{margin:8px 0 0!important}
+.program-hero-visual{display:flex;align-items:center;justify-content:center;min-width:0;background:#fff;border:1px solid rgba(255,255,255,.55);border-radius:28px;padding:14px;box-shadow:0 18px 42px rgba(0,0,0,.18)}
+.program-hero-image{display:block;width:100%;max-width:440px;max-height:390px;aspect-ratio:1/1;object-fit:contain;border-radius:18px}
+@media(max-width:760px){.hero.program-hero-split .program-hero-layout{grid-template-columns:1fr!important;gap:20px!important}.program-hero-visual{width:min(100%,390px);justify-self:center;padding:10px}.program-hero-image{max-height:310px}.program-hero-actions{display:grid;grid-template-columns:1fr}.program-hero-actions .btn{width:100%;justify-content:center;text-align:center}}
+</style>
+<style id="program-enroll-styles">.session-length{display:inline-flex;flex-wrap:wrap;background:#f0edff;color:#6140ce;border-radius:999px;padding:7px 12px;font-size:12px;font-weight:800}.program-enroll{padding:64px 0;background:linear-gradient(135deg,#f3f8ff,#f5f0ff)}.program-enroll-form{display:grid;margin-inline:auto;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;max-width:850px;padding:24px;background:#fff;border:1px solid #dfe5f5;border-radius:22px;box-shadow:0 16px 40px #0b1b4d12}.program-enroll-form label{display:flex;flex-direction:column;gap:7px;color:#0b1b4d;font-size:13px;font-weight:800}.program-enroll-form input,.program-enroll-form select,.program-enroll-form textarea{width:100%;border:1px solid #dce4f2;border-radius:12px;padding:12px;font:inherit;color:#0b1b4d;background:#fbfcff}.program-enroll-form .full{grid-column:1/-1}.program-enroll-form button{grid-column:1/-1;justify-self:center;min-width:260px}.program-enroll{scroll-margin-top:30px}@media(max-width:650px){.program-enroll-form{grid-template-columns:1fr;padding:16px}.program-enroll-form .full,.program-enroll-form button{grid-column:1}.program-enroll-form button{width:100%;min-width:0}}</style>
+<style id="program-brand-alignment-v83">.program-brand-logo-v83{display:block;width:min(100%,440px);height:auto;object-fit:contain;margin-inline:auto}.program-hero,.program-intro,.course-hero,.program-header{align-items:center}@media(min-width:800px){.program-brand-logo-v83{max-width:440px;max-height:440px}.program-hero,.program-intro,.course-hero,.program-header{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(280px,.9fr);gap:clamp(24px,4vw,56px);align-items:center}}@media(max-width:799px){.program-brand-logo-v83{max-width:min(100%,360px);margin:20px auto 0}}</style><style id="kubiq-v85-transparent-program-art">.program-hero-visual{background:transparent!important;border:0!important;box-shadow:none!important;padding:0!important}.program-hero-image{background:transparent!important;border-radius:0!important;mix-blend-mode:normal!important;filter:drop-shadow(0 16px 24px rgba(20,15,70,.14))}</style><style id="program-preferences-styles">.program-preferences{border:1px solid #e0e6f5;border-radius:14px;padding:13px 15px;margin:0}.program-preferences legend{padding:0 5px;color:#0b1b4d;font-size:13px;font-weight:850}.program-day-options{display:flex;flex-wrap:wrap;gap:8px 14px}.program-day-options label{display:inline-flex;align-items:center;gap:6px;font-size:13px}.program-day-options input{width:auto;accent-color:#7548f6}.program-enroll-form select{min-height:45px}</style>
+<style id="sales-carousel-controls-css">
+.sales-carousel-controls{display:flex;align-items:center;justify-content:center;gap:16px;margin:8px 0 5px;color:#657395;font-size:13px;font-weight:800}
+.sales-carousel-controls button{width:40px;height:40px;border:0;border-radius:50%;background:#7548f6;color:white;font-size:22px;cursor:pointer;box-shadow:0 8px 18px rgba(117,72,246,.22);transition:transform .2s ease,background .2s ease}
+.sales-carousel-controls button:hover{transform:translateY(-2px);background:#5d32dc}
+.sales-carousel-controls button:focus-visible{outline:3px solid #08c5f4;outline-offset:3px}
+@media(prefers-reduced-motion:reduce){.sales-carousel-controls button{transition:none}}
+</style>
+<style id="kubiq-v137-mobile-ux">
+/* KUBIQ V137 · Mobile-first polish. All rules are intentionally mobile-only. */
+@media (max-width:760px){
+  :root{scroll-padding-top:82px;--kubiq-mobile-gutter:clamp(18px,5vw,26px)}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+  body{overflow-x:hidden;padding-bottom:calc(82px + env(safe-area-inset-bottom,0px))}
+  main,section,header,footer{min-width:0}
+  img,video,svg{max-width:100%}
+  p,li,a,button,h1,h2,h3,h4{overflow-wrap:break-word}
+  a,button,[role="button"],summary{-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+  a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid rgba(0,200,255,.8)!important;outline-offset:3px!important}
+  section[id]{scroll-margin-top:84px}
+  .wrap{width:calc(100% - 2 * var(--kubiq-mobile-gutter))!important;max-width:100%!important}
+  .section,.schedule-section,.faq-section,.final-cta,.certificate-section,.kids-showcase,.v78-reviews{padding-top:clamp(42px,9vw,64px)!important;padding-bottom:clamp(42px,9vw,64px)!important}
+  .section-intro{margin-bottom:22px!important}
+  .section-title,h1{font-size:clamp(29px,8vw,42px)!important;line-height:1.08!important;letter-spacing:-.04em!important;text-wrap:balance}
+  h2,h3{ text-wrap:balance }
+  p{line-height:1.65}
+  .btn,.course-more,.course-open,.session-calendar-link,.faq-contact,.v85-mission-cta .btn{min-height:48px}
+  .btn{padding:13px 20px!important;white-space:normal;line-height:1.25!important}
+  input,select,textarea{font-size:16px!important;min-height:48px;max-width:100%}
+  .course-modal,.enroll-dialog{width:calc(100vw - 20px)!important;max-width:calc(100vw - 20px)!important;max-height:88svh!important;overflow:auto!important;border-radius:22px!important}
+  .course-modal-body,.enroll-form{padding:18px!important}
+  .course-modal-actions,.enroll-submit-wrap{display:grid!important;grid-template-columns:1fr!important;gap:10px!important}
+  .course-modal-actions>*{width:100%!important}
+  .creator-quiz-option{min-height:54px!important;padding:15px 16px!important;border-radius:16px!important}
+  .mission-track,.v91-review-track{scroll-snap-type:x mandatory!important;scroll-padding-inline:var(--kubiq-mobile-gutter)!important;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;scrollbar-width:none!important}
+  .mission-track::-webkit-scrollbar,.v91-review-track::-webkit-scrollbar{display:none}
+  .mission-track>.v71-mission-card,.v91-review-card{scroll-snap-align:center!important}
+  .v91-review-track{grid-auto-columns:minmax(0,88%)!important;padding:8px 2px 18px!important}
+  .v91-review-card{min-height:0!important;height:100%;box-shadow:0 10px 26px rgba(11,27,77,.07)!important}
+  .v91-review-controls{padding:4px 0 0}
+  .v91-review-arrow{width:46px!important;height:46px!important}
+  .v91-review-dots button{width:10px!important;height:10px!important}
+  .v91-review-dots button.is-active{width:26px!important}
+  .faq-item{border-radius:18px!important;margin-bottom:12px!important}
+  .faq-item summary{min-height:68px!important;padding:18px 20px!important;gap:14px}
+  .faq-answer{padding:0 20px 20px!important;line-height:1.7}
+  .contact-grid,.contact-channels{grid-template-columns:1fr!important}
+  .contact-panel,.contact-booking-panel{border-radius:22px!important;padding:20px!important}
+  footer{padding-bottom:calc(28px + env(safe-area-inset-bottom,0px))!important}
+  footer .footer-logo-lockup{max-width:min(100%,390px)!important}
+  .mobile-action-dock{position:fixed;z-index:999;left:12px;right:12px;bottom:calc(10px + env(safe-area-inset-bottom,0px));display:grid;grid-template-columns:1fr 1fr;gap:9px;padding:8px;border:1px solid rgba(255,255,255,.72);border-radius:20px;background:rgba(255,255,255,.9);box-shadow:0 10px 35px rgba(7,18,52,.22);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);transition:transform .25s ease,opacity .25s ease}
+  .mobile-action-dock a{display:flex;align-items:center;justify-content:center;min-height:48px;padding:10px 12px;border-radius:14px;text-decoration:none;font-size:14px;font-weight:850;line-height:1.15;text-align:center}
+  .mobile-action-dock a:first-child{background:#0b1b4d;color:#fff}
+  .mobile-action-dock a:last-child{background:linear-gradient(110deg,#5b37e8,#7b4dff);color:#fff}
+  .mobile-action-dock.is-hidden{opacity:0;transform:translateY(130%);pointer-events:none}
+  body.mobile-dialog-open .mobile-action-dock{opacity:0;pointer-events:none}
+}
+@media(max-width:390px){
+  .mobile-action-dock{left:9px;right:9px;gap:7px;padding:7px}
+  .mobile-action-dock a{font-size:13px;min-height:46px;padding:9px 7px}
+}
+@media(prefers-reduced-motion:reduce) and (max-width:760px){html{scroll-behavior:auto}.mobile-action-dock{transition:none!important}}
+
+</style>
+<style id="kubiq-v142-mobile-final-audit">
+/* V142: mobile QA consolidation. Desktop is deliberately untouched. */
+.mobile-action-dock{display:none}
+@media screen and (max-width:760px){
+  html,body{width:100%;max-width:100%;overflow-x:clip}
+  body{padding-bottom:calc(88px + env(safe-area-inset-bottom,0px))}
+  .mobile-action-dock{display:grid;position:fixed;z-index:1500;left:max(10px,env(safe-area-inset-left,0px));right:max(10px,env(safe-area-inset-right,0px));bottom:calc(9px + env(safe-area-inset-bottom,0px));grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:8px;border:1px solid rgba(255,255,255,.82);border-radius:19px;background:rgba(255,255,255,.94);box-shadow:0 8px 28px rgba(7,18,52,.2);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+  .mobile-action-dock a{display:flex;min-width:0;min-height:48px;align-items:center;justify-content:center;padding:10px 8px;border-radius:13px;text-align:center;text-decoration:none;font:800 13px/1.2 Nunito,Arial,sans-serif;overflow-wrap:anywhere}
+  .mobile-action-dock a:first-child{background:#0b1b4d;color:#fff}
+  .mobile-action-dock a:last-child{background:linear-gradient(110deg,#5b37e8,#7b4dff);color:#fff}
+  .mobile-action-dock.is-hidden{opacity:0;transform:translateY(130%);pointer-events:none}
+  body.mobile-dialog-open .mobile-action-dock,body.mobile-form-focus .mobile-action-dock{opacity:0;pointer-events:none;transform:translateY(130%)}
+  main,section,header,footer,.wrap,.container{min-width:0;max-width:100%}
+  img,video,iframe{max-width:100%}
+  input,select,textarea{font-size:16px!important;max-width:100%}
+  button,a,[role=button],summary{touch-action:manipulation}
+  .course-modal,.enroll-dialog,.trial-dialog{width:calc(100% - 20px)!important;max-width:calc(100% - 20px)!important;max-height:calc(100dvh - 24px)!important;max-height:calc(100svh - 24px)!important;overflow:auto!important;overscroll-behavior:contain}
+  .course-modal-backdrop,.enroll-backdrop,.trial-backdrop{padding:10px!important;align-items:center!important}
+  .course-modal-actions,.enroll-submit-wrap{grid-template-columns:minmax(0,1fr)!important}
+  .course-modal-actions>*{min-width:0;width:100%!important}
+  .payment-choices{grid-template-columns:1fr!important}
+  .trial-weekdays,.trial-calendar-grid{gap:3px!important}
+  .trial-day{min-width:0;min-height:38px!important}
+  .status-proof-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  .status-proof-grid>div:last-child:nth-child(odd){grid-column:1/-1}
+  .mobile-action-dock a:focus-visible{outline:3px solid #00c8ff;outline-offset:3px}
+}
+@media screen and (max-width:390px){
+  .mobile-action-dock{left:8px;right:8px;gap:6px;padding:7px}
+  .mobile-action-dock a{font-size:12px;min-height:46px;padding:9px 6px}
+}
+@media(prefers-reduced-motion:reduce){
+  @media screen and (max-width:760px){html{scroll-behavior:auto}.mobile-action-dock{transition:none!important}}
+}
+</style>
+<style id="kubiq-v153-structured-program-layout">
+/* Estructura uniforme y legible para Roblox, Python y Scratch */
+.program-sales-showcase{padding:clamp(48px,6vw,82px) 0;overflow:hidden}
+.program-sales-showcase .wrap{width:min(1120px,calc(100% - 40px));margin-inline:auto}
+.program-sales-showcase .sales-head{max-width:850px;margin:0 auto 34px;text-align:center}
+.program-sales-showcase .sales-head h2{line-height:1.12;text-wrap:balance;margin:12px 0}
+.program-sales-showcase .sales-head p,.sales-project-heading p{line-height:1.7}
+.program-sales-showcase .sales-project-heading{max-width:850px;margin:0 auto 22px;text-align:center}
+.program-sales-showcase .sales-projects{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;overflow:visible;padding:0}
+.program-sales-showcase .sales-project{min-width:0;display:flex;flex-direction:column;overflow:hidden;border:1px solid #e3eaf8;border-radius:22px;background:#fff;box-shadow:0 12px 30px rgba(11,27,77,.08)}
+.program-sales-showcase .project-image-wrap{position:relative;aspect-ratio:16/10;overflow:hidden;background:#eef3ff}
+.program-sales-showcase .project-image-wrap img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+.program-sales-showcase .project-copy{padding:18px 20px 22px}
+.program-sales-showcase .project-copy strong{display:block;color:#0b1b4d;font-size:18px;line-height:1.25;margin:6px 0 9px}
+.program-sales-showcase .project-copy p{margin:0;color:#59647e;font-size:14px;line-height:1.6}
+.program-sales-showcase .sales-trustline{max-width:850px;margin:28px auto 0;text-align:center;line-height:1.65}
+.skills-transfer{padding:clamp(48px,6vw,76px) 0;background:linear-gradient(180deg,#f8faff,#fff)}
+.skills-transfer .intro{max-width:850px;margin:0 auto 28px;text-align:center}
+.life-skills-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.life-skill-card{min-width:0;min-height:190px;padding:19px 18px;border:1px solid #e2e8f6;border-radius:18px;background:linear-gradient(145deg,#fff,#f8faff);box-shadow:0 8px 22px rgba(11,27,77,.055)}
+.life-skill-icon{display:grid;place-items:center;width:38px;height:38px;margin-bottom:12px;border-radius:12px;background:#f0edff;color:#7048e8;font-size:20px;font-weight:900}
+.life-skill-kicker{display:block;margin-bottom:6px;color:#6e7a9b;font-size:9px;font-weight:900;letter-spacing:.13em}
+.life-skill-card h3{margin:0 0 7px;color:#0b1b4d;font-size:15px;line-height:1.25}
+.life-skill-card p{margin:0;color:#66718a;font-size:12px;line-height:1.55}
+@media(max-width:900px){.life-skills-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.program-sales-showcase .sales-projects{gap:14px}}
+@media(max-width:650px){.program-sales-showcase .wrap{width:calc(100% - 32px)}.program-sales-showcase .sales-projects{grid-template-columns:1fr;gap:16px}.program-sales-showcase .project-image-wrap{aspect-ratio:16/9}.program-sales-showcase .project-copy{padding:16px}.life-skills-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.life-skill-card{min-height:0;padding:14px 13px;border-radius:15px}.life-skill-card h3{font-size:13px}.life-skill-card p{font-size:11px;line-height:1.5}.life-skill-icon{width:34px;height:34px;margin-bottom:9px}}
+@media(max-width:360px){.life-skills-grid{grid-template-columns:1fr}.life-skill-card{padding:16px}}
+</style>
+<style id="kubiq-v154-shared-program-template">
+/* Shared visual template aligned to Scratch */
+
+:root{--navy:#0B1B4D;--cyan:#00C8FF;--violet:#7B4DFF;--ink:#18213d;--muted:#65708b;--line:#e6eaf5}
+*{box-sizing:border-box}body{margin:0;font-family:Nunito,sans-serif;color:var(--ink);line-height:1.65}a{color:inherit;text-decoration:none}.wrap{width:min(1080px,calc(100% - 40px));margin:auto}
+header{border-bottom:1px solid var(--line);background:#fff}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{font:900 clamp(21px,3vw,30px) Poppins,sans-serif;letter-spacing:-.045em;color:var(--navy);white-space:nowrap}.brand span{color:var(--violet)}.nav a:last-child{font-weight:800;color:var(--navy)}
+.hero{background:radial-gradient(circle at 85% 15%,#7b4dff55,transparent 30%),linear-gradient(125deg,#0B1B4D,#101a52);color:#fff;padding:72px 0 68px}.eyebrow{color:#9cecff;font-size:12px;letter-spacing:.15em;font-weight:900}h1,h2,h3{font-family:Poppins,sans-serif;line-height:1.15}h1{font-size:clamp(36px,6vw,62px);letter-spacing:-.055em;max-width:850px;margin:16px 0}.hero p{font-size:17px;color:#d9e2ff;max-width:780px}.btn{display:inline-flex;padding:14px 20px;border-radius:999px;background:var(--cyan);color:var(--navy);font-weight:900;margin:12px 10px 0 0}.btn-outline{background:#f0f2ff;color:var(--navy)}
+section{padding:64px 0}.intro{max-width:760px;margin-bottom:30px}.intro h2{color:var(--navy);font-size:clamp(27px,4vw,40px);margin:0 0 12px}.intro p{color:var(--muted)}.levels{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.level-card{border:1px solid var(--line);border-radius:22px;padding:26px;background:#fff;box-shadow:0 14px 35px #0b1b4d0b}.level-age{display:inline-block;padding:6px 11px;background:#e9e6ff;border-radius:999px;color:var(--navy);font-weight:900;font-size:12px}.level-card h3{color:var(--navy);font-size:22px;margin:14px 0 8px}.level-card p{color:var(--muted);font-size:14px}.level-tags{padding:12px;background:#f6f8ff;border-radius:12px;color:#364365;font-size:13px;line-height:1.7}.skills{background:#f6f8ff}.skill-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.skill-grid li{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;color:var(--navy);font-weight:800;font-size:13px;list-style:none}.skill-grid{padding:0}.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:28px}.facts div{text-align:center;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px}.facts strong{display:block;color:var(--navy);font:800 18px Poppins}.facts span{font-size:12px;color:var(--muted)}.faq details{border-bottom:1px solid var(--line);padding:17px 0}.faq summary{font-weight:900;color:var(--navy);cursor:pointer}.faq p{color:var(--muted)}.cta{background:#0B1B4D;color:#fff;text-align:center;padding:58px 0}.cta h2{font-size:clamp(26px,4vw,40px);max-width:780px;margin:0 auto 12px}.cta p{color:#d9e2ff;max-width:650px;margin:0 auto}footer{background:#071234;color:#cbd5f5;padding:24px 0;font-size:13px}footer .wrap{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}@media(max-width:760px){.levels{grid-template-columns:1fr}.skill-grid{grid-template-columns:repeat(2,1fr)}.facts{grid-template-columns:repeat(2,1fr)}.hero{padding:54px 0}}
+
+/* KUBIQ V73 — páginas de programa: mundos visuales más vivos y navegación clara */
+.nav{min-height:82px;height:auto;padding:10px 0}.nav a:last-child{font-size:13px;padding:10px 15px;border-radius:999px;background:#f0edff;color:#5532c8;transition:background .2s,transform .2s}.nav a:last-child:hover{background:#e3dcff;transform:translateX(-2px)}
+.hero{position:relative;isolation:isolate;overflow:hidden;background:radial-gradient(circle at 82% 18%,rgba(0,200,255,.30),transparent 24%),radial-gradient(circle at 15% 88%,rgba(123,77,255,.42),transparent 30%),linear-gradient(125deg,#0B1B4D 0%,#172b69 56%,#35216e 100%)}
+.hero:before,.hero:after{content:"";position:absolute;z-index:-1;border:1px solid rgba(255,255,255,.18);border-radius:28px;transform:rotate(28deg);pointer-events:none}.hero:before{width:190px;height:190px;right:8%;top:10%;box-shadow:0 0 0 18px rgba(0,200,255,.045),0 0 0 38px rgba(123,77,255,.04)}.hero:after{width:90px;height:90px;right:27%;bottom:5%;border-color:rgba(0,200,255,.32)}
+.hero .wrap{position:relative}.hero .eyebrow{display:inline-flex;padding:7px 12px;border:1px solid rgba(156,236,255,.28);border-radius:999px;background:rgba(255,255,255,.07)}
+.btn{padding:14px 22px;border-radius:14px;box-shadow:0 9px 22px rgba(0,200,255,.18);transition:transform .2s,box-shadow .2s,background .2s}.btn:hover{transform:translateY(-3px);box-shadow:0 14px 26px rgba(0,200,255,.26)}.btn-outline{background:#f0edff;color:#5634c7;border:1px solid #ded6ff;box-shadow:none}.btn-outline:hover{background:#e6e0ff;box-shadow:0 10px 20px rgba(123,77,255,.15)}
+.level-card{position:relative;overflow:hidden;border:1px solid #e1e6fb;border-radius:24px;background:linear-gradient(155deg,#fff 0%,#f8faff 100%);box-shadow:0 14px 35px rgba(11,27,77,.08);transition:transform .25s,box-shadow .25s}.level-card:before{content:"";position:absolute;left:0;right:0;top:0;height:6px;background:linear-gradient(90deg,#00C8FF,#7B4DFF,#FFC928)}.level-card:hover{transform:translateY(-5px);box-shadow:0 20px 42px rgba(11,27,77,.13)}.level-age{background:#e8f9ff;color:#08799b}.level-card:nth-child(2) .level-age{background:#eee9ff;color:#6845c8}.level-tags{background:linear-gradient(110deg,#eefaff,#f3efff);border:1px solid #e3e9ff;color:#34466e}
+.skill-grid li{position:relative;border-radius:17px;box-shadow:0 8px 22px rgba(11,27,77,.06);transition:transform .2s,box-shadow .2s}.skill-grid li:hover{transform:translateY(-4px);box-shadow:0 13px 27px rgba(11,27,77,.11)}.skill-grid li:nth-child(3n+1){border-top:4px solid #00C8FF}.skill-grid li:nth-child(3n+2){border-top:4px solid #7B4DFF}.skill-grid li:nth-child(3n){border-top:4px solid #FFC928}
+.facts div{background:linear-gradient(150deg,#fff,#f7f8ff);border-color:#e3e8f7;box-shadow:0 8px 22px rgba(11,27,77,.05)}.facts div:nth-child(2n) strong{color:#7049df}.facts div:nth-child(2n+1) strong{color:#078cb2}
+.faq details{padding:18px 16px;border:1px solid #e6eaf5;border-radius:14px;margin:9px 0;background:#fff}.faq summary{list-style:none}.faq summary::-webkit-details-marker{display:none}.faq summary:after{content:"+";float:right;color:#7B4DFF;font-size:21px;line-height:1}.faq details[open] summary:after{content:"−"}.faq details[open]{background:#fafaff;border-color:#dcd5ff}
+.cta{background:radial-gradient(circle at 80% 20%,rgba(0,200,255,.22),transparent 28%),linear-gradient(120deg,#0B1B4D,#251c63)}
+@media(max-width:760px){.nav{min-height:72px}.brand{font-size:23px}.hero:before{right:-45px;top:12%;width:130px;height:130px}.hero:after{right:16%;bottom:3%;width:65px;height:65px}.level-card{padding:22px}.btn{margin-right:6px}}
+@media(prefers-reduced-motion:reduce){.level-card,.skill-grid li,.btn,.nav a:last-child{transition:none!important}.level-card:hover,.skill-grid li:hover,.btn:hover{transform:none}}
+ .program-nav{display:flex;gap:9px;align-items:center}.program-nav a{font-size:12px;font-weight:900;color:#5532c8;text-decoration:none;padding:9px 12px;border-radius:999px;background:#f0edff}.session-length{display:inline-block;margin:8px 0;padding:5px 9px;border-radius:20px;background:#e4f8ff;color:#08799b;font-size:11px;font-weight:900}
+
+.program-hero-gif{display:block;width:clamp(150px,25vw,250px);height:auto;max-height:250px;object-fit:contain;margin:22px 0 0 auto;border-radius:22px;filter:drop-shadow(0 12px 22px rgba(0,0,0,.18))}
+.level-card .python-advanced-gif{display:block;width:min(100%,210px);height:auto;max-height:210px;object-fit:contain;margin:14px auto 0;border-radius:16px}
+.level-card .btn-outline{display:inline-flex;align-items:center;justify-content:center}
+@media(max-width:650px){.program-hero-gif{margin:20px auto 0;width:min(65vw,220px)}}
+
+
+/* Habilidades fuera de pantalla: tarjetas visuales, sin carrusel */
+.skills.skills-benefits{background:linear-gradient(135deg,#eefaff 0%,#f4f0ff 55%,#fff8e8 100%);padding:54px 0 58px}
+.skills-benefits .intro{max-width:900px;text-align:center;margin:0 auto 24px}
+.skills-benefits .intro h2{font-size:clamp(26px,3.4vw,38px);letter-spacing:-.035em}
+.skills-benefits .intro p{max-width:720px;margin:0 auto;color:#647293}
+.sales-benefit-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:22px 0 0}
+.sales-benefit{position:relative;isolation:isolate;min-height:210px;overflow:hidden;padding:24px 23px 26px;border:1px solid rgba(123,77,255,.16);border-radius:24px;background:#fff;box-shadow:0 13px 28px rgba(11,27,77,.07);transition:transform .25s ease,box-shadow .25s ease}
+.sales-benefit:hover{transform:translateY(-7px) rotate(-.4deg);box-shadow:0 20px 38px rgba(11,27,77,.13)}
+.sales-benefit:after{content:"";position:absolute;z-index:-1;width:150px;height:150px;right:-54px;bottom:-70px;border-radius:50%;background:rgba(255,255,255,.45)}
+.benefit-creative{background:linear-gradient(145deg,#effbff,#e7f5ff 58%,#f0eaff)}.benefit-logic{background:linear-gradient(145deg,#f3edff,#f1edff 55%,#e8faff)}.benefit-confidence{background:linear-gradient(145deg,#fff8e7,#fff2d6 60%,#f4eaff)}
+.benefit-icon{display:grid;place-items:center;width:48px;height:48px;border-radius:16px;background:#fff;color:#7548f6;font-size:25px;font-weight:1000;box-shadow:0 6px 15px rgba(11,27,77,.08);margin-bottom:13px}.benefit-logic .benefit-icon{color:#0797bd}.benefit-confidence .benefit-icon{color:#d58a00}
+.benefit-kicker{display:block;margin-bottom:5px;color:#7650e8;font-size:10px;font-weight:1000;letter-spacing:.14em}.benefit-logic .benefit-kicker{color:#0787a8}.benefit-confidence .benefit-kicker{color:#a56a00}
+.sales-benefit strong{display:block;color:var(--navy);font:800 19px Poppins,sans-serif;letter-spacing:-.025em}.sales-benefit p{margin:9px 0 0;color:#52617f;font-size:14px;line-height:1.65;max-width:34ch}.benefit-spark{position:absolute;right:19px;top:15px;color:#8c70ff;font-size:32px;opacity:.7}
+@media(max-width:760px){.sales-benefit-row{grid-template-columns:1fr;gap:12px}.sales-benefit{min-height:0;padding:20px}.sales-benefit p{max-width:48ch}}
+
+
+.brand-header-logo{display:block;width:245px;max-width:48vw;height:auto;object-fit:contain}@media(max-width:560px){.brand-header-logo{width:170px}.nav{flex-wrap:wrap;gap:8px}.program-nav{width:100%;padding-bottom:5px}.program-nav a{flex:1;text-align:center}}
+
+.level-card{display:flex;flex-direction:column;align-items:stretch}.level-card .btn{align-self:center!important;justify-content:center!important;margin:18px auto 0!important;min-width:250px;text-align:center}
+.program-nav a:last-child{background:#00c8ff;color:#0b1b4d}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(220px,34%);column-gap:34px;align-items:center}
+.hero .eyebrow,.hero h1,.hero p{grid-column:1}.hero .program-hero-gif{grid-column:2;grid-row:1 / span 3;align-self:center;justify-self:center;width:min(100%,320px);max-height:320px;margin:0!important;object-fit:contain}
+.hero .btn{grid-column:1;justify-self:start;margin:8px 10px 0 0}
+@media(max-width:700px){.hero .wrap{display:flex;flex-direction:column;align-items:flex-start}.hero .program-hero-gif{order:2;align-self:center;margin:16px auto!important;width:min(68vw,240px)}.hero .btn{order:3;align-self:stretch;text-align:center}.level-card .btn{min-width:0;width:min(100%,280px)}}
+
+/* V82 — identidad visual del programa alineada con el texto */
+.hero.program-hero-split .program-hero-layout{display:grid!important;grid-template-columns:minmax(0,1.15fr) minmax(260px,.85fr)!important;gap:36px!important;align-items:center!important}
+.program-hero-copy{min-width:0}.program-hero-copy h1{max-width:760px}.program-hero-copy p{max-width:760px}.program-hero-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}.program-hero-actions .btn{margin:8px 0 0!important}
+.program-hero-visual{display:flex;align-items:center;justify-content:center;min-width:0;background:#fff;border:1px solid rgba(255,255,255,.55);border-radius:28px;padding:14px;box-shadow:0 18px 42px rgba(0,0,0,.18)}
+.program-hero-image{display:block;width:100%;max-width:440px;max-height:390px;aspect-ratio:1/1;object-fit:contain;border-radius:18px}
+@media(max-width:760px){.hero.program-hero-split .program-hero-layout{grid-template-columns:1fr!important;gap:20px!important}.program-hero-visual{width:min(100%,390px);justify-self:center;padding:10px}.program-hero-image{max-height:310px}.program-hero-actions{display:grid;grid-template-columns:1fr}.program-hero-actions .btn{width:100%;justify-content:center;text-align:center}}
+
+.session-length{display:inline-flex;flex-wrap:wrap;background:#f0edff;color:#6140ce;border-radius:999px;padding:7px 12px;font-size:12px;font-weight:800}.program-enroll{padding:64px 0;background:linear-gradient(135deg,#f3f8ff,#f5f0ff)}.program-enroll-form{display:grid;margin-inline:auto;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;max-width:850px;padding:24px;background:#fff;border:1px solid #dfe5f5;border-radius:22px;box-shadow:0 16px 40px #0b1b4d12}.program-enroll-form label{display:flex;flex-direction:column;gap:7px;color:#0b1b4d;font-size:13px;font-weight:800}.program-enroll-form input,.program-enroll-form select,.program-enroll-form textarea{width:100%;border:1px solid #dce4f2;border-radius:12px;padding:12px;font:inherit;color:#0b1b4d;background:#fbfcff}.program-enroll-form .full{grid-column:1/-1}.program-enroll-form button{grid-column:1/-1;justify-self:center;min-width:260px}.program-enroll{scroll-margin-top:30px}@media(max-width:650px){.program-enroll-form{grid-template-columns:1fr;padding:16px}.program-enroll-form .full,.program-enroll-form button{grid-column:1}.program-enroll-form button{width:100%;min-width:0}}
+.program-preferences{border:1px solid #e0e6f5;border-radius:14px;padding:13px 15px;margin:0}.program-preferences legend{padding:0 5px;color:#0b1b4d;font-size:13px;font-weight:850}.program-day-options{display:flex;flex-wrap:wrap;gap:8px 14px}.program-day-options label{display:inline-flex;align-items:center;gap:6px;font-size:13px}.program-day-options input{width:auto;accent-color:#7548f6}.program-enroll-form select{min-height:45px}
+
+
+
+.program-sales-showcase{overflow:hidden;background:radial-gradient(circle at 8% 12%,rgba(0,200,255,.09),transparent 26%),radial-gradient(circle at 94% 45%,rgba(123,77,255,.10),transparent 28%),linear-gradient(180deg,#f8fbff 0%,#fff 100%);}
+.program-sales-showcase .wrap{max-width:1120px}
+.sales-head{max-width:850px;margin:0 auto 34px;text-align:center}
+.sales-head .eyebrow,.sales-mini-label{display:inline-flex;align-items:center;gap:7px;padding:7px 12px;border-radius:999px;background:#e9faff;color:#0784a8;font-size:11px;font-weight:1000;letter-spacing:.13em}
+.sales-head h2{font-size:clamp(28px,4vw,43px);color:var(--navy);margin:15px 0 12px;letter-spacing:-.04em}
+.sales-head p{max-width:740px;margin:0 auto;color:#5e6b8c;font-size:clamp(15px,1.7vw,18px)}
+.sales-benefit-intro{text-align:center;margin:30px auto 18px}.sales-benefit-intro h3,.sales-project-heading h3{font:800 clamp(22px,3vw,30px) Poppins,sans-serif;color:var(--navy);margin:10px 0 6px;letter-spacing:-.035em}.sales-benefit-intro p,.sales-project-heading p{color:#687695;margin:0;font-size:15px}
+.sales-benefit-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:22px 0 48px}
+.sales-benefit{position:relative;isolation:isolate;min-height:220px;overflow:hidden;padding:24px 23px 26px;border:1px solid rgba(123,77,255,.16);border-radius:24px;background:#fff;box-shadow:0 13px 28px rgba(11,27,77,.07);transition:transform .25s ease,box-shadow .25s ease}
+.sales-benefit:hover{transform:translateY(-7px) rotate(-.4deg);box-shadow:0 20px 38px rgba(11,27,77,.13)}
+.sales-benefit:after{content:"";position:absolute;z-index:-1;width:150px;height:150px;right:-54px;bottom:-70px;border-radius:50%;background:rgba(255,255,255,.45)}
+.benefit-creative{background:linear-gradient(145deg,#effbff,#e7f5ff 58%,#f0eaff)}.benefit-logic{background:linear-gradient(145deg,#f3edff,#f1edff 55%,#e8faff)}.benefit-confidence{background:linear-gradient(145deg,#fff8e7,#fff2d6 60%,#f4eaff)}
+.benefit-icon{display:grid;place-items:center;width:48px;height:48px;border-radius:16px;background:#fff;color:#7548f6;font-size:25px;font-weight:1000;box-shadow:0 6px 15px rgba(11,27,77,.08);margin-bottom:13px}.benefit-logic .benefit-icon{color:#0797bd}.benefit-confidence .benefit-icon{color:#d58a00}
+.benefit-kicker,.project-number{display:block;margin-bottom:5px;color:#7650e8;font-size:10px;font-weight:1000;letter-spacing:.14em}.benefit-logic .benefit-kicker{color:#0787a8}.benefit-confidence .benefit-kicker{color:#a56a00}
+.sales-benefit strong{display:block;color:var(--navy);font:800 19px Poppins,sans-serif;letter-spacing:-.025em}.sales-benefit p{margin:9px 0 0;color:#52617f;font-size:14px;line-height:1.65;max-width:32ch}.benefit-spark{position:absolute;right:19px;top:15px;color:#8c70ff;font-size:32px;opacity:.7}
+.sales-project-heading{text-align:center;margin:0 auto 16px}.sales-project-heading h3{margin-top:10px}.sales-projects:focus-visible{outline:3px solid #00c8ff;outline-offset:4px}
+.sales-projects{display:grid;grid-auto-columns:minmax(260px,1fr);grid-auto-flow:column;gap:18px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:8px 3px 22px;scrollbar-width:thin;scrollbar-color:#a995ff #edf0fb}
+.sales-project{min-width:0;overflow:hidden;scroll-snap-align:start;border:1px solid #e2e5fb;border-radius:24px;background:#fff;box-shadow:0 12px 28px rgba(11,27,77,.08);transition:transform .25s ease,box-shadow .25s ease}.sales-project:hover{transform:translateY(-6px);box-shadow:0 20px 38px rgba(11,27,77,.14)}
+.project-image-wrap{position:relative;height:190px;overflow:hidden;background:linear-gradient(135deg,#e9f8ff,#f1eaff)}.project-image-wrap img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .45s ease}.sales-project:hover .project-image-wrap img{transform:scale(1.06)}.project-chip{position:absolute;left:13px;bottom:12px;padding:7px 10px;border-radius:999px;background:rgba(11,27,77,.86);color:#fff;font-size:9px;font-weight:1000;letter-spacing:.1em;backdrop-filter:blur(8px)}
+.project-copy{padding:18px 19px 21px}.project-number{color:#0b9abb}.project-copy strong{display:block;color:var(--navy);font:800 18px Poppins,sans-serif;line-height:1.25}.project-copy p{margin:8px 0 0;color:#61708f;font-size:14px;line-height:1.6}
+.sales-trustline{margin:20px auto 0;max-width:850px;text-align:center;color:#63708e;font-size:13px}.sales-cta-inline{text-align:center;margin-top:18px}.sales-cta-inline a{display:inline-flex;padding:13px 20px;border-radius:14px;background:#e9e4ff;color:#5533c8;font-weight:900;transition:transform .2s,background .2s}.sales-cta-inline a:hover{transform:translateY(-2px);background:#ded5ff}
+@media(min-width:900px){.sales-projects{grid-auto-columns:calc((100% - 36px)/3);overflow-x:auto}.sales-projects::-webkit-scrollbar{height:7px}}
+@media(max-width:760px){.sales-benefit-row{grid-template-columns:1fr;gap:12px;margin-bottom:34px}.sales-benefit{min-height:0;padding:20px}.sales-benefit p{max-width:48ch}.sales-projects{grid-auto-columns:minmax(78%,330px)}.project-image-wrap{height:180px}.sales-head{text-align:left}.sales-head p{margin:0}}
+@media(prefers-reduced-motion:reduce){.sales-benefit,.sales-project,.project-image-wrap img{transition:none}.sales-projects{scroll-behavior:auto}}
+
+
+/* KUBIQ V137 · Mobile-first polish. All rules are intentionally mobile-only. */
+@media (max-width:760px){
+  :root{scroll-padding-top:82px;--kubiq-mobile-gutter:clamp(18px,5vw,26px)}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+  body{overflow-x:hidden;padding-bottom:calc(82px + env(safe-area-inset-bottom,0px))}
+  main,section,header,footer{min-width:0}
+  img,video,svg{max-width:100%}
+  p,li,a,button,h1,h2,h3,h4{overflow-wrap:break-word}
+  a,button,[role="button"],summary{-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+  a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid rgba(0,200,255,.8)!important;outline-offset:3px!important}
+  section[id]{scroll-margin-top:84px}
+  .wrap{width:calc(100% - 2 * var(--kubiq-mobile-gutter))!important;max-width:100%!important}
+  .section,.schedule-section,.faq-section,.final-cta,.certificate-section,.kids-showcase,.v78-reviews{padding-top:clamp(42px,9vw,64px)!important;padding-bottom:clamp(42px,9vw,64px)!important}
+  .section-intro{margin-bottom:22px!important}
+  .section-title,h1{font-size:clamp(29px,8vw,42px)!important;line-height:1.08!important;letter-spacing:-.04em!important;text-wrap:balance}
+  h2,h3{ text-wrap:balance }
+  p{line-height:1.65}
+  .btn,.course-more,.course-open,.session-calendar-link,.faq-contact,.v85-mission-cta .btn{min-height:48px}
+  .btn{padding:13px 20px!important;white-space:normal;line-height:1.25!important}
+  input,select,textarea{font-size:16px!important;min-height:48px;max-width:100%}
+  .course-modal,.enroll-dialog{width:calc(100vw - 20px)!important;max-width:calc(100vw - 20px)!important;max-height:88svh!important;overflow:auto!important;border-radius:22px!important}
+  .course-modal-body,.enroll-form{padding:18px!important}
+  .course-modal-actions,.enroll-submit-wrap{display:grid!important;grid-template-columns:1fr!important;gap:10px!important}
+  .course-modal-actions>*{width:100%!important}
+  .creator-quiz-option{min-height:54px!important;padding:15px 16px!important;border-radius:16px!important}
+  .mission-track,.v91-review-track{scroll-snap-type:x mandatory!important;scroll-padding-inline:var(--kubiq-mobile-gutter)!important;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;scrollbar-width:none!important}
+  .mission-track::-webkit-scrollbar,.v91-review-track::-webkit-scrollbar{display:none}
+  .mission-track>.v71-mission-card,.v91-review-card{scroll-snap-align:center!important}
+  .v91-review-track{grid-auto-columns:minmax(0,88%)!important;padding:8px 2px 18px!important}
+  .v91-review-card{min-height:0!important;height:100%;box-shadow:0 10px 26px rgba(11,27,77,.07)!important}
+  .v91-review-controls{padding:4px 0 0}
+  .v91-review-arrow{width:46px!important;height:46px!important}
+  .v91-review-dots button{width:10px!important;height:10px!important}
+  .v91-review-dots button.is-active{width:26px!important}
+  .faq-item{border-radius:18px!important;margin-bottom:12px!important}
+  .faq-item summary{min-height:68px!important;padding:18px 20px!important;gap:14px}
+  .faq-answer{padding:0 20px 20px!important;line-height:1.7}
+  .contact-grid,.contact-channels{grid-template-columns:1fr!important}
+  .contact-panel,.contact-booking-panel{border-radius:22px!important;padding:20px!important}
+  footer{padding-bottom:calc(28px + env(safe-area-inset-bottom,0px))!important}
+  footer .footer-logo-lockup{max-width:min(100%,390px)!important}
+  .mobile-action-dock{position:fixed;z-index:999;left:12px;right:12px;bottom:calc(10px + env(safe-area-inset-bottom,0px));display:grid;grid-template-columns:1fr 1fr;gap:9px;padding:8px;border:1px solid rgba(255,255,255,.72);border-radius:20px;background:rgba(255,255,255,.9);box-shadow:0 10px 35px rgba(7,18,52,.22);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);transition:transform .25s ease,opacity .25s ease}
+  .mobile-action-dock a{display:flex;align-items:center;justify-content:center;min-height:48px;padding:10px 12px;border-radius:14px;text-decoration:none;font-size:14px;font-weight:850;line-height:1.15;text-align:center}
+  .mobile-action-dock a:first-child{background:#0b1b4d;color:#fff}
+  .mobile-action-dock a:last-child{background:linear-gradient(110deg,#5b37e8,#7b4dff);color:#fff}
+  .mobile-action-dock.is-hidden{opacity:0;transform:translateY(130%);pointer-events:none}
+  body.mobile-dialog-open .mobile-action-dock{opacity:0;pointer-events:none}
+}
+@media(max-width:390px){
+  .mobile-action-dock{left:9px;right:9px;gap:7px;padding:7px}
+  .mobile-action-dock a{font-size:13px;min-height:46px;padding:9px 7px}
+}
+@media(prefers-reduced-motion:reduce) and (max-width:760px){html{scroll-behavior:auto}.mobile-action-dock{transition:none!important}}
+
+
+
+/* V142: mobile QA consolidation. Desktop is deliberately untouched. */
+.mobile-action-dock{display:none}
+@media screen and (max-width:760px){
+  html,body{width:100%;max-width:100%;overflow-x:clip}
+  body{padding-bottom:calc(88px + env(safe-area-inset-bottom,0px))}
+  .mobile-action-dock{display:grid;position:fixed;z-index:1500;left:max(10px,env(safe-area-inset-left,0px));right:max(10px,env(safe-area-inset-right,0px));bottom:calc(9px + env(safe-area-inset-bottom,0px));grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:8px;border:1px solid rgba(255,255,255,.82);border-radius:19px;background:rgba(255,255,255,.94);box-shadow:0 8px 28px rgba(7,18,52,.2);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+  .mobile-action-dock a{display:flex;min-width:0;min-height:48px;align-items:center;justify-content:center;padding:10px 8px;border-radius:13px;text-align:center;text-decoration:none;font:800 13px/1.2 Nunito,Arial,sans-serif;overflow-wrap:anywhere}
+  .mobile-action-dock a:first-child{background:#0b1b4d;color:#fff}
+  .mobile-action-dock a:last-child{background:linear-gradient(110deg,#5b37e8,#7b4dff);color:#fff}
+  .mobile-action-dock.is-hidden{opacity:0;transform:translateY(130%);pointer-events:none}
+  body.mobile-dialog-open .mobile-action-dock,body.mobile-form-focus .mobile-action-dock{opacity:0;pointer-events:none;transform:translateY(130%)}
+  main,section,header,footer,.wrap,.container{min-width:0;max-width:100%}
+  img,video,iframe{max-width:100%}
+  input,select,textarea{font-size:16px!important;max-width:100%}
+  button,a,[role=button],summary{touch-action:manipulation}
+  .course-modal,.enroll-dialog,.trial-dialog{width:calc(100% - 20px)!important;max-width:calc(100% - 20px)!important;max-height:calc(100dvh - 24px)!important;max-height:calc(100svh - 24px)!important;overflow:auto!important;overscroll-behavior:contain}
+  .course-modal-backdrop,.enroll-backdrop,.trial-backdrop{padding:10px!important;align-items:center!important}
+  .course-modal-actions,.enroll-submit-wrap{grid-template-columns:minmax(0,1fr)!important}
+  .course-modal-actions>*{min-width:0;width:100%!important}
+  .payment-choices{grid-template-columns:1fr!important}
+  .trial-weekdays,.trial-calendar-grid{gap:3px!important}
+  .trial-day{min-width:0;min-height:38px!important}
+  .status-proof-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  .status-proof-grid>div:last-child:nth-child(odd){grid-column:1/-1}
+  .mobile-action-dock a:focus-visible{outline:3px solid #00c8ff;outline-offset:3px}
+}
+@media screen and (max-width:390px){
+  .mobile-action-dock{left:8px;right:8px;gap:6px;padding:7px}
+  .mobile-action-dock a{font-size:12px;min-height:46px;padding:9px 6px}
+}
+@media(prefers-reduced-motion:reduce){
+  @media screen and (max-width:760px){html{scroll-behavior:auto}.mobile-action-dock{transition:none!important}}
+}
+
+
+/* Estructura uniforme y legible para Roblox, Python y Scratch */
+.program-sales-showcase{padding:clamp(48px,6vw,82px) 0;overflow:hidden}
+.program-sales-showcase .wrap{width:min(1120px,calc(100% - 40px));margin-inline:auto}
+.program-sales-showcase .sales-head{max-width:850px;margin:0 auto 34px;text-align:center}
+.program-sales-showcase .sales-head h2{line-height:1.12;text-wrap:balance;margin:12px 0}
+.program-sales-showcase .sales-head p,.sales-project-heading p{line-height:1.7}
+.program-sales-showcase .sales-project-heading{max-width:850px;margin:0 auto 22px;text-align:center}
+.program-sales-showcase .sales-projects{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;overflow:visible;padding:0}
+.program-sales-showcase .sales-project{min-width:0;display:flex;flex-direction:column;overflow:hidden;border:1px solid #e3eaf8;border-radius:22px;background:#fff;box-shadow:0 12px 30px rgba(11,27,77,.08)}
+.program-sales-showcase .project-image-wrap{position:relative;aspect-ratio:16/10;overflow:hidden;background:#eef3ff}
+.program-sales-showcase .project-image-wrap img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+.program-sales-showcase .project-copy{padding:18px 20px 22px}
+.program-sales-showcase .project-copy strong{display:block;color:#0b1b4d;font-size:18px;line-height:1.25;margin:6px 0 9px}
+.program-sales-showcase .project-copy p{margin:0;color:#59647e;font-size:14px;line-height:1.6}
+.program-sales-showcase .sales-trustline{max-width:850px;margin:28px auto 0;text-align:center;line-height:1.65}
+.skills-transfer{padding:clamp(48px,6vw,76px) 0;background:linear-gradient(180deg,#f8faff,#fff)}
+.skills-transfer .intro{max-width:850px;margin:0 auto 28px;text-align:center}
+.life-skills-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.life-skill-card{min-width:0;min-height:190px;padding:19px 18px;border:1px solid #e2e8f6;border-radius:18px;background:linear-gradient(145deg,#fff,#f8faff);box-shadow:0 8px 22px rgba(11,27,77,.055)}
+.life-skill-icon{display:grid;place-items:center;width:38px;height:38px;margin-bottom:12px;border-radius:12px;background:#f0edff;color:#7048e8;font-size:20px;font-weight:900}
+.life-skill-kicker{display:block;margin-bottom:6px;color:#6e7a9b;font-size:9px;font-weight:900;letter-spacing:.13em}
+.life-skill-card h3{margin:0 0 7px;color:#0b1b4d;font-size:15px;line-height:1.25}
+.life-skill-card p{margin:0;color:#66718a;font-size:12px;line-height:1.55}
+@media(max-width:900px){.life-skills-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.program-sales-showcase .sales-projects{gap:14px}}
+@media(max-width:650px){.program-sales-showcase .wrap{width:calc(100% - 32px)}.program-sales-showcase .sales-projects{grid-template-columns:1fr;gap:16px}.program-sales-showcase .project-image-wrap{aspect-ratio:16/9}.program-sales-showcase .project-copy{padding:16px}.life-skills-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.life-skill-card{min-height:0;padding:14px 13px;border-radius:15px}.life-skill-card h3{font-size:13px}.life-skill-card p{font-size:11px;line-height:1.5}.life-skill-icon{width:34px;height:34px;margin-bottom:9px}}
+@media(max-width:360px){.life-skills-grid{grid-template-columns:1fr}.life-skill-card{padding:16px}}
+
+
+/* V138: fix mobile benefit/review carousel — cards must use readable full-width columns */
+@media (max-width:760px){
+  .v91-reviews-shell{width:100%;max-width:100%;min-width:0;overflow:hidden}
+  .v91-review-track{
+    display:flex!important;
+    flex-flow:row nowrap!important;
+    align-items:stretch!important;
+    width:100%!important;
+    max-width:100%!important;
+    min-width:0!important;
+    grid-template-columns:none!important;
+    grid-auto-columns:unset!important;
+    grid-auto-flow:unset!important;
+    gap:14px!important;
+    overflow-x:auto!important;
+    overflow-y:hidden!important;
+    padding:8px 4px 20px!important;
+    box-sizing:border-box!important;
+    scroll-snap-type:x mandatory!important;
+    scroll-padding-inline:4px!important;
+    -webkit-overflow-scrolling:touch!important;
+  }
+  .v91-review-track>.v91-review-card{
+    display:flex!important;
+    flex:0 0 88%!important;
+    width:88%!important;
+    min-width:88%!important;
+    max-width:88%!important;
+    box-sizing:border-box!important;
+    white-space:normal!important;
+    overflow-wrap:break-word!important;
+    word-break:normal!important;
+    scroll-snap-align:center!important;
+    padding:20px!important;
+  }
+  .v91-review-card h3,.v91-review-card p{
+    width:100%!important;
+    max-width:100%!important;
+    white-space:normal!important;
+    word-break:normal!important;
+    overflow-wrap:break-word!important;
+    writing-mode:horizontal-tb!important;
+  }
+}
+
+
+.sales-benefit-intro{text-align:center;margin:30px auto 18px}.skills-takeaways .sales-benefit-row{margin-bottom:24px}.skills-transfer .intro{max-width:850px;margin:0 auto;text-align:center}
+@media(max-width:760px){.sales-benefit-row{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:14px!important;margin:20px 0 28px!important}.sales-benefit{width:100%;min-width:0;min-height:0;padding:21px!important;border-radius:20px}.sales-benefit strong{display:block;line-height:1.25}.sales-benefit p{line-height:1.55}.sales-benefit-intro{margin:18px auto 14px}.program-hero-image{max-width:min(78vw,330px);height:auto}}
+
+
+@media screen and (max-width:760px){
+  .program-enroll-form{
+    width:100%;
+    margin-inline:auto!important;
+  }
+  .program-enroll-form > button[type="submit"]{
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    justify-self:stretch!important;
+    align-self:center!important;
+    width:100%!important;
+    max-width:100%!important;
+    min-width:0!important;
+    margin:0!important;
+    padding:15px 18px!important;
+    box-sizing:border-box!important;
+    text-align:center!important;
+    line-height:1.25!important;
+    transform:none!important;
+  }
+}
+
+
+.program-hero-visual{background:transparent!important;box-shadow:none!important;border:0!important}
+.program-hero-image{background:transparent!important;mix-blend-mode:normal!important;object-fit:contain!important;filter:drop-shadow(0 14px 22px rgba(11,27,77,.18))}
+
+.program-nav{display:flex!important;align-items:center!important;justify-content:flex-end!important;gap:10px!important;flex-wrap:wrap!important}
+.program-nav a{display:inline-flex!important;align-items:center!important;justify-content:center!important;text-align:center!important;min-height:42px!important;padding:10px 16px!important;line-height:1.2!important;white-space:nowrap!important;border-radius:999px!important}
+.program-enroll-form button[type=submit],#programEnrollForm button[type=submit],form button[type=submit]{display:flex!important;align-items:center!important;justify-content:center!important;text-align:center!important;line-height:1.2!important}
+@media(max-width:760px){.program-nav{gap:7px!important}.program-nav a{min-height:38px!important;padding:8px 12px!important;font-size:12px!important}}
+</style>
+<style id="kubiq-v155-project-card-fit">
+/* V155: project cards size to their own content on every screen. */
+.program-sales-showcase .sales-projects{align-items:start!important;grid-auto-rows:max-content!important;grid-auto-flow:row!important}
+.program-sales-showcase .sales-project{height:auto!important;min-height:0!important;align-self:start!important;flex:0 0 auto!important}
+.program-sales-showcase .project-image-wrap{height:auto!important;aspect-ratio:16/10!important;flex:0 0 auto!important}
+.program-sales-showcase .project-image-wrap img{display:block;width:100%;height:100%;object-fit:cover}
+.program-sales-showcase .project-copy{height:auto!important;min-height:0!important;flex:0 0 auto!important;align-self:stretch}
+.program-sales-showcase .project-copy p{margin:8px 0 0}
+@media(max-width:650px){
+ .program-sales-showcase .sales-projects{display:grid!important;grid-template-columns:minmax(0,1fr)!important;grid-auto-rows:max-content!important;align-items:start!important;gap:14px!important}
+ .program-sales-showcase .sales-project{width:100%!important;max-width:100%!important;height:auto!important;min-height:0!important}
+ .program-sales-showcase .project-image-wrap{aspect-ratio:16/9!important;height:auto!important}
+ .program-sales-showcase .project-copy{padding:15px 16px 17px!important}
+ .program-sales-showcase .project-copy strong{font-size:17px!important;line-height:1.25!important;margin:5px 0 7px!important}
+ .program-sales-showcase .project-copy p{font-size:14px!important;line-height:1.55!important}
+}
+</style>
+<style id="kubiq-v157-project-carousel-mobile-fix">
+/* V157: project cards use intrinsic height and a horizontal mobile carousel. */
+.program-sales-showcase .sales-projects{
+  display:grid!important; grid-template-columns:repeat(3,minmax(0,1fr));
+  grid-auto-flow:row; grid-auto-rows:max-content; align-items:start; align-content:start;
+  height:auto!important; min-height:0!important;
+}
+.program-sales-showcase .sales-project{
+  display:flex!important; flex-direction:column!important; justify-content:flex-start!important;
+  align-self:start!important; height:auto!important; min-height:0!important;
+  max-height:none!important; box-sizing:border-box!important;
+}
+.program-sales-showcase .project-image-wrap{
+  width:100%!important; height:auto!important; aspect-ratio:16/9!important;
+  flex:0 0 auto!important;
+}
+.program-sales-showcase .project-copy{
+  display:block!important; height:auto!important; min-height:0!important;
+  flex:0 0 auto!important; margin:0!important;
+}
+.program-sales-showcase .project-copy strong,.program-sales-showcase .project-copy p{
+  height:auto!important; min-height:0!important;
+}
+@media(max-width:650px){
+  .program-sales-showcase .sales-projects{
+    display:grid!important; grid-template-columns:none!important;
+    grid-auto-flow:column!important; grid-auto-columns:minmax(82%,330px)!important;
+    grid-auto-rows:max-content!important; align-items:start!important; align-content:start!important;
+    gap:14px!important; width:100%!important; height:auto!important; min-height:0!important;
+    overflow-x:auto!important; overflow-y:hidden!important;
+    padding:8px 4px 18px!important; box-sizing:border-box!important;
+    scroll-snap-type:x mandatory!important; scroll-padding-inline:4px!important;
+    -webkit-overflow-scrolling:touch!important; overscroll-behavior-x:contain!important;
+  }
+  .program-sales-showcase .sales-project{
+    width:auto!important; min-width:0!important; max-width:none!important;
+    height:auto!important; min-height:0!important; align-self:start!important;
+    scroll-snap-align:start!important;
+  }
+  .program-sales-showcase .project-image-wrap{aspect-ratio:16/9!important;height:auto!important}
+  .program-sales-showcase .project-image-wrap img{width:100%!important;height:100%!important;object-fit:cover!important}
+  .program-sales-showcase .project-copy{padding:15px 16px 17px!important}
+  .program-sales-showcase .project-copy strong{font-size:17px!important;line-height:1.25!important;margin:5px 0 7px!important}
+  .program-sales-showcase .project-copy p{font-size:14px!important;line-height:1.55!important;margin:0!important}
+}
+</style>
+<style id="kubiq-v158-refinements">
+/* KUBIQ V158: desktop skills carousel + refined program navigation */
+@media (min-width: 901px){
+ .skills-transfer .life-skills-grid{display:flex!important;flex-wrap:nowrap!important;gap:16px!important;overflow-x:auto!important;overflow-y:hidden!important;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:10px 4px 22px!important;scrollbar-width:none;}
+ .skills-transfer .life-skills-grid::-webkit-scrollbar{display:none}
+ .skills-transfer .life-skill-card{flex:0 0 calc((100% - 48px)/4)!important;min-height:190px;scroll-snap-align:start;}
+ .skills-transfer .skills-carousel-controls{display:flex;justify-content:flex-end;gap:10px;margin:0 4px 8px}
+ .skills-transfer .skills-carousel-controls button{width:42px;height:42px;border:1px solid rgba(11,27,77,.14);border-radius:50%;background:#fff;color:#0b1b4d;font-size:22px;line-height:1;display:grid;place-items:center;cursor:pointer;box-shadow:0 6px 16px rgba(11,27,77,.08);transition:transform .2s,background .2s}
+ .skills-transfer .skills-carousel-controls button:hover{background:#eefaff;transform:translateY(-2px)}
+}
+.program-nav{display:flex!important;align-items:center!important;justify-content:flex-end;gap:12px!important;flex-wrap:wrap}
+.program-nav a{display:inline-flex!important;align-items:center;justify-content:center;min-height:44px;padding:11px 19px!important;border:1px solid transparent;border-radius:999px!important;font-family:Nunito,sans-serif;font-size:14px!important;font-weight:900!important;line-height:1.15;text-decoration:none!important;white-space:nowrap;box-shadow:0 5px 14px rgba(11,27,77,.07);transition:transform .2s,box-shadow .2s,background .2s}
+.program-nav a:first-child{background:#f0edff!important;color:#5634c8!important;border-color:#e5ddff}
+.program-nav a:last-child{background:linear-gradient(110deg,#00c8ff,#62dcff)!important;color:#0b1b4d!important;border-color:rgba(0,200,255,.35)}
+.program-nav a:hover{transform:translateY(-2px);box-shadow:0 9px 20px rgba(11,27,77,.13)}
+@media(max-width:760px){.program-nav{gap:8px!important}.program-nav a{min-height:40px;padding:9px 13px!important;font-size:12px!important}}
+@media(prefers-reduced-motion:reduce){.skills-transfer .life-skills-grid{scroll-behavior:auto}.program-nav a{transition:none}}
+
+/* KUBIQ V161: jerarquía visual de niveles y navegación de programas */
+.level-route-intro{max-width:900px!important;margin:0 auto 34px!important;text-align:center!important}
+.level-route-intro .eyebrow{display:block;text-align:center!important;margin:0 auto 12px!important}
+.level-route-intro h2{max-width:850px;margin:0 auto 14px!important;text-align:center!important}
+.level-route-intro p{max-width:760px;margin:0 auto!important;text-align:center!important}
+.program-nav{gap:12px!important;justify-content:flex-end!important}
+.program-nav a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:11px 20px!important;border:1px solid rgba(123,77,255,.18);border-radius:999px!important;font-size:13px!important;font-weight:900!important;letter-spacing:.01em;line-height:1.15;text-decoration:none!important;white-space:nowrap;box-shadow:0 5px 14px rgba(11,27,77,.08);transition:transform .2s ease,box-shadow .2s ease,background .2s ease!important}
+.program-nav a:first-child{background:#f0edff!important;color:#5532c8!important}
+.program-nav a:last-child{background:linear-gradient(110deg,#00c8ff,#62e2f5)!important;color:#0b1b4d!important;border-color:rgba(0,200,255,.45)!important}
+.program-nav a:hover{transform:translateY(-2px);box-shadow:0 9px 20px rgba(11,27,77,.14)}
+@media(max-width:700px){.level-route-intro{padding-inline:8px!important;margin-bottom:24px!important}.level-route-intro h2{font-size:clamp(26px,7vw,34px)!important}.program-nav{justify-content:flex-end!important;gap:8px!important}.program-nav a{flex:0 1 auto!important;min-height:40px;padding:9px 13px!important;font-size:12px!important}}
+@media(prefers-reduced-motion:reduce){.program-nav a{transition:none!important}}
+
+</style>
+<style id="kubiq-v164-program-header-fix">
+/* V164: consistent, balanced program navigation across Scratch, Roblox and Python. */
+header .nav{display:flex!important;align-items:center!important;justify-content:space-between!important;gap:22px!important;flex-wrap:nowrap!important;min-height:88px!important}
+header .brand{display:flex!important;align-items:center!important;flex:0 1 auto!important;min-width:0!important}
+header .brand-header-logo{display:block!important;width:220px!important;max-width:38vw!important;height:auto!important;object-fit:contain!important}
+header .program-nav{display:flex!important;align-items:center!important;justify-content:flex-end!important;gap:12px!important;flex:0 0 auto!important;flex-wrap:nowrap!important;width:auto!important;padding:0!important}
+header .program-nav a{box-sizing:border-box!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;min-height:44px!important;padding:10px 19px!important;margin:0!important;border-radius:999px!important;font-family:Nunito,sans-serif!important;font-size:14px!important;font-weight:900!important;line-height:1.2!important;white-space:nowrap!important;text-decoration:none!important;letter-spacing:0!important;box-shadow:0 5px 14px rgba(11,27,77,.09)!important}
+header .program-nav a:first-child{background:#f0edff!important;color:#5532c8!important;border:1px solid #e5ddff!important}
+header .program-nav a:last-child{background:linear-gradient(110deg,#00c8ff,#62e2f5)!important;color:#0b1b4d!important;border:1px solid rgba(0,200,255,.4)!important}
+header .program-nav a:hover{transform:translateY(-1px);box-shadow:0 8px 18px rgba(11,27,77,.13)!important}
+@media(max-width:760px){
+ header .nav{min-height:0!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:13px!important;padding-top:17px!important;padding-bottom:15px!important}
+ header .brand{justify-content:center!important;width:100%!important}
+ header .brand-header-logo{width:168px!important;max-width:60vw!important}
+ header .program-nav{display:grid!important;grid-template-columns:1fr 1.35fr!important;gap:9px!important;width:min(100%,390px)!important;justify-content:center!important}
+ header .program-nav a{width:100%!important;min-width:0!important;min-height:42px!important;padding:9px 10px!important;font-size:12px!important;line-height:1.15!important;text-align:center!important}
+}
+@media(prefers-reduced-motion:reduce){header .program-nav a{transition:none!important}}
+</style>
+<style id="program-consent-styles">.program-consent{grid-column:1/-1;padding:13px 14px;border:1px solid #dfe5f5;border-radius:14px;background:#f8faff}.program-consent-label{display:flex!important;flex-direction:row!important;align-items:flex-start;gap:9px!important;font-size:12px!important;font-weight:650!important;line-height:1.5}.program-consent-label input{width:auto!important;flex:0 0 auto;margin:2px 0 0;accent-color:#7548f6}.program-consent small{display:block;margin:7px 0 0 25px;color:#586786;font-size:11px;line-height:1.5}@media(max-width:650px){.program-consent{grid-column:1}.program-consent small{font-size:11px}}</style><style id="kubiq-v185-consent-text-wrap">.program-consent-label>span{display:block;flex:1;min-width:0}.program-consent-label a{display:inline;white-space:normal;overflow-wrap:anywhere}</style><style id="kubiq-v187-facts-and-cta">.facts{grid-template-columns:repeat(3,minmax(0,1fr))!important;max-width:1040px;margin-left:auto!important;margin-right:auto!important;justify-content:center}.facts>div{text-align:center}</style><style id="kubiq-v188-faq-compact">.faq .faq-more{margin-top:14px}.faq .faq-more>summary{cursor:pointer;font-weight:700;color:#5f43d7;list-style-position:inside}.faq .faq-more-list{padding-top:10px}.faq .faq-more-list details{margin-top:10px}</style><style id="kubiq-v189-footer-privacy-gutter">
+footer .footer-privacy-link,footer .experience-footer-inner a,footer .kubiq-footer-inner>a{display:inline-block;box-sizing:border-box;max-width:100%;margin:12px auto 0;padding:8px 0;color:#dbe4ff;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+footer .wrap .footer-privacy-link{margin-left:0}
+@media(max-width:760px){footer .footer-privacy-link,footer .experience-footer-inner a,footer .kubiq-footer-inner>a{margin:10px 0 0;padding:8px 0}footer .wrap,footer .experience-footer-inner{box-sizing:border-box;max-width:100%;min-width:0}}
+</style><style id="kubiq-v202-course-header-match">
+header .wrap.nav{height:76px;min-height:76px;box-sizing:border-box;display:flex!important;align-items:center!important;justify-content:space-between!important;gap:14px!important}
+.course-header-logo{display:block;flex:0 1 auto;min-width:0;text-decoration:none}
+.course-header-logo img{display:block;width:245px;max-width:34vw;height:auto}
+.course-subnav{display:flex;align-items:center;gap:10px;margin-left:auto}
+.course-subnav a{display:inline-flex;align-items:center;justify-content:center;font-size:12px;font-weight:900;color:#5136bc;text-decoration:none;padding:8px 11px;border-radius:999px;background:#f0edff;white-space:nowrap}
+.course-back{display:inline-flex;align-items:center;justify-content:center;gap:8px;margin-left:auto;font-weight:900;color:#0b1b4d;font-size:13px;text-decoration:none;padding:12px 17px;border-radius:999px;background:linear-gradient(100deg,#00c8ff,#8cecff);box-shadow:0 8px 22px #00c8ff40;white-space:nowrap;transition:transform .2s,box-shadow .2s}
+.course-back:hover{transform:translateY(-2px);box-shadow:0 12px 26px #00c8ff66}
+@media(max-width:760px){header .wrap.nav{height:auto;min-height:66px;flex-wrap:wrap;padding:10px 0}.course-header-logo img{width:170px;max-width:48vw}.course-subnav{order:3;width:auto;margin-left:0}.course-back{margin-left:auto}}
+@media(max-width:380px){header .wrap.nav{column-gap:8px}.course-header-logo img{width:140px}.course-back{padding:10px 12px;font-size:12px}.course-subnav a{padding:8px 10px}}
+</style><style id="kubiq-v209-course-footer-layout">
+.course-footer{background:#071234!important;color:#dbe5ff!important;padding:26px 0 30px!important}
+.course-footer .course-footer-inner{box-sizing:border-box;display:grid!important;grid-template-columns:minmax(0,1fr) auto!important;grid-template-rows:auto auto!important;align-items:center!important;column-gap:32px!important;row-gap:14px!important}
+.course-footer-brand{grid-column:1;grid-row:1;margin:0!important;color:#f4f6ff!important;font-size:14px!important;font-weight:800!important;line-height:1.5!important}
+.course-footer-brand span{color:#aebbdc!important;font-weight:500!important}
+.course-footer-nav{grid-column:2;grid-row:1;display:flex!important;align-items:center!important;justify-content:flex-end!important;gap:clamp(16px,2.4vw,34px)!important;flex-wrap:wrap!important}
+.course-footer-nav a,.course-footer .footer-privacy-link{color:#dbe5ff!important;font-size:13px!important;line-height:1.5!important;text-decoration:none!important}
+.course-footer-nav a{white-space:nowrap!important}
+.course-footer-nav a:hover,.course-footer .footer-privacy-link:hover{color:#72e5ff!important;text-decoration:underline!important;text-underline-offset:4px}
+.course-footer .footer-privacy-link{grid-column:2;grid-row:2;justify-self:end!important;display:inline-block!important;margin:0!important;padding:0!important}
+@media(max-width:760px){
+ .course-footer .course-footer-inner{grid-template-columns:minmax(0,1fr)!important;grid-template-rows:auto auto auto!important;row-gap:13px!important}
+ .course-footer-brand{grid-column:1;grid-row:1}
+ .course-footer-nav{grid-column:1;grid-row:2;justify-content:flex-start!important;gap:12px 22px!important}
+ .course-footer-nav a{white-space:normal!important}
+ .course-footer .footer-privacy-link{grid-column:1;grid-row:3;justify-self:start!important}
+}
+</style><style id="kubiq-v211-level-card-clarity">
+.levels{align-items:stretch!important}
+.levels>.level-card{display:flex!important;flex-direction:column!important;align-items:stretch!important;gap:0!important;min-width:0!important}
+.levels>.level-card .level-info-group{display:grid!important;grid-template-columns:1fr!important;gap:12px!important;margin:18px 0 16px!important}
+.levels>.level-card .level-info-item{margin:0!important;padding:0 0 12px!important;border-bottom:1px solid #e8edfa!important}
+.levels>.level-card .level-info-item h4,.levels>.level-card .level-content-list h4{margin:0 0 6px!important;color:#0b1b4d!important;font-family:Poppins,sans-serif!important;font-size:13px!important;font-weight:800!important;line-height:1.4!important}
+.levels>.level-card .level-info-item p{margin:0!important;color:#5e6d91!important;font-size:14px!important;line-height:1.6!important}
+.levels>.level-card .level-content-list{margin:0 0 18px!important;padding:14px 16px!important;border:1px solid #e1e8fa!important;border-radius:14px!important;background:#f7f9ff!important;box-sizing:border-box!important}
+.levels>.level-card .level-content-list ul{display:grid!important;grid-template-columns:1fr 1fr!important;gap:6px 18px!important;margin:8px 0 0!important;padding-left:18px!important;color:#536487!important;font-size:13px!important;line-height:1.5!important}
+.levels>.level-card .level-content-list li{padding-left:2px!important}
+.levels>.level-card>.btn{margin:4px auto 0!important;align-self:center!important;margin-top:4px!important}
+@media(max-width:560px){.levels>.level-card .level-content-list ul{grid-template-columns:1fr!important}}
+</style><meta name="description" content="Aprende a crear mundos y experiencias interactivas con Roblox Studio. Clases online en vivo para estudiantes de 10 a 16 años, según nivel."/>
+<meta name="robots" content="index,follow,max-image-preview:large"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="KUBIQ ACADEMY"/>
+<meta property="og:locale" content="es_EC"/>
+<meta property="og:title" content="IA Exploradores e IA Creadores | KUBIQ ACADEMY"/>
+<meta property="og:description" content="Inteligencia artificial para niños y jóvenes. Empieza con IA Exploradores, de 9 a 12 años, y continúa con IA Creadores, de 13 a 17 años."/>
+<meta property="og:url" content="https://vanesalazarp17.github.io/kubiq/programas/ia/"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="IA Exploradores e IA Creadores | KUBIQ ACADEMY"/>
+<meta name="twitter:description" content="Inteligencia artificial para niños y jóvenes. Empieza con IA Exploradores, de 9 a 12 años, y continúa con IA Creadores, de 13 a 17 años."/>
+<link rel="canonical" href="https://vanesalazarp17.github.io/kubiq/programas/ia/"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Course","name":"Inteligencia Artificial | KUBIQ ACADEMY","description":"Inteligencia artificial para niños y jóvenes. Empieza con IA Exploradores, de 9 a 12 años, y continúa con IA Creadores, de 13 a 17 años.","provider":{"@type":"EducationalOrganization","name":"KUBIQ ACADEMY","url":"https://vanesalazarp17.github.io/kubiq/"},"inLanguage":"es","educationalLevel":"Inicial e intermedio–avanzado","courseMode":"online","url":"https://vanesalazarp17.github.io/kubiq/programas/ia/"}</script>
+</head>
+<body>
+<header><div class="wrap nav"><a aria-label="KUBIQ Academy, inicio" class="course-header-logo" href="../../index.html"><img alt="KUBIQ ACADEMY" src="../../imagenes/kubiq-logo-header.png"/></a><nav aria-label="Navegación del programa" class="course-subnav"><a href="../../index.html#cursos">Programas</a></nav><a class="course-back" href="../../index.html">← Volver a KUBIQ</a></div></header>
+<main>
+<section class="hero program-hero-split"><div class="wrap program-hero-layout"><div class="program-hero-copy"><span class="eyebrow">KUBIQ ACADEMY · INTELIGENCIA ARTIFICIAL</span><h1>De descubrir la inteligencia artificial a crear con ella.</h1><p>Explora la inteligencia artificial a través de juegos, experimentos y proyectos. La ruta empieza con IA Exploradores, donde descubres cómo funcionan los sistemas inteligentes, y continúa con IA Creadores, donde diseñas, pruebas y mejoras tus propios prototipos.</p><div class="program-hero-actions"><a class="btn" href="https://cal.com/kubiqacademy/30min">Agendar sesión gratuita</a><a class="btn" href="https://wa.me/593984538209?text=Hola%20KUBIQ%2C%20quiero%20informaci%C3%B3n%20sobre%20ia">Consultar por WhatsApp</a></div></div><div class="program-hero-visual"><img alt="El ajolote de KUBIQ representa la ruta de Inteligencia Artificial" class="program-hero-image program-brand-logo-v83" loading="eager" src="../../imagenes/ia-portada.webp"/></div></div></section>
+<section class="skills skills-transfer"><div class="wrap"><div class="intro"><span class="sales-mini-label">LO QUE SE LLEVA DE CADA RETO</span><h2>Mucho más que aprender a usar IA</h2></div><div aria-label="Ocho habilidades que desarrolla el estudiante al trabajar con IA" class="life-skills-grid"><article class="life-skill-card"><span aria-hidden="true" class="life-skill-icon">✦</span><h3>Curiosidad</h3><p>Hace preguntas, propone explicaciones y pone a prueba sus ideas.</p></article><article class="life-skill-card"><span aria-hidden="true" class="life-skill-icon">⌘</span><h3>Pensamiento crítico</h3><p>Contrasta lo que devuelve la IA con ejemplos y fuentes.</p></article><article class="life-skill-card"><span aria-hidden="true" class="life-skill-icon">✓</span><h3>Comunicación clara</h3><p>Aprende a dar el contexto necesario y a pedir lo que quiere conseguir.</p></article><article class="life-skill-card"><span aria-hidden="true" class="life-skill-icon">✧</span><h3>Observación</h3><p>Identifica patrones y detecta cuándo una respuesta está incompleta.</p></article><article class="life-skill-card"><span aria-hidden="true" class="life-skill-icon">◇</span><h3>Secuencias</h3><p>Ordena sus ideas para preparar una historia con principio, desarrollo y final.</p></article><article class="life-skill-card"><span aria-hidden="true" class="life-skill-icon">◎</span><h3>Creatividad</h3><p>Experimenta con distintas formas de contar una historia o resolver un reto.</p></article><article class="life-skill-card"><span aria-hidden="true" class="life-skill-icon">↻</span><h3>Perseverancia</h3><p>Vuelve a escribir una pregunta cuando la primera respuesta queda incompleta.</p></article><article class="life-skill-card"><span aria-hidden="true" class="life-skill-icon">♡</span><h3>Criterio digital</h3><p>Decide qué información puede compartir y explica cuándo usó IA.</p></article></div></div></section>
+<div id="proyectos">
+<section aria-labelledby="sales-title-exploradores" class="program-sales-showcase" id="ia-exploradores">
+<div class="wrap">
+<div class="sales-head"><span class="eyebrow">APRENDER CREANDO · KUBIQ ACADEMY</span><h2 id="sales-title-exploradores">Explora cómo aprende la inteligencia artificial.</h2><p>Entrena un modelo sencillo, experimenta con recomendaciones y crea tu propia historia.</p></div>
+<div class="sales-project-heading"><h3>Proyectos de IA Exploradores</h3></div>
+<div aria-label="Ejemplos de proyectos de IA Exploradores" class="sales-projects" tabindex="0">
+  <article class="sales-project">
+    <div class="project-image-wrap"><img alt="Una niña comprueba si su modelo reconoce un auto de juguete" loading="lazy" src="../../imagenes/ia-proyecto-robot-detective.webp"/><span class="project-chip">RECONOCE OBJETOS</span></div>
+    <div class="project-copy"><span class="project-number">PROYECTO 1</span><strong>Entrena a tu robot detective</strong><p>Entrena un modelo con imágenes de objetos y ponlo a prueba con nuevas pistas.</p></div>
+  </article>
+  <article class="sales-project">
+    <div class="project-image-wrap"><img alt="Un niño elige sus gustos en una tableta y recibe una recomendación de lectura" loading="lazy" src="../../imagenes/ia-proyecto-aventuras.webp"/><span class="project-chip">RECOMIENDA</span></div>
+    <div class="project-copy"><span class="project-number">PROYECTO 2</span><strong>Mi recomendador de aventuras</strong><p>Diseña un sistema que recomiende historias, libros o videojuegos según los gustos de cada persona.</p></div>
+  </article>
+  <article class="sales-project">
+    <div class="project-image-wrap"><img alt="Un niño dibuja en una tableta una historieta sobre un capibara aventurero" loading="lazy" src="../../imagenes/ia-proyecto-historia.webp"/><span class="project-chip">IMAGINA</span></div>
+    <div class="project-copy"><span class="project-number">PROYECTO 3</span><strong>Historias mágicas con IA</strong><p>Inventa personajes y aventuras, mejora las ideas con ayuda de la IA y conviértelas en un cuento original.</p></div>
+  </article>
+</div>
+</div>
+</section>
+<section aria-labelledby="sales-title-creadores" class="program-sales-showcase" id="ia-creadores">
+<div class="wrap">
+<div class="sales-head"><h2 id="sales-title-creadores">Diseña soluciones inteligentes que puedas probar.</h2><p>Crea personajes que reaccionan, asistentes que ayudan a estudiar y sistemas que aprenden de las preferencias.</p></div>
+<div class="sales-project-heading"><h3>Proyectos de IA Creadores</h3></div>
+<div aria-label="Ejemplos de proyectos de IA Creadores" class="sales-projects" tabindex="0">
+  <article class="sales-project">
+    <div class="project-image-wrap"><img alt="Un adolescente prueba un videojuego en el que un guardián reacciona al paso del jugador" loading="lazy" src="../../imagenes/ia-proyecto-videojuego.webp"/><span class="project-chip">CREA COMPORTAMIENTOS</span></div>
+    <div class="project-copy"><span class="project-number">PROYECTO 1</span><strong>Videojuegos con personajes inteligentes</strong><p>Diseña un personaje que reaccione a las decisiones del jugador y prueba distintos comportamientos.</p></div>
+  </article>
+  <article class="sales-project">
+    <div class="project-image-wrap"><img alt="Una adolescente trabaja en un asistente de estudio que usa materiales y preguntas de práctica" loading="lazy" src="../../imagenes/ia-proyecto-asistente.webp"/><span class="project-chip">DISEÑA UN ASISTENTE</span></div>
+    <div class="project-copy"><span class="project-number">PROYECTO 2</span><strong>Crea tu propio asistente de estudio con IA</strong><p>Crea un prototipo que organice materiales, genere preguntas de práctica y te ayude a comprobar respuestas.</p></div>
+  </article>
+  <article class="sales-project">
+    <div class="project-image-wrap"><img alt="Un adolescente con audífonos evalúa las recomendaciones de música de su prototipo" loading="lazy" src="../../imagenes/ia-proyecto-recomendador.webp"/><span class="project-chip">EVALÚA Y MEJORA</span></div>
+    <div class="project-copy"><span class="project-number">PROYECTO 3</span><strong>Diseña un recomendador inteligente</strong><p>Construye un prototipo que sugiera música, juegos o contenido según preferencias y evalúa sus recomendaciones.</p></div>
+  </article>
+</div>
+</div>
+</section></div>
+
+<section><div class="wrap"><div class="intro level-route-intro"><span class="eyebrow" style="color:#7B4DFF">DOS NIVELES · UNA RUTA</span><h2>Elige el nivel que acompaña su siguiente desafío.</h2><p>Cada estudiante avanza desde sus conocimientos e intereses. Te orientamos para elegir el nivel adecuado antes de la matrícula.</p></div><div class="levels"><article class="level-card"><span class="level-age">9 a 12 años</span><span class="session-length">32 clases · 60 min por sesión</span><h3>IA Exploradores</h3><div class="level-info-group"><section class="level-info-item"><h4>Conocimientos previos</h4><p>No requiere conocimientos previos de programación.</p></section><section class="level-info-item"><h4>Qué aprenderá</h4><p>Experimenta con datos, modelos, asistentes y recomendaciones. Al finalizar, crea y presenta un proyecto introductorio con IA.</p></section></div><section class="level-content-list"><h4>Contenidos principales</h4><ul><li>Reconocimiento de imágenes, sonidos y patrones</li><li>Experimentos con datos y entrenamiento de primeros modelos</li><li>Asistentes e inteligencia artificial generativa</li><li>IA en videojuegos y sistemas de recomendación</li><li>Pensamiento crítico, creatividad y responsabilidad digital</li><li>Creación y presentación de un proyecto introductorio con IA</li></ul></section><a class="btn btn-outline" data-program="IA Exploradores" href="#solicitar-matricula">Solicitar matrícula</a></article><article class="level-card"><span class="level-age">13 a 17 años</span><span class="session-length">40 clases · 75 min por sesión</span><h3>IA Creadores</h3><div class="level-info-group"><section class="level-info-item"><h4>Conocimientos previos</h4><p>Haber aprobado IA Exploradores. No es obligatorio conocer Python.</p></section><section class="level-info-item"><h4>Qué aprenderá</h4><p>Diseña, desarrolla y evalúa soluciones de IA para situaciones reales. Al finalizar, presenta un prototipo inteligente propio.</p></section></div><section class="level-content-list"><h4>Contenidos principales</h4><ul><li>Modelos de aprendizaje automático</li><li>Visión artificial y procesamiento del lenguaje</li><li>Sistemas de recomendación e IA para videojuegos</li><li>IA generativa y asistentes inteligentes</li><li>Evaluación de resultados y mejora de modelos</li><li>Seguridad, privacidad y ética tecnológica</li><li>Desarrollo y presentación de un prototipo propio</li></ul></section><a class="btn btn-outline" data-program="IA Creadores" href="#solicitar-matricula">Solicitar matrícula</a></article></div>
+<div class="facts"><div><strong>32 / 40 clases</strong><span>según el nivel</span></div><div><strong>60 / 75 min</strong><span>por clase</span></div></div></div></section>
+<section class="program-enroll" id="solicitar-matricula"><div class="wrap"><div class="intro"><span class="eyebrow" style="color:#7B4DFF">SOLICITUD DE MATRÍCULA</span><h2>Cuéntanos sobre el estudiante.</h2><p>Completa estos datos para recibir información del programa, horarios y condiciones. La solicitud no genera un cobro.</p></div><form class="program-enroll-form" id="programEnrollForm"><label>Nombre del representante<input name="representante" placeholder="Tu nombre" required=""/></label><label>WhatsApp de contacto<input name="whatsapp" placeholder="Número con código de país" required="" type="tel"/></label><label>Edad del estudiante<input max="18" min="6" name="edad" placeholder="Edad" required="" type="number"/></label><label>Programa de interés<select id="programSelect" name="programa" required=""><option value="">Selecciona un programa</option><option value="IA Exploradores">IA Exploradores</option><option value="IA Creadores">IA Creadores</option></select></label><fieldset class="full program-preferences"><legend>Días preferidos</legend><div class="program-day-options"><label><input name="dias" type="checkbox" value="Lunes"/> Lunes</label><label><input name="dias" type="checkbox" value="Martes"/> Martes</label><label><input name="dias" type="checkbox" value="Miércoles"/> Miércoles</label><label><input name="dias" type="checkbox" value="Jueves"/> Jueves</label><label><input name="dias" type="checkbox" value="Viernes"/> Viernes</label><label><input name="dias" type="checkbox" value="Sábado"/> Sábado</label><label><input name="dias" type="checkbox" value="Domingo"/> Domingo</label></div></fieldset><label class="full">Horarios preferidos<select name="horario" required=""><option value="">Selecciona una opción</option><option>Lunes a viernes: 11:00 a. m. – 7:00 p. m.</option><option>Sábados y domingos: 9:00 a. m. – 5:00 p. m.</option><option>Cualquier horario disponible</option></select></label><label class="full">Mensaje (opcional)<textarea name="mensaje" placeholder="Cuéntanos si tienes alguna consulta." rows="3"></textarea></label><div class="full program-consent"><label class="program-consent-label"><input name="consentimiento" type="checkbox" required/><span>Confirmo que soy padre, madre o representante legal del estudiante. He leído el <a href="../../privacidad.html" target="_blank" rel="noopener">Aviso de privacidad</a> y autorizo a KUBIQ Academy a utilizar estos datos para gestionar mi solicitud y contactarme.</span></label><small>Los datos se utilizarán para gestionar tu solicitud y comunicarnos contigo. Consulta el Aviso de privacidad para conocer tus derechos y cómo ejercerlos.</small></div><button class="btn btn-outline" type="submit">Enviar</button></form></div></section>
+<section class="faq"><div class="wrap"><div class="intro"><h2>Preguntas frecuentes</h2><p>Información práctica para elegir un curso.</p></div>
+<details><summary>¿Por dónde puede empezar?</summary><p>La ruta comienza con IA Exploradores y continúa con IA Creadores. Para ingresar a IA Creadores, el estudiante debe haber aprobado IA Exploradores.</p></details>
+<details><summary>¿Tiene que saber programar?</summary><p>IA Exploradores no requiere conocimientos previos de programación. Para IA Creadores no es obligatorio conocer Python.</p></details>
+<details><summary>¿Cómo se usan las herramientas de IA?</summary><p>El estudiante trabaja con ejemplos ficticios o materiales de clase y aprende a evitar compartir información personal.</p></details>
+</div></section>
+<section class="cta"><div class="wrap"><h2>¿Listo para comenzar la ruta de Inteligencia Artificial?</h2><p>Dale a tu hijo la oportunidad de descubrir la programación creando sus propios proyectos. Elige cómo quieres comenzar: matriculándolo directamente o conociendo primero nuestra metodología.</p><a class="btn" href="#solicitar-matricula">Solicitar matrícula</a><a class="btn" href="https://cal.com/kubiqacademy/30min" rel="noopener" target="_blank">Agendar sesión gratuita</a><a class="btn" href="https://wa.me/593984538209" rel="noopener" target="_blank">Consultar por WhatsApp</a></div></section>
+</main>
+<footer class="course-footer">
+<div class="wrap course-footer-inner">
+  <p class="course-footer-brand">KUBIQ ACADEMY <span>· Mentes que programan el futuro</span></p>
+  <nav class="course-footer-nav" aria-label="Enlaces del pie de página">
+    <a href="../../index.html">Inicio</a>
+    <a href="../../escuelas.html">Programas para escuelas</a>
+    <a href="https://wa.me/593984538209">Contacto</a>
+  </nav>
+  <a href="../../privacidad.html" class="footer-privacy-link">Aviso de privacidad</a>
+</div>
+</footer>
+<script>
+(function(){const form=document.getElementById('programEnrollForm');if(!form)return;const select=document.getElementById('programSelect');document.querySelectorAll('[data-program]').forEach(btn=>btn.addEventListener('click',()=>{if(select)select.value=btn.dataset.program;}));form.addEventListener('submit',function(e){e.preventDefault();if(!form.reportValidity())return;const d=new FormData(form);const lines=['Hola KUBIQ ACADEMY, deseo solicitar información de matrícula.','Representante: '+d.get('representante'),'WhatsApp de contacto: '+d.get('whatsapp'),'Edad del estudiante: '+d.get('edad'),'Programa: '+d.get('programa'),'Días preferidos: '+(d.getAll('dias').join(', ')||'Por coordinar'),'Horario preferido: '+(d.get('horario')||'Por coordinar'),'Mensaje: '+(d.get('mensaje')||'Sin mensaje adicional'),'Consentimiento para responder esta solicitud: Sí'];window.open('https://wa.me/593984538209?text='+encodeURIComponent(lines.join('\n')),'_blank','noopener');});const params=new URLSearchParams(location.search);if(params.get('programa')&&select)select.value=params.get('programa');})();</script>
+<script>
+document.querySelectorAll('.program-sales-showcase').forEach(section=>{
+ const track=section.querySelector('.sales-projects');
+ const prev=section.querySelector('.sales-prev');
+ const next=section.querySelector('.sales-next');
+ if(!track||!prev||!next)return;
+ const move=direction=>track.scrollBy({left:direction*Math.min(track.clientWidth*.82,390),behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
+ prev.addEventListener('click',()=>move(-1));
+ next.addEventListener('click',()=>move(1));
+});
+</script>
+<nav aria-label="Acciones rápidas para móvil" class="mobile-action-dock"><a href="../../index.html#cursos">Ver cursos</a><a href="https://cal.com/kubiqacademy/30min" rel="noopener" target="_blank">Reservar experiencia</a></nav>
+<script id="kubiq-v142-mobile-dock-behavior">(()=>{const d=document.querySelector('.mobile-action-dock');if(!d)return;const footer=document.querySelector('footer');if(footer&&'IntersectionObserver'in window){const io=new IntersectionObserver(es=>d.classList.toggle('is-hidden',es.some(e=>e.isIntersecting)),{threshold:.05});io.observe(footer)}document.addEventListener('focusin',e=>{if(e.target.matches('input,select,textarea'))document.body.classList.add('mobile-form-focus')});document.addEventListener('focusout',e=>{if(e.target.matches('input,select,textarea'))setTimeout(()=>{if(!document.activeElement.matches('input,select,textarea'))document.body.classList.remove('mobile-form-focus')},120)});})();</script>
+<style id="kubiq-program-learning-sections-v143">
+.sales-benefit-intro{text-align:center;margin:30px auto 18px}.skills-takeaways .sales-benefit-row{margin-bottom:24px}.skills-transfer .intro{max-width:850px;margin:0 auto;text-align:center}
+@media(max-width:760px){.sales-benefit-row{display:grid!important;grid-template-columns:minmax(0,1fr)!important;gap:14px!important;margin:20px 0 28px!important}.sales-benefit{width:100%;min-width:0;min-height:0;padding:21px!important;border-radius:20px}.sales-benefit strong{display:block;line-height:1.25}.sales-benefit p{line-height:1.55}.sales-benefit-intro{margin:18px auto 14px}.program-hero-image{max-width:min(78vw,330px);height:auto}}
+</style>
+<script id="kubiq-v164-skills-carousel">
+(()=>{
+ const section=document.querySelector('.skills-transfer');
+ const track=section?.querySelector('.life-skills-grid');
+ if(!section||!track) return;
+ const desktop=window.matchMedia('(min-width: 901px)');
+ if(!desktop.matches) return; // Mobile keeps its existing touch-scroll layout.
+ const originals=[...track.querySelectorAll('.life-skill-card')];
+ if(originals.length<5) return;
+ const controls=section.querySelector('.skills-carousel-controls')||document.createElement('div');
+ controls.className='skills-carousel-controls';
+ controls.setAttribute('aria-label','Controles de habilidades');
+ controls.innerHTML='<button type="button" class="skills-prev" aria-label="Habilidades anteriores">‹</button><button type="button" class="skills-next" aria-label="Más habilidades">›</button>';
+ if(!controls.parentNode) track.parentNode.insertBefore(controls,track);
+ // Duplicate a complete set on both ends so the carousel loops without a visible jump.
+ const originalsWidth=()=>track.scrollWidth;
+ const before=document.createDocumentFragment();
+ originals.slice(-4).forEach(card=>{const clone=card.cloneNode(true);clone.setAttribute('aria-hidden','true');before.appendChild(clone);});
+ track.insertBefore(before,track.firstChild);
+ const after=document.createDocumentFragment();
+ originals.slice(0,4).forEach(card=>{const clone=card.cloneNode(true);clone.setAttribute('aria-hidden','true');after.appendChild(clone);});
+ track.appendChild(after);
+ const originalSpan=originalsWidth()/2;
+ const cardStep=()=>{const card=track.querySelector('.life-skill-card');const gap=parseFloat(getComputedStyle(track).gap)||16;return (card?.getBoundingClientRect().width||260)+gap;};
+ track.scrollLeft=originalSpan;
+ let pauseUntil=0, previous=0, raf=0;
+ const pause=(ms=4500)=>{pauseUntil=performance.now()+ms;};
+ const move=dir=>{pause(5000);track.scrollBy({left:dir*cardStep(),behavior:'smooth'});};
+ controls.querySelector('.skills-prev').addEventListener('click',()=>move(-1));
+ controls.querySelector('.skills-next').addEventListener('click',()=>move(1));
+ ['pointerdown','touchstart','wheel','mouseenter','focusin'].forEach(evt=>track.addEventListener(evt,()=>pause(),{passive:true}));
+ controls.addEventListener('mouseenter',()=>pause());
+ const reduced=window.matchMedia('(prefers-reduced-motion: reduce)');
+ const tick=now=>{
+   if(!document.hidden&&!reduced.matches&&now>pauseUntil){
+     if(previous){const elapsed=Math.min(now-previous,50);track.scrollLeft+=12*elapsed/1000;}
+     if(track.scrollLeft>=originalSpan*2) track.scrollLeft-=originalSpan;
+     else if(track.scrollLeft<=0) track.scrollLeft+=originalSpan;
+   }
+   previous=now;raf=requestAnimationFrame(tick);
+ };
+ if(!reduced.matches) raf=requestAnimationFrame(tick);
+ document.addEventListener('visibilitychange',()=>{previous=0;});
+})();
+</script>
+<style id="kubiq-v165-skill-card-cleanup">
+/* V165: avoid redundant kicker labels above skill titles */
+.skills-transfer .life-skill-kicker{display:none!important}
+</style>
+<style id="kubiq-program-form-note">.program-form-note{max-width:620px;margin:12px auto 0;color:#586786;font-size:13px;line-height:1.55;text-align:center}@media(max-width:760px){.program-form-note{font-size:12px;padding:0 8px}}</style>
+
+
+
+<style id="kubiq-v226-course-mobile-header">
+/* V226: navegación móvil coherente en Scratch, Roblox Studio y Python. */
+@media screen and (max-width:760px){
+  header .wrap.nav{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;
+    grid-template-areas:
+      "brand brand"
+      "programas volver"!important;
+    align-items:center!important;
+    justify-content:stretch!important;
+    gap:12px!important;
+    height:auto!important;
+    min-height:0!important;
+    padding:14px 0!important;
+    box-sizing:border-box!important;
+  }
+  header .wrap.nav .course-header-logo{
+    grid-area:brand!important;
+    justify-self:center!important;
+    width:auto!important;
+    min-width:0!important;
+    margin:0!important;
+    line-height:0!important;
+  }
+  header .wrap.nav .course-header-logo img{
+    display:block!important;
+    width:clamp(145px,42vw,175px)!important;
+    max-width:100%!important;
+    height:auto!important;
+  }
+  header .wrap.nav .course-subnav{
+    grid-area:programas!important;
+    display:flex!important;
+    width:100%!important;
+    min-width:0!important;
+    margin:0!important;
+    justify-content:stretch!important;
+  }
+  header .wrap.nav .course-subnav a,
+  header .wrap.nav .course-back{
+    display:flex!important;
+    width:100%!important;
+    min-width:0!important;
+    min-height:48px!important;
+    align-items:center!important;
+    justify-content:center!important;
+    box-sizing:border-box!important;
+    margin:0!important;
+    padding:10px 8px!important;
+    border:0!important;
+    border-radius:15px!important;
+    background:#e9e6ff!important;
+    color:#5935bd!important;
+    box-shadow:none!important;
+    font:800 13px/1.2 Nunito,Arial,sans-serif!important;
+    text-align:center!important;
+    white-space:normal!important;
+    overflow-wrap:anywhere!important;
+  }
+  header .wrap.nav .course-back{
+    grid-area:volver!important;
+  }
+}
+@media screen and (max-width:360px){
+  header .wrap.nav{gap:9px!important;padding:12px 0!important}
+  header .wrap.nav .course-subnav a,
+  header .wrap.nav .course-back{font-size:12px!important;padding:9px 6px!important}
+}
+</style>
+
+</body></html>

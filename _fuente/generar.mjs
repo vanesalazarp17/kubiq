@@ -46,8 +46,9 @@ function list(items, extraClass = '') {
 }
 
 function validate() {
-  const ids = new Set();
-  function register(id) {
+  const programIds = new Set();
+  const courseIds = new Set();
+  function register(ids, id) {
     if (typeof id !== 'string' || !/^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$/.test(id) || ids.has(id)) {
       throw new Error(`Identificador inválido o repetido: ${id}`);
     }
@@ -55,7 +56,7 @@ function validate() {
   }
   if (!Array.isArray(programs) || !programs.length) throw new Error('El catálogo está vacío');
   for (const program of programs) {
-    register(program.id);
+    register(programIds, program.id);
     if (!program.portada.imagen?.startsWith('../../imagenes/') ||
         !existsSync(root + program.portada.imagen.slice('../../'.length))) {
       throw new Error(`Falta la imagen de portada de ${program.id}`);
@@ -64,7 +65,7 @@ function validate() {
       throw new Error(`El programa ${program.id} necesita al menos un nivel`);
     }
     for (const course of program.niveles) {
-      register(course.id);
+      register(courseIds, course.id);
       if (!course.imagen?.startsWith('imagenes/') || !existsSync(root + course.imagen)) {
         throw new Error(`Falta la imagen de ${course.id}: ${course.imagen}`);
       }
@@ -77,7 +78,12 @@ function validate() {
 
 validate();
 const catalog = [];
-const ageGuide = [];
+const missions = [];
+const ageGroups = [
+  {min: 8, max: 10, cards: []},
+  {min: 11, max: 12, cards: []},
+  {min: 13, max: 17, cards: []},
+];
 const enrollment = [];
 const modal = {};
 const outputs = new Map();
@@ -87,7 +93,6 @@ for (const program of programs) {
   const route = `programas/${program.id}/`;
   const href = route + 'index.html';
   const levelCards = [];
-  const ageCards = [];
   const options = [];
   let group = `<div class="course-area-heading"><h3>${html(program.encabezado)}</h3></div>`;
   for (const course of program.niveles) {
@@ -95,7 +100,8 @@ for (const program of programs) {
     const values = escapeFields({
       id: course.id, nombre: course.nombre, titulo: course.titulo, nivel: course.nivel,
       edad: course.edad, edadCorta: course.edad.replace(' a ', '–'),
-      imagen: course.imagen, ruta: href, sesiones: course.sesiones, minutos: course.minutos,
+      imagen: course.imagen, ruta: href,
+      textoImagen: course.tarjeta.textoImagen ?? `Logo animado de ${course.titulo} de KUBIQ Academy`, sesiones: course.sesiones, minutos: course.minutos,
       rotulo: `${program.nombre.toUpperCase()} · ${course.nivel.replace(/^Nivel /, '').toUpperCase()}`,
     });
     group += render('tarjeta.html', {
@@ -104,7 +110,16 @@ for (const program of programs) {
       etiquetaEnlace: html(course.tarjeta.etiquetaEnlace),
       temas: list(course.tarjeta.temas, ' class="v156-extra-learning"'),
     }) + '\n';
-    ageCards.push(render('tarjeta-edad.html', values));
+    const ageRange = /^(\d+) a (\d+) años$/.exec(course.edad);
+    if (!ageRange || Number(ageRange[1]) > Number(ageRange[2])) {
+      throw new Error(`Revisa el rango de edades de ${course.id}: ${course.edad}`);
+    }
+    const [, min, max] = ageRange.map(Number);
+    for (const group of ageGroups) {
+      if (min <= group.max && max >= group.min) {
+        group.cards.push(render('tarjeta-edad.html', values));
+      }
+    }
     levelCards.push(render('nivel.html', {
       ...values,
       requisitos: html(course.ficha.requisitos),
@@ -119,13 +134,32 @@ for (const program of programs) {
     };
   }
   catalog.push(group.trimEnd());
-  ageGuide.push(render('grupo-edad.html', {...escapeFields(program.guiaEdad), tarjetas: ageCards.join('')}));
+  const firstCourse = program.niveles[0];
+  const mission = program.mision ?? {
+    titulo: firstCourse.titulo,
+    descripcion: firstCourse.modal.project,
+    imagen: firstCourse.imagen,
+    alternativo: firstCourse.tarjeta.textoImagen ?? firstCourse.titulo,
+  };
+  if (!mission.imagen?.startsWith('imagenes/') || !existsSync(root + mission.imagen)) {
+    throw new Error(`Falta la imagen de la misión de ${program.id}: ${mission.imagen}`);
+  }
+  if (mission.imagenEstatica &&
+      (!mission.imagenEstatica.startsWith('imagenes/') || !existsSync(root + mission.imagenEstatica))) {
+    throw new Error(`Falta la versión estática de la misión de ${program.id}: ${mission.imagenEstatica}`);
+  }
+  missions.push(render('mision.html', {
+    ...escapeFields({...mission, programa: program.nombre, ruta: href}),
+    fuenteEstatica: mission.imagenEstatica ?
+      `<source media="(prefers-reduced-motion: reduce)" srcset="${html(mission.imagenEstatica)}"/>` : '',
+    abierto: missions.length === 0 ? ' open' : '',
+  }));
   const facts = program.datosRapidos.map(({valor, dato, sufijo, etiqueta}) => {
     const text = dato ? [...new Set(program.niveles.map(course => course[dato]))].join(' / ') + sufijo : valor;
     return `<div><strong>${html(text)}</strong><span>${html(etiqueta)}</span></div>`;
   });
   const seo = render('seo.json', Object.fromEntries(
-    Object.entries({...program.seo, url: site + route}).map(([key, value]) =>
+    Object.entries({...program.seo, nivel: program.seo.nivel ?? 'Inicial y avanzado', url: site + route}).map(([key, value]) =>
       [key, JSON.stringify(value).slice(1, -1).replaceAll('<', '\\u003c')],
     ),
   ));
@@ -139,7 +173,11 @@ for (const program of programs) {
     habilidades: fragment(program, 'habilidades'),
     proyectos: fragment(program, 'proyectos'),
     rotuloNiveles: levelCards.length === 2 ? 'DOS NIVELES · UNA RUTA' :
-      levelCards.length === 1 ? 'UN NIVEL · UNA RUTA' : `${levelCards.length} NIVELES · UNA RUTA`,
+      levelCards.length === 1 ? 'PLAN DEL CURSO' : `${levelCards.length} NIVELES · UNA RUTA`,
+    tituloNiveles: levelCards.length === 1 ? '¿Qué aprenderá en este curso?' :
+      'Elige el nivel que acompaña su siguiente desafío.',
+    descripcionNiveles: levelCards.length === 1 ? 'Conoce los requisitos, los contenidos y la duración del curso.' :
+      'Cada estudiante avanza desde sus conocimientos e intereses. Te orientamos para elegir el nivel adecuado antes de la matrícula.',
     niveles: levelCards.join(''),
     datosRapidos: `<div class="facts">${facts.join('')}</div>`,
     matricula: render('matricula.html', {opciones: options.join('')}),
@@ -154,7 +192,12 @@ outputs.set('index.html', render('inicio.html', {
     'Tres rutas creativas. Seis niveles para empezar y avanzar.' :
     `${programs.length} rutas creativas · ${levelCount} niveles para empezar y avanzar.`,
   catalogo: catalog.join('\n'),
-  guiaEdad: ageGuide.join('\n'),
+  misiones: missions.join('\n'),
+  guiaEdad: ageGroups.map(({min, max, cards}) => render('grupo-edad.html', {
+    rango: `${min}–${max} años`,
+    texto: cards.length === 1 ? '1 curso recomendado' : `${cards.length} cursos recomendados`,
+    tarjetas: cards.join(''),
+  })).join('\n'),
   opcionesCursos: enrollment.join(''),
 }));
 outputs.set('scripts/main.js', render('main.js', {datosModal: JSON.stringify(modal, null, 2)}));

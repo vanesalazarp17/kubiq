@@ -3,10 +3,6 @@
     "id": "scratch",
     "nombre": "Scratch",
     "encabezado": "SCRATCH · CREA HISTORIAS Y VIDEOJUEGOS",
-    "guiaEdad": {
-      "rango": "8–12 años",
-      "texto": "Scratch · Crea historias, animaciones y videojuegos"
-    },
     "tituloPagina": "Cursos de Scratch para niños de 8 a 13 años | KUBIQ ACADEMY",
     "seo": {
       "nombre": "Programas de Scratch | KUBIQ ACADEMY",
@@ -137,16 +133,18 @@
       "clase": "program-hero-image",
       "imagen": "../../imagenes/logo-scratch-kubiq.gif"
     },
-    "sitemapPrioridad": "0.9"
+    "sitemapPrioridad": "0.9",
+    "mision": {
+      "titulo": "Diseña un videojuego",
+      "descripcion": "Diseña personajes, crea reglas y programa cómo funciona tu juego.",
+      "imagen": "imagenes/scratch-disenia-videojuego.gif",
+      "alternativo": "Una estudiante prueba un videojuego creado con Scratch"
+    }
   },
   {
     "id": "roblox",
     "nombre": "Roblox Studio",
     "encabezado": "ROBLOX STUDIO · CONSTRUYE MUNDOS 3D",
-    "guiaEdad": {
-      "rango": "10–16 años",
-      "texto": "Roblox Studio · Construye mundos 3D y experiencias interactivas"
-    },
     "tituloPagina": "Cursos de Roblox Studio para niños y jóvenes | KUBIQ ACADEMY",
     "seo": {
       "nombre": "Programas de Roblox Studio | KUBIQ ACADEMY",
@@ -277,16 +275,18 @@
       "clase": "program-hero-image program-brand-logo-v83",
       "imagen": "../../imagenes/course-roblox-brand-v85.png"
     },
-    "sitemapPrioridad": "0.9"
+    "sitemapPrioridad": "0.9",
+    "mision": {
+      "titulo": "Construye un mundo 3D",
+      "descripcion": "Construye escenarios, recorridos y experiencias en 3D.",
+      "imagen": "imagenes/roblox-construye-mundo-3d.gif",
+      "alternativo": "Un estudiante prueba su mundo 3D en Roblox Studio"
+    }
   },
   {
     "id": "python",
     "nombre": "Python",
     "encabezado": "PYTHON · PROGRAMA TUS IDEAS",
-    "guiaEdad": {
-      "rango": "13–17 años",
-      "texto": "Python · Programa ideas y resuelve retos con código"
-    },
     "tituloPagina": "Cursos de Python para jóvenes de 13 a 17 años | KUBIQ ACADEMY",
     "seo": {
       "nombre": "Programas de Python | KUBIQ ACADEMY",
@@ -417,6 +417,160 @@
       "clase": "program-hero-image program-brand-logo-v83",
       "imagen": "../../imagenes/python-logo-portada-v158.png"
     },
-    "sitemapPrioridad": "0.9"
+    "sitemapPrioridad": "0.9",
+    "mision": {
+      "titulo": "Programa una solución",
+      "descripcion": "Escribe código para crear pequeños programas y resolver retos.",
+      "imagen": "imagenes/python-programa-solucion-v114.gif",
+      "alternativo": "Dos estudiantes prueban un programa escrito en Python"
+    }
+  },
+  {
+    "id": "ia",
+    "nombre": "IA",
+    "encabezado": "IA · INTELIGENCIA ARTIFICIAL",
+    "tituloPagina": "IA Exploradores e IA Creadores | KUBIQ ACADEMY",
+    "seo": {
+      "nombre": "Inteligencia Artificial | KUBIQ ACADEMY",
+      "descripcion": "Inteligencia artificial para niños y jóvenes. Empieza con IA Exploradores, de 9 a 12 años, y continúa con IA Creadores, de 13 a 17 años.",
+      "tituloSocial": "IA Exploradores e IA Creadores | KUBIQ ACADEMY",
+      "descripcionSocial": "Inteligencia artificial para niños y jóvenes. Empieza con IA Exploradores, de 9 a 12 años, y continúa con IA Creadores, de 13 a 17 años.",
+      "nivel": "Inicial e intermedio–avanzado"
+    },
+    "datosRapidos": [
+      {
+        "dato": "sesiones",
+        "sufijo": " clases",
+        "etiqueta": "según el nivel"
+      },
+      {
+        "dato": "minutos",
+        "sufijo": " min",
+        "etiqueta": "por clase"
+      }
+    ],
+    "llamadaAccion": "¿Listo para comenzar la ruta de Inteligencia Artificial?",
+    "portada": {
+      "etiqueta": "KUBIQ ACADEMY · INTELIGENCIA ARTIFICIAL",
+      "titulo": "De descubrir la inteligencia artificial a crear con ella.",
+      "descripcion": "Explora la inteligencia artificial a través de juegos, experimentos y proyectos. La ruta empieza con IA Exploradores, donde descubres cómo funcionan los sistemas inteligentes, y continúa con IA Creadores, donde diseñas, pruebas y mejoras tus propios prototipos.",
+      "alternativo": "El ajolote de KUBIQ representa la ruta de Inteligencia Artificial",
+      "clase": "program-hero-image program-brand-logo-v83",
+      "imagen": "../../imagenes/ia-portada.webp"
+    },
+    "sitemapPrioridad": "0.9",
+    "niveles": [
+      {
+        "id": "ia-exploradores",
+        "nombre": "IA Exploradores",
+        "titulo": "IA Exploradores",
+        "nivel": "Nivel inicial",
+        "edad": "9 a 12 años",
+        "sesiones": 32,
+        "minutos": 60,
+        "imagen": "imagenes/course-ia-exploradores.webp",
+        "tarjeta": {
+          "resumen": "Descubre cómo aprende la IA y crea tus primeros proyectos.",
+          "temas": [
+            "Reconocimiento de imágenes, sonidos y patrones",
+            "Datos y entrenamiento de primeros modelos",
+            "Asistentes, videojuegos y recomendaciones"
+          ],
+          "etiquetaEnlace": "Ver información de IA Exploradores",
+          "textoImagen": "Insignia de IA Exploradores de KUBIQ Academy"
+        },
+        "ficha": {
+          "requisitos": "No requiere conocimientos previos de programación.",
+          "aprendizaje": "Experimenta con datos, modelos, asistentes y recomendaciones. Al finalizar, crea y presenta un proyecto introductorio con IA.",
+          "temas": [
+            "Reconocimiento de imágenes, sonidos y patrones",
+            "Experimentos con datos y entrenamiento de primeros modelos",
+            "Asistentes e inteligencia artificial generativa",
+            "IA en videojuegos y sistemas de recomendación",
+            "Pensamiento crítico, creatividad y responsabilidad digital",
+            "Creación y presentación de un proyecto introductorio con IA"
+          ]
+        },
+        "modal": {
+          "description": "A través de juegos, misiones y experimentos, el estudiante descubre cómo las máquinas reconocen patrones, entrena sus primeros modelos y aprende a usar la IA de forma creativa y responsable.",
+          "topics": [
+            "Reconocimiento de imágenes, sonidos y patrones",
+            "Experimentos con datos y entrenamiento de primeros modelos",
+            "Asistentes e inteligencia artificial generativa",
+            "IA en videojuegos y sistemas de recomendación",
+            "Pensamiento crítico, creatividad y responsabilidad digital",
+            "Creación y presentación de un proyecto introductorio con IA"
+          ],
+          "skills": [
+            "Curiosidad y observación",
+            "Comunicación clara",
+            "Pensamiento crítico",
+            "Creatividad y revisión"
+          ],
+          "project": "Creará y presentará un proyecto introductorio con inteligencia artificial.",
+          "prerequisites": "No requiere conocimientos previos de programación."
+        }
+      },
+      {
+        "id": "ia-creadores",
+        "nombre": "IA Creadores",
+        "titulo": "IA Creadores",
+        "nivel": "Nivel intermedio–avanzado",
+        "edad": "13 a 17 años",
+        "sesiones": 40,
+        "minutos": 75,
+        "imagen": "imagenes/course-ia-creadores.webp",
+        "tarjeta": {
+          "resumen": "Diseña, prueba y mejora tus propias soluciones con IA.",
+          "temas": [
+            "Modelos de aprendizaje automático",
+            "Visión artificial y procesamiento del lenguaje",
+            "Recomendaciones y personajes inteligentes en videojuegos"
+          ],
+          "etiquetaEnlace": "Ver información de IA Creadores",
+          "textoImagen": "Insignia de IA Creadores de KUBIQ Academy"
+        },
+        "ficha": {
+          "requisitos": "Haber aprobado IA Exploradores. No es obligatorio conocer Python.",
+          "aprendizaje": "Diseña, desarrolla y evalúa soluciones de IA para situaciones reales. Al finalizar, presenta un prototipo inteligente propio.",
+          "temas": [
+            "Modelos de aprendizaje automático",
+            "Visión artificial y procesamiento del lenguaje",
+            "Sistemas de recomendación e IA para videojuegos",
+            "IA generativa y asistentes inteligentes",
+            "Evaluación de resultados y mejora de modelos",
+            "Seguridad, privacidad y ética tecnológica",
+            "Desarrollo y presentación de un prototipo propio"
+          ]
+        },
+        "modal": {
+          "description": "A través de desafíos, videojuegos y experimentos, el estudiante explora cómo se construyen los sistemas inteligentes y aplica lo aprendido al diseño y la evaluación de un prototipo propio.",
+          "topics": [
+            "Modelos de aprendizaje automático",
+            "Visión artificial y procesamiento del lenguaje",
+            "Sistemas de recomendación e IA para videojuegos",
+            "IA generativa y asistentes inteligentes",
+            "Evaluación de resultados y mejora de modelos",
+            "Seguridad, privacidad y ética tecnológica",
+            "Desarrollo y presentación de un prototipo propio"
+          ],
+          "skills": [
+            "Diseño y planificación de proyectos",
+            "Evaluación de resultados",
+            "Resolución de problemas",
+            "Comunicación y autonomía"
+          ],
+          "project": "Construirá y presentará un prototipo inteligente propio.",
+          "prerequisites": "Haber aprobado IA Exploradores. No es obligatorio conocer Python."
+        }
+      }
+    ],
+    "mision": {
+      "titulo": "Entrena un robot detective",
+      "descripcion": "Enséñale a reconocer objetos con imágenes y ponlo a prueba con nuevas pistas.",
+      "imagen": "imagenes/ia-mision-detective.gif",
+      "alternativo": "Una niña prueba si su modelo de IA reconoce un dinosaurio de juguete",
+      "imagenEstatica": "imagenes/ia-mision-detective.webp"
+    }
   }
 ]

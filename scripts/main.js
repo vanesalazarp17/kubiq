@@ -208,6 +208,61 @@ const courseDetails={
     "prerequisites": "Requiere bases de Python: variables, condicionales, ciclos y funciones. Si hay dudas, KUBIQ orientará sobre el nivel adecuado.",
     "href": "programas/python/index.html",
     "enrollmentValue": "Python avanzado"
+  },
+  "ia-exploradores": {
+    "title": "IA Exploradores",
+    "level": "Nivel inicial",
+    "age": "9 a 12 años",
+    "sessions": 32,
+    "duration": 60,
+    "image": "imagenes/course-ia-exploradores.webp",
+    "description": "A través de juegos, misiones y experimentos, el estudiante descubre cómo las máquinas reconocen patrones, entrena sus primeros modelos y aprende a usar la IA de forma creativa y responsable.",
+    "topics": [
+      "Reconocimiento de imágenes, sonidos y patrones",
+      "Experimentos con datos y entrenamiento de primeros modelos",
+      "Asistentes e inteligencia artificial generativa",
+      "IA en videojuegos y sistemas de recomendación",
+      "Pensamiento crítico, creatividad y responsabilidad digital",
+      "Creación y presentación de un proyecto introductorio con IA"
+    ],
+    "skills": [
+      "Curiosidad y observación",
+      "Comunicación clara",
+      "Pensamiento crítico",
+      "Creatividad y revisión"
+    ],
+    "project": "Creará y presentará un proyecto introductorio con inteligencia artificial.",
+    "prerequisites": "No requiere conocimientos previos de programación.",
+    "href": "programas/ia/index.html",
+    "enrollmentValue": "IA Exploradores"
+  },
+  "ia-creadores": {
+    "title": "IA Creadores",
+    "level": "Nivel intermedio–avanzado",
+    "age": "13 a 17 años",
+    "sessions": 40,
+    "duration": 75,
+    "image": "imagenes/course-ia-creadores.webp",
+    "description": "A través de desafíos, videojuegos y experimentos, el estudiante explora cómo se construyen los sistemas inteligentes y aplica lo aprendido al diseño y la evaluación de un prototipo propio.",
+    "topics": [
+      "Modelos de aprendizaje automático",
+      "Visión artificial y procesamiento del lenguaje",
+      "Sistemas de recomendación e IA para videojuegos",
+      "IA generativa y asistentes inteligentes",
+      "Evaluación de resultados y mejora de modelos",
+      "Seguridad, privacidad y ética tecnológica",
+      "Desarrollo y presentación de un prototipo propio"
+    ],
+    "skills": [
+      "Diseño y planificación de proyectos",
+      "Evaluación de resultados",
+      "Resolución de problemas",
+      "Comunicación y autonomía"
+    ],
+    "project": "Construirá y presentará un prototipo inteligente propio.",
+    "prerequisites": "Haber aprobado IA Exploradores. No es obligatorio conocer Python.",
+    "href": "programas/ia/index.html",
+    "enrollmentValue": "IA Creadores"
   }
 };
 document.querySelectorAll('.course-card[data-course]').forEach(card=>{

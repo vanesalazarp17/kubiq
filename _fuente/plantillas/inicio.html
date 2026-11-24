@@ -2044,6 +2044,33 @@ footer .footer-bottom-links a:focus-visible{
 <meta name="twitter:description" content="Clases online en vivo de Scratch, Roblox Studio y Python para niños y jóvenes. Grupos pequeños, proyectos creativos y acompañamiento docente."/>
 <link rel="canonical" href="https://vanesalazarp17.github.io/kubiq/"/>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://vanesalazarp17.github.io/kubiq/#organization","name":"KUBIQ ACADEMY","url":"https://vanesalazarp17.github.io/kubiq/","logo":"https://vanesalazarp17.github.io/kubiq/imagenes/kubiq-logo-header.png","description":"Academia online de programación para niños y jóvenes de 8 a 17 años. Clases en vivo de Scratch, Roblox Studio y Python, en grupos pequeños de 4 a 8 estudiantes.","sameAs":[]},{"@type":"WebSite","@id":"https://vanesalazarp17.github.io/kubiq/#website","url":"https://vanesalazarp17.github.io/kubiq/","name":"KUBIQ ACADEMY","inLanguage":"es","publisher":{"@id":"https://vanesalazarp17.github.io/kubiq/#organization"}},{"@type":"EducationalOrganization","@id":"https://vanesalazarp17.github.io/kubiq/#academy","name":"KUBIQ ACADEMY","url":"https://vanesalazarp17.github.io/kubiq/","description":"Academia online de programación para niños y jóvenes de 8 a 17 años. Clases en vivo de Scratch, Roblox Studio y Python, en grupos pequeños de 4 a 8 estudiantes.","areaServed":["Ecuador","Latinoamérica"],"educationalLevel":"Educación extracurricular para niños y jóvenes","audience":{"@type":"PeopleAudience","suggestedMinAge":8,"suggestedMaxAge":17},"provider":{"@id":"https://vanesalazarp17.github.io/kubiq/#organization"}}]}</script>
+<style id="kubiq-mission-accordion">
+.mission-accordion{display:grid;gap:12px;margin:28px 0 16px}
+.mission-item{overflow:hidden;border:1px solid #b7caff;border-radius:20px;background:linear-gradient(155deg,#fff,#eef4ff);color:#0b1b4d}
+.mission-item summary{display:grid;grid-template-columns:84px minmax(0,1fr) 42px;grid-template-areas:"arte titulo control";align-items:center;gap:14px;padding:14px 22px;cursor:pointer;list-style:none}
+.mission-item[open] summary{grid-template-columns:minmax(0,1fr) 42px;grid-template-areas:"titulo control" "arte arte"}
+.mission-art{grid-area:arte;display:block;width:100%;overflow:hidden;border-radius:10px;background:#151b52}
+.mission-art img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover}
+.mission-item[open] .mission-art{width:min(100%,620px);justify-self:center;border-radius:16px}
+.mission-item[open] .mission-art img{aspect-ratio:16/9;object-fit:contain}
+.mission-item summary::-webkit-details-marker{display:none}
+.mission-item summary:focus-visible{outline:3px solid #6545e8;outline-offset:-4px;border-radius:18px}
+.mission-item-title{grid-area:titulo;display:grid;gap:3px}
+.mission-item-title small{font-size:12px;font-weight:800;color:#4940a5}
+.mission-item-title strong{font:800 clamp(17px,2.4vw,23px)/1.25 Poppins,sans-serif}
+.mission-toggle{grid-area:control;display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:#00c8ff;color:#0b1b4d;font-size:24px;font-weight:800}
+.mission-toggle::before{content:"+"}
+.mission-item[open] .mission-toggle::before{content:"−"}
+.mission-content{width:min(100%,664px);margin:0 auto;padding:0 22px 22px}
+.mission-item .mission-content p{margin:0 0 12px;color:#526184;line-height:1.55}
+.mission-item .mission-content a{color:#5836cb;font-weight:900}
+@media(max-width:620px){
+  .mission-item summary{grid-template-columns:60px minmax(0,1fr) 36px;gap:10px;padding:12px 14px}
+  .mission-item[open] summary{grid-template-columns:minmax(0,1fr) 36px}
+  .mission-toggle{width:36px;height:36px}
+  .mission-content{padding:0 14px 15px}
+}
+</style>
 </head>
 <body><a class="skip-link" href="#contenido-principal">Saltar al contenido principal</a>
 <div class="site-sticky-shell" id="siteStickyShell">
@@ -2122,7 +2149,7 @@ footer .footer-bottom-links a:focus-visible{
 <div class="wrap">
 <div class="section-kicker">ENCUENTRA TU RUTA</div>
 <h2 class="section-title display" id="v78-age-title">¿Qué puede aprender según su edad?</h2>
-<p class="section-intro">Edades orientativas y organización académica de cada programa.</p>
+<p class="section-intro">Elige un rango para ver los cursos recomendados. Si un curso abarca más de un rango, aparece en ambos.</p>
 <div class="v78-age-list">
 {{guiaEdad}}
 </div>
@@ -2141,6 +2168,7 @@ footer .footer-bottom-links a:focus-visible{
 <button class="creator-quiz-option" data-route="scratch" type="button">Un videojuego con personajes e historias</button>
 <button class="creator-quiz-option" data-route="roblox" type="button">Un mundo 3D que otros puedan explorar</button>
 <button class="creator-quiz-option" data-route="python" type="button">Un programa que resuelva un reto</button>
+<button class="creator-quiz-option" data-route="ia" type="button">Un proyecto que aprenda a reconocer objetos</button>
 </div>
 <div aria-live="polite" class="creator-quiz-result" data-quiz-result="" hidden="">
 <img alt="Logo del programa recomendado" data-quiz-logo="" loading="lazy" src="imagenes/course-scratch-inicial.gif"/>
@@ -2160,10 +2188,8 @@ footer .footer-bottom-links a:focus-visible{
 <div class="section-kicker">NO SOLO MIRES LA TECNOLOGÍA. HAZ QUE SUCEDA.</div>
 <h2 class="section-title display" id="v71-missions-title">¿Qué te gustaría crear primero?</h2>
 <p class="section-intro">Cada programa convierte la curiosidad en pequeños desafíos. El estudiante prueba ideas, toma decisiones, encuentra errores y mejora su proyecto con acompañamiento.</p>
-<div class="v71-mission-grid mission-track">
-<article class="v71-mission-card v71-mission-scratch"><span class="v71-mission-tag">MISIÓN 1 · SCRATCH</span><div aria-hidden="true" class="v71-mission-icon"><img alt="Ilustración animada de estudiante creando un videojuego con KUBIQ" loading="lazy" src="imagenes/scratch-disenia-videojuego.gif"/></div><h3>Diseña un videojuego</h3><p>Diseña personajes, crea reglas y programa cómo funciona tu juego.</p><a class="mission-card-link" href="programas/scratch/index.html">Explorar Scratch →</a></article>
-<article class="v71-mission-card v71-mission-roblox"><span class="v71-mission-tag">MISIÓN 2 · ROBLOX STUDIO</span><div aria-hidden="true" class="v71-mission-icon"><img alt="Ilustración animada de estudiante construyendo un mundo 3D con KUBIQ" loading="lazy" src="imagenes/roblox-construye-mundo-3d.gif"/></div><h3>Construye un mundo 3D</h3><p>Construye escenarios, recorridos y experiencias en 3D.</p><a class="mission-card-link" href="programas/roblox/index.html">Explorar Roblox Studio →</a></article>
-<article class="v71-mission-card v71-mission-python"><span class="v71-mission-tag">MISIÓN 3 · PYTHON</span><div aria-hidden="true" class="v71-mission-icon"><img alt="Ilustración animada de estudiantes programando una solución con Python" loading="lazy" src="imagenes/python-programa-solucion-v114.gif"/></div><h3>Programa una solución</h3><p>Escribe código para crear pequeños programas y resolver retos.</p><a class="mission-card-link" href="programas/python/index.html">Explorar Python →</a></article>
+<div class="mission-accordion">
+{{misiones}}
 </div>
 <p class="v71-mission-note">Los proyectos concretos se ajustan al nivel y avance de cada grupo; estos ejemplos muestran posibilidades de creación.</p>
 <div class="v85-mission-cta"><a class="btn btn-primary" href="#cursos">Encuentra tu próxima misión</a></div>
@@ -2179,7 +2205,7 @@ footer .footer-bottom-links a:focus-visible{
 <aside class="status-card reveal">
 <div class="status-top"><span class="status-dot"></span> Aprendizaje personalizado</div>
 <h3>De la curiosidad a la creación.</h3>
-<p>Las rutas de KUBIQ ACADEMY incluyen Scratch, Roblox Studio y Python. Cada herramienta permite desarrollar distintas formas de pensamiento y creación digital.</p>
+<p>Cada ruta de KUBIQ ACADEMY desarrolla distintas formas de pensamiento y creación digital.</p>
 <div class="status-line"></div>
 <div aria-label="Características de los programas KUBIQ" class="status-proof-grid"><div><strong>4–8</strong><span>estudiantes por grupo</span></div><div><strong>Por edad</strong><span>duración adaptada</span></div><div><strong>Proyectos</strong><span>para aplicar lo aprendido</span></div></div>
 </aside>

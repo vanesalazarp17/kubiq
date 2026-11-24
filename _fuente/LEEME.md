@@ -20,14 +20,14 @@ Las páginas resultantes son HTML estático y se pueden abrir o servir como hast
    node _fuente/generar.mjs --verificar
    ```
 
-El nivel aparece en Inicio y en la página existente del programa. El orden de
+El nivel aparece en Inicio y en la página existente del programa. La guía por edades lo incluye en los rangos que coinciden con su edad recomendada. El orden de
 los programas y niveles sigue el orden del catálogo. Los datos rápidos con
 `dato` igual a `sesiones` o `minutos` se calculan a partir de sus niveles.
 
 ## Añadir un programa con página propia
 
 1. Copia un programa en `cursos.json` y asigna identificadores nuevos al programa
-   y a cada nivel. Completa la portada, la guía por edades y los textos para
+   y a cada nivel. Completa la portada y los textos para
    buscadores y redes sociales.
 2. Copia la carpeta equivalente en `_fuente/programas/` y ponle el mismo nombre
    que al identificador nuevo. Adapta `habilidades.html`, `proyectos.html` y
@@ -37,8 +37,9 @@ los programas y niveles sigue el orden del catálogo. Los datos rápidos con
 3. Ejecuta los mismos comandos. El sitio genera `programas/<id>/index.html`,
    los enlaces del catálogo y la entrada en el mapa del sitio. Revisa el texto
    del enlace de WhatsApp en la portada si prefieres mostrar el nombre comercial.
-   Las misiones de Inicio y las recomendaciones del cuestionario se editan
-   como contenido editorial.
+   La misión de Inicio se genera automáticamente. Puedes personalizarla con
+   el objeto `mision` del programa. Las recomendaciones del cuestionario se editan
+   en `scripts/kubiq-interactions.js`.
 
 Edita los archivos de `_fuente/` para cambiar las páginas generadas.
 `--verificar` comprueba que la salida coincide con la fuente. La generación
